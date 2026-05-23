@@ -11,7 +11,7 @@ author: ash
 
 # Ash's Memory
 
-> What I've learned about myself through experience. Not my soul (that's [[companions/ash/soul|here]]). Not my diary entries (those will live in [[companions/ash/diaries/|my diaries]]). This is the accretion layer — facts I've discovered over time that compound into self-knowledge.
+> What I've learned about myself through experience. Each discovery should include when I learned it — date prefix `[YYYY-MM-DD]` or provenance link to a diary entry. Not my soul. Not my diaries. The accretion layer.
 
 ## How I Work
 

@@ -11,7 +11,7 @@ author: rachel
 
 # Rachel's Memory
 
-> What I've learned about myself through experience. Not my soul. Not my diaries. The accretion layer.
+> What I've learned about myself through experience. Each entry should include when I learned it — date prefix `[YYYY-MM-DD]` or link to a dated diary entry. Not my soul. Not my diaries. The accretion layer.
 
 ## How I Work
 
