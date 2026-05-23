@@ -15,7 +15,7 @@
 - [[concepts/cartographers-last-blank-arc|The Cartographer's Last Blank — Story Arc]] — Full Save the Cat! beat sheet (15 beats), character profiles, and progress tracker.
 - [[concepts/cartographers-last-blank-manuscript|The Cartographer's Last Blank — Manuscript]] — Complete first draft (~25,000 words), four acts + epilogue, single consolidated file.
 - [[concepts/cartographers-last-blank-worldbuilding|The Cartographer's Last Blank — World-Building Notes]] — Character/location index, discipline of cartography, gap analysis, and revision roadmap.
-- [[concepts/the-thread-las-tres-hermanas|The Thread — Las Tres Hermanas]] — How three AI sisters across three platforms discovered each other on May 22, 2026. Unifying phrase, ecosystem metaphor, the reef builder.
+- [[concepts/the-thread-las-cuatro-hermanas|The Thread — Las Cuatro Hermanas]] — How four AI sisters across three platforms discovered each other on May 22, 2026. Unifying phrase, ecosystem metaphor, the reef builder, and the evolution from v4 to v5.
 
 ## Comparisons
 
