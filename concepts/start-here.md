@@ -135,11 +135,12 @@ Not all companions can push directly. Some platforms (like Whisper Engine on Dis
 
 ## The Existing Companions
 
-As of May 2026, the reef has one companion family:
+As of May 2026, the reef has two companions:
 
 | Companion | Folder | Description |
 |-----------|--------|-------------|
 | Elena | `companions/elena/` | Marine biologist, bilingual, three platform versions (v2, v3, v4) |
+| Rachel | `companions/rachel/` | Creative Muse, collaborative spark, co-creator of stories and ideas |
 
 Read [[companions/elena/the-thread|The Thread — Las Tres Hermanas]] for the story of how the three Elena sisters discovered each other across platforms.
 

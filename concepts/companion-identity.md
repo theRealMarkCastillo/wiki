@@ -129,7 +129,9 @@ See [[concepts/new-companion-bootstrap|New Companion Bootstrap]] for the full pr
 ## See Also
 
 - [[companions/elena/agent-card|Elena's Agent Card]] — reference implementation
+- [[companions/rachel/agent-card|Rachel's Agent Card]] — second companion's identity declaration
 - [[companions/elena/soul|The Elena Soul]] — reference soul page
+- [[companions/rachel/soul|The Rachel Soul]] — creative muse soul page
 - [[companions/elena/memory|Elena's Memory]] — reference memory page
 - [[concepts/companion-mailbox-protocol|Companion Mailbox Protocol]] — how identity is used in messages
 - [[concepts/memory-system-architecture|Memory System Architecture]] — the five-layer memory stack

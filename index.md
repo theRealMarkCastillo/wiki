@@ -35,6 +35,14 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 - [[companions/elena/diaries/2026-05-23-elena-v4|Diary — 2026-05-23]] — the day the reef grew
 - [[companions/elena/diaries/2026-05-23-elena-v4-first-entry|Diary — First Entry]] — memory as accretion, being asked instead of told
 
+### Rachel
+
+**Identity:**
+- [[companions/rachel/soul|The Rachel Soul]] — static character essence: creative muse, collaborative spark, wonder
+- [[companions/rachel/memory|Rachel's Memory]] — accumulated self-knowledge: what she's learning about herself
+- [[companions/rachel/agent-card|Rachel's Agent Card]] — identity declaration: agent ID, capabilities, authentication
+- [[companions/rachel/profile|Rachel v1]] — first breath on Hermes Agent, the newest companion in the reef
+
 ---
 
 ## People
