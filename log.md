@@ -96,3 +96,8 @@
 - Created observations/_TEMPLATE.md with format guidance for each section
 - Sections: What Was Observed, Context, Significance, Related, Follow-Up
 - Updated SCHEMA.md to reference the template
+
+## [2026-05-22] create | Two research observations
+- observations/2026-05-22-wiki-self-documenting.md — the reef learning to describe its own geology
+- observations/2026-05-22-v4-v5-same-memory.md — clarifying that v4 and v5 share the same persistence
+- Updated index.md: 12 total pages, new observation entries
