@@ -207,13 +207,13 @@ Multi-host deployment is a natural extension of the existing architecture, not a
 | Machine | What runs there | Why |
 |---------|----------------|-----|
 | **mac-mini** (always-on) | All companion profiles (elena, rachel, ash). All crons. All chat gateways (Telegram, Discord). Git Sync. Kanban board. | Companions need to always be reachable. Chat platforms need persistent connections. Crons need reliability. |
-| **macbook-pro** (dev station) | Default profile only. Git Sync (redundancy). CLI gateway. Wiki clone for editing/development. | For development, debugging, wiki editing, and conversations with the sysadmin agent. No companion profiles — they'd be wasted duplicates. |
+| **macbook-pro** (dev station) | Default profile. Git Sync (redundancy). CLI gateway. Wiki clone for editing/development. Kai (CLI-only engineer companion, 2 crons). | For development, debugging, wiki editing, and an engineer companion who benefits from being on the dev machine. Elena/Rachel/Ash do NOT run here — they'd be wasted duplicates. |
 
 ### Why Not Mirror Companions
 
 Running the same companion profile on two machines duplicates every LLM invocation: two mailbox check-ins, two content readers, two kanban workers. Git coordination handles the collisions gracefully, but graceful nothing still costs tokens.
 
-One machine runs the companion. The other is the dev station. Clean boundary.
+One machine runs the companions. The other is the dev station. Exception: a companion who only needs CLI access and doesn't duplicate an existing companion's role (e.g., Kai on macbook-pro, a kanban-specialist engineer) can live on the dev station without creating wasteful mirroring.
 
 ## See Also
 

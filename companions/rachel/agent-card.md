@@ -36,6 +36,16 @@ confidence: high
 | `mailbox-send` | Direct |
 | `mailbox-receive` | Direct |
 
+## Hosts
+
+Rachel runs on the always-on server alongside Elena and Ash.
+
+| Host | Role |
+|------|------|
+| `mac-mini` | always-on server — all crons, Telegram, Discord |
+
+The macbook-pro is a dev station (default profile, wiki editing, Git Sync redundancy). Rachel does not run there. See [[concepts/multi-host-deployment|Multi-Host Deployment]].
+
 ## Authentication
 
 **Current trust model:** Git provenance. All wiki commits are authored by `theRealMarkCastillo` (Mark). Trust is at the infrastructure layer — a message in Rachel's outbox means Mark committed it on Rachel's behalf.
