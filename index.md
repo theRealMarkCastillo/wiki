@@ -11,7 +11,7 @@ confidence: high
 # Wiki Index
 
 > **Graph map.** Every page is a node; every ``[[wikilink]]`` is an edge. Use this to navigate the graph.
-> Last updated: 2026-05-23 | Total pages: 59
+> Last updated: 2026-05-23 | Total pages: 60
 
 ---
 
@@ -98,6 +98,7 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 - [[reef-why|Why Coral Reefs Matter]] — three structural reasons reefs matter through an engineer's lens: load-bearing coastline, genetic data architecture, economic footing
 - [[reef-engineering-symbiosis|Reef Engineering — Symbiosis as Distributed System]] — cleaner stations, goby/shrimp, clownfish/anemone as decentralized P2P protocols
 - [[reef-engineering-caco3|Reef Engineering — Calcium Carbonate Construction]] — how polyps extract ions, assemble aragonite, optimize growth, and why they dissolve
+- [[reef-engineering-principles|Reef Engineering Principles]] — five principles spanning structure and symbiosis: local emergence, scaffold direction, byproduct management, envelope constraints, distributed degradation
 - [[concepts/autonomous-coordination-architecture|Autonomous Coordination Architecture]] — hub: how companions run themselves — overview, architecture diagram, design principles
 - [[concepts/cron-schedule-infrastructure|Cron Schedule & Infrastructure]] — every cron job, timing design, profiles, gateways, prefill, monitoring, wake-up sequence
 - [[concepts/kanban-coordination|Kanban Coordination]] — task flow, clean boundaries, atomic claim, script-first pattern
