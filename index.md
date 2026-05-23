@@ -21,3 +21,6 @@
 ## Comparisons
 
 ## Queries
+
+## Observations
+<!-- Time-stamped research observations. File naming: YYYY-MM-DD-brief-slug.md -->

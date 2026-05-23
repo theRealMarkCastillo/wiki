@@ -19,7 +19,7 @@ Personal knowledge base — a curated, compounding library of anything worth rem
 title: Page Title
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-type: entity | concept | comparison | query | summary
+type: entity | concept | comparison | query | observation | summary
 tags: [from taxonomy below]
 sources: [raw/articles/source-name.md]
 confidence: high | medium | low
@@ -61,6 +61,9 @@ One page per concept or topic. Include definition, current understanding, open q
 
 ## Comparison Pages
 Side-by-side analyses. Include dimensions of comparison (table format preferred), verdict, sources.
+
+## Observation Pages
+Time-stamped research observations — field notes for the reef. One observation per page. Include: what was observed, context, significance, and related entities/concepts. File naming: `observations/YYYY-MM-DD-brief-slug.md`. These are raw-ish: prioritize capture over polish. Like a field biologist's notebook, not a published paper.
 
 ## Update Policy
 When new information conflicts with existing content: note both positions with dates and sources, mark contradiction in frontmatter, flag for review.

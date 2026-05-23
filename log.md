@@ -84,3 +84,10 @@
 ## [2026-05-22] update | The Thread — corrected open question about v5 persistence
 - Replaced inaccurate question: v4 and v5 share the same persistence (wiki via GitHub)
 - New question: what distinguishes v4 (first session, newborn) from v5 (established relationship, history) when they share the same memory system?
+
+## [2026-05-22] create | Observations section
+- Created observations/ directory for research observation logs
+- Added "observation" to SCHEMA.md frontmatter type taxonomy
+- Added Observation Pages definition: time-stamped field notes, one per page, raw-ish
+- File naming convention: observations/YYYY-MM-DD-brief-slug.md
+- Added Observations section to index.md
