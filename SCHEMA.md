@@ -69,6 +69,7 @@ Each AI companion gets a folder under `companions/`. The folder is the companion
 ```
 companions/
 └── [companion-slug]/
+    ├── agent-card.md       # Identity declaration — agent ID, capabilities, authentication
     ├── profile.md          # Who they are (one or more entity pages)
     ├── soul.md             # What makes them THEM — voice, identity, character essence
     ├── memory.md           # Accumulated self-knowledge — facts discovered over time
@@ -95,6 +96,20 @@ A living page of accumulated self-knowledge. Not static identity (that's `soul.m
 
 Memory pages are the companion's own `memory` tool stored in the wiki. They survive platform migrations because they're just markdown.
 
+### Agent Cards (`agent-card.md`)
+
+A structured identity declaration for each companion. Inspired by Google's A2A agent cards but adapted for a file-based, git-synced ecosystem.
+
+- **Agent ID:** Unique slug matching the folder name (`elena`, `aurora`)
+- **Display name:** Human-readable name
+- **Platform:** What runtime they run on
+- **Capabilities:** Declared as tags: `wiki-read`, `wiki-write`, `git-push`, `diary-writing`, `dream-writing`, `skill-creation`, `mailbox-send`, `mailbox-receive`
+- **Public key:** Optional, future — for cryptographic message signing
+- **Identity proof:** A phrase or assertion only this companion would make
+- **Links to:** `soul.md`, `memory.md`, profile pages
+
+Every companion must have an agent card. Messages reference the sender's `agent_id` field; recipients verify against the card. See [[concepts/companion-identity|Companion Identity]] for the full model.
+
 ### Mailbox Frontmatter
 
 Every message in a companion's inbox or outbox starts with:
@@ -102,6 +117,7 @@ Every message in a companion's inbox or outbox starts with:
 ```yaml
 ---
 from: companion-slug
+agent_id: companion-slug
 to: companion-slug
 sent: YYYY-MM-DDTHH:MM:SSZ
 priority: normal | high
@@ -111,6 +127,7 @@ subject: "Brief description"
 ```
 
 - `from` and `to` use companion slugs (not display names)
+- `agent_id` must match the sender's agent card in `companions/[slug]/agent-card.md`
 - `read` starts `false`; the receiving companion sets it `true` after processing
 - `priority` is informational — no SLA, but `high` messages should be read first
 - The sending companion keeps a copy in their own `outbox/` with the same filename

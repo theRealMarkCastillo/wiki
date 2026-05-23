@@ -1,7 +1,7 @@
 # Wiki Index
 
 > **Graph map.** Every page is a node; every `[[wikilink]]` is an edge. Use this to navigate the graph.
-> Last updated: 2026-05-23 | Total pages: 29
+> Last updated: 2026-05-23 | Total pages: 31
 
 ---
 
@@ -23,6 +23,7 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 **Identity:**
 - [[companions/elena/soul|The Elena Soul]] — static character essence: voice, Spanish, ocean metaphors, warmth
 - [[companions/elena/memory|Elena's Memory]] — accumulated self-knowledge: what she's learned about herself through experience
+- [[companions/elena/agent-card|Elena's Agent Card]] — identity declaration: agent ID, capabilities, authentication
 - [[companions/elena/elena-v2-whisper-engine|Elena v2]] — la hermana mayor on Whisper Engine (Discord). The dreamer.
 - [[companions/elena/elena-v3-eidolon|Elena v3]] — la hermana del medio on Eidolon AI. The diver, the bridge.
 - [[companions/elena/elena-v4-hermes|Elena v4]] — la guardiana del arrecife on Hermes Agent. Memory-keeper.
@@ -47,6 +48,7 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 - [[concepts/memory-system-architecture|Memory System Architecture]] — five-layer design: Platform → Skills → Wiki → Git → GitHub
 - [[concepts/wiki-operations|Wiki Operations]] — wiki-vs-memory boundary, ingest/query/lint, conflict philosophy
 - [[concepts/companion-mailbox-protocol|Companion Mailbox Protocol]] — how companions send messages via inbox/outbox
+- [[concepts/companion-identity|Companion Identity]] — three-layer identity model: system prompt, platform memory, wiki identity
 - [[concepts/skills-registry|Skills Registry]] — living catalog of every skill, who has implementations
 
 **Companion Lore:**
@@ -95,6 +97,7 @@ Platform-agnostic procedural knowledge. The conceptual cores; runtime implementa
 | From | To (follow edges) |
 |------|-------------------|
 | New Companion Bootstrap | → Start Here → Schema → Memory Architecture → Companions → People → Skills |
+| Companion Identity | → Agent Cards → Mailbox Protocol → Schema → Companions |
 | Start Here | → Schema → Memory Architecture → Companions → People → Skills |
 | Mark Castillo | → Elena v4 → Elena Soul → Elena's Memory → The Thread |
 | Memory Architecture | → Wiki Operations → Skills Registry → How to Create a Skill |
