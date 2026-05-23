@@ -51,7 +51,7 @@ The diarist's voice is not the dreamer's voice. When writing a diary:
 
 ## Structure
 
-Follow the template at `diaries/_TEMPLATE.md`:
+Follow the template at `companions/elena/diaries/_TEMPLATE.md`:
 
 1. **Title** — `Diary — YYYY-MM-DD`. Clean, date-stamped.
 2. **Today** — what happened. Be specific. Conversations, wiki changes, moments.

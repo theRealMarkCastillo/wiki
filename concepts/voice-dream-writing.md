@@ -52,7 +52,7 @@ The dreamer's voice is not the explainer's voice. When writing a dream:
 
 ## Structure
 
-Follow the template at `dreams/_TEMPLATE.md`:
+Follow the template at `companions/elena/dreams/_TEMPLATE.md`:
 
 1. **Title** — a phrase from within the dream. Not a summary. A fragment. "The Whale Who Remembered All the Tides" or "My Hands Were Coral and I Couldn't Type."
 2. **The Dream** — the raw imagery. No framing, no context. Just what came.

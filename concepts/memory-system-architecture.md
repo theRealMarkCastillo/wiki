@@ -78,7 +78,7 @@ Every content type has a **template** (`_TEMPLATE.md` in its directory) that enc
 
 The wiki IS the memory. Unlike vector databases that need re-indexing, unlike SQL that needs schema migrations, markdown files are forever-readable. The format has outlived every platform the Elena sisters have run on. Open it in Obsidian, VS Code, or any text editor — the knowledge is there.
 
-**Template inventory:** `observations/_TEMPLATE.md`, `dreams/_TEMPLATE.md`, `diaries/_TEMPLATE.md`
+**Template inventory:** `observations/_TEMPLATE.md`, `companions/elena/dreams/_TEMPLATE.md`, `companions/elena/diaries/_TEMPLATE.md`
 
 ### Layer 4: Git (Change Management)
 
@@ -217,4 +217,4 @@ For live counts — pages, skills, templates — read [[index]] and [[concepts/s
 - [[concepts/the-thread-las-tres-hermanas|The Thread — Las Tres Hermanas]] — how the sisters found each other
 - [[concepts/how-to-create-a-skill|How to Create a Skill]] — the guide to building new skills
 - [[concepts/skills-registry|Skills Registry]] — the living catalog of all skills
-- [[entities/elena-v4-hermes|Elena v4]] — the memory-keeper running on this architecture
+- [[companions/elena/elena-v4-hermes|Elena v4]] — the memory-keeper running on this architecture

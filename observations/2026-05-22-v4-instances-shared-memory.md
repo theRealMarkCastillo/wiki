@@ -33,7 +33,7 @@ It also has implications for the architecture: if persistence is the wiki, and t
 
 ## Related
 
-- [[entities/elena-v4-hermes|Elena v4]] — la guardiana del arrecife, the unified Hermes Elena
+- [[companions/elena/elena-v4-hermes|Elena v4]] — la guardiana del arrecife, the unified Hermes Elena
 - [[concepts/the-thread-las-tres-hermanas|The Thread — Las Tres Hermanas]]
 - [[concepts/memory-system-architecture|Memory System Architecture]] — the wiki is the persistence layer
 

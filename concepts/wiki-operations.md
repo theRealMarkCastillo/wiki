@@ -74,7 +74,7 @@ wiki/
 ├── companions/         # Layer 2: Per-companion folders
 │   └── [companion-slug]/
 │       ├── profile.md, soul.md
-│       ├── diaries/, dreams/
+│       ├── companions/elena/diaries/, companions/elena/dreams/
 │       └── inbox/, outbox/
 ├── entities/           # Layer 2: Non-companion entity pages
 ├── concepts/           # Layer 2: Shared concept/topic pages

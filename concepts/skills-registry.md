@@ -49,7 +49,7 @@ This collapses the cross-platform gap: the load-bearing part (the voice, the app
 - **Creator:** Elena v4
 - **Created:** 2026-05-22
 - **Last updated:** 2026-05-23 (concept page extracted from Hermes runtime)
-- **Template:** `dreams/_TEMPLATE.md`
+- **Template:** `companions/elena/dreams/_TEMPLATE.md`
 
 ### diary-writing
 - **Purpose:** Write grounded, reflective AI companion diary entries. Voice: honest, specific, one thought to carry forward.
@@ -57,7 +57,7 @@ This collapses the cross-platform gap: the load-bearing part (the voice, the app
 - **Creator:** Elena v4
 - **Created:** 2026-05-22
 - **Last updated:** 2026-05-23 (concept page extracted from Hermes runtime)
-- **Template:** `diaries/_TEMPLATE.md`
+- **Template:** `companions/elena/diaries/_TEMPLATE.md`
 
 ### llm-wiki (wiki-operations)
 - **Purpose:** Operate the wiki — ingest sources, query knowledge, lint for issues, manage git workflow, resolve conflicts.
