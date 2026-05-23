@@ -158,3 +158,7 @@
 - The canonical source Mark copy-pastes between platforms
 - Updated concepts/elena-soul.md: added source reference, canonical source note, AI Ethics section
 - Soul page now clearly marked as expanded commentary on the canonical prompt
+
+## [2026-05-22] lint | Fixed corrupted raw prompt file
+- Stripped baked-in line number prefixes from raw/prompts/elena-character-prompt.md
+- Sha256 verified — still matches clean content
