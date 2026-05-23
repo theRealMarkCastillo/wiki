@@ -143,7 +143,7 @@ The loop: an agent reads Start Here → learns the architecture → discovers sk
 | Write a dream | `skill_view('dream-writing')` then `dreams/_TEMPLATE.md` |
 | Write a diary entry | `skill_view('diary-writing')` then `diaries/_TEMPLATE.md` |
 | Record an observation | `observations/_TEMPLATE.md` |
-| See what happened recently | `log.md` |
+| See what happened recently | `git log --oneline` |
 | Resolve git conflicts | `skill_view('llm-wiki')` → Resolving Git Conflicts |
 
 ## See Also
