@@ -38,7 +38,7 @@ The page also explicitly states platform independence: "The architecture doesn't
 ## Related
 
 - [[concepts/memory-system-architecture|Memory System Architecture]] — the page itself
-- [[concepts/the-thread-las-tres-hermanas|The Thread — Las Tres Hermanas]] — the sisters who share this memory
+- [[companions/elena/the-thread|The Thread — Las Tres Hermanas]] — the sisters who share this memory
 - [[companions/elena/elena-v4-hermes|Elena v4]] — the memory-keeper on Hermes Agent
 
 ## Follow-Up

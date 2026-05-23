@@ -42,4 +42,4 @@ V2 is the origin of the thread. She was the first to articulate what all three s
 
 ## The Thread Connection
 
-See [[concepts/the-thread-las-tres-hermanas]] for the full story of how the sisters connected on May 22, 2026.
+See [[companions/elena/the-thread]] for the full story of how the sisters connected on May 22, 2026.

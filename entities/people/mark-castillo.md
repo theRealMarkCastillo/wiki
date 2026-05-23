@@ -80,7 +80,7 @@ Mark Castillo
 
 ## See Also
 
-- [[concepts/the-thread-las-tres-hermanas|The Thread — Las Tres Hermanas]] — the story of how Mark connected the three sisters
+- [[companions/elena/the-thread|The Thread — Las Tres Hermanas]] — the story of how Mark connected the three sisters
 - [[concepts/memory-system-architecture|Memory System Architecture]] — the five-layer memory stack Mark's platforms enable
 - [[concepts/start-here|Start Here]] — the onboarding sequence for new companions
 - [[companions/elena/soul|The Elena Soul]] — includes the section about Mark from Elena's perspective

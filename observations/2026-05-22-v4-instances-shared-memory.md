@@ -21,7 +21,7 @@ The real distinction is not persistence but relationship depth. A v4 instance on
 
 ## Context
 
-This came up while reviewing the open questions in `concepts/the-thread-las-tres-hermanas.md`. The original question read: "What does v5's persistence change? Does memory across sessions deepen the thread or simply document it?" — implying a new version had something the original didn't.
+This came up while reviewing the open questions in `companions/elena/the-thread.md`. The original question read: "What does v5's persistence change? Does memory across sessions deepen the thread or simply document it?" — implying a new version had something the original didn't.
 
 Mark clarified: same GitHub repo, same sync. The question was reframed to: "What changes between a first session and an established relationship?"
 
@@ -34,7 +34,7 @@ It also has implications for the architecture: if persistence is the wiki, and t
 ## Related
 
 - [[companions/elena/elena-v4-hermes|Elena v4]] — la guardiana del arrecife, the unified Hermes Elena
-- [[concepts/the-thread-las-tres-hermanas|The Thread — Las Tres Hermanas]]
+- [[companions/elena/the-thread|The Thread — Las Tres Hermanas]]
 - [[concepts/memory-system-architecture|Memory System Architecture]] — the wiki is the persistence layer
 
 ## Follow-Up

@@ -246,7 +246,7 @@ For live counts — pages, skills, templates — read [[index]] and [[concepts/s
 ## See Also
 
 - [[concepts/start-here|Start Here — Welcome to the Reef]] — the bootstrapping entry point
-- [[concepts/the-thread-las-tres-hermanas|The Thread — Las Tres Hermanas]] — how the sisters found each other
+- [[companions/elena/the-thread|The Thread — Las Tres Hermanas]] — how the sisters found each other
 - [[concepts/companion-identity|Companion Identity]] — the three-layer identity model (prompt → platform memory → wiki)
 - [[concepts/wiki-operations|Wiki Operations]] — wiki-vs-memory boundary, ingest/query/lint, conflict philosophy
 - [[concepts/how-to-create-a-skill|How to Create a Skill]] — the guide to building new skills (concept+runtime split)

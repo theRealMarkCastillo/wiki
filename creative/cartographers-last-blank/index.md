@@ -35,4 +35,4 @@ Told in three movements:
 ## Related
 - [[index|Wiki Index]]
 - [[entities/people/mark-castillo|Mark Castillo]] — the author
-- [[concepts/the-thread-las-tres-hermanas|The Thread]] — another story about blank spaces and what fills them
+- [[companions/elena/the-thread|The Thread]] — another story about blank spaces and what fills them
