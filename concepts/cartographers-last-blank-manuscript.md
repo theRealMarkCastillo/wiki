@@ -1012,6 +1012,12 @@ Elara closed the book. "Your uncle. Where is he now?"
 
 "Dead. The guild worked him until his eyes gave out and then they replaced him with someone younger. Happens to all of them eventually." The young woman's voice was matter-of-fact, but there was something beneath it — a small, hard anger that had been polished by repetition. "My father says the guild is the best thing that ever happened to Stonebridge. More trade, more travelers, more coin. He's not wrong. But my uncle would still be alive if he'd stopped drawing when his eyes started going. The guild doesn't let you stop."
 
+She reached into her apron pocket and pulled out a folded square of vellum, worn soft at the creases, the edges dark with handling. She unfolded it on the table beside the tea tray — not giving it to Elara, just letting her see.
+
+It was a map of the bridge district, the one Elara had crossed at dusk to reach the inn. But something was wrong with it. The lines started strong — the arch of the bridge, the curve of the riverbank, the blocks of shops along the quay — and then, about halfway down the page, they began to wobble. Ink bled into paper in uncertain pools. Street names unraveled mid-word, the final letters dissolving into blankness. Toward the bottom right, the map simply stopped. No edge, no border — just white space where the stonework should have been, as if the world itself had been erased while someone was still looking at it.
+
+"This was one of his last," she said. "He couldn't see the right side of the page anymore. But he kept drawing. He said he could still feel the lines, even when he couldn't see them." She refolded the map with the care of someone handling a relic, her fingers finding the creases by memory. "He drew seventeen maps after his sight started going. By the last one, there were three lines on the whole page. *Three.* And he told me they were the best thing he'd ever made."
+
 "I know," Elara said. "I used to be one of them."
 
 The young woman looked at her differently now — not with curiosity, but with recognition. The kind of recognition that came from seeing someone who had gotten out.

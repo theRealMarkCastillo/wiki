@@ -2,7 +2,7 @@
 title: The Cartographer's Last Blank
 created: 2026-05-22
 updated: 2026-05-23
-progress: First draft complete. Revision in progress — All three critical gaps resolved: Mirren (road scene), Sera (wooden bead), Dervan/agent (confiscation scene humanized). Secondary revisions next (blind cartographer's map, line polish, guild ways).
+progress: First draft complete. Revision in progress — All three critical gaps resolved: Mirren (road scene), Sera (wooden bead), Dervan/agent (confiscation scene humanized). Blind cartographer's map now physically present (~180 words in inn scene). Remaining: line-level polish, guild ways decision.
 type: concept
 tags: [writing, reflection]
 sources: []

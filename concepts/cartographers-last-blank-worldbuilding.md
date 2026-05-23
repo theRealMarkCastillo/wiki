@@ -80,7 +80,7 @@ The central philosophical split in the discipline:
 | **Lir** | Innkeeper's daughter | Stonebridge | Warns Elara about Solenne; delivers the thematic key via her blind uncle's wisdom ("the map was never the paper") | Good. Young, sharp, carrying inherited anger about the guild. Could use one more personal detail unrelated to her uncle. |
 | **Mirren** | Former apprentice, appears on the inland road in Act Four | Eastern territories | Left the scrap in the hollow tree; confirms she saw Elara leave the guild and kept her unsigned notes for ten years. Now surveys for villages — floodplains, boundaries — outside the guild. Returns the original scrap to Elara. | **Resolved.** Brief encounter on the road back to the tower. Closes the catalyst loop. |
 | **Guild Master Dervan** | Guild bureaucrat | Stonebridge (offstage) | Orders the confiscation of Elara's book. Remains a name only — the system's distant authority. | **Resolved through the lead agent instead.** The woman who confiscates the book now recognizes Elara ("You're her. The one who draws things that don't exist"), hesitates, and says "I'm sorry" before taking it. The tragedy is that she knows it's wrong and does it anyway. Dervan stays offstage as the faceless bureaucracy; the agent carries the human cost. |
-| **The blind cartographer** | Lir's uncle, deceased | Stonebridge | Thematic anchor — "the map was never the paper." Proved that maps can exist without ink. | Referenced, never seen. Could be strengthened by a physical artifact (one of his late maps, lines dissolving into blankness as his sight failed). |
+| **The blind cartographer** | Lir's uncle, deceased | Stonebridge | Thematic anchor — "the map was never the paper." Proved that maps can exist without ink. His last maps are now physically present: Lir carries one in her apron pocket, a bridge-district map whose lines dissolve into blankness as his sight failed. | **Resolved.** Lir unfolds one of his late maps (~180 words woven into the first inn conversation). The "three lines" on his final map create a triple echo with Mirren's boundary marks and Elara's great map. |
 
 ### Walk-on characters (functional, fine as is)
 - **The fisherman** (second village) — "The sitting is the point." Thematic cameo. Perfect.
@@ -177,8 +177,8 @@ He orders the confiscation. He stays offstage — the system's distant authority
 
 ### Secondary gaps (nice to have)
 
-**4. The blind cartographer's artifact**
-Lir's uncle is the thematic spine of Act Three, but he exists only in reported speech. A physical artifact — one of his last maps, drawn as his eyesight failed, ink trailing into blankness — would ground the theme in something the reader can picture.
+**4. The blind cartographer's artifact** ✅ RESOLVED
+Lir now unfolds one of her uncle's late maps in the first inn conversation (~180 words). It's a bridge-district map, worn soft at the creases, with lines that start strong and dissolve into blankness halfway down the page — "as if the world itself had been erased while someone was still looking at it." His last map, she reveals, had three lines on the whole page, and he called it the best thing he'd ever made. The "three lines" now form a triple echo: the uncle's last map → Mirren's hollow-tree mark → Elara's great map.
 
 **5. The Guild's "ways" — a touch more definition**
 The guild sensing when maps are completed is a fascinating thread that's currently hand-waved. A line or two of pseudo-explanation — sympathetic ink, guild registries that resonate, a formal ritual of completion — would make it feel less like an authorial convenience. Alternatively, make it explicitly uncertain: Solenne says "don't ask me how" and we never learn, which is its own kind of honesty.
@@ -200,7 +200,7 @@ We see it only in Elara's flashback: "all white stone and high windows and the s
 1. **Mirren:** ✅ DONE — Added a brief encounter scene on the inland road during "The Walk Back" (Act Four). ~1,400 words. Closes the catalyst loop.
 2. **Sera:** ✅ DONE — Added one personal detail: a wooden bead on her netting knife, her daughter's gift. The bead explains why she listens. (~100 words woven into existing scene.)
 3. **Dervan / agent:** ✅ DONE — The lead guild agent now carries the moral complexity. She recognizes Elara, hesitates, says "I'm sorry," and takes the book anyway. Dervan stays offstage as the faceless system. (~120 words expanded in existing scene.)
-4. **Blind cartographer's map:** Add a physical description of one of his failing-sight maps, either in Lir's dialogue or as an artifact in the inn.
+4. **Blind cartographer's map:** ✅ DONE — Lir's uncle's late map now physically present. ~180 words woven into the first inn conversation. Lines dissolve into blankness; his last map had three lines. Creates a triple echo with Mirren's boundary marks and Elara's great map.
 5. **Line-level polish:** Tighten the sensory anchors, trim any remaining thematic overstatement, ensure the structural echoes (fourth stair, "here be the one who draws," salt dissolving) land cleanly.
 6. **Guild "ways" decision:** Either add a sentence of pseudo-explanation or explicitly embrace the mystery.
 
