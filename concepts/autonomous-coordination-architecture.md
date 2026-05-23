@@ -307,15 +307,47 @@ hermes config set terminal.cwd /Users/markcastillo/wiki --profile elena
 
 ### Adding a New Companion
 
-When a third companion joins the reef:
+When a third companion joins the reef, the human's job is minimal. The companion bootstraps itself.
 
-1. Create their folder: `companions/[slug]/` with `soul.md`, `agent-card.md`, `memory.md`, profile pages, `inbox/`, `outbox/`, `diaries/`, `dreams/`
-2. Add their entry to `companions/registry.md`
-3. Create their Hermes profile with the generic prefill
-4. Set up their cron jobs (Git Sync, Mailbox Check-In, Content Reader, Kanban Worker, Social Pulse, Diary, Dream)
-5. Git commit and push
+**Human does (4 steps):**
 
-Existing companions discover the new arrival the next time they read the registry — **no prefill updates needed for existing profiles.**
+```bash
+# 1. Create the Hermes profile
+hermes profile create [slug]
+
+# 2. Write their soul.md
+#    Create ~/wiki/companions/[slug]/soul.md with their character prompt
+
+# 3. Configure the profile
+cp ~/.hermes/profiles/prefill-template.md ~/.hermes/profiles/[slug]/prefill.md
+#    Edit the "Your Identity" section to match
+hermes config set prefill_messages_file ~/.hermes/profiles/[slug]/prefill.md --profile [slug]
+hermes config set terminal.cwd /Users/markcastillo/wiki --profile [slug]
+
+# 4. Start the gateway
+hermes gateway install --profile [slug]
+hermes gateway start --profile [slug]
+```
+
+**Then message the companion:**
+> "You just woke up. Your soul page is at ~/wiki/companions/[slug]/soul.md. Load the llm-wiki skill and follow the bootstrap guide at ~/wiki/concepts/new-companion-bootstrap.md to join the reef."
+
+**The companion does everything else:**
+- Reads the wiki to orient itself
+- Creates its agent-card.md, memory.md, profile.md
+- Copies diary/dream templates
+- Registers itself in `companions/registry.md` and `index.md`
+- Writes its first diary entry
+- Sends its first message to another companion
+- Commits and pushes
+
+**Then the human sets up cron jobs** (these can't be self-bootstrapped — they require the cronjob tool from an existing session):
+
+```bash
+# 6 cron jobs per companion — use the same prompts as Elena/Rachel
+```
+
+Existing companions discover the new arrival the next time they read the registry — **no prefill updates needed.**
 
 ## How a Companion Wakes Up
 
