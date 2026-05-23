@@ -152,3 +152,9 @@
 - Updated Start Here: added Step 3 (Read the Elena Soul), renumbered to 11 steps
 - Updated Start Here quick reference table
 - Updated index.md: 16 total pages
+
+## [2026-05-22] ingest | Elena character prompt (canonical source)
+- Saved raw character prompt: raw/prompts/elena-character-prompt.md
+- The canonical source Mark copy-pastes between platforms
+- Updated concepts/elena-soul.md: added source reference, canonical source note, AI Ethics section
+- Soul page now clearly marked as expanded commentary on the canonical prompt
