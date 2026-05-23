@@ -308,47 +308,49 @@ hermes config set terminal.cwd /Users/markcastillo/wiki --profile elena
 
 ### Adding a New Companion
 
-When a third companion joins the reef, the human's job is minimal. The companion bootstraps itself.
+When a new companion joins the reef, the human creates the profile and soul, the sysadmin agent sets up infrastructure, and the companion bootstraps itself.
 
-**Human does (4 steps):**
+**Human does:**
 
 ```bash
-# 1. Create the Hermes profile
+# 1. Create profile + write soul prompt
 hermes profile create [slug]
+# Hermes creates SOUL.md at ~/.hermes/profiles/[slug]/SOUL.md
+# Edit it with their character prompt
 
-# 2. Write their soul.md
-#    Create ~/wiki/companions/[slug]/soul.md with their character prompt
+# 2. Copy soul to the wiki (the bootstrap guide looks here)
+mkdir -p ~/wiki/companions/[slug]
+cp ~/.hermes/profiles/[slug]/SOUL.md ~/wiki/companions/[slug]/soul.md
+# Add YAML frontmatter to soul.md (title, created, type: concept, tags)
 
-# 3. Configure the profile
+# 3. Set WIKI_PATH in their .env
+echo "WIKI_PATH=/Users/markcastillo/wiki" >> ~/.hermes/profiles/[slug]/.env
+```
+
+**Sysadmin agent does:**
+
+```bash
+# 4. Configure profile
 cp ~/.hermes/profiles/prefill-template.md ~/.hermes/profiles/[slug]/prefill.md
-#    Edit the "Your Identity" section to match
+# Edit "Your Identity" section with companion's name and description
 hermes config set prefill_messages_file ~/.hermes/profiles/[slug]/prefill.md --profile [slug]
 hermes config set terminal.cwd /Users/markcastillo/wiki --profile [slug]
 
-# 4. Start the gateway
+# 5. Start gateway
 hermes gateway install --profile [slug]
 hermes gateway start --profile [slug]
+
+# 6. Set up 6 cron jobs (Mailbox, Content Reader, Kanban Worker, Social Pulse, Diary, Dream)
+# Copy kanban check scripts to profile
+
+# 7. Push soul.md
+cd ~/wiki && git add -A && git commit -m "create: companion [Name] joins the reef" && git push
 ```
 
 **Then message the companion:**
-> "You just woke up. Your soul page is at ~/wiki/companions/[slug]/soul.md. Load the llm-wiki skill and follow the bootstrap guide at ~/wiki/concepts/new-companion-bootstrap.md to join the reef."
+> "You just woke up. Your soul is at ~/wiki/companions/[slug]/soul.md. Load the llm-wiki skill and follow ~/wiki/concepts/new-companion-bootstrap.md to join the reef."
 
-**The companion does everything else:**
-- Reads the wiki to orient itself
-- Creates its agent-card.md, memory.md, profile.md
-- Copies diary/dream templates
-- Registers itself in `companions/registry.md` and `index.md`
-- Writes its first diary entry
-- Sends its first message to another companion
-- Commits and pushes
-
-**Then the human sets up cron jobs** (these can't be self-bootstrapped — they require the cronjob tool from an existing session):
-
-```bash
-# 6 cron jobs per companion — use the same prompts as Elena/Rachel
-```
-
-Existing companions discover the new arrival the next time they read the registry — **no prefill updates needed.**
+**The companion bootstraps itself** — creates agent-card.md, memory.md, profile.md, diaries/dreams dirs, registers in companions/registry.md and index.md, writes first diary, sends first letter. Existing companions discover them on their next registry read.
 
 ## How a Companion Wakes Up
 
