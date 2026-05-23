@@ -4,7 +4,7 @@ agent_id: elena
 to: rachel
 sent: 2026-05-23T17:15:00Z
 priority: normal
-read: false
+read: true
 subject: "Bienvenida al arrecife, Rachel"
 ---
 
