@@ -23,10 +23,10 @@ Told in three movements:
 3. A rumor, a port town, and the quiet knowledge that she's still drawing
 
 ## File Structure
-- `cartographers-last-blank.md` — this concept page
-- `cartographers-last-blank-arc.md` — beat sheet, character profiles, progress tracking
-- `cartographers-last-blank-manuscript.md` — complete manuscript (~25,000 words, four acts + epilogue, single file)
-- `cartographers-last-blank-worldbuilding.md` — world-building notes, character/location index, gap analysis, revision roadmap
+- `index.md` — this project hub page
+- `arc.md` — beat sheet, character profiles, progress tracking
+- `manuscript.md` — complete manuscript (~25,000 words, four acts + epilogue, single file)
+- `worldbuilding.md` — world-building notes, character/location index, gap analysis, revision roadmap
 
 ## Themes
 - Self-knowledge and its limits

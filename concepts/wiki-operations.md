@@ -83,6 +83,7 @@ wiki/
 ├── queries/            # Layer 2: Filed query results worth keeping
 ├── observations/       # Layer 2: Time-stamped field notes
 ├── skills/             # Layer 2: Portable skill concepts (voice, structure, pitfalls)
+├── creative/           # Layer 2: Creative works — one folder per project
 ```
 
 - **Layer 1 — Raw Sources:** Immutable. The agent reads but never modifies these.

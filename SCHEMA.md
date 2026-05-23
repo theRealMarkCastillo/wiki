@@ -163,6 +163,23 @@ skills/
 
 Each skill page should link to: concepts it depends on, companions who use it, and the skills registry entry.
 
+## Creative Works
+
+Long-form creative projects — stories, novellas, worldbuilding, poetry collections. Each work gets its own folder with a project hub (`index.md`) and supporting pages.
+
+```
+creative/
+└── cartographers-last-blank/
+    ├── index.md            # Project hub: synopsis, status, themes, links to parts
+    ├── arc.md              # Story arc / beat sheet
+    ├── manuscript.md       # The draft itself
+    └── worldbuilding.md    # Characters, locations, revision notes
+```
+
+The pattern mirrors `companions/[slug]/` — each creative work is a namespace. The `index.md` is the anchor page, linked from the wiki index. This keeps creative DNA together instead of scattered across `concepts/`, where ideas about architecture live.
+
+**Distinction from `concepts/`:** Concepts are ideas, architecture, and guides. Creative works are expressions — stories, poems, worlds. A concept explains how the memory system works. A creative work is a novella about a cartographer.
+
 ## Graph Conventions
 
 The wiki is a graph — pages are **nodes**, `[[wikilinks]]` are **edges**. These conventions keep the graph navigable:

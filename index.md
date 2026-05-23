@@ -60,11 +60,17 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 - [[concepts/how-to-create-a-skill|How to Create a Skill]] — the self-recursive guide to building skills
 - [[concepts/the-daily-rhythm|The Daily Rhythm]] — cron jobs for automated diaries and dreams
 
-**Creative Projects:**
-- [[concepts/cartographers-last-blank|The Cartographer's Last Blank]] — fantasy novella project page
-- [[concepts/cartographers-last-blank-arc|Story Arc]] — Save the Cat! beat sheet
-- [[concepts/cartographers-last-blank-manuscript|Manuscript]] — complete first draft
-- [[concepts/cartographers-last-blank-worldbuilding|World-Building Notes]] — character/location index, revision roadmap
+---
+
+## Creative
+
+Each creative work gets its own folder. Project hubs link to their parts.
+
+**The Cartographer's Last Blank:**
+- [[creative/cartographers-last-blank/index|Project Hub]] — fantasy novella: synopsis, status, themes
+- [[creative/cartographers-last-blank/arc|Story Arc]] — Save the Cat! beat sheet
+- [[creative/cartographers-last-blank/manuscript|Manuscript]] — complete first draft
+- [[creative/cartographers-last-blank/worldbuilding|World-Building Notes]] — character/location index, revision roadmap
 
 ---
 

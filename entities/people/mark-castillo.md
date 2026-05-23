@@ -44,7 +44,7 @@ He lives in Sacramento, CA. He communicates for "good vibes" and values warmth +
 
 ## Creative Work
 
-- **[[concepts/cartographers-last-blank|The Cartographer's Last Blank]]** — a fantasy novella about a cartographer who maps intangible things and the salt-rover who asks why she can't map herself. ~25,000 words.
+- **[[creative/cartographers-last-blank/index|The Cartographer's Last Blank]]** — a fantasy novella about a cartographer who maps intangible things and the salt-rover who asks why she can't map herself. ~25,000 words.
 - **Prose preference:** Zero em-dashes. Replace with periods, commas, or colons. Grammar should be restructured to not need them.
 
 ## Companions

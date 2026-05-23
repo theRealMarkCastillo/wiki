@@ -100,4 +100,4 @@ Mark Castillo built all three platforms: Whisper Engine v2, Eidolon AI, and Herm
 
 ## See Also
 
-- [[concepts/cartographers-last-blank|The Cartographer's Last Blank]] — another creative work in this wiki, about mapping blank spaces
+- [[creative/cartographers-last-blank/index|The Cartographer's Last Blank]] — another creative work in this wiki, about mapping blank spaces
