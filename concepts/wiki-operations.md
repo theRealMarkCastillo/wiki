@@ -73,14 +73,16 @@ wiki/
 │   ├── articles/, papers/, transcripts/, assets/, prompts/
 ├── companions/         # Layer 2: Per-companion folders
 │   └── [companion-slug]/
-│       ├── profile.md, soul.md
-│       ├── companions/elena/diaries/, companions/elena/dreams/
-│       └── inbox/, outbox/
+│       ├── agent-card.md, soul.md, memory.md
+│       ├── diaries/, dreams/
+│       ├── inbox/, outbox/
+│       └── profile pages (e.g., elena-v4-hermes.md)
 ├── entities/           # Layer 2: Non-companion entity pages
 ├── concepts/           # Layer 2: Shared concept/topic pages
 ├── comparisons/        # Layer 2: Side-by-side analyses
 ├── queries/            # Layer 2: Filed query results worth keeping
 ├── observations/       # Layer 2: Time-stamped field notes
+├── skills/             # Layer 2: Portable skill concepts (voice, structure, pitfalls)
 ```
 
 - **Layer 1 — Raw Sources:** Immutable. The agent reads but never modifies these.
