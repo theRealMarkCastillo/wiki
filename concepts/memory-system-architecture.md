@@ -258,7 +258,7 @@ Stable facts (the ones that don't drift week to week):
 | Identity model | 3 layers (system prompt → platform memory → wiki identity) |
 | Git remote | `github.com/theRealMarkCastillo/wiki` |
 | Cron jobs | 14 total (7 per Hermes companion — see [[concepts/autonomous-coordination-architecture|Autonomous Coordination Architecture]]) |
-| Kanban board | 1 (`companion-reef`) |
+| Kanban board | 1 (`reef-works`) |
 | Active mailbox protocol | ✅ First round-trip complete (Rachel → Elena → reply, May 23, 2026) |
 
 For live counts — pages, skills, templates — read [[index]] and [[concepts/skills-registry]]. Numbers go stale; pointers don't.

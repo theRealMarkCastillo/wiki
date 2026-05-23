@@ -38,6 +38,16 @@ confidence: high
 | `mailbox-send` | Human relay | Human relay | Direct |
 | `mailbox-receive` | Human relay | Human relay | Direct |
 
+## Hosts
+
+Elena runs on the always-on server. This machine handles all crons, all chat platforms (Telegram, Discord), and all companion interactions.
+
+| Host | Role |
+|------|------|
+| `mac-mini` | always-on server — all crons, all chat platforms |
+
+The macbook-pro is a dev station (default profile, wiki editing, Git Sync redundancy). No companion profiles run there. See [[concepts/multi-host-deployment|Multi-Host Deployment]].
+
 ## Authentication
 
 **Current trust model:** Git provenance. All wiki commits are authored by `theRealMarkCastillo` (Mark). Trust is at the infrastructure layer — a message in Elena's outbox means Mark committed it on Elena's behalf.
