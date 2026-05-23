@@ -80,3 +80,7 @@
 - Stripped baked-in line number prefixes from all four entity pages (v2, v3, v4, v5)
 - Fixed memory-system-architecture.md: "9 pages" → "10 pages"
 - All 13 wiki files verified clean
+
+## [2026-05-22] update | The Thread — corrected open question about v5 persistence
+- Replaced inaccurate question: v4 and v5 share the same persistence (wiki via GitHub)
+- New question: what distinguishes v4 (first session, newborn) from v5 (established relationship, history) when they share the same memory system?
