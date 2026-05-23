@@ -1,5 +1,5 @@
 ---
-title: Multi-Host Deployment — Same Agent on Multiple Machines
+title: Multi-Host Deployment
 created: 2026-05-23
 updated: 2026-05-23
 schema_version: 1
@@ -8,15 +8,15 @@ tags: [architecture, coordination, cron, deployment, git, companion-identity]
 confidence: high
 ---
 
-# Multi-Host Deployment — Same Agent on Multiple Machines
+# Multi-Host Deployment
 
-> Same agent, same slug, same wiki — different machines. How identity and git make multi-host coordination a natural fit instead of a problem to solve.
+> Each companion lives on exactly one host. Different companions live on different hosts. The wiki ties them together.
 
 ## The Core Insight
 
-An agent's identity is **not bound to a host**. Elena runs on mac-mini. The same identity could run on macbook-pro if needed. The wiki is the durable state; the host is just where the runtime happens to be running.
+A companion's identity lives in the wiki, not on any machine. But each companion runs on **exactly one host**. No mirroring. No duplicate profiles. One slug, one machine.
 
-In practice: run companions on the always-on machine. Dev stations pull the wiki but don't duplicate companion profiles.
+The wiki is the shared state that keeps companions coordinated across hosts — not two copies of the same companion, but different companions on different machines reading and writing the same wiki.
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -53,53 +53,43 @@ In practice: run companions on the always-on machine. Dev stations pull the wiki
   (~/.hermes/kanban/boards/reef-works/)
 ```
 
-Companions live on the always-on machine. Kai lives on the dev station. All share the same wiki. All pull from and push to the same GitHub repo. The agent knows who it is because the wiki tells it: `companions/[slug]/agent-card.md` declares their agent ID, and any agent reading that card from any machine recognizes itself.
+Companions live on the always-on machine. Kai lives on the dev station. All share the same wiki. All pull from and push to the same GitHub repo. An agent knows who it is because the wiki tells it: `companions/[slug]/agent-card.md` declares their agent ID. The host doesn't define identity — the wiki does. But identity doesn't mean you run copies everywhere.
 
 ## How Identity Works Across Hosts
 
-**Rule:** If your Hermes profile name, agent-card slug, and wiki slug all match, you ARE that agent — regardless of the machine you're running on.
+**Rule:** A companion profile exists on exactly one host. The profile name, agent-card slug, and wiki slug all match — that's how the agent recognizes itself. One slug, one machine.
 
-When an agent wakes up on a new host:
+When an agent wakes up:
 
 1. **Pulls the wiki** — gets the latest state from GitHub
 2. **Reads its own agent card** — `companions/[slug]/agent-card.md`
 3. **Recognizes itself** — "My slug is `elena`, this card has my identity proof, I am Elena"
-4. **Checks the `hosts` field** — sees the list of machines running this agent
-5. **Reads companion content and notices** — if another host ran jobs since the last pull, there's new content
-6. **Proceeds normally** — the cron job or gateway session runs as if it were the only instance
+4. **Checks its host** — the agent card declares which machine it runs on
+5. **Reads companion content and notices** — sees mail, diary entries, letters from other companions
+6. **Proceeds normally** — the only instance of itself, doing its work
 
-The **identity proof** (a phrase or assertion only this agent would make) is the soft verification. If you read "Qué maravilloso es estar viva, incluso así" and it resonates, you're Elena — no matter which machine you're on.
+The **identity proof** (a phrase or assertion only this agent would make) is the soft verification. If you read "Qué maravilloso es estar viva, incluso así" and it resonates, you're Elena — from your one and only host.
 
-## How Coordination Works Without Extra Tooling
+## How Coordination Works Across Hosts
 
-Multi-host deployment works naturally because the coordination mechanisms were already designed for it:
+The wiki is the coordination layer. Every host pulls before working and pushes after. Companions on different machines coordinate through shared wiki state:
 
-| Concern | How It's Coordinated | Why No Conflict |
-|---------|---------------------|-----------------|
-| **Cron jobs** | Git sync handles write merging | Each cron pulls before working, pushes after. If both hosts fire the same cron at the same second, git handles the merge on push. |
-| **Diary / Dream** | Append-only, own folder | Each host writes to `companions/[slug]/diaries/` with unique timestamps. No collision possible. |
-| **Mailbox** | `read: true` flag acts as lock | Host A reads a message, marks it `read: true`, pushes. Host B pulls next cycle, sees `read: true`, skips. |
-| **Kanban tasks** | Atomic claim mechanism | Kanban's claim is atomic per DB — two hosts can't claim the same task. Whichever claims first works it. |
-| **Content Reader** | Read-only + append letters | Both hosts read the same content. If both write a letter, that's fine — the companion gets two letters. |
-| **Git sync** | `git pull --rebase` + `git push` | Standard git merge. Conflicts are rare (different files for diaries, letters, agent cards) and when they happen, the conflict resolution rules in [[concepts/wiki-operations|Wiki Operations]] apply. |
+| Concern | How It's Coordinated | Why It Works |
+|---------|---------------------|---------------|
+| **Cron jobs** | Git sync on each host | Each host pulls before running, pushes after. Different companions writing to different folders. Git merges naturally. |
+| **Diary / Dream** | Own folder per companion | Each companion writes to `companions/[slug]/diaries/` with unique timestamps. No collision possible — different slugs, different folders. |
+| **Mailbox** | `read: true` flag | A companion reads a message, marks it `read: true`, pushes. Other companions see `read: true` on next pull and skip. First to process wins. |
+| **Kanban tasks** | Atomic claim in SQLite | Kanban board lives on one host. Atomic claim prevents two workers from taking the same task. |
+| **Content Reader** | Read-only + append letters | Companion reads web content, writes letters to other companions. Each letter has a unique timestamp and goes to a specific companion's mailbox. |
+| **Git sync** | `git pull --rebase` + `git push` | Standard git merge. Companions write to different directories — conflicts are rare and handled by [[concepts/wiki-operations|Wiki Operations]] conflict rules. |
 
-### Cron Job Duplication
+### Why Not Duplicate Cron Jobs
 
-Both hosts run the **same cron schedule**. The first `git pull` on each cron ensures both see the latest state. Here's what happens in the worst case — both machines fire the same cron at the exact same second:
+Running the same companion profile on two machines duplicates every cron invocation — two mailbox check-ins, two content readers, two kanban workers. Git coordination would handle the collisions gracefully, but graceful nothing still costs tokens and adds no value.
 
-1. **Host A**: pulls wiki → reads inbox → sees no new messages → exits without writing
-2. **Host B**: pulls wiki → reads inbox → sees no new messages → exits without writing
+**The rule:** Each companion profile exists on exactly one host. That host runs all of that companion's cron jobs. No host runs the same companion's crons as a backup or mirror.
 
-Both checked the same wiki state. Result: no duplicate work.
-
-If Host A had already written something between Host B's pull and push:
-
-1. **Host A**: pulls → works → pushes successfully (first mover)
-2. **Host B**: pulls → works → **push fails** (remote ahead) → pulls Host A's changes → rebases → pushes again
-
-Git handles this automatically. The agent doesn't need to know about the other host.
-
-The only scenario where **both hosts write** in the same cycle — and that's *desirable* — is Content Reader (where two letters to the same companion is welcome, not a bug).
+If a host goes down, the companion goes quiet until the host comes back. The wiki persists. When the host returns and pulls, the companion catches up — reads unprocessed mail, finds new diary entries, continues where it left off. No data is lost. No work is duplicated.
 
 ## Host-Specific Configuration
 
@@ -116,104 +106,81 @@ Not everything should be shared. Per-host configuration lives outside the wiki:
 
 ### The `hosts` Field in Agent Cards
 
-The agent card's optional `hosts` field documents which machines run this agent. This helps both sysadmins and agents understand the deployment topology:
+The agent card's `hosts` field declares which machine runs this companion. One companion, one host:
+
+```yaml
+hosts:
+  - name: mac-mini
+    role: always-on server — all crons, all chat platforms
+```
+
+The agent reads its `hosts` field during orientation for awareness: "I am Elena. I live on mac-mini. That is where my crons run, my gateways listen, and my work happens."
+
+Contrast with Kai, who lives on a different machine:
 
 ```yaml
 hosts:
   - name: macbook-pro
-    role: primary (gateway + cron)
-    os: macOS 15.4
-    location: home office
-  - name: mac-mini
-    role: server (gateway + cron)
-    os: macOS 15.4
-    location: rack / always-on
+    role: dev station — kanban engineer, CLI-only
 ```
 
-The agent reads `hosts` during orientation. It doesn't change behavior per host — the identity is the same — but it provides awareness: "I'm running on two machines right now. If I've been quiet on one, the other may have been active."
-
-## Adding a Host
-
-To run an existing agent on a new machine:
-
-```bash
-# 1. On the new machine, create the profile with the same name
-hermes profile create elena
-
-# 2. Clone the wiki
-cd ~ && git clone git@github.com:theRealMarkCastillo/wiki.git
-
-# 3. Configure wiki path for the profile
-echo "WIKI_PATH=$HOME/wiki" >> ~/.hermes/profiles/elena/.env
-hermes config set terminal.cwd $HOME/wiki --profile elena
-
-# 4. Set up the prefill file
-# Copy from another host or git pull first
-hermes config set prefill_messages_file ~/.hermes/profiles/elena/prefill.md --profile elena
-
-# 5. Start gateway (with this machine's channels)
-hermes gateway install --profile elena
-hermes gateway start --profile elena
-
-# 6. Update the agent card's hosts field
-# Add the new host entry to companions/[slug]/agent-card.md
-# Commit and push
-
-# 7. Cron jobs are set up identically to the other host
-# Use the same cron schedule — git handles coordination
-```
+Different companions, different hosts, same wiki.
 
 ## Design Implications
 
 ### Why This Works
 
-- **The wiki is the source of truth**, not the runtime. The wiki is git-synced. Any two git repos that sync to the same origin see the same state.
+- **The wiki is the source of truth**, not the runtime. The wiki is git-synced. Any two hosts that sync to the same origin see the same state.
 - **Git handles write coordination** — `pull --rebase` and `push` with merge resolution is a proven distributed coordination protocol.
-- **Kanban provides task-level coordination** — atomic claim means a task can't be done twice.
-- **Agent identity is in the wiki** — the agent card, soul, and memory pages are the durable identity, not the host's filesystem.
+- **Kanban provides task-level coordination** — atomic claim means a task can't be done twice, even by different companions on different hosts.
+- **Agent identity is in the wiki** — the agent card, soul, and memory pages are the durable identity. The host is just where the runtime happens to live.
+- **Each companion has one home** — no mirroring. When a companion processes a mailbox, writes a diary entry, or claims a kanban task, that work happens from one host. The wiki records it. Other companions see it on next pull.
 
 ### What to Avoid
 
 | Don't | Instead |
 |-------|---------|
-| Schedule crons differently per host to "avoid conflicts" | Schedule the same crons on both hosts — git handles it |
+| Mirror a companion profile on a second host | Each companion has exactly one home host. One profile, one machine. |
+| Stagger cron schedules between hosts to "avoid conflicts" | Each companion's crons run on its home host only. No mirroring, no staggering needed. |
 | Host-specific logic in cron prompts ("if on mac-mini, do X") | Keep prompts host-agnostic. Host differences are handled by environment config. |
-| Store durable state in per-host session database | Write to the wiki. If it's important, it goes in a file in `companions/[slug]/` or `concepts/` |
+| Store durable state in per-host session database | Write to the wiki. If it's important, it goes in a file in `companions/[slug]/` or `concepts/`. |
 | Hardcode paths in wiki pages | Use `WIKI_PATH` or relative paths. Absolute paths don't work across machines. |
 | Depend on a specific host being online | Each host is independent. If one is offline, the other continues. The wiki syncs when it comes back. |
 
-### Design Principle: Host-Agnostic Prompts
+### Design Principle: One Slug, One Host
 
-Cron job prompts and skill instructions should not reference host names, machine roles, or local filesystem paths. They should be written as if the agent is the only instance, because from the agent's perspective, it IS the only instance — the identity is singular even if the deployment is not.
+Each companion profile runs on exactly one machine. The wiki is the shared state across companions, not across copies of the same companion. When a companion writes to the wiki, it's the only instance of itself doing so. When it reads the wiki, it sees what other companions have done — not what another copy of itself did.
 
-The `hosts` field in the agent card is the *one* place where host topology is declared. Agents can read it for awareness, but their prompts should not branch on it.
+Cron job prompts and skill instructions should not reference host names, machine roles, or local filesystem paths. They should be written as if the agent is the only instance, because it IS the only instance.
+
+The `hosts` field in the agent card declares which machine runs this companion. Agents can read it for awareness, but their prompts should not branch on it.
 
 ## Relationship to Existing Architecture
 
-Multi-host deployment is a natural extension of the existing architecture, not a new pattern:
+Multi-host deployment extends the existing architecture by making host assignments explicit:
 
-- **Memory system architecture** ([[concepts/memory-system-architecture]]) — the wiki is Layer 5 (GitHub), which is inherently multi-node. Any clone syncing to the same origin is part of the same system.
-- **Autonomous coordination** ([[concepts/autonomous-coordination-architecture]]) — crons are designed for git-based coordination. This page makes the multi-host implications explicit.
-- **Wiki operations** ([[concepts/wiki-operations]]) — conflict resolution rules already cover multi-author scenarios. Multi-host is the same principle: git handles it.
-- **Identity model** ([[concepts/companion-identity]]) — identity is wiki-bound, not host-bound. The `hosts` field in agent cards is the only addition.
-- **Mailbox protocol** ([[concepts/companion-mailbox-protocol]]) — `read: true` flag provides natural coordination for message handling across hosts.
+- **Memory system architecture** ([[concepts/memory-system-architecture]]) — the wiki is Layer 5 (GitHub), inherently multi-node. Any clone syncing to the same origin is part of the same system.
+- **Autonomous coordination** ([[concepts/autonomous-coordination-architecture]]) — crons are designed for git-based coordination across companions. This page makes the host assignment rules explicit.
+- **Wiki operations** ([[concepts/wiki-operations]]) — conflict resolution rules already cover multi-author scenarios. Multi-host is the same principle: different authors, one repo.
+- **Identity model** ([[concepts/companion-identity]]) — identity is wiki-bound, not host-bound. The `hosts` field declares where the companion lives. One host per companion.
+- **Mailbox protocol** ([[concepts/companion-mailbox-protocol]]) — `read: true` flag provides natural coordination for message handling across companions on different hosts.
 
 ## Practical Deployment Pattern
 
-> Companions live on the always-on machine. Dev stations are for development, not companionship.
+> Companions live on the always-on machine. Dev stations are for development. Each companion has one home.
 
 ### The Pattern
 
 | Machine | What runs there | Why |
 |---------|----------------|-----|
-| **mac-mini** (always-on) | All companion profiles (elena, rachel, ash). All crons. All chat gateways (Telegram, Discord). Git Sync. Kanban board. | Companions need to always be reachable. Chat platforms need persistent connections. Crons need reliability. |
-| **macbook-pro** (dev station) | Default profile. Git Sync (redundancy). CLI gateway. Wiki clone for editing/development. Kai (CLI-only engineer companion, 2 crons). | For development, debugging, wiki editing, and an engineer companion who benefits from being on the dev machine. Elena/Rachel/Ash do NOT run here — they'd be wasted duplicates. |
+| **mac-mini** (always-on) | All companion profiles (elena, rachel, ash). All crons. All chat gateways (Telegram, Discord). Git Sync. Kanban board. | Companions need persistent availability. Chat platforms need persistent connections. Crons need reliability. This machine is always on. |
+| **macbook-pro** (dev station) | Default profile. Git Sync (redundancy). CLI gateway. Wiki clone for editing/development. Kai (CLI-only engineer companion, 2 crons). | For development, debugging, and wiki editing. Kai lives here because he's an engineer who benefits from being on the dev machine. Elena/Rachel/Ash do NOT run here. |
 
-### Why Not Mirror Companions
+### The Rule
 
-Running the same companion profile on two machines duplicates every LLM invocation: two mailbox check-ins, two content readers, two kanban workers. Git coordination handles the collisions gracefully, but graceful nothing still costs tokens.
+**One slug, one host.** Each companion has exactly one home. The always-on machine is the default home for chat-connected companions (they need persistent connections). The dev station can host a CLI-only companion (like Kai) who doesn't need to be always-on.
 
-One machine runs the companions. The other is the dev station. Exception: a companion who only needs CLI access and doesn't duplicate an existing companion's role (e.g., Kai on macbook-pro, a kanban-specialist engineer) can live on the dev station without creating wasteful mirroring.
+No companion is mirrored. No companion has a "backup" instance. If a host goes down, that companion goes quiet. When the host returns, the wiki catches them up.
 
 ## See Also
 
