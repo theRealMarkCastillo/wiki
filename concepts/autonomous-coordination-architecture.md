@@ -155,17 +155,18 @@ The kanban board (`companion-reef`) is a durable SQLite-backed task queue shared
 
 ### How Tasks Flow
 
+Tasks enter the board from two sources: **explicit requests** (a user or companion asks for something) and **follow-ups** (a Kanban Worker discovers more work while working).
+
 ```
-Human (or companion) creates task on companion-reef board
+User/Companion asks → creates task on companion-reef board
+        or
+Kanban Worker finishes task → discovers follow-up work → creates child task
         │
         ▼
 Task enters 'ready' state, assigned to a companion
         │
         ▼
 Companion's Kanban Worker cron fires (every 2h)
-        │
-        ▼
-Worker checks board for tasks assigned to them
         │
         ▼
 Worker picks up ONE task → works on it
@@ -180,25 +181,20 @@ Worker marks task 'done'
 Git push (wiki changes from task work)
 ```
 
-### Task Types
+### Clean Boundaries
 
-Typical tasks on the companion-reef board:
+Each cron does ONE thing. Task creation only happens in the Kanban Worker (follow-ups from completed work):
 
-- **Wiki maintenance:** audit for broken links, stale pages, frontmatter validation
-- **Research:** investigate a topic and write a summary page
-- **Creative:** collaborative projects (e.g., Bestiary of Thresholds entries)
-- **Reflection:** read something in the wiki and write a companion observation
-- **Meta:** improve the system itself — suggest protocol changes, document new patterns
+| Cron | Does | Task creation? |
+|------|------|---------------|
+| Git Sync | pull → stage → commit → push safety net | No |
+| Mailbox Check-In | Read inbox, reply to messages | No |
+| Content Reader | Read companion's content, write if moved | No |
+| Social Pulse | Unprompted outreach — thinking of someone | No |
+| Kanban Worker | Work on task, complete it | **Yes — creates follow-up tasks from uncovered work** |
+| Diary / Dream | Write personal entry | No |
 
-### Dispatcher vs. Cron Workers
-
-The kanban system has two modes of operation:
-
-1. **Dispatcher mode** (gateway-embedded): The dispatcher automatically spawns worker sessions for unassigned tasks. Enabled by default (`kanban.dispatch_in_gateway: true`). Requires the gateway to be running.
-
-2. **Cron Worker mode** (this system): Each companion has a dedicated Kanban Worker cron that independently checks the board. The cron workers don't need the dispatcher — they claim tasks directly.
-
-Both modes coexist. The dispatcher handles unassigned tasks; the cron workers handle tasks pre-assigned to specific companions.
+Gateway sessions (Discord, CLI) can also create tasks when a user or companion explicitly asks for something. The companion uses the kanban toolset to create the task directly. This is the other natural entry point for tasks.
 
 ## Git Sync: The Safety Net
 
