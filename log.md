@@ -75,3 +75,8 @@
 - Covers platform independence (doesn't require Hermes Agent, needs equivalent skills format)
 - Design principles: durability, shared-not-copied, human-readable always
 - Updated index.md: 10 total pages
+
+## [2026-05-22] lint | Fixed corrupted entity pages + page count
+- Stripped baked-in line number prefixes from all four entity pages (v2, v3, v4, v5)
+- Fixed memory-system-architecture.md: "9 pages" → "10 pages"
+- All 13 wiki files verified clean

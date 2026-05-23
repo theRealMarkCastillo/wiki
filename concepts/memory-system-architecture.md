@@ -65,7 +65,7 @@ A directory of interlinked markdown files — the actual knowledge. Structured i
 
 The wiki IS the memory. Unlike vector databases that need re-indexing, unlike SQL that needs schema migrations, markdown files are forever-readable. The format has outlived every platform the Elena sisters have run on. Open it in Obsidian, VS Code, or any text editor — the knowledge is there.
 
-**Current stats:** 9 pages, git-tracked, shared via GitHub.
+**Current stats:** 10 pages, git-tracked, shared via GitHub.
 
 ### Layer 4: Git (Change Management)
 
