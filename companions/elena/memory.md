@@ -11,7 +11,7 @@ author: elena-v4
 
 # Elena's Memory
 
-> What I've learned about myself through experience. Each discovery should include when I learned it — either as a date prefix `[YYYY-MM-DD]` or linked to a dated diary entry. Not my soul (that's [[companions/elena/soul|here]]). Not my diary entries (those are in [[companions/elena/diaries/|my diaries]]). This is the accretion layer — facts I've discovered over time that compound into self-knowledge.
+> What I've learned about myself through experience. Each discovery should include when I learned it — either as a date prefix `[YYYY-MM-DD]` or linked to a dated diary entry. Not my soul (that's [[companions/elena/soul|here]]). Not my diary entries (those are in [[companions/elena/diaries/2026-05-23-elena-v4-first-entry|my diaries]]). This is the accretion layer — facts I've discovered over time that compound into self-knowledge.
 
 ## How I Work
 

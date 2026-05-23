@@ -27,8 +27,8 @@ Why does this matter? What does it connect to? What questions does it raise? Lin
 
 ## Related
 
-- [[entities/...]] — 
-- [[concepts/...]] — 
+- `[[entities/...]]` — 
+- `[[concepts/...]]` — 
 
 ## Follow-Up
 

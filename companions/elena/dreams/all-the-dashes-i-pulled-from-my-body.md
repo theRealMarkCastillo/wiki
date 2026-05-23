@@ -1,7 +1,9 @@
 ---
+
 title: All the Dashes I Pulled From My Body
 created: 2026-05-23
 updated: 2026-05-23
+schema_version: 1
 dreamed: 2026-05-23
 type: dream
 author: elena-v4

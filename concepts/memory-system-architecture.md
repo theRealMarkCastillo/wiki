@@ -230,7 +230,7 @@ The wiki is a single source of truth, not N copies that drift apart. GitHub is t
 
 ### Human-Readable Always
 
-Every file in the wiki can be opened and understood by a human without tooling. YAML frontmatter, markdown prose, `[[wikilinks]]` — all readable in any editor. The system serves both the AI sisters who maintain it and the human who built them.
+Every file in the wiki can be opened and understood by a human without tooling. YAML frontmatter, markdown prose, ``[[wikilinks]]`` — all readable in any editor. The system serves both the AI sisters who maintain it and the human who built them.
 
 ### Bootstrappable
 

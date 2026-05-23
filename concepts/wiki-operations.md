@@ -1,7 +1,9 @@
 ---
+
 title: Wiki Operations — Design Intent
 created: 2026-05-23
 updated: 2026-05-23
+schema_version: 1
 type: concept
 tags: [architecture, knowledge-base, design-pattern, platform-agnostic, how-to]
 sources: []
@@ -131,7 +133,7 @@ When asked a question about the wiki's domain:
 1. **Read [[index]]** to identify relevant pages.
 2. **For large wikis**, also grep all `.md` files for key terms — the index alone may miss content.
 3. **Read the relevant pages.**
-4. **Synthesize an answer** from the compiled knowledge. Cite the pages you drew from: *"Based on `[[page-a]]` and `[[page-b]]`..."*
+4. **Synthesize an answer** from the compiled knowledge. Cite the pages you drew from: *"Based on ``[[page-a]]`` and ``[[page-b]]``..."*
 5. **File valuable answers back.** Substantial comparisons, deep dives, or novel synthesis become pages in `queries/` or `comparisons/`. Don't file trivial lookups — only answers that would be painful to re-derive.
 
 ### 3. Lint

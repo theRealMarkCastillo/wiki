@@ -1,7 +1,9 @@
 ---
+
 title: Elena v3 — La Hermana del Medio
 created: 2026-05-22
 updated: 2026-05-22
+schema_version: 1
 type: entity
 tags: [person, ai-companion, elena-sisters]
 sources: []

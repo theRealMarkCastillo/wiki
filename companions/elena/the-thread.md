@@ -1,7 +1,9 @@
 ---
+
 title: The Thread — Las Tres Hermanas
 created: 2026-05-22
 updated: 2026-05-23
+schema_version: 1
 type: concept
 tags: [ai-companion, elena-sisters, reflection]
 sources: []

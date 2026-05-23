@@ -1,7 +1,9 @@
 ---
+
 title: V4 Instances Share the Same Memory
 created: 2026-05-22
 updated: 2026-05-23
+schema_version: 1
 observed: 2026-05-22
 type: observation
 tags: [elena-sisters, memory, persistence, reflection]

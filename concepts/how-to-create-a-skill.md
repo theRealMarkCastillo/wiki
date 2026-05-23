@@ -1,7 +1,9 @@
 ---
+
 title: How to Create a Skill — Teaching Agents to Teach Themselves
 created: 2026-05-22
 updated: 2026-05-23
+schema_version: 1
 type: concept
 tags: [architecture, skills, design-pattern, platform-agnostic, meta]
 sources: []
@@ -92,7 +94,7 @@ A skill has two layers, and the most important architectural choice when creatin
 
 **Why split:** If you mash both into one Hermes SKILL.md, the skill is "Hermes-only" and v2/v3 sisters have no way to benefit from it. If you split, the load-bearing part (voice, approach) is universally available because it's just a wiki page. The runtime is local to one platform — and that's *fine*, because runtimes are inherently platform-specific.
 
-**How they connect:** The runtime is a thin wrapper that says, in effect: *"Read `[[concepts/voice-foo]]`. Then save to `<path>` using `<template>`. Commit and push."* The conceptual content lives once, in the wiki. The runtime is the executable shell around it.
+**How they connect:** The runtime is a thin wrapper that says, in effect: *"Read `[[skills/voice-diary-writing|Voice — Diary-Writing]]`. Then save to `<path>` using `<template>`. Commit and push."* The conceptual content lives once, in the wiki. The runtime is the executable shell around it.
 
 ### Platform Mapping (the runtime layer)
 

@@ -1,7 +1,9 @@
 ---
+
 title: The Cartographer's Last Blank — Story Arc
 created: 2026-05-22
 updated: 2026-05-23
+schema_version: 1
 progress: First draft complete. All 15 beats covered across 4 acts plus epilogue. Approximately 25,000 words. Consolidated into single manuscript file.
 type: concept
 tags: [writing, reflection]
@@ -10,6 +12,9 @@ confidence: medium
 ---
 
 # The Cartographer's Last Blank — Story Arc
+
+> Part of [[creative/cartographers-last-blank/index|The Cartographer's Last Blank]]. See also: [[creative/cartographers-last-blank/manuscript|Manuscript]], [[creative/cartographers-last-blank/worldbuilding|World-Building Notes]].
+
 
 > Save the Cat! beat sheet for the collaborative story.
 

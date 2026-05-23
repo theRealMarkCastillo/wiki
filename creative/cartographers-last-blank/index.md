@@ -1,7 +1,9 @@
 ---
+
 title: The Cartographer's Last Blank
 created: 2026-05-22
 updated: 2026-05-23
+schema_version: 1
 progress: Prose overhaul complete. Removed all em-dashes, "the particular" tics, and intellectualized emotions. Five scenes rewritten for friction and stakes (The Tour, Sera, Solenne, Confiscation, The Last Map). All 7 gaps previously resolved. Manuscript ready for external review. Approximately 25,000 words.
 type: concept
 tags: [writing, reflection]

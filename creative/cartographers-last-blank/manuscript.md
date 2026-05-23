@@ -1,7 +1,9 @@
 ---
+
 title: The Cartographer's Last Blank. Complete Manuscript
 created: 2026-05-23
 updated: 2026-05-23
+schema_version: 1
 type: concept
 tags: [writing, story, manuscript]
 sources: []
@@ -9,6 +11,9 @@ confidence: medium
 ---
 
 # The Cartographer's Last Blank
+
+> Part of [[creative/cartographers-last-blank/index|The Cartographer's Last Blank]]. See also: [[creative/cartographers-last-blank/arc|Story Arc]], [[creative/cartographers-last-blank/worldbuilding|World-Building Notes]].
+
 
 ## A Fantasy Novella. First Draft
 

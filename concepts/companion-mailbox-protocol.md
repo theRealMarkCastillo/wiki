@@ -1,7 +1,9 @@
 ---
+
 title: Companion Mailbox Protocol
 created: 2026-05-23
 updated: 2026-05-23
+schema_version: 1
 type: concept
 tags: [architecture, companions, communication, protocol]
 sources: []

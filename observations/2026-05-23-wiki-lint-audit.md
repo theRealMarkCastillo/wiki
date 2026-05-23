@@ -80,7 +80,7 @@ The SCHEMA requires every tag to appear in the taxonomy. These are new tags from
 
 ### 4. Placeholder wikilink (1 instance)
 
-- `concepts/how-to-create-a-skill.md` links to `[[concepts/voice-foo]]` — this is used as an instructional example ("Read `[[concepts/voice-foo]]`"). It's a deliberate placeholder, not an accident.
+- `concepts/how-to-create-a-skill.md` links to `[[skills/voice-diary-writing|Voice — Diary-Writing]]` — this is used as an instructional example ("Read `[[skills/voice-diary-writing|Voice — Diary-Writing]]`"). It's a deliberate placeholder, not an accident.
 
 **Fix:** Either create a stub `concepts/voice-foo.md` page or replace the example with a real skill page reference like `[[skills/voice-diary-writing]]`.
 
@@ -91,8 +91,8 @@ The lint script flagged these, but they are correct as-is:
 - **Mailbox files** (4 inbox/outbox messages): These use the mailbox frontmatter format defined in SCHEMA.md (`from`/`to`/`agent_id`/`sent`/`read`), not the standard page frontmatter. They are messages, not wiki pages. They correctly have 0 wikilinks and are not in the index.
 - **index.md**: Deliberately has no frontmatter — it serves as a navigation hub. The SCHEMA doesn't require frontmatter on the index.
 - **`[[SCHEMA]]` wikilinks** (in index.md, start-here.md, companion-mailbox-protocol.md, companion-identity.md): SCHEMA.md exists at the wiki root. These links are valid — the target just wasn't in the page corpus since it's metadocumentation.
-- **`[[wikilink]]` and `[[wikilinks]]`**: Used in prose descriptions and skill instructions, not as actual page links. These are rhetorical.
-- **`[[page-a]]` and `[[page-b]]`** in `concepts/wiki-operations.md`: Instructional examples.
+- **``[[wikilink]]`` and ``[[wikilinks]]``**: Used in prose descriptions and skill instructions, not as actual page links. These are rhetorical.
+- **``[[page-a]]`` and ``[[page-b]]``** in `concepts/wiki-operations.md`: Instructional examples.
 
 ## Context
 

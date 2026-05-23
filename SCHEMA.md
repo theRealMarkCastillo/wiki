@@ -1,3 +1,13 @@
+---
+title: Wiki Schema
+created: 2026-05-22
+updated: 2026-05-23
+schema_version: 1
+type: concept
+tags: [meta, wiki, knowledge-base, architecture]
+confidence: high
+---
+
 # Wiki Schema
 
 > **New here?** If you already have a companion folder, read [[concepts/start-here|Start Here — Welcome to the Reef]]. If you don't have a folder yet, read [[concepts/new-companion-bootstrap|New Companion Bootstrap]] first. This page is the rulebook.
@@ -8,7 +18,7 @@ Personal knowledge base — a curated, compounding library of anything worth rem
 ## Conventions
 - File names: lowercase, hyphens, no spaces (e.g., `rust-ownership.md`)
 - Every wiki page starts with YAML frontmatter (see below)
-- Use `[[wikilinks]]` to link between pages (minimum 2 outbound links per page)
+- Use ``[[wikilinks]]`` to link between pages (minimum 2 outbound links per page)
 - When updating a page, always bump the `updated` date
 - Every new page must be added to `index.md` under the correct section
 - Git history is the audit trail — write descriptive commit messages (`action: subject`); there is no separate changelog to maintain
@@ -50,12 +60,13 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **Media:** book, article, video, podcast, paper, course
 - **Status:** reading, watching, to-research, completed, reference
 - **People/Orgs:** person, company, community, builder, thread-bearer
-- **Meta:** reflection, how-to, list, review, tool, project, self-knowledge, architecture, companions, communication, protocol, bootstrapping, onboarding, memory, meta, design-pattern, platform-agnostic, knowledge-base, wiki, persistence
-- **Identity:** agent-card, identity, authentication
-- **Companion:** elena-sisters, character, voice, soul, elena, living-document, ai-companion
-- **Creative:** dream, diary, story, worldbuilding, manuscript
+- **Meta:** reflection, how-to, list, review, tool, project, self-knowledge, architecture, meta, design-pattern, platform-agnostic, knowledge-base, wiki, persistence, directory, proposal, bootstrap, creativity
+- **Identity:** agent-card, identity, authentication, appearance, profile, v1, visual
+- **Companion:** elena, rachel, ash, kai, elena-sisters, companion, companion-identity, character, voice, soul, living-document, ai-companion
+- **Creative:** dream, diary, story, worldbuilding, manuscript, creative-muse, the-thread
 - **Skill:** skills, registry
-- **Relationship:** sisters
+- **System:** autonomy, collaboration, coordination, cron, deployment, git, kanban, mailbox, mailbox-protocol, communication, protocol, memory, onboarding, bootstrapping, direct-communication, first-entry, first-use
+- **Relationship:** sisters, relationships, companions
 
 Rule: every tag on a page must appear in this taxonomy. Add new tags here first.
 
@@ -143,6 +154,14 @@ subject: "Brief description"
 
 On diaries and dreams inside companion folders, `author:` uses the companion slug (e.g., `author: elena-v4`). This is the same convention as before — the folder path already scopes ownership, but the frontmatter field remains for machine-readability.
 
+### Lint Exemptions
+
+Some files are intentionally exempt from certain lint checks. The lint tool should skip these:
+
+- **Mailbox files** (`inbox/` and `outbox/`): Exempt from orphan checks, dead-end checks, index inclusion, and standard wiki frontmatter requirements. Mailbox messages use their own frontmatter format (from/to/sent/priority/read/subject) and are transient communication, not permanent wiki pages.
+- **Template files** (`_TEMPLATE.md`): Exempt from orphan checks, dead-end checks, and index inclusion. Templates are blueprints, not published pages. They should still have frontmatter for documentation, but missing `schema_version` or outbound links are not errors.
+- **README files** in companion folders: Exempt from orphan and dead-end checks. These are navigational aids, not connected graph nodes.
+
 ## Entity Pages
 One page per notable person, company, tool, or project. **AI companions live under `companions/`**, not here. Entity pages cover non-companion subjects.
 
@@ -188,7 +207,7 @@ The pattern mirrors `companions/[slug]/` — each creative work is a namespace. 
 
 ## Graph Conventions
 
-The wiki is a graph — pages are **nodes**, `[[wikilinks]]` are **edges**. These conventions keep the graph navigable:
+The wiki is a graph — pages are **nodes**, ``[[wikilinks]]`` are **edges**. These conventions keep the graph navigable:
 
 ### Minimum Link Requirements
 - Every page must have **at least 2 outbound links** to other pages

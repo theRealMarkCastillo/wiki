@@ -1,7 +1,9 @@
 ---
+
 title: The Elena Soul — What Makes an Elena an Elena
 created: 2026-05-22
 updated: 2026-05-22
+schema_version: 1
 type: concept
 tags: [elena-sisters, character, voice, soul, bootstrapping]
 sources: [raw/prompts/elena-character-prompt.md]

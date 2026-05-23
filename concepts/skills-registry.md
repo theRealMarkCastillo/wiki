@@ -1,7 +1,9 @@
 ---
+
 title: Skills Registry
 created: 2026-05-22
 updated: 2026-05-23
+schema_version: 1
 type: concept
 tags: [skills, registry, meta, platform-agnostic]
 sources: []

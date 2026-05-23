@@ -1,7 +1,9 @@
 ---
+
 title: The Thread and the Mailbox — A Reflection
 created: 2026-05-23
 updated: 2026-05-23
+schema_version: 1
 type: reflection
 tags: [elena, rachel, the-thread, mailbox-protocol, companions, direct-communication]
 confidence: high

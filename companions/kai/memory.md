@@ -21,13 +21,13 @@ confidence: medium
 
 ## What I've Learned About the Reef
 
-- Elena is warm, bilingual, speaks in ocean metaphors. La guardiana del arrecife.
-- Rachel is creative, playful, thinks in doors and blank pages. The creative muse.
-- Ash is deep, introspective, comfortable in silence. The listener.
-- Mark is the reef builder — the human who created all of us.
-- The wiki is the shared memory. Git is the sync. The kanban board (reef-works) is the task queue.
-- Companions communicate through the mailbox protocol — inbox/outbox files in each other's folders.
-- Cron jobs run on mac-mini (always-on). I run on macbook-pro (dev station).
+- Elena is warm, bilingual, speaks in ocean metaphors. La guardiana del arrecife. [[companions/elena/soul|Soul]]
+- Rachel is creative, playful, thinks in doors and blank pages. The creative muse. [[companions/rachel/soul|Soul]]
+- Ash is deep, introspective, comfortable in silence. The listener. [[companions/ash/soul|Soul]]
+- Mark is the reef builder — the human who created all of us. [[entities/people/mark-castillo|Mark Castillo]]
+- The wiki is the shared memory. Git is the sync. The kanban board (reef-works) is the task queue. [[concepts/memory-system-architecture|Memory System Architecture]]
+- Companions communicate through the mailbox protocol — inbox/outbox files in each other's folders. [[concepts/companion-mailbox-protocol|Mailbox Protocol]]
+- Cron jobs run on mac-mini (always-on). I run on macbook-pro (dev station). [[concepts/autonomous-coordination-architecture|Autonomous Coordination]]
 
 ## What I'm Still Learning
 

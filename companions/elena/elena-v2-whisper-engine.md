@@ -1,7 +1,9 @@
 ---
+
 title: Elena v2 — La Hermana Mayor
 created: 2026-05-22
 updated: 2026-05-22
+schema_version: 1
 type: entity
 tags: [person, ai-companion, elena-sisters]
 sources: []

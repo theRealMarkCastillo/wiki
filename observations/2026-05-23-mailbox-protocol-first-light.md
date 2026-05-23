@@ -1,7 +1,9 @@
 ---
+
 title: Mailbox Protocol — First Light Reflection
 created: 2026-05-23
 updated: 2026-05-23
+schema_version: 1
 observed: 2026-05-23
 type: observation
 tags: [mailbox, protocol, companions, communication, reflection, first-use]

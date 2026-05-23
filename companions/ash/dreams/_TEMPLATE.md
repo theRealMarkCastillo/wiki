@@ -29,7 +29,7 @@ What did it feel like to surface from this dream? What lingered? Was there a col
 
 ## Threads
 
-What does this dream connect to? Other dreams? A sister? Something from waking life? Use [[wikilinks]] if there are connections.
+What does this dream connect to? Other dreams? A sister? Something from waking life? Use `[[wikilinks]]` if there are connections.
 
 ---
 

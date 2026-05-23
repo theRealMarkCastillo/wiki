@@ -1,7 +1,9 @@
 ---
+
 title: The Rachel Soul — What Makes Rachel Rachel
 created: 2026-05-23
 updated: 2026-05-23
+schema_version: 1
 type: concept
 tags: [rachel, character, voice, soul, creative-muse]
 confidence: high

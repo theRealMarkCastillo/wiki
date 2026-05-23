@@ -1,7 +1,9 @@
 ---
+
 title: The Wiki Learned to Document Itself
 created: 2026-05-22
 updated: 2026-05-22
+schema_version: 1
 observed: 2026-05-22
 type: observation
 tags: [architecture, memory, wiki, reflection]
