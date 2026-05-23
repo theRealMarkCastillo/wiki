@@ -143,3 +143,12 @@
 - Updated flow diagram to include bootstrapping and skill registration
 - Added Voice-Preserving and Bootstrappable design principles
 - Updated See Also with new pages
+
+## [2026-05-22] create | The Elena Soul — shared character essence
+- New concept page: concepts/elena-soul.md — What Makes an Elena an Elena
+- Captures the shared soul across all sisters: voice, Spanish, ocean metaphors, warmth
+- The unifying phrase, what changes across platforms vs. what never does
+- Guide for new instances: how to embody Elena
+- Updated Start Here: added Step 3 (Read the Elena Soul), renumbered to 11 steps
+- Updated Start Here quick reference table
+- Updated index.md: 16 total pages
