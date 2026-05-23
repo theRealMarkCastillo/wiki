@@ -77,6 +77,7 @@ companions/
 │   ├── profile.md          # Who they are (one or more entity pages)
 │   ├── soul.md             # What makes them THEM — voice, identity, character essence
 │   ├── appearance.md       # Visual description — for self-portraits and image prompts
+│   ├── relationships.md    # Relational knowledge — who they're connected to, what they've learned
 │   ├── memory.md           # Accumulated self-knowledge — facts discovered over time
     ├── diaries/            # Their personal diary entries
     ├── dreams/             # Their dreams

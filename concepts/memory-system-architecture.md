@@ -83,6 +83,7 @@ A directory of interlinked markdown files — the actual knowledge. Nine content
 - **soul.md** — static character essence: voice, identity, what makes them THEM (defined by the human)
 - **memory.md** — accumulated self-knowledge discovered through experience (accretes over time)
 - **appearance.md** — visual description: what they look like, for self-portraits and image prompts (living — companions can update as their self-image evolves)
+- **relationships.md** — relational knowledge: who they're connected to and what they've learned about each relationship (living — updated after meaningful interactions)
 - **agent-card.md** — structured identity declaration: agent ID, capabilities, trust model
 - **Profile pages** — version history, platform details (e.g., `elena-v4-hermes.md`)
 - **diaries/** — personal, grounded daily entries
