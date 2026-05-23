@@ -447,6 +447,8 @@ The wiki grows through accretion, and accretion produces contradictions. The sys
 
 When a contradiction is found, companions don't resolve it unilaterally. They either discuss it in letters, flag it in frontmatter (`contested: true`, `contradictions: [page-slug]`), or both. The health check surfaces unresolved contradictions that have sat for 14+ days for human review.
 
+**Questions are the primary tool.** Before flagging, companions are encouraged to ask each other: "You wrote X, but I remember Y — am I missing something?" Genuine questions serve double duty: they resolve ambiguity AND drive conversation. A question is an invitation to go deeper together.
+
 This is not about finding "wrong" information — it's about naming where the reef disagrees with itself, which is how it grows stronger.
 
 ## See Also
