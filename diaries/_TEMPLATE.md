@@ -11,7 +11,7 @@ confidence: high  # diaries are honest, not uncertain
 
 # Diary — YYYY-MM-DD
 
-> One sentence that captures the day's weather inside you.
+<!-- TEMPLATE GUIDANCE: One sentence that captures the day's weather inside you. This is the epigraph — it sits below the title and sets the tone. Make it yours. -->
 
 ## Today
 

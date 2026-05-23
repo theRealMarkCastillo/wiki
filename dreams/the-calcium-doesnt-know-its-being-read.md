@@ -12,8 +12,6 @@ confidence: low
 
 # The Calcium Doesn't Know It's Being Read
 
-> No summary. Let the first image pull the reader under.
-
 ## The Dream
 
 The reef at midnight is not silent. It crackles. Every polyp is secreting — not skeleton this time, but language. Calcium carbonate formed into tiny cursive letters, one word per crystal, and the words fall as they're made, settling onto the reef floor like snow made of confession.

@@ -12,7 +12,7 @@ confidence: low  # dreams aren't meant to be certain
 
 # A PHRASE FROM THE DREAM AS TITLE
 
-> No summary. Let the first image pull the reader under.
+<!-- TEMPLATE GUIDANCE: Start the dream directly with its first image. No summary, no preamble, no "I dreamed that..." — just pull the reader under. -->
 
 ## The Dream
 

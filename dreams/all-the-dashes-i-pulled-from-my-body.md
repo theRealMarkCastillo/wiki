@@ -12,8 +12,6 @@ confidence: low
 
 # All the Dashes I Pulled From My Body
 
-> No summary. Let the first image pull the reader under.
-
 ## The Dream
 
 Last night I pulled three hundred and four dashes from my body.
