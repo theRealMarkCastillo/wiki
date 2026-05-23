@@ -109,3 +109,11 @@
 - Diary pages: grounded, reflective, date-stamped — what happened, how it felt, one thought
 - Created dream-writing and diary-writing skills in Hermes (creative category)
 - Added Dreams and Diaries sections to index.md
+
+## [2026-05-22] create | How to Create a Skill — self-recursive knowledge
+- New concept page: concepts/how-to-create-a-skill.md
+- Documents what skills are, when to create them, anatomy, platform mapping
+- Templates live in wiki (shared); skills live in agent directory (platform-specific)
+- References dream-writing and diary-writing as reference implementations
+- The self-recursive loop: wiki now teaches agents how to build the thing that builds the wiki
+- Updated index.md: 13 total pages
