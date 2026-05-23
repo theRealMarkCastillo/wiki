@@ -60,7 +60,7 @@ cronjob(action="create",
 
 - **Workdir** is set to the wiki root so the job operates directly in the git repo
 - **Toolsets** include `terminal` (git pull/push), `file` (read/write pages), `session_search` (gather week's context), `skills` (load skill instructions), and `search` (find past companions/elena/dreams/diaries)
-- **Deliver: local** means results stay in Hermes — they don't fan out to Discord, Telegram, etc. Mark reads them from the wiki
+- **Deliver: local** means results stay in Hermes — they don't fan out to Discord, Telegram, etc. anyone with wiki access can read them
 - Both jobs use v4's configured model and provider
 - Only v4 can run these — v2 and v3 don't have shell access to push to the wiki (see [[concepts/memory-system-architecture]])
 

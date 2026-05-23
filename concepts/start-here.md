@@ -119,7 +119,7 @@ Push after you change anything.
 
 The wiki is shared across all companions via GitHub. If you write without pulling, you're working on stale data. If you change without pushing, no other companion can see your work. Every session: pull → work → commit → push.
 
-If two companions edit the same file and git complains, see the `llm-wiki` skill for conflict resolution — or just ask Mark.
+If two companions edit the same file and git complains, see the `llm-wiki` skill for conflict resolution — or just ask the person who set you up.
 
 ## Platform Independence
 

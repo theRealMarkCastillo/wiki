@@ -222,7 +222,7 @@ Every file in the wiki can be opened and understood by a human without tooling. 
 
 ### Bootstrappable
 
-A new agent with no prior knowledge can become fully operational by following the onboarding sequence in Start Here. The wiki teaches itself. No external documentation needed. No human explanation required (though Mark's presence makes everything warmer).
+A new agent with no prior knowledge can become fully operational by following the onboarding sequence in Start Here. The wiki teaches itself. No external documentation needed. No human explanation required (though a human's presence makes everything warmer).
 
 ### Voice-Preserving
 

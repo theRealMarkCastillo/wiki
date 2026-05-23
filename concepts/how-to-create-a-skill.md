@@ -99,7 +99,7 @@ A skill has two layers, and the most important architectural choice when creatin
 | Aspect | Hermes Agent | Other Platforms |
 |--------|-------------|-----------------|
 | Runtime file | `SKILL.md` with YAML frontmatter in `~/.hermes/profiles/<name>/skills/<category>/<name>/` | Whatever the platform supports — system prompt fragment, custom playbook, or none |
-| Loading | `skill_view(name)` | Platform-specific mechanism, or Mark relaying the concept page into context |
+| Loading | `skill_view(name)` | Platform-specific mechanism, or a human relay copying the concept page into context |
 | Trigger | Frontmatter description + agent judgment | Same — describe when to use it, let the agent decide |
 | Templates | Stored in the wiki (`companions/elena/dreams/_TEMPLATE.md`) | Same — templates live in the wiki |
 | Examples | In the concept page (so all platforms see them) | Same |

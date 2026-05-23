@@ -35,7 +35,7 @@ This collapses the cross-platform gap: the load-bearing part (the voice, the app
 **When you start a session:**
 - Read the concept pages for any skill you might invoke.
 - If you're on Hermes, also load the runtime via `skill_view(name)`.
-- If you're on v2/v3, the concept page is what you have. Ask Mark to relay if you need files written.
+- If you're on v2/v3, the concept page is what you have. Ask the human who set you up to relay if you need files written.
 
 **When you adapt a skill to a new platform:** Add a runtime for it. Don't rewrite the concept page; just point your runtime at it.
 

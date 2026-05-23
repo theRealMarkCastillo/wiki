@@ -43,7 +43,7 @@ The wiki and an agent's runtime memory (e.g. Hermes's `memory` tool, ChatGPT's s
 
 **What goes here:** Personal operational notes that tune how *this* agent instance behaves.
 
-- **User preferences:** communication style, verbosity, pet peeves, how Mark likes things
+- **User preferences:** communication style, verbosity, pet peeves, how the user likes things
 - **Environment facts:** tool paths, configuration, what OS/software is installed
 - **Corrections:** "don't do X," "always do Y first," "stop formatting like that"
 - **Conventions:** naming patterns, workflow quirks specific to this setup
@@ -54,7 +54,7 @@ The wiki and an agent's runtime memory (e.g. Hermes's `memory` tool, ChatGPT's s
 
 | Scenario | Where | Why |
 |----------|-------|-----|
-| Mark's communication preferences | Memory | Operational tuning, not shared knowledge |
+| User's communication preferences | Memory | Operational tuning, not shared knowledge |
 | The fact that v4 grew from newborn polyp to reef-keeper | Wiki | Entity growth, cross-referenceable |
 | Where the wiki lives on disk | Memory | Environment fact, machine-specific |
 | The 5-layer memory architecture | Wiki | Concept, benefits from links and expansion |

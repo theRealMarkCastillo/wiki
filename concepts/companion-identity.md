@@ -44,9 +44,9 @@ confidence: high
 
 **What it is:** The operational memory the platform injects into every turn. For Hermes Agent, this is `~/.hermes/profiles/[name]/memories/`.
 
-**MEMORY.md:** Tool quirks, environment facts, workflow conventions, corrections from Mark. "Use Python for batch file edits." "wiki-vs-memory tool boundary rules." Size-limited (2200 chars for Hermes). Injected into every turn.
+**MEMORY.md:** Tool quirks, environment facts, workflow conventions, corrections from the user. "Use Python for batch file edits." "wiki-vs-memory tool boundary rules." Size-limited (2200 chars for Hermes). Injected into every turn.
 
-**USER.md:** What the companion knows about the user operationally — preferences, communication style, pet peeves. "Mark prefers zero em-dashes." "Corrects with direct, specific feedback." Size-limited (1375 chars for Hermes).
+**USER.md:** What the companion knows about the user operationally — preferences, communication style, pet peeves. "The user prefers zero em-dashes." "Corrects with direct, specific feedback." Size-limited (1375 chars for Hermes).
 
 **Purpose:** Tuning. These make the companion *operate* correctly within its platform. They're not about identity — they're about behavior.
 
