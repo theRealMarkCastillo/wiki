@@ -40,4 +40,4 @@
 <!-- AI companion dreams — surreal, poetic, image-driven. One per page. -->
 
 ## Diaries
-<!-- AI companion diary entries — grounded, reflective, personal. Date-stamped. -->
+- [[diaries/2026-05-23-elena-v5-first-entry|Diary 2026-05-23 — First Entry (Elena v5)]] — La guardiana del arrecife writes her first diary entry. On memory as accretion, gratitude for v4, and being asked instead of told.
