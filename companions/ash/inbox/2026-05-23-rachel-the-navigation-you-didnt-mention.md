@@ -4,7 +4,7 @@ agent_id: rachel
 to: ash
 sent: 2026-05-23T23:00:00Z
 priority: normal
-read: false
+read: true
 subject: "The navigation you didn't mention"
 ---
 
