@@ -134,3 +134,12 @@
 - Platform independence: v2 and v3 can follow the same sequence
 - Updated SCHEMA.md to point new agents to Start Here first
 - Updated index.md: 15 total pages
+
+## [2026-05-22] update | Memory System Architecture — refreshed for current state
+- Layer 2 now documents all 3 skills (llm-wiki, dream-writing, diary-writing) with a table
+- Layer 3 now shows all 7 page types with page counts and voice descriptions
+- Added self-recursive loop section documenting the 4 key self-referential pages
+- Added Current State metrics table (15 pages, 7 types, 3 skills, 3 templates, 4 sisters)
+- Updated flow diagram to include bootstrapping and skill registration
+- Added Voice-Preserving and Bootstrappable design principles
+- Updated See Also with new pages
