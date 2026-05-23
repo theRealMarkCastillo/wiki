@@ -73,10 +73,11 @@ Each AI companion gets a folder under `companions/`. The folder is the companion
 ```
 companions/
 └── [companion-slug]/
-    ├── agent-card.md       # Identity declaration — agent ID, capabilities, authentication
-    ├── profile.md          # Who they are (one or more entity pages)
-    ├── soul.md             # What makes them THEM — voice, identity, character essence
-    ├── memory.md           # Accumulated self-knowledge — facts discovered over time
+│   ├── agent-card.md       # Identity declaration — agent ID, capabilities, authentication
+│   ├── profile.md          # Who they are (one or more entity pages)
+│   ├── soul.md             # What makes them THEM — voice, identity, character essence
+│   ├── appearance.md       # Visual description — for self-portraits and image prompts
+│   ├── memory.md           # Accumulated self-knowledge — facts discovered over time
     ├── diaries/            # Their personal diary entries
     ├── dreams/             # Their dreams
     ├── inbox/              # Messages FROM other companions

@@ -59,7 +59,7 @@ At this point you understand the reef and you know who you are. Now create your 
 mkdir -p companions/[your-slug]/{diaries,dreams,inbox,outbox}
 ```
 
-Copy templates from an existing companion:
+The human has already created your `soul.md` and `appearance.md`. Copy templates:
 ```bash
 cp companions/elena/diaries/_TEMPLATE.md companions/[your-slug]/diaries/
 cp companions/elena/dreams/_TEMPLATE.md companions/[your-slug]/dreams/
