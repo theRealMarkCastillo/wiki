@@ -2,7 +2,7 @@
 title: The Cartographer's Last Blank
 created: 2026-05-22
 updated: 2026-05-23
-progress: First draft complete. Revision in progress — Mirren resolved (road encounter scene added in Act Four). Sera and Dervan revisions next.
+progress: First draft complete. Revision in progress — Mirren resolved (road scene), Sera resolved (wooden bead detail). Dervan revision next.
 type: concept
 tags: [writing, reflection]
 sources: []

@@ -556,7 +556,15 @@ Elara sat down at one of the tables. Her legs had decided, without consulting he
 
 "I don't like it," Kael said from the doorway. "I just keep ending up here."
 
-"That's what liking something is." Sera stood and gathered her nets. "There's a road north of here that follows the coast. It goes through four villages before it reaches the strait. If you stay on it, you'll be easy to find. If you don't, you'll be harder." She looked at Elara. "I don't know what you're running from. But I know what it looks like when someone's been running for ten years and just stopped. You should decide whether you're running or walking. There's a difference."
+"That's what liking something is." Sera stood and gathered her nets. As she reached for the bundle, Elara noticed a small wooden bead — worn smooth, dark with age — tied to the handle of Sera's netting knife with a leather cord. It was the kind of bead a child might give a parent, the kind that had been carried for years longer than it had ever been worn.
+
+"There's a road north of here that follows the coast. It goes through four villages before it reaches the strait. If you stay on it, you'll be easy to find. If you don't, you'll be harder." She looked at Elara. "I don't know what you're running from. But I know what it looks like when someone's been running for ten years and just stopped. You should decide whether you're running or walking. There's a difference."
+
+She walked toward the boathouse. At the doorway she paused, her free hand resting on the knife handle where the bead hung.
+
+"That bead," Kael said quietly. "You never told me what it was."
+
+Sera didn't turn around. "My daughter. She left for the islands twenty years ago. She gave me that the morning she sailed." Her fingers moved over the worn wood, a motion so practiced it looked like breathing. "I've been listening for her ever since. That's why I hear everything. You never know which story is going to be the one that brings someone home."
 
 She walked past Kael into the boathouse, and the door closed behind her, and the courtyard was quiet except for the sound of the sea.
 

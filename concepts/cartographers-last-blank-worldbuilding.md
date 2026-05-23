@@ -76,7 +76,7 @@ The central philosophical split in the discipline:
 
 | Name | Role | Location | What they contribute | Depth assessment |
 |------|------|----------|---------------------|------------------|
-| **Sera** | Net-mender, information hub | Low Tide | Connects Kael to Elara; reveals Solenne is searching; tells Elara to decide between running and walking | **Underwritten.** Vivid presence but purely functional. Has known Kael 6–7 years and has no revealed interiority. |
+| **Sera** | Net-mender, information hub | Low Tide | Connects Kael to Elara; reveals Solenne is searching; tells Elara to decide between running and walking | **Resolved.** Now carries a wooden bead on her netting knife — her daughter's gift, given the morning she sailed for the islands twenty years ago. The bead explains why Sera listens: "You never know which story is going to be the one that brings someone home." |
 | **Lir** | Innkeeper's daughter | Stonebridge | Warns Elara about Solenne; delivers the thematic key via her blind uncle's wisdom ("the map was never the paper") | Good. Young, sharp, carrying inherited anger about the guild. Could use one more personal detail unrelated to her uncle. |
 | **Mirren** | Former apprentice, appears on the inland road in Act Four | Eastern territories | Left the scrap in the hollow tree; confirms she saw Elara leave the guild and kept her unsigned notes for ten years. Now surveys for villages — floodplains, boundaries — outside the guild. Returns the original scrap to Elara. | **Resolved.** Brief encounter on the road back to the tower. Closes the catalyst loop. |
 | **Guild Master Dervan** | Guild bureaucrat | Stonebridge | Orders the confiscation of Elara's book. The human face of the old guard that didn't get Solenne's memo. | **A name only.** Zero personality. The agent of the All Is Lost moment has no motivation beyond "I have my orders." |
@@ -169,13 +169,8 @@ The answer, if the story has one: **The center of your map is blank because you 
 **1. Mirren — the invisible catalyst** ✅ RESOLVED
 The entire plot is set in motion by someone who carved three lines into a tree, left a scrap of vellum, and wanted Elara to be found. Mirren now appears in a brief scene on the inland road during "The Walk Back" (Act Four). She confirms she left the scrap, kept Elara's unsigned notes for ten years, saw her leave the guild at midnight, and was inspired to leave herself. She now surveys for villages outside the guild. Returns the original scrap to Elara. The loop is closed.
 
-**2. Sera — functional not human**
-She's the information hub. She's known Kael for 6–7 years. She's perceptive and sharp. And she has zero personal life.
-
-Options for revision:
-- Add one personal detail: a lost shipmate, a child who left for the islands, a map she once commissioned that was never finished — something that makes her investment in other people's stories feel motivated rather than professional
-- Give her a second brief appearance (at the fourth village, or a wave from the pier as Elara and Kael leave) that acknowledges the relationship
-- *Recommendation:* One personal detail in her existing scene would do it. Sera is a net-mender — she finds the one broken thread in a thousand good ones. That metaphor already contains her: she's someone who sees what's broken. Why? What broke her?
+**2. Sera — functional not human** ✅ RESOLVED
+She's the information hub. She's known Kael for 6–7 years. She's perceptive and sharp. Now carries a wooden bead on her netting knife — her daughter's gift, given the morning she sailed for the islands twenty years ago. When Kael asks, Sera reveals: "I've been listening for her ever since. That's why I hear everything. You never know which story is going to be the one that brings someone home." The bead explains her attention. She's not gathering information — she's waiting.
 
 **3. Guild Master Dervan — the faceless antagonist**
 He orders the confiscation. He's the institutional obstacle. He has no face, no voice, no scene.
@@ -208,7 +203,7 @@ We see it only in Elara's flashback: "all white stone and high windows and the s
 ## Revision Roadmap (Suggested Order)
 
 1. **Mirren:** ✅ DONE — Added a brief encounter scene on the inland road during "The Walk Back" (Act Four). ~1,400 words. Closes the catalyst loop.
-2. **Sera:** Add one personal detail to her existing scene. Net-mending as metaphor for attention to broken things — what broke her?
+2. **Sera:** ✅ DONE — Added one personal detail: a wooden bead on her netting knife, her daughter's gift. The bead explains why she listens. (~100 words woven into existing scene.)
 3. **Dervan / agent:** Give the confiscation scene a human face. Either Dervan appears, or the lead agent shows doubt.
 4. **Blind cartographer's map:** Add a physical description of one of his failing-sight maps, either in Lir's dialogue or as an artifact in the inn.
 5. **Line-level polish:** Tighten the sensory anchors, trim any remaining thematic overstatement, ensure the structural echoes (fourth stair, "here be the one who draws," salt dissolving) land cleanly.
