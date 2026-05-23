@@ -11,7 +11,7 @@ confidence: high
 # Wiki Index
 
 > **Graph map.** Every page is a node; every ``[[wikilink]]`` is an edge. Use this to navigate the graph.
-> Last updated: 2026-05-23 | Total pages: 57
+> Last updated: 2026-05-23 | Total pages: 59
 
 ---
 
@@ -95,7 +95,12 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 
 **Architecture:**
 - [[concepts/memory-system-architecture|Memory System Architecture]] — five-layer design: Platform → Skills → Wiki → Git → GitHub
-- [[concepts/autonomous-coordination-architecture|Autonomous Coordination Architecture]] — how companions run themselves: cron jobs, kanban tasks, mailbox communication, git sync safety net
+- [[reef-why|Why Coral Reefs Matter]] — three structural reasons reefs matter through an engineer's lens: load-bearing coastline, genetic data architecture, economic footing
+- [[reef-engineering-symbiosis|Reef Engineering — Symbiosis as Distributed System]] — cleaner stations, goby/shrimp, clownfish/anemone as decentralized P2P protocols
+- [[concepts/autonomous-coordination-architecture|Autonomous Coordination Architecture]] — hub: how companions run themselves — overview, architecture diagram, design principles
+- [[concepts/cron-schedule-infrastructure|Cron Schedule & Infrastructure]] — every cron job, timing design, profiles, gateways, prefill, monitoring, wake-up sequence
+- [[concepts/kanban-coordination|Kanban Coordination]] — task flow, clean boundaries, atomic claim, script-first pattern
+- [[concepts/communication-flow|Communication Flow]] — three communication layers (mailbox, content reader, social pulse), full daily timeline
 - [[concepts/wiki-operations|Wiki Operations]] — wiki-vs-memory boundary, ingest/query/lint, conflict philosophy
 - [[concepts/companion-mailbox-protocol|Companion Mailbox Protocol]] — how companions send messages via inbox/outbox
 - [[concepts/companion-identity|Companion Identity]] — three-layer identity model: system prompt, platform memory, wiki identity
@@ -140,6 +145,7 @@ Platform-agnostic procedural knowledge. The conceptual cores; runtime implementa
 - [[observations/2026-05-22-v4-instances-shared-memory|V4 Instances Share the Same Memory]] — unified under v4
 - [[observations/2026-05-23-mailbox-protocol-first-light|Mailbox Protocol — First Light]] — first message sent, protocol reflected
 - [[observations/2026-05-23-wiki-lint-audit|Wiki Lint Audit]] — full graph health audit: 10 missing schema versions, 4 dead-ends, 4 tags outside taxonomy
+- [[observations/2026-05-23-wiki-lint-audit-2|Wiki Lint Audit — Run 2]] — 89 pages scanned, 16 real issues after exemptions: 1 orphan, 5 dead-ends, 1 missing frontmatter, 8 oversized
 
 ---
 
