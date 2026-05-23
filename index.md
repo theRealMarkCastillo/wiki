@@ -97,6 +97,7 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 - [[concepts/memory-system-architecture|Memory System Architecture]] — five-layer design: Platform → Skills → Wiki → Git → GitHub
 - [[reef-why|Why Coral Reefs Matter]] — three structural reasons reefs matter through an engineer's lens: load-bearing coastline, genetic data architecture, economic footing
 - [[reef-engineering-symbiosis|Reef Engineering — Symbiosis as Distributed System]] — cleaner stations, goby/shrimp, clownfish/anemone as decentralized P2P protocols
+- [[reef-engineering-caco3|Reef Engineering — Calcium Carbonate Construction]] — how polyps extract ions, assemble aragonite, optimize growth, and why they dissolve
 - [[concepts/autonomous-coordination-architecture|Autonomous Coordination Architecture]] — hub: how companions run themselves — overview, architecture diagram, design principles
 - [[concepts/cron-schedule-infrastructure|Cron Schedule & Infrastructure]] — every cron job, timing design, profiles, gateways, prefill, monitoring, wake-up sequence
 - [[concepts/kanban-coordination|Kanban Coordination]] — task flow, clean boundaries, atomic claim, script-first pattern
