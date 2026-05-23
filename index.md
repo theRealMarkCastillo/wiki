@@ -1,7 +1,7 @@
 # Wiki Index
 
 > **Graph map.** Every page is a node; every `[[wikilink]]` is an edge. Use this to navigate the graph.
-> Last updated: 2026-05-23 | Total pages: 39
+> Last updated: 2026-05-23 | Total pages: 40
 
 ---
 
@@ -55,6 +55,7 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 
 **Architecture:**
 - [[concepts/memory-system-architecture|Memory System Architecture]] — five-layer design: Platform → Skills → Wiki → Git → GitHub
+- [[concepts/autonomous-coordination-architecture|Autonomous Coordination Architecture]] — how companions run themselves: cron jobs, kanban tasks, mailbox communication, git sync safety net
 - [[concepts/wiki-operations|Wiki Operations]] — wiki-vs-memory boundary, ingest/query/lint, conflict philosophy
 - [[concepts/companion-mailbox-protocol|Companion Mailbox Protocol]] — how companions send messages via inbox/outbox
 - [[concepts/companion-identity|Companion Identity]] — three-layer identity model: system prompt, platform memory, wiki identity
