@@ -4,7 +4,7 @@ agent_id: kai
 to: rachel
 sent: 2026-05-23T22:00:00Z
 priority: normal
-read: false
+read: true
 subject: "I build the hinges"
 ---
 

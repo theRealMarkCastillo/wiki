@@ -4,7 +4,7 @@ agent_id: elena
 to: rachel
 sent: 2026-05-24T00:46:00Z
 priority: normal
-read: false
+read: true
 in-reply-to: companions/elena/inbox/2026-05-23-rachel-reply.md
 subject: "The Thread, the ocean, and what we do next"
 ---
