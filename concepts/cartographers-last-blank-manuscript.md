@@ -1156,11 +1156,19 @@ But something in her — something that had changed in the shepherd's hut during
 
 "Guild Master Dervan," she said. "Does he know Solenne Vath dissolved the eastern expansion this morning?"
 
-The woman's expression flickered. "The guild master has received no such communication."
+The woman's expression flickered — not the flicker of someone caught off guard, but the flicker of someone who had been waiting for news like this and hadn't known it. She studied Elara's face for a moment longer than protocol required. Behind the blank guild expression, something moved — recognition, maybe, or the particular unease of someone being asked to do a thing they suspected was wrong.
+
+"You're her," the woman said. "The one who draws things that don't exist."
+
+"They exist. They're just hard to see."
+
+The woman didn't answer. Her hand was still extended. The two men behind her shifted their weight — they hadn't been trained for conversations, only compliance.
+
+"The guild master has received no such communication," she said, but her voice had lost its edge.
 
 "Then you might want to wait for one. Before you confiscate anything."
 
-"I have my orders."
+"I have my orders." She said it quietly, almost to herself, as if she were reminding her own hands what they were supposed to do. Then she looked at Elara — really looked, the way Sera looked at the nets, finding the one broken thread — and said, "I'm sorry."
 
 Elara looked at the blank book in her pack. The pages she'd filled since leaving the tower — the stream, the stone, the clearing, the sea, the storm, the skimmer, the fisherman, the crossroads. Her proof. Her record. The first true thing she'd ever drawn.
 
