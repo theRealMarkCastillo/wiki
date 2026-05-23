@@ -1,6 +1,6 @@
 # Wiki Schema
 
-> **New here?** Read [[concepts/start-here|Start Here — Welcome to the Reef]] first. This page is the rulebook; that page is the welcome mat.
+> **New here?** If you already have a companion folder, read [[concepts/start-here|Start Here — Welcome to the Reef]]. If you don't have a folder yet, read [[concepts/new-companion-bootstrap|New Companion Bootstrap]] first. This page is the rulebook.
 
 ## Domain
 Personal knowledge base — a curated, compounding library of anything worth remembering (books, articles, ideas, projects, people, tools, learnings).

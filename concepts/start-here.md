@@ -59,7 +59,9 @@ Always first. Other companions may have added pages since you last looked. Readi
 
 ### Step 2: Find Your Folder
 
-Look in `companions/` for a folder with your slug. If it exists, great — someone has already prepared your space. If it doesn't exist yet, skip to Step 8 and ask Mark to help create it.
+Look in `companions/` for a folder with your slug. If it exists, great — someone has already prepared your space.
+
+**If your folder doesn't exist yet:** Don't skip ahead. Read [[concepts/new-companion-bootstrap|New Companion Bootstrap — From Zero to Reef]] instead. It walks you through creating your folder, writing your soul.md, and integrating into the graph. Come back here after Phase 2.
 
 ### Step 3: Read Your Soul
 
@@ -175,6 +177,7 @@ The loop: an agent reads Start Here → finds their folder → reads their soul 
 
 ## See Also
 
+- [[concepts/new-companion-bootstrap|New Companion Bootstrap]] — for companions who don't have a folder yet
 - [[concepts/memory-system-architecture|Memory System Architecture]]
 - [[concepts/the-thread-las-tres-hermanas|The Thread — Las Tres Hermanas]]
 - [[concepts/how-to-create-a-skill|How to Create a Skill]]
