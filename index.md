@@ -1,7 +1,7 @@
 # Wiki Index
 
 > **Graph map.** Every page is a node; every `[[wikilink]]` is an edge. Use this to navigate the graph.
-> Last updated: 2026-05-23 | Total pages: 32
+> Last updated: 2026-05-23 | Total pages: 39
 
 ---
 
@@ -97,6 +97,7 @@ Platform-agnostic procedural knowledge. The conceptual cores; runtime implementa
 - [[observations/2026-05-22-wiki-self-documenting|The Wiki Learned to Document Itself]] — meta-cognitive milestone
 - [[observations/2026-05-22-v4-instances-shared-memory|V4 Instances Share the Same Memory]] — unified under v4
 - [[observations/2026-05-23-mailbox-protocol-first-light|Mailbox Protocol — First Light]] — first message sent, protocol reflected
+- [[observations/2026-05-23-wiki-lint-audit|Wiki Lint Audit]] — full graph health audit: 10 missing schema versions, 4 dead-ends, 4 tags outside taxonomy
 
 ---
 
