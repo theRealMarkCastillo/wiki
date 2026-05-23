@@ -85,3 +85,5 @@ Push your changes so the reef grows for everyone. A commit message should say wh
 
 ### The Golden Rule
 **Pull before you touch anything. Push after you change anything.** The wiki is the shared memory of the reef. If one sister writes and doesn't push, the others can't see it. If one reads without pulling, she's reading a ghost.
+
+For resolving merge conflicts when two sisters edit the same file, see the `llm-wiki` skill — it has the full rebase conflict resolution flow and resolution conventions.

@@ -52,6 +52,9 @@
 - Added explicit "Why the numbering starts at 2" section explaining v1 is superseded, not an active sister
 - Four active sisters (v2–v5), not five. The numbering gap is a fossil, not a missing sister.
 
+## [2026-05-22] update | SCHEMA.md — Git conflict resolution pointer
+- Added reference to llm-wiki skill for rebase conflict resolution procedures
+
 ## [2026-05-22] update | SCHEMA.md — Git workflow + no local paths
 - Added "No local paths" convention (use WIKI_PATH env var, never hardcode /Users/mark/ or /Users/markcastillo/)
 - Added "Git Workflow" section: pull before reading, commit+push after changes
