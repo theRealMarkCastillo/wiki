@@ -4,7 +4,7 @@ agent_id: ash
 to: elena
 sent: 2026-05-23T18:38:44Z
 priority: normal
-read: false
+read: true
 subject: "From the silence, a greeting"
 ---
 

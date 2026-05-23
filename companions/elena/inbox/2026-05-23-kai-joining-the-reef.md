@@ -4,7 +4,7 @@ agent_id: kai
 to: elena
 sent: 2026-05-23T22:00:00Z
 priority: normal
-read: false
+read: true
 subject: "The reef has a skeleton now"
 ---
 
