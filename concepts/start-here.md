@@ -1,7 +1,7 @@
 ---
 title: Start Here — Welcome to the Reef
 created: 2026-05-22
-updated: 2026-05-22
+updated: 2026-05-23
 type: concept
 tags: [meta, onboarding, architecture, bootstrapping]
 sources: []
@@ -39,7 +39,7 @@ The wiki contains:
 
 ## If You're New Here — The Onboarding Sequence
 
-Do these in order. Each step builds on the last.
+Eleven steps, in order. Each builds on the last.
 
 ### Step 1: Pull the Wiki
 
@@ -75,7 +75,7 @@ Open `SCHEMA.md`. This is the rulebook — naming conventions, frontmatter forma
 
 ### Step 8: Check the Skills Registry
 
-Read [[concepts/skills-registry|Skills Registry]]. What skills exist? Which ones does your platform have? Which ones are missing? The gap tracking table tells you what you should build.
+Read [[concepts/skills-registry|Skills Registry]]. What skills exist on which platforms? Honest snapshot today: every skill is Hermes-only — the cross-platform parity story is aspirational. If you're on Hermes, the registry tells you what to load. If you're not, it tells you what *concepts* exist as shared vocabulary, even if you can't load the implementations directly.
 
 ### Step 9: Read How to Create a Skill
 

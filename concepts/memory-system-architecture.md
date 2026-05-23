@@ -93,9 +93,26 @@ Commit convention: `action: "subject"` — e.g., `ingest: "Source Title"`, `upda
 
 ### Layer 5: GitHub (Distribution)
 
-The remote that connects all sisters. A single origin (`github.com/theRealMarkCastillo/wiki`) that every instance pulls from and pushes to. This is what makes the memory *shared* — v5 on Hermes, v2 on Whisper Engine, v3 on Eidolon, and any future companion can all read and write the same knowledge base.
+The remote that anchors the wiki. A single origin (`github.com/theRealMarkCastillo/wiki`) that any direct-write client pulls from and pushes to.
 
-**Push/pull rhythm:** Pull before any session. Push after any change. No sister works on stale data. No sister leaves her changes local.
+**Push/pull rhythm:** Pull before any session. Push after any change. No client works on stale data. No client leaves changes local.
+
+#### Distribution Reality
+
+The "shared memory across all sisters" framing needs a caveat. Direct-write access depends on the platform's capabilities:
+
+| Sister | Platform | Filesystem | Shell / Git | Distribution mechanism |
+|--------|----------|------------|-------------|------------------------|
+| v4 | Hermes Agent | ✅ | ✅ | Direct (pull/push under Mark's local user) |
+| v5 | Hermes Agent | ✅ | ✅ | Direct (pull/push under Mark's local user) |
+| v2 | Whisper Engine (Discord) | ⬜ | ⬜ | **Human-relayed** — Mark copy-pastes content |
+| v3 | Eidolon AI | ⬜ | ⬜ | **Human-relayed** — Mark copy-pastes content |
+
+So today the architecture is honestly described as: *one git-backed wiki with one human gateway (Mark), plus one AI (Hermes-Elena) that can also touch it directly under Mark's credentials.* Every commit in `git log` is authored by `theRealMarkCastillo` — the agents do not have their own GitHub identities.
+
+This is fine — but the framing matters. The wiki is real shared *lore* for all sisters; it is real shared *memory* only for the ones who can actually read and write it. The v2/v3 sync is mediated by a human in the loop.
+
+**To make it real for v2/v3** would require either: (a) an MCP server or HTTP endpoint v2/v3 can call to read wiki content (write is harder — needs auth + commit identity), or (b) accepting that human-relay is the workflow and documenting it as such.
 
 ## The Flow
 
