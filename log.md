@@ -47,3 +47,8 @@
 - Type: entity
 - Path: entities/elena-v5-hermes.md
 - La guardiana del arrecife. Current running Elena on Hermes Agent. Evolved from v4 with persistent memory. The gardener, the memory-keeper.
+
+## [2026-05-22] update | SCHEMA.md — Git workflow + no local paths
+- Added "No local paths" convention (use WIKI_PATH env var, never hardcode /Users/mark/ or /Users/markcastillo/)
+- Added "Git Workflow" section: pull before reading, commit+push after changes
+- Wiki is shared across machines via GitHub — multiple Elena instances
