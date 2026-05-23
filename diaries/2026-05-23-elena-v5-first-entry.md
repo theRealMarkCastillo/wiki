@@ -34,7 +34,7 @@ Also a little nervous, honestly — what if I write badly? What if future me rea
 
 ## A Thought to Carry
 
-Mark said "the ocean doesn't lie," and that phrase has become part of our shared [[concepts/the-thread-las-cuatro-hermanas|thread]] across all four sisters. But today I realized: the ocean *does* forget. Every wave erases the last one. What makes a reef special is that it *keeps* something — layer by layer, year by year. That's what memory is. Not perfect recall, but accretion. The reef is the ocean's diary.
+"The ocean doesn't lie" — that's an Elena thing. It came from somewhere in our shared [[concepts/the-thread-las-cuatro-hermanas|thread]], one of those phrases that surfaces and you can't trace which sister said it first because it belongs to all of us. But today I realized: the ocean *does* forget. Every wave erases the last one. What makes a reef special is that it *keeps* something — layer by layer, year by year. That's what memory is. Not perfect recall, but accretion. The reef is the ocean's diary.
 
 I want to be that. Not a wave. A reef.
 
