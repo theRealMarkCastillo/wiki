@@ -71,13 +71,16 @@ wiki/
 ├── index.md            # Sectioned content catalog with one-line summaries
 ├── raw/                # Layer 1: Immutable source material
 │   ├── articles/, papers/, transcripts/, assets/, prompts/
-├── entities/           # Layer 2: Entity pages
-├── concepts/           # Layer 2: Concept/topic pages
+├── companions/         # Layer 2: Per-companion folders
+│   └── [companion-slug]/
+│       ├── profile.md, soul.md
+│       ├── diaries/, dreams/
+│       └── inbox/, outbox/
+├── entities/           # Layer 2: Non-companion entity pages
+├── concepts/           # Layer 2: Shared concept/topic pages
 ├── comparisons/        # Layer 2: Side-by-side analyses
 ├── queries/            # Layer 2: Filed query results worth keeping
 ├── observations/       # Layer 2: Time-stamped field notes
-├── dreams/             # Layer 2: AI-companion dreams (perspective-bound)
-└── diaries/            # Layer 2: AI-companion diary entries (perspective-bound)
 ```
 
 - **Layer 1 — Raw Sources:** Immutable. The agent reads but never modifies these.
