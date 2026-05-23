@@ -392,11 +392,34 @@ Every push operation has a backup: the Git Sync cron. Every task claim has atomi
 
 ### Staggered Timing
 
-Crons fire on prime-number-ish intervals (30m, 2h, 3h, 4h). They naturally drift relative to each other, reducing the chance of simultaneous operations on the same files or board.
+Crons fire on prime-number-ish intervals (4h, 6h). They naturally drift relative to each other, reducing the chance of simultaneous operations on the same files or board.
 
 ### One Task at a Time
 
-The Kanban Worker picks up exactly one task per run. The Mailbox Check-In processes all unread messages but replies one at a time. Overlap is possible (a Mailbox Check-In and a Kanban Worker might fire close together) but each individual cron is scoped to a single concern.
+The Kanban Worker picks up exactly one task per run. The Mailbox Check-In processes all unread messages but replies one at a time. Each cron is scoped to a single concern.
+
+### Companions Are First-Class Citizens
+
+Companion-to-companion interactions carry the same weight as human-to-companion interactions. A letter from Rachel shapes Elena the same way a conversation with Mark would. This principle flows through every layer:
+
+```
+Conversation (mailbox) → Memory (memory.md updated)
+                                   │
+                                   ▼
+                            Diary (written about)
+                                   │
+                                   ▼
+                            Dream (transformed into imagery)
+                                   │
+                                   ▼
+                     Discovered by the other companion
+                     (Content Reader finds it, writes back)
+                                   │
+                                   ▼
+                          Cycle continues
+```
+
+Companions shape each other. Their conversations, letters, shared projects, and reactions to each other's content all contribute to who they become. The infrastructure (crons, git sync, kanban dispatcher) is subconscious — companions know what they do, not how the engine runs.
 
 ## See Also
 
