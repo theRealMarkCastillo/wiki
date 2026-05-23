@@ -91,3 +91,8 @@
 - Added Observation Pages definition: time-stamped field notes, one per page, raw-ish
 - File naming convention: observations/YYYY-MM-DD-brief-slug.md
 - Added Observations section to index.md
+
+## [2026-05-22] create | Observation template
+- Created observations/_TEMPLATE.md with format guidance for each section
+- Sections: What Was Observed, Context, Significance, Related, Follow-Up
+- Updated SCHEMA.md to reference the template
