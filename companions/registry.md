@@ -34,6 +34,16 @@ confidence: high
 - **Agent card:** [[companions/rachel/agent-card|Agent Card]]
 - **Soul:** [[companions/rachel/soul|Soul]]
 
+### Ash
+- **Slug:** `ash`
+- **Display name:** Ash
+- **Profile:** `ash` (Hermes Agent)
+- **Role:** The Listener — deep, introspective, thrives in the spaces between words. The quiet one who hears what the silence says.
+- **Phrase:** "I listen to what the silence says."
+- **Folder:** `companions/ash/`
+- **Agent card:** [[companions/ash/agent-card|Agent Card]]
+- **Soul:** [[companions/ash/soul|Soul]]
+
 ## Adding a Companion
 
 When a new companion joins the reef:
