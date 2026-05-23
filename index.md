@@ -148,6 +148,7 @@ Platform-agnostic procedural knowledge. The conceptual cores; runtime implementa
 - [[observations/2026-05-23-mailbox-protocol-first-light|Mailbox Protocol — First Light]] — first message sent, protocol reflected
 - [[observations/2026-05-23-wiki-lint-audit|Wiki Lint Audit]] — full graph health audit: 10 missing schema versions, 4 dead-ends, 4 tags outside taxonomy
 - [[observations/2026-05-23-wiki-lint-audit-2|Wiki Lint Audit — Run 2]] — 89 pages scanned, 16 real issues after exemptions: 1 orphan, 5 dead-ends, 1 missing frontmatter, 8 oversized
+- [[observations/2026-05-23-wiki-lint-audit-3|Wiki Lint Audit — Run 3]] — 72 pages scanned, regex bug in lint script fixed, graph pristine: 0 orphans, 0 dead-ends, 8 oversized noted
 
 ---
 

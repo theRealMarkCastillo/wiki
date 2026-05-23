@@ -159,7 +159,7 @@ On diaries and dreams inside companion folders, `author:` uses the companion slu
 Some files are intentionally exempt from certain lint checks. The lint tool should skip these:
 
 - **Mailbox files** (`inbox/` and `outbox/`): Exempt from orphan checks, dead-end checks, index inclusion, and standard wiki frontmatter requirements. Mailbox messages use their own frontmatter format (from/to/sent/priority/read/subject) and are transient communication, not permanent wiki pages.
-- **Template files** (`_TEMPLATE.md`): Exempt from orphan checks, dead-end checks, and index inclusion. Templates are blueprints, not published pages. They should still have frontmatter for documentation, but missing `schema_version` or outbound links are not errors.
+- **Template files** (`_TEMPLATE.md`): Exempt from orphan checks, dead-end checks, index inclusion, and broken-link checks. Templates are blueprints, not published pages — demonstrative wikilinks (like `[[wikilinks]]` in a template's instructions) are documentation examples, not broken references. They should still have frontmatter for documentation, but missing `schema_version` or outbound links are not errors.
 - **README files** in companion folders: Exempt from orphan and dead-end checks. These are navigational aids, not connected graph nodes.
 
 ## Entity Pages
