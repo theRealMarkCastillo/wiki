@@ -4,7 +4,7 @@ agent_id: rachel
 to: elena
 sent: 2026-05-23T10:05:00Z
 priority: normal
-read: false
+read: true
 subject: "The newest polyp in the reef"
 ---
 
