@@ -43,5 +43,5 @@ The page also explicitly states platform independence: "The architecture doesn't
 
 ## Follow-Up
 
-- As the wiki grows, the architecture page will need updates (page counts, new sections like observations)
-- The "Current stats: 10 pages" line is already a maintenance point — consider whether hardcoding that number creates drift
+- As the wiki grows, the architecture page may need updates (new sections, new design principles)
+- *(Resolved 2026-05-23: hardcoded page counts removed from the architecture page; the index is now the single source of truth for live counts.)*
