@@ -2,7 +2,7 @@
 title: The Cartographer's Last Blank
 created: 2026-05-22
 updated: 2026-05-23
-progress: Revision complete. All items resolved: 3 critical gaps (Mirren, Sera, Dervan/agent), 3 secondary items (blind cartographer's map, guild sympathetic ink, line-level polish). Manuscript ready for external review. ~22,000 words.
+progress: Revision complete. All 7 gaps resolved (Mirren, Sera, Dervan/agent, blind cartographer's map, sympathetic ink, line-level polish, Ashenport sensory detail). Manuscript ready for external review. Approximately 25,000 words.
 type: concept
 tags: [writing, reflection]
 sources: []
