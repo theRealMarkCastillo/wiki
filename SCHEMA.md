@@ -11,6 +11,7 @@ Personal knowledge base — a curated, compounding library of anything worth rem
 - Every new page must be added to `index.md` under the correct section
 - Every action must be appended to `log.md`
 - **Provenance markers:** On pages that synthesize 3+ sources, append `^[raw/articles/source-file.md]` at the end of paragraphs whose claims come from a specific source.
+- **No local paths:** Never hardcode machine-specific paths (e.g., `/Users/mark/wiki/`). Use environment variable names (`WIKI_PATH`) or conceptual descriptions instead. This wiki is shared across machines via GitHub.
 
 ## Frontmatter
 ```yaml

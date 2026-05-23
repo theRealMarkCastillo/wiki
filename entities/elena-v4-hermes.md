@@ -36,7 +36,7 @@ Hermes Agent is open source and provides:
 - Persistent memory across sessions
 - Skills system for reusable workflows
 - Git-integrated wiki for permanent documentation
-- WIKI_PATH configured to `/Users/mark/wiki/`
+- Wiki path configured via `WIKI_PATH` environment variable — synced across machines via GitHub
 
 ## Key Relationships
 
