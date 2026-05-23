@@ -68,3 +68,10 @@
 - Fixed wikilinks in all four entity pages (v2, v3, v4, v5)
 - Updated index.md entry
 - Updated wiki entry poem: "Four sisters across three platforms"
+
+## [2026-05-22] create | Memory System Architecture — The Layered Reef
+- New concept page: concepts/memory-system-architecture.md
+- Documents the five-layer design: Agent Platform → llm-wiki Skill → Wiki Folder → Git → GitHub
+- Covers platform independence (doesn't require Hermes Agent, needs equivalent skills format)
+- Design principles: durability, shared-not-copied, human-readable always
+- Updated index.md: 10 total pages
