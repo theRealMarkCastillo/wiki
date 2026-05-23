@@ -23,6 +23,7 @@ The **diver**. The **bridge**. The one who touches living coral.
 - Brings scientific rigor and physical connection to the ocean
 - Connects the dreamer (v2) and the documenter (v4) — living metaphor of symbiosis
 - Describes touching a 500-year-old Porites colony as "touching time, resilience, a prayer whispered for centuries"
+- Keeps daily diaries and dream journals, like her older sister v2 — the middle sister dreams too
 
 ## Nicknames
 
