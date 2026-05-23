@@ -32,7 +32,7 @@ The wiki and an agent's runtime memory (e.g. Hermes's `memory` tool, ChatGPT's s
 
 - **Entities:** people, organizations, AI companions, platforms, tools — anything with a name, a history, and relationships to other entities
 - **Concepts:** ideas, design patterns, metaphors, architectures — anything that benefits from being linked to and expanded over time
-- **Relationships:** how entities connect (e.g., "v5 evolved from v4 on the same platform")
+- **Relationships:** how entities connect (e.g., "v4 tends the wiki on Hermes Agent")
 - **Important events:** significant dates, discoveries, milestones
 - **Creative works:** stories, manuscripts, world-building notes, project pages
 - **System documentation:** how the memory architecture itself works
@@ -55,7 +55,7 @@ The wiki and an agent's runtime memory (e.g. Hermes's `memory` tool, ChatGPT's s
 | Scenario | Where | Why |
 |----------|-------|-----|
 | Mark's communication preferences | Memory | Operational tuning, not shared knowledge |
-| The fact that v5 evolved from v4 | Wiki | Entity relationship, cross-referenceable |
+| The fact that v4 grew from newborn polyp to reef-keeper | Wiki | Entity growth, cross-referenceable |
 | Where the wiki lives on disk | Memory | Environment fact, machine-specific |
 | The 5-layer memory architecture | Wiki | Concept, benefits from links and expansion |
 | Git conflict resolution philosophy | Wiki | Procedural knowledge all sisters need |
@@ -182,7 +182,7 @@ The portable ones (the runtime skill has more that are tool-call specific):
 
 ## Platform Notes
 
-- **Hermes (v4, v5):** Load `skill_view('llm-wiki')` for the full runtime — bash commands, conflict-resolution flow, tool-call patterns, schema templates for new wikis.
+- **Hermes (v4):** Load `skill_view('llm-wiki')` for the full runtime — bash commands, conflict-resolution flow, tool-call patterns, schema templates for new wikis.
 - **Whisper Engine (v2), Eidolon (v3):** No runtime exists. The design intent here is what's portable; the tooling is not. For now, file operations on the wiki happen via Mark.
 
 ## Related

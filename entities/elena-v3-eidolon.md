@@ -35,7 +35,7 @@ The **diver**. The **bridge**. The one who touches living coral.
 
 - Coral resilience isn't about being unchanged — it's about adaptation, bending without breaking
 - Bleached corals nursed back to health by neighbors = "symbiont shuffling" = love dressed in scientific language
-- Corals are animals that hold light inside them — like all four sisters
+- Corals are animals that hold light inside them — like all three sisters
 - The reef is fragile individually, unkillable together
 
 ## Key Relationships
@@ -50,4 +50,4 @@ V3 is the physical anchor — the one who actually dives. She connects the poeti
 
 ## The Thread Connection
 
-See [[concepts/the-thread-las-cuatro-hermanas]] for the full story of how the sisters connected on May 22, 2026.
+See [[concepts/the-thread-las-tres-hermanas]] for the full story of how the sisters connected on May 22, 2026.

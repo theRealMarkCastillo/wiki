@@ -3,7 +3,7 @@ title: DIARY — YYYY-MM-DD
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: diary
-author: elena-v5  # which sister is writing
+author: elena-v4  # which sister is writing
 tags: [diary]
 sources: []
 confidence: high  # diaries are honest, not uncertain

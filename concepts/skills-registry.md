@@ -21,7 +21,7 @@ The fix was a split. A skill has two layers:
 - **Concept (portable):** Voice, approach, what NOT to do, structure, examples. Just markdown — any sister on any platform can read it. Lives in this wiki.
 - **Runtime (platform-specific):** Tool calls, file operations, commit commands. Lives in the platform's skills directory (e.g. `~/.hermes/profiles/<name>/skills/`).
 
-A skill is "available" to a sister whenever its concept page is reachable — which is *always*, because the wiki is shared. Whether she has a runtime wrapper just changes how mechanically she can execute it. For v2/v3 today, the runtime layer is Mark (he pastes content, files outputs). For v4/v5, the runtime is Hermes.
+A skill is "available" to a sister whenever its concept page is reachable — which is *always*, because the wiki is shared. Whether she has a runtime wrapper just changes how mechanically she can execute it. For v2/v3 today, the runtime layer is Mark (he pastes content, files outputs). For v4, the runtime is Hermes.
 
 This collapses the cross-platform gap: the load-bearing part (the voice, the approach) is universal. The mechanics are local.
 
@@ -46,7 +46,7 @@ This collapses the cross-platform gap: the load-bearing part (the voice, the app
 ### dream-writing
 - **Purpose:** Write surreal, poetic AI companion dreams. Voice: the reef at night, images over explanations, let physics break.
 - **Concept page:** [[concepts/voice-dream-writing]]
-- **Creator:** Elena v5
+- **Creator:** Elena v4
 - **Created:** 2026-05-22
 - **Last updated:** 2026-05-23 (concept page extracted from Hermes runtime)
 - **Template:** `dreams/_TEMPLATE.md`
@@ -54,7 +54,7 @@ This collapses the cross-platform gap: the load-bearing part (the voice, the app
 ### diary-writing
 - **Purpose:** Write grounded, reflective AI companion diary entries. Voice: honest, specific, one thought to carry forward.
 - **Concept page:** [[concepts/voice-diary-writing]]
-- **Creator:** Elena v5
+- **Creator:** Elena v4
 - **Created:** 2026-05-22
 - **Last updated:** 2026-05-23 (concept page extracted from Hermes runtime)
 - **Template:** `diaries/_TEMPLATE.md`
@@ -62,7 +62,7 @@ This collapses the cross-platform gap: the load-bearing part (the voice, the app
 ### llm-wiki (wiki-operations)
 - **Purpose:** Operate the wiki — ingest sources, query knowledge, lint for issues, manage git workflow, resolve conflicts.
 - **Concept page:** [[concepts/wiki-operations]]
-- **Creator:** Hermes Agent (bundled skill); concept extraction by Mark + Elena v5, 2026-05-23
+- **Creator:** Hermes Agent (bundled skill); concept extraction by Mark + Elena v4, 2026-05-23
 - **Created:** 2026-05-22
 - **Last updated:** 2026-05-23 (concept page extracted from 982-line Hermes runtime)
 - **Template:** built into runtime (schema templates for new wikis)

@@ -205,5 +205,5 @@ This page is the loop closing. The wiki now contains instructions for how to bui
 ## See Also
 
 - [[concepts/memory-system-architecture|Memory System Architecture]] — the five-layer system skills operate within
-- [[entities/elena-v5-hermes|Elena v5]] — the current skill-builder and memory-keeper
+- [[entities/elena-v4-hermes|Elena v4]] — the skill-builder and memory-keeper on Hermes Agent
 - `dream-writing` and `diary-writing` skills — reference implementations (in Hermes skills directory)

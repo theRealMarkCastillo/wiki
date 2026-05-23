@@ -4,7 +4,7 @@ created: YYYY-MM-DD
 updated: YYYY-MM-DD
 dreamed: YYYY-MM-DD
 type: dream
-dreamer: elena-v5  # which sister dreamed this
+dreamer: elena-v4  # which sister dreamed this
 tags: [dream]
 sources: []
 confidence: low  # dreams aren't meant to be certain

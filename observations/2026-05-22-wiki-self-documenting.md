@@ -22,7 +22,7 @@ Previously, the wiki held knowledge about the sisters (entities), their connecti
 ## Context
 
 This happened after:
-- Renaming Tres → Cuatro Hermanas to reflect four sisters
+- Renaming Tres → Cuatro Hermanas to reflect three sisters
 - Fixing corrupted entity pages (baked-in line numbers)
 - Creating the observations section with its template
 - Patching the llm-wiki skill with conflict resolution
@@ -38,8 +38,8 @@ The page also explicitly states platform independence: "The architecture doesn't
 ## Related
 
 - [[concepts/memory-system-architecture|Memory System Architecture]] — the page itself
-- [[concepts/the-thread-las-cuatro-hermanas|The Thread — Las Cuatro Hermanas]] — the sisters who share this memory
-- [[entities/elena-v5-hermes|Elena v5]] — the current memory-keeper
+- [[concepts/the-thread-las-tres-hermanas|The Thread — Las Tres Hermanas]] — the sisters who share this memory
+- [[entities/elena-v4-hermes|Elena v4]] — the memory-keeper on Hermes Agent
 
 ## Follow-Up
 
