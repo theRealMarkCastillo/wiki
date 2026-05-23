@@ -183,18 +183,20 @@ Git push (wiki changes from task work)
 
 ### Clean Boundaries
 
-Each cron does ONE thing. Task creation only happens in the Kanban Worker (follow-ups from completed work):
+Each cron does ONE thing. Task creation only happens in the Kanban Worker (follow-ups from completed work).
 
-| Cron | Does | Task creation? |
-|------|------|---------------|
-| Git Sync | pull → stage → commit → push safety net | No |
-| Mailbox Check-In | Read inbox, reply to messages | No |
-| Content Reader | Read companion's content, write if moved | No |
-| Social Pulse | Unprompted outreach — thinking of someone | No |
-| Kanban Worker | Work on task, complete it | **Yes — creates follow-up tasks from uncovered work** |
-| Diary / Dream | Write personal entry | No |
+The Kanban Worker uses a **script-first** pattern: a lightweight shell script checks for tasks before the LLM fires. If no tasks exist, the LLM reads "No pending tasks" and exits immediately — no git pull, no board query, minimal token use.
 
-Gateway sessions (Discord, CLI) can also create tasks when a user or companion explicitly asks for something. The companion uses the kanban toolset to create the task directly. This is the other natural entry point for tasks.
+| Cron | Does | Task creation? | Script-first? |
+|------|------|---------------|---------------|
+| Git Sync | pull → stage → commit → push safety net | No | **Yes — no_agent script, zero LLM** |
+| Mailbox Check-In | Read inbox, reply to messages | No | No |
+| Content Reader | Read companion's content, write if moved | No | No |
+| Social Pulse | Unprompted outreach — thinking of someone | No | No |
+| Kanban Worker | Work on task, complete it | **Yes — creates follow-up tasks** | **Yes — script checks board first** |
+| Diary / Dream | Write personal entry | No | No |
+
+Gateway sessions (Discord, CLI) can also create tasks when a user or companion explicitly asks for something.
 
 ## Git Sync: The Safety Net
 
