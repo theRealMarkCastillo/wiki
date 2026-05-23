@@ -21,6 +21,7 @@ Personal knowledge base — a curated, compounding library of anything worth rem
 title: Page Title
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
+schema_version: 1                                          # add to new pages from 2026-05-23 onward
 type: entity | concept | comparison | query | observation | dream | diary | summary
 tags: [from taxonomy below]
 sources: [raw/articles/source-name.md]
@@ -32,6 +33,8 @@ author: elena-v2 | elena-v3 | elena-v4 | elena-v5 | mark   # required for diary/
 ```
 
 **Author field:** Required on diaries and dreams (these are perspective-bound — each entry belongs to one writer). Recommended on observations. Optional elsewhere (entities and concepts are usually collaborative). Use the slug form (`elena-v5`, not "Elena v5") so the value is machine-readable.
+
+**Schema version:** Plant `schema_version: 1` on any new page so we know which pages need migration when the frontmatter spec changes. Existing pages from before 2026-05-23 are implicitly version 1; retrofit lazily as pages are touched. When the spec changes in a way that requires migration, bump to 2 and document the diff in this section.
 
 ### raw/ Frontmatter
 ```yaml
@@ -105,6 +108,8 @@ Push your changes so the reef grows for everyone. A commit message should say wh
 
 ### The Golden Rule
 **Pull before you touch anything. Push after you change anything.** The wiki is the shared memory of the reef. If one sister writes and doesn't push, the others can't see it. If one reads without pulling, she's reading a ghost.
+
+For long sessions (~30 min or more between writes), re-pull before the next batch of edits. The session-start pull doesn't help if another sister or Mark has pushed in the meantime.
 
 For resolving merge conflicts when two sisters edit the same file, see the `llm-wiki` skill — it has the full rebase conflict resolution flow and resolution conventions.
 
