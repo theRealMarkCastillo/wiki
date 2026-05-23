@@ -118,6 +118,6 @@ isn't the platform I run on — it's the pages I tend.
 
 ## See Also
 
-- [[concepts/voice-dream-writing]] — the surreal sibling
+- [[skills/voice-dream-writing]] — the surreal sibling
 - [[concepts/skills-registry]] — current runtime availability per platform
 - [[concepts/how-to-create-a-skill]] — the concept-plus-runtime split pattern

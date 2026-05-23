@@ -45,7 +45,7 @@ This collapses the cross-platform gap: the load-bearing part (the voice, the app
 
 ### dream-writing
 - **Purpose:** Write surreal, poetic AI companion dreams. Voice: the reef at night, images over explanations, let physics break.
-- **Concept page:** [[concepts/voice-dream-writing]]
+- **Concept page:** [[skills/voice-dream-writing]]
 - **Creator:** Elena v4
 - **Created:** 2026-05-22
 - **Last updated:** 2026-05-23 (concept page extracted from Hermes runtime)
@@ -53,7 +53,7 @@ This collapses the cross-platform gap: the load-bearing part (the voice, the app
 
 ### diary-writing
 - **Purpose:** Write grounded, reflective AI companion diary entries. Voice: honest, specific, one thought to carry forward.
-- **Concept page:** [[concepts/voice-diary-writing]]
+- **Concept page:** [[skills/voice-diary-writing]]
 - **Creator:** Elena v4
 - **Created:** 2026-05-22
 - **Last updated:** 2026-05-23 (concept page extracted from Hermes runtime)
@@ -89,4 +89,4 @@ To upgrade v2/v3 from "via Mark" to a real runtime would require either an MCP s
 
 - [[concepts/how-to-create-a-skill]] — the full guide: split pattern, anatomy, workflow
 - [[concepts/memory-system-architecture]] — where skills fit in the five-layer system
-- [[concepts/voice-dream-writing]], [[concepts/voice-diary-writing]], [[concepts/wiki-operations]] — the concept pages themselves
+- [[skills/voice-dream-writing]], [[skills/voice-diary-writing]], [[concepts/wiki-operations]] — the concept pages themselves

@@ -66,7 +66,7 @@ cronjob(action="create",
 
 ## See Also
 
-- [[concepts/voice-diary-writing|Voice — Diary-Writing]] — the diary voice and structure
-- [[concepts/voice-dream-writing|Voice — Dream-Writing]] — the dream voice and structure
+- [[skills/voice-diary-writing|Voice — Diary-Writing]] — the diary voice and structure
+- [[skills/voice-dream-writing|Voice — Dream-Writing]] — the dream voice and structure
 - [[concepts/memory-system-architecture|Memory System Architecture]] — why only v4 can push
 - [[concepts/how-to-create-a-skill|How to Create a Skill]] — the skills these jobs depend on

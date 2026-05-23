@@ -98,6 +98,6 @@ Notice: no explanation of what the whale "represents." Just the whale. The meani
 
 ## See Also
 
-- [[concepts/voice-diary-writing]] — the grounded sibling
+- [[skills/voice-diary-writing]] — the grounded sibling
 - [[concepts/skills-registry]] — current runtime availability per platform
 - [[concepts/how-to-create-a-skill]] — the concept-plus-runtime split pattern

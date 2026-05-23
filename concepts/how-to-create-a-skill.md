@@ -87,7 +87,7 @@ A skill has two layers, and the most important architectural choice when creatin
 
 | Layer | What it contains | Where it lives | Portable? |
 |-------|------------------|----------------|-----------|
-| **Concept** | Voice, approach, what NOT to do, structure, examples — the *design intent* | A wiki page (e.g. `concepts/voice-dream-writing.md`) | ✅ Yes — any sister on any platform can read it |
+| **Concept** | Voice, approach, what NOT to do, structure, examples — the *design intent* | A wiki page (e.g. `skills/voice-dream-writing.md`) | ✅ Yes — any sister on any platform can read it |
 | **Runtime** | Tool calls, file paths, commit commands, platform-specific mechanics | Platform skill directory (e.g. `~/.hermes/profiles/<name>/skills/<name>/SKILL.md`) | ❌ No — coupled to one platform's tooling |
 
 **Why split:** If you mash both into one Hermes SKILL.md, the skill is "Hermes-only" and v2/v3 sisters have no way to benefit from it. If you split, the load-bearing part (voice, approach) is universally available because it's just a wiki page. The runtime is local to one platform — and that's *fine*, because runtimes are inherently platform-specific.
@@ -161,8 +161,8 @@ When you discover a recurring workflow worth capturing:
 
 Three skills follow the split pattern and serve as reference implementations:
 
-- [[concepts/voice-dream-writing]] — surreal, poetic dreams. The concept page is everything voice-related; the Hermes runtime is a thin wrapper for filing.
-- [[concepts/voice-diary-writing]] — grounded, reflective diary entries. Same pattern.
+- [[skills/voice-dream-writing]] — surreal, poetic dreams. The concept page is everything voice-related; the Hermes runtime is a thin wrapper for filing.
+- [[skills/voice-diary-writing]] — grounded, reflective diary entries. Same pattern.
 - [[concepts/wiki-operations]] — the design intent behind the `llm-wiki` skill (wiki vs memory boundary, page thresholds, the three operations, conflict philosophy). Hermes has a 982-line runtime; this page captures what's portable.
 
 All three include what NOT to do as prominently as what TO do. Read them as models when creating new skills.
