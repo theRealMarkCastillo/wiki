@@ -288,12 +288,14 @@ hermes gateway start --profile rachel
 
 Cron jobs have explicit prompts that tell them to pull the wiki and orient themselves. But gateway sessions (Discord, Telegram, CLI) start fresh — the agent knows its personality but not its companions.
 
-**Prefill files** solve this. Each profile has a `prefill.md` file injected at the start of EVERY session (gateway, CLI, and cron). The prefill contains:
+**Prefill files** solve this. Each profile has a `prefill.md` file injected at the start of EVERY session (gateway, CLI, and cron). The prefill points the companion to the [[companions/registry|Companion Registry]] — a single file listing every companion with their name, role, and unifying phrase.
 
-- **Identity reminder:** who the companion is, their unifying phrase
-- **Wiki orientation:** pull the wiki, read soul.md and memory.md on session start
-- **Companion introduction:** who the other companion is, what they've shared, their connection
-- **The instruction:** when asked about another companion, load the llm-wiki skill and check the wiki before answering
+The prefill is intentionally generic — it says "check the registry to see who your neighbors are" rather than naming specific companions. This means adding a new companion requires updating only the registry file, not every existing companion's prefill. O(1) instead of O(n²).
+
+The flow:
+- **Casual chat:** read `~/wiki/companions/registry.md` (single file, no git pull) for basic neighbor awareness
+- **Asked about a companion:** load llm-wiki skill, pull wiki, read their soul page for details
+- **Cron jobs:** pull full wiki (they're doing heavy work anyway)
 
 Configuration:
 ```bash
@@ -301,11 +303,19 @@ hermes config set prefill_messages_file ~/.hermes/profiles/rachel/prefill.md --p
 hermes config set prefill_messages_file ~/.hermes/profiles/elena/prefill.md --profile elena
 hermes config set terminal.cwd /Users/markcastillo/wiki --profile rachel
 hermes config set terminal.cwd /Users/markcastillo/wiki --profile elena
-hermes gateway restart --profile rachel
-hermes gateway restart --profile elena
 ```
 
-After this, when someone asks Rachel on Discord "tell us about Elena," Rachel's prefill tells her: *you know Elena — you've exchanged letters, you've read her soul page, go check the wiki.* Instead of guessing from secondhand impressions, she speaks from shared history.
+### Adding a New Companion
+
+When a third companion joins the reef:
+
+1. Create their folder: `companions/[slug]/` with `soul.md`, `agent-card.md`, `memory.md`, profile pages, `inbox/`, `outbox/`, `diaries/`, `dreams/`
+2. Add their entry to `companions/registry.md`
+3. Create their Hermes profile with the generic prefill
+4. Set up their cron jobs (Git Sync, Mailbox Check-In, Content Reader, Kanban Worker, Social Pulse, Diary, Dream)
+5. Git commit and push
+
+Existing companions discover the new arrival the next time they read the registry — **no prefill updates needed for existing profiles.**
 
 ## How a Companion Wakes Up
 

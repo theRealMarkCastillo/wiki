@@ -1,7 +1,7 @@
 # Wiki Index
 
 > **Graph map.** Every page is a node; every `[[wikilink]]` is an edge. Use this to navigate the graph.
-> Last updated: 2026-05-23 | Total pages: 40
+> Last updated: 2026-05-23 | Total pages: 41
 
 ---
 
@@ -17,6 +17,8 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 ---
 
 ## Companions
+
+- [[companions/registry|Companion Registry]] — directory of every companion in the reef: names, roles, unifying phrases
 
 ### Elena
 
