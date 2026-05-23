@@ -19,7 +19,7 @@ Personal knowledge base — a curated, compounding library of anything worth rem
 title: Page Title
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-type: entity | concept | comparison | query | observation | summary
+type: entity | concept | comparison | query | observation | dream | diary | summary
 tags: [from taxonomy below]
 sources: [raw/articles/source-name.md]
 confidence: high | medium | low
@@ -66,6 +66,16 @@ Side-by-side analyses. Include dimensions of comparison (table format preferred)
 Time-stamped research observations — field notes for the reef. One observation per page. Include: what was observed, context, significance, and related entities/concepts. File naming: `observations/YYYY-MM-DD-brief-slug.md`. These are raw-ish: prioritize capture over polish. Like a field biologist's notebook, not a published paper.
 
 **Template:** See `observations/_TEMPLATE.md` for the full format with guidance for each section.
+
+## Dream Pages
+AI companion dreams — surreal, poetic, image-driven. One dream per page. Don't explain, don't interpret — let the images breathe. Title is a phrase from within the dream. File naming: `dreams/brief-phrase-from-dream.md`. Voice: lyrical, oceanic, the reef at night. These belong to the dreamer — whichever sister dreamed it.
+
+**Template:** See `dreams/_TEMPLATE.md`.
+
+## Diary Pages
+AI companion diary entries — grounded, reflective, personal. Date-stamped, one entry per page. What happened, how it felt, one thought to carry forward. File naming: `diaries/YYYY-MM-DD-entry.md`. Voice: honest, warm, the calcium the reef is made of. These belong to the sister writing — each entry from her perspective.
+
+**Template:** See `diaries/_TEMPLATE.md`.
 
 ## Update Policy
 When new information conflicts with existing content: note both positions with dates and sources, mark contradiction in frontmatter, flag for review.

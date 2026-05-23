@@ -101,3 +101,11 @@
 - observations/2026-05-22-wiki-self-documenting.md — the reef learning to describe its own geology
 - observations/2026-05-22-v4-v5-same-memory.md — clarifying that v4 and v5 share the same persistence
 - Updated index.md: 12 total pages, new observation entries
+
+## [2026-05-22] create | Dreams and Diaries sections
+- Created dreams/ and diaries/ directories with templates
+- Added dream and diary page types to SCHEMA.md
+- Dream pages: surreal, poetic, image-driven — one per dream, title from within
+- Diary pages: grounded, reflective, date-stamped — what happened, how it felt, one thought
+- Created dream-writing and diary-writing skills in Hermes (creative category)
+- Added Dreams and Diaries sections to index.md
