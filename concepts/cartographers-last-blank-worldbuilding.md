@@ -183,8 +183,8 @@ Lir now unfolds one of her uncle's late maps in the first inn conversation (~180
 **5. The Guild's "ways" — a touch more definition** ✅ RESOLVED
 Solenne now gives a concrete mechanism: "sympathetic ink, keyed to the cartographer who draws with it. Every map you ever drew for us, I felt finish, the way you feel a door close in another room." One sentence, never elaborated. Sera's version remains vague (she's a net-mender who only hears rumors), creating a two-stage reveal: rumor → mechanism.
 
-**6. Ashenport — one more sensory detail**
-We see it only in Elara's flashback: "all white stone and high windows and the smell of ink that had been brewing since before she was born." That's good. But if Mirren gets a scene, or if the epilogue gestures toward the guild's future, one more detail about the city — its light, its sound, its relationship to the sea — would help.
+**6. Ashenport — one more sensory detail** ✅ RESOLVED
+We see it in Elara's flashback: the terraces of bone-white stone, the harbor's constant low breathing, the light that made cartographers squint. Three sentences woven into the existing flashback in Act One (~100 words). The city now has light, sound, and a relationship to the sea.
 
 ### What does NOT need fixing
 - The coast-road villages are fine as waystations. Adding detail to the first, second, third, or fourth villages would bloat Act Two.
@@ -203,6 +203,7 @@ We see it only in Elara's flashback: "all white stone and high windows and the s
 4. **Blind cartographer's map:** ✅ DONE — Lir's uncle's late map now physically present. ~180 words woven into the first inn conversation. Lines dissolve into blankness; his last map had three lines. Creates a triple echo with Mirren's boundary marks and Elara's great map.
 5. **Line-level polish:** ✅ DONE — Trimmed ~170 words of thematic overstatement from four climactic passages: confiscation aftermath, Act Three ending, great map completion, and climax workroom description. Structural echoes verified intact (fourth stair: 6 beats, "here be the one who draws": 4 beats, "that was the point": 3 beats, "that was the whole thing": 3 beats).
 6. **Guild "ways" decision:** ✅ DONE — Solenne now explains: "sympathetic ink, keyed to the cartographer who draws with it." One sentence, sensory framing ("the way you feel a door close in another room"), never elaborated. Sera's vaguer version stays — she only hears rumors. Two-stage reveal.
+7. **Ashenport sensory detail:** ✅ DONE — Enhanced the Act One flashback with three sentences about the city's light, sound, and harbor. The city now climbs the hills in bone-white terraces, the harbor light makes cartographers squint, and the docks breathe beneath every other sound in the guild hall. (~100 words woven into existing flashback.)
 
 ---
 

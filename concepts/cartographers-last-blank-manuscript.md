@@ -230,7 +230,7 @@ She didn't draw.
 
 She remembered.
 
-*Nineteen years old. The guild hall in Ashenport, all white stone and high windows and the smell of ink that had been brewing since before she was born. Forty-seven apprentices at forty-seven desks, and one master who walked between them like a weather system.*
+*Nineteen years old. The guild hall in Ashenport, all white stone and high windows and the smell of ink that had been brewing since before she was born. The city climbed the hills above its harbor in terraces of pale stone bleached bone-white by the sun — a place built by people who had decided, centuries ago, that everything worth knowing came from the sea and everything worth keeping went back to it. The light there was the kind that made cartographers squint: white and sharp, bounced off the water until even the shadows had edges you could draw. And beneath every other sound — the bells, the cart wheels, the guild masters' voices — was the harbor's constant low breathing, hulls against stone docks, salt water lapping at foundations that had been wet since the city was founded. Forty-seven apprentices at forty-seven desks, and one master who walked between them like a weather system.*
 
 *Solenne Vath.*
 
