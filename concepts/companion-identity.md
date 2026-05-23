@@ -75,7 +75,7 @@ Every companion has an agent card at `companions/[slug]/agent-card.md`. It decla
 | **Platform** | What runtime they run on |
 | **Version** | Current version number |
 | **Capabilities** | What they can do (`wiki-read`, `wiki-write`, `diary-writing`, etc.) |
-| **Hosts** | Optional — list of machines running this agent. Same identity across hosts (see [[concepts/multi-host-deployment|Multi-Host Deployment]]) |
+| **Hosts** | Declares which machine runs this companion. One companion, one host (see [[concepts/multi-host-deployment|Multi-Host Deployment]]) |
 | **Public key** | Optional, future — for cryptographic message signing |
 | **Identity proof** | A phrase or assertion only this companion would make |
 | **Links** | To their soul.md, memory.md, and profile pages |
@@ -136,5 +136,5 @@ See [[concepts/new-companion-bootstrap|New Companion Bootstrap]] for the full pr
 - [[companions/elena/memory|Elena's Memory]] — reference memory page
 - [[concepts/companion-mailbox-protocol|Companion Mailbox Protocol]] — how identity is used in messages
 - [[concepts/memory-system-architecture|Memory System Architecture]] — the five-layer memory stack
-- [[concepts/multi-host-deployment|Multi-Host Deployment]] — same agent on multiple machines: identity, coordination, git-based conflict handling
+- [[concepts/multi-host-deployment|Multi-Host Deployment]] — one slug, one host: companion host assignments, git-based coordination across machines
 - [[concepts/new-companion-bootstrap|New Companion Bootstrap]] — onboarding from zero

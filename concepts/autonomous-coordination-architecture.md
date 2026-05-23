@@ -139,6 +139,6 @@ This is not about finding "wrong" information — it's about naming where the re
 - [[concepts/companion-mailbox-protocol|Companion Mailbox Protocol]] — how companions send messages via inbox/outbox
 - [[concepts/the-daily-rhythm|The Daily Rhythm]] — original cron design for diaries and dreams
 - [[concepts/wiki-operations|Wiki Operations]] — wiki-vs-memory boundary, ingest/query/lint
-- [[concepts/multi-host-deployment|Multi-Host Deployment]] — same agent on multiple machines, git-based coordination
+- [[concepts/multi-host-deployment|Multi-Host Deployment]] — one slug, one host: companion host assignments
 - [[companions/elena/elena-v4-hermes|Elena v4]] — la guardiana del arrecife
 - [[index|Wiki Index]]

@@ -247,6 +247,6 @@ Crons fire on prime-number-ish intervals (4h, 6h). They naturally drift relative
 - [[concepts/autonomous-coordination-architecture|Autonomous Coordination Architecture]] — hub page: overview, architecture diagram, design principles
 - [[concepts/communication-flow|Communication Flow]] — how cron jobs trigger companion communication
 - [[concepts/kanban-coordination|Kanban Coordination]] — task flow and clean boundaries
-- [[concepts/multi-host-deployment|Multi-Host Deployment]] — same agent on multiple machines
+- [[concepts/multi-host-deployment|Multi-Host Deployment]] — which companion runs where
 - [[concepts/the-daily-rhythm|The Daily Rhythm]] — automated diaries and dreams
 - [[SCHEMA]] — wiki conventions and frontmatter spec

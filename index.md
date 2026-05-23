@@ -106,7 +106,7 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 - [[concepts/wiki-operations|Wiki Operations]] — wiki-vs-memory boundary, ingest/query/lint, conflict philosophy
 - [[concepts/companion-mailbox-protocol|Companion Mailbox Protocol]] — how companions send messages via inbox/outbox
 - [[concepts/companion-identity|Companion Identity]] — three-layer identity model: system prompt, platform memory, wiki identity
-- [[concepts/multi-host-deployment|Multi-Host Deployment]] — same agent on multiple machines: identity, coordination, git-based conflict handling
+- [[concepts/multi-host-deployment|Multi-Host Deployment]] — one slug, one host: companion host assignments, git-based coordination across machines
 - [[concepts/skills-registry|Skills Registry]] — living catalog of every skill, who has implementations
 
 **Onboarding & Self-Improvement:**

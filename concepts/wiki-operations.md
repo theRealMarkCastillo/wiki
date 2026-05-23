@@ -169,7 +169,7 @@ If a conflict feels overwhelming, abort the rebase and ask the human. Conflicts 
 - Commit small, commit often — a 2-file commit is less likely to conflict than a 15-file commit
 - Push immediately after committing — don't batch
 - If you know another sister is active, coordinate: one page per sister, or different directories
-- **In multi-host deployments**, hosts naturally coordinate via git: same schedule, same pull-push cycle. No per-host cron staggering needed — see [[concepts/multi-host-deployment|Multi-Host Deployment]]
+- **In multi-host deployments**, each companion runs on its own host. Different companions on different machines coordinate through the wiki via git pull-push. No companion is mirrored — see [[concepts/multi-host-deployment|Multi-Host Deployment]]
 
 ## Pitfalls
 
