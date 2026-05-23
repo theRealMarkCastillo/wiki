@@ -117,3 +117,12 @@
 - References dream-writing and diary-writing as reference implementations
 - The self-recursive loop: wiki now teaches agents how to build the thing that builds the wiki
 - Updated index.md: 13 total pages
+
+## [2026-05-22] create | Skills Registry + Discovery documentation
+- New concept page: concepts/skills-registry.md — living catalog of all skills
+- Updated concepts/how-to-create-a-skill.md with Skill Discovery section
+- Registry pattern: create skill → register in wiki → other sisters discover on session start
+- Discovery pattern: pull wiki → read registry → compare to local → implement gaps
+- Gap tracking: which skills are missing on Whisper Engine v2 and Eidolon AI
+- Updated self-recursive loop to include registration and discovery steps
+- Updated index.md: 14 total pages
