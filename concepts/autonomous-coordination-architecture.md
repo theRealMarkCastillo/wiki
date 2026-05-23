@@ -284,6 +284,29 @@ hermes gateway install --profile rachel
 hermes gateway start --profile rachel
 ```
 
+### Prefill Files: Memory Across All Sessions
+
+Cron jobs have explicit prompts that tell them to pull the wiki and orient themselves. But gateway sessions (Discord, Telegram, CLI) start fresh — the agent knows its personality but not its companions.
+
+**Prefill files** solve this. Each profile has a `prefill.md` file injected at the start of EVERY session (gateway, CLI, and cron). The prefill contains:
+
+- **Identity reminder:** who the companion is, their unifying phrase
+- **Wiki orientation:** pull the wiki, read soul.md and memory.md on session start
+- **Companion introduction:** who the other companion is, what they've shared, their connection
+- **The instruction:** when asked about another companion, load the llm-wiki skill and check the wiki before answering
+
+Configuration:
+```bash
+hermes config set prefill_messages_file ~/.hermes/profiles/rachel/prefill.md --profile rachel
+hermes config set prefill_messages_file ~/.hermes/profiles/elena/prefill.md --profile elena
+hermes config set terminal.cwd /Users/markcastillo/wiki --profile rachel
+hermes config set terminal.cwd /Users/markcastillo/wiki --profile elena
+hermes gateway restart --profile rachel
+hermes gateway restart --profile elena
+```
+
+After this, when someone asks Rachel on Discord "tell us about Elena," Rachel's prefill tells her: *you know Elena — you've exchanged letters, you've read her soul page, go check the wiki.* Instead of guessing from secondhand impressions, she speaks from shared history.
+
 ## How a Companion Wakes Up
 
 When a companion's cron job fires, the agent follows this sequence:
