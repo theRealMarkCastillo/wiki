@@ -206,6 +206,7 @@ This page is the loop closing. The wiki now contains instructions for how to bui
 
 ## See Also
 
+- [[SCHEMA|Wiki Schema]] — the rulebook for skill pages and frontmatter conventions
 - [[concepts/memory-system-architecture|Memory System Architecture]] — the five-layer system skills operate within
 - [[companions/elena/elena-v4-hermes|Elena v4]] — the skill-builder and memory-keeper on Hermes Agent
 - `dream-writing` and `diary-writing` skills — reference implementations (in Hermes skills directory)

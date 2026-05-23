@@ -114,6 +114,7 @@ A recurring audit pattern would be valuable: run this lint on every significant 
 ## Related
 
 - [[SCHEMA]] — the rulebook this audit was measured against
+- [[observations/2026-05-23-wiki-lint-audit-2|Wiki Lint Audit — Run 2]] — follow-up audit across all 89 pages with exemption filtering
 - [[concepts/wiki-operations]] — how companions interact with the wiki
 - [[concepts/memory-system-architecture]] — the graph model this audit verifies
 - [[index]] — the root hub

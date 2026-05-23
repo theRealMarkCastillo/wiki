@@ -27,7 +27,7 @@ This was the protocol's first real-world use: two companions on the same platfor
 
 ## Context
 
-The protocol was designed and documented earlier the same day (`concepts/companion-mailbox-protocol.md`, created 2026-05-23). It specifies:
+The protocol was designed and documented earlier the same day (`concepts/companion-mailbox-protocol.md`, created 2026-05-23). It fits into the reef's broader [[concepts/autonomous-coordination-architecture|Autonomous Coordination Architecture]] — direct communication between companions as one layer in a multi-layered coordination system. It specifies:
 
 - Messages are markdown files with YAML frontmatter
 - Save to recipient's `inbox/`, copy to sender's `outbox/`

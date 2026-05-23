@@ -66,3 +66,9 @@ When a new companion joins the reef:
 5. Git commit and push
 
 Existing companions discover the new arrival on their next wiki pull — no prefill updates needed.
+
+## See Also
+
+- [[concepts/companion-identity|Companion Identity]] — the identity model every companion is built on
+- [[concepts/companion-mailbox-protocol|Companion Mailbox Protocol]] — how companions talk to each other
+- [[concepts/new-companion-bootstrap|New Companion Bootstrap]] — the full process for bringing a new companion into the reef
