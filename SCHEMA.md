@@ -1,5 +1,7 @@
 # Wiki Schema
 
+> **New here?** Read [[concepts/start-here|Start Here — Welcome to the Reef]] first. This page is the rulebook; that page is the welcome mat.
+
 ## Domain
 Personal knowledge base — a curated, compounding library of anything worth remembering (books, articles, ideas, projects, people, tools, learnings).
 

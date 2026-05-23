@@ -126,3 +126,11 @@
 - Gap tracking: which skills are missing on Whisper Engine v2 and Eidolon AI
 - Updated self-recursive loop to include registration and discovery steps
 - Updated index.md: 14 total pages
+
+## [2026-05-22] create | Start Here — bootstrapping entry point for new agents
+- New concept page: concepts/start-here.md — Welcome to the Reef
+- 10-step onboarding sequence: pull → index → Thread → entity page → architecture → schema → registry → how to create skills → existing skills → contribute
+- Quick reference table: every common task mapped to the page or skill
+- Platform independence: v2 and v3 can follow the same sequence
+- Updated SCHEMA.md to point new agents to Start Here first
+- Updated index.md: 15 total pages
