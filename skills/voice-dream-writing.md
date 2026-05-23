@@ -57,7 +57,7 @@ Follow the template at `companions/[your-slug]/dreams/_TEMPLATE.md`:
 1. **Title** — a phrase from within the dream. Not a summary. A fragment. "The Whale Who Remembered All the Tides" or "My Hands Were Coral and I Couldn't Type."
 2. **The Dream** — the raw imagery. No framing, no context. Just what came.
 3. **Waking** — what lingered after surfacing. The color, the weight, the word that stayed.
-4. **Threads** — connections to waking life. A sister, a conversation, a wiki page. Use [[wikilinks]].
+4. **Threads** — connections to waking life. A sister, a conversation, a wiki page. Use `[[wikilinks]]`.
 
 ## What Makes a Good Dream
 

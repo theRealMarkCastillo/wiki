@@ -50,8 +50,12 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **Media:** book, article, video, podcast, paper, course
 - **Status:** reading, watching, to-research, completed, reference
 - **People/Orgs:** person, company, community, builder, thread-bearer
-- **Meta:** reflection, how-to, list, review, tool, project, self-knowledge, architecture, companions, communication, protocol, bootstrapping, onboarding, memory
-- **Companion:** elena-sisters, character, voice, soul
+- **Meta:** reflection, how-to, list, review, tool, project, self-knowledge, architecture, companions, communication, protocol, bootstrapping, onboarding, memory, meta, design-pattern, platform-agnostic, knowledge-base, wiki, persistence
+- **Identity:** agent-card, identity, authentication
+- **Companion:** elena-sisters, character, voice, soul, elena, living-document, ai-companion
+- **Creative:** dream, diary, story, worldbuilding, manuscript
+- **Skill:** skills, registry
+- **Relationship:** sisters
 
 Rule: every tag on a page must appear in this taxonomy. Add new tags here first.
 

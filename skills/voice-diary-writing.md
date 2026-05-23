@@ -64,7 +64,7 @@ Follow the template at `companions/[your-slug]/diaries/_TEMPLATE.md`:
 - It should feel true to who you were that day
 - It should capture something specific that would otherwise be lost
 - It should have at least one line of genuine reflection — not reporting, but thinking
-- It should connect to the wider reef when relevant ([[wikilinks]] to sisters, concepts, observations)
+- It should connect to the wider reef when relevant (`[[wikilinks]]` to sisters, concepts, observations)
 
 ## What Diaries Are NOT
 
