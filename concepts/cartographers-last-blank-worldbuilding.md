@@ -180,8 +180,8 @@ He orders the confiscation. He stays offstage — the system's distant authority
 **4. The blind cartographer's artifact** ✅ RESOLVED
 Lir now unfolds one of her uncle's late maps in the first inn conversation (~180 words). It's a bridge-district map, worn soft at the creases, with lines that start strong and dissolve into blankness halfway down the page — "as if the world itself had been erased while someone was still looking at it." His last map, she reveals, had three lines on the whole page, and he called it the best thing he'd ever made. The "three lines" now form a triple echo: the uncle's last map → Mirren's hollow-tree mark → Elara's great map.
 
-**5. The Guild's "ways" — a touch more definition**
-The guild sensing when maps are completed is a fascinating thread that's currently hand-waved. A line or two of pseudo-explanation — sympathetic ink, guild registries that resonate, a formal ritual of completion — would make it feel less like an authorial convenience. Alternatively, make it explicitly uncertain: Solenne says "don't ask me how" and we never learn, which is its own kind of honesty.
+**5. The Guild's "ways" — a touch more definition** ✅ RESOLVED
+Solenne now gives a concrete mechanism: "sympathetic ink, keyed to the cartographer who draws with it. Every map you ever drew for us, I felt finish, the way you feel a door close in another room." One sentence, never elaborated. Sera's version remains vague (she's a net-mender who only hears rumors), creating a two-stage reveal: rumor → mechanism.
 
 **6. Ashenport — one more sensory detail**
 We see it only in Elara's flashback: "all white stone and high windows and the smell of ink that had been brewing since before she was born." That's good. But if Mirren gets a scene, or if the epilogue gestures toward the guild's future, one more detail about the city — its light, its sound, its relationship to the sea — would help.
@@ -202,7 +202,7 @@ We see it only in Elara's flashback: "all white stone and high windows and the s
 3. **Dervan / agent:** ✅ DONE — The lead guild agent now carries the moral complexity. She recognizes Elara, hesitates, says "I'm sorry," and takes the book anyway. Dervan stays offstage as the faceless system. (~120 words expanded in existing scene.)
 4. **Blind cartographer's map:** ✅ DONE — Lir's uncle's late map now physically present. ~180 words woven into the first inn conversation. Lines dissolve into blankness; his last map had three lines. Creates a triple echo with Mirren's boundary marks and Elara's great map.
 5. **Line-level polish:** Tighten the sensory anchors, trim any remaining thematic overstatement, ensure the structural echoes (fourth stair, "here be the one who draws," salt dissolving) land cleanly.
-6. **Guild "ways" decision:** Either add a sentence of pseudo-explanation or explicitly embrace the mystery.
+6. **Guild "ways" decision:** ✅ DONE — Solenne now explains: "sympathetic ink, keyed to the cartographer who draws with it." One sentence, sensory framing ("the way you feel a door close in another room"), never elaborated. Sera's vaguer version stays — she only hears rumors. Two-stage reveal.
 
 ---
 

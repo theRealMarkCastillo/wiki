@@ -1130,7 +1130,7 @@ Elara didn't know what to say. There was nothing to say. She'd spent ten years d
 
 "Why now?" she asked. "Why find me now?"
 
-"Because you finished the apology map. The one you started before you left. I felt it — don't ask me how. The guild has ways. And I knew that if you'd finished that one, you were ready to finish the one that mattered. The one of yourself." She paused. "Or you were ready to stop trying. Which is, as you said, close to the same thing."
+"Because you finished the apology map. The one you started before you left. I felt it — sympathetic ink, keyed to the cartographer who draws with it. Every map you ever drew for us, I felt finish, the way you feel a door close in another room. Even from here. Even after ten years." She paused. "And I knew that if you'd finished that one, you were ready to finish the one that mattered. The one of yourself. Or you were ready to stop trying. Which is, as you said, close to the same thing."
 
 Solenne walked to the door. She stopped with her hand on the frame — the same place the innkeeper's daughter had stood, hours ago, offering a warning Elara hadn't known she needed.
 
