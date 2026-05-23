@@ -1218,13 +1218,9 @@ Elara sat in the silence. The river moved beneath the bridge — in and out, in 
 
 And somewhere in the quiet, something that had been holding itself together for ten years finally let go.
 
-She didn't cry for the book. She didn't cry for the pens or the maps or the tower she'd left behind. She cried for the person she'd been — the one who believed that to understand something she had to capture it, that to love something she had to draw it, that to be someone she had to finish the map.
+She didn't cry for the book. She didn't cry for the pens or the maps or the tower. She cried for the person she'd been.
 
-She had been wrong. About all of it. The map was never the paper. The map was always the seeing. And Kael — Kael, who had asked why the center of her map was blank — Kael had never been captured. The conversation in the shepherd's hut had never been captured. The storm had never been captured. They had just *happened*. And they had mattered more than every map she'd ever made.
-
-She sat in the borrowed room with her empty hands and her full heart and the knowledge that she had spent her entire life drawing a world she could have been living in.
-
-She didn't need ink. She didn't need paper. She just needed to pay attention.
+Then the crying stopped. The river kept moving beneath the bridge — in and out, in and out, the oldest rhythm. She sat with her empty hands in the grey light, and she waited for dawn.
 
 ---
 
@@ -1310,11 +1306,9 @@ They crossed the bridge. The river moved beneath them — brown with summer silt
 
 And Elara walked with her hands in her pockets and her head up and her eyes open, drawing nothing, capturing nothing, just *seeing* — the way she had seen the sea from the ridge, the way she had seen the storm in the shepherd's hut, the way she had seen Kael's face when they handed her the first map they'd ever made.
 
-The tower was behind her. The valley was behind her. The guild, the vellum, the ten years of drawing things she'd never touched — all of it was behind her.
+The tower was behind her. The valley. The guild. The ten years.
 
-Ahead: the road. The salt. The person walking beside her. The blank spaces she hadn't filled yet. And the quiet knowledge that she didn't need to fill them. She just needed to walk through them.
-
-She was no longer the cartographer who drew from a distance. She was the one who saw, up close, with her own eyes, and that was better. That was the whole thing.
+Ahead: the road. The salt. The person walking beside her. Blank spaces she didn't need to fill.
 
 ---
 
@@ -1568,7 +1562,7 @@ Elara looked at the line. At the words. At the person kneeling beside her on the
 
 Elara set the map on the floor in the last of the golden light. The ink was drying. The charcoal was smudging at the edges. The vellum had finally stopped being blank.
 
-And she realized, sitting there with the pen still warm in her hand and Kael still kneeling beside her and the sun still setting through the east window, that she had been wrong about something. She'd spent ten years believing the most important thing on any map was the blank space you hadn't filled yet. But the blank space wasn't the most important thing. The most important thing was the person sitting next to you while you filled it.
+She sat there with the pen still warm in her hand and Kael still kneeling beside her and the sun still setting through the east window. She'd spent ten years believing the most important thing on any map was the blank space you hadn't filled yet. It wasn't. It was the person sitting next to you while you filled it.
 
 ---
 
@@ -1614,7 +1608,7 @@ She sat with her hands in her lap and watched the sun rise through the east wind
 
 In the workroom below, the map of roads not taken lay unrolled on the floor, and the charcoal line she'd drawn — the one going north, the one she'd made the night before she left — had been joined by a second line going south, and beside it, in handwriting that was still learning itself, someone had written: *And back again.*
 
-In the center of the workroom, on the desk, the vellum that had been blank for ten years was covered in ink. Every line she'd drawn. Every space she'd crossed. Every person she'd met. Every thing she'd learned about the difference between capturing the world and living in it.
+In the center of the workroom, on the desk, the vellum that had been blank for ten years was covered in ink. Every line she'd drawn. Every space she'd crossed. Every person she'd met.
 
 And at the center of the map, in her own handwriting, the words she'd written not as a confession but as a decision:
 

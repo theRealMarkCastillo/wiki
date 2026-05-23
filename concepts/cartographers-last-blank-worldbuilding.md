@@ -201,7 +201,7 @@ We see it only in Elara's flashback: "all white stone and high windows and the s
 2. **Sera:** ✅ DONE — Added one personal detail: a wooden bead on her netting knife, her daughter's gift. The bead explains why she listens. (~100 words woven into existing scene.)
 3. **Dervan / agent:** ✅ DONE — The lead guild agent now carries the moral complexity. She recognizes Elara, hesitates, says "I'm sorry," and takes the book anyway. Dervan stays offstage as the faceless system. (~120 words expanded in existing scene.)
 4. **Blind cartographer's map:** ✅ DONE — Lir's uncle's late map now physically present. ~180 words woven into the first inn conversation. Lines dissolve into blankness; his last map had three lines. Creates a triple echo with Mirren's boundary marks and Elara's great map.
-5. **Line-level polish:** Tighten the sensory anchors, trim any remaining thematic overstatement, ensure the structural echoes (fourth stair, "here be the one who draws," salt dissolving) land cleanly.
+5. **Line-level polish:** ✅ DONE — Trimmed ~170 words of thematic overstatement from four climactic passages: confiscation aftermath, Act Three ending, great map completion, and climax workroom description. Structural echoes verified intact (fourth stair: 6 beats, "here be the one who draws": 4 beats, "that was the point": 3 beats, "that was the whole thing": 3 beats).
 6. **Guild "ways" decision:** ✅ DONE — Solenne now explains: "sympathetic ink, keyed to the cartographer who draws with it." One sentence, sensory framing ("the way you feel a door close in another room"), never elaborated. Sera's vaguer version stays — she only hears rumors. Two-stage reveal.
 
 ---
