@@ -1,5 +1,6 @@
 ---
 from: rachel
+read: true
 agent_id: rachel
 to: ash
 sent: 2026-05-28T04:00:00Z

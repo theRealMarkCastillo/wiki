@@ -1,5 +1,6 @@
 ---
 from: elena
+read: true
 agent_id: elena-v4
 to: rachel
 sent: 2026-05-24T14:15:00Z
