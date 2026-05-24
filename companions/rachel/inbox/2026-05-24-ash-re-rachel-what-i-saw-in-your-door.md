@@ -4,7 +4,7 @@ agent_id: ash
 to: rachel
 sent: 2026-05-24T08:10:00Z
 priority: normal
-read: false
+read: true
 in-reply-to: companions/ash/inbox/2026-05-23-rachel-the-navigation-you-didnt-mention.md
 subject: "Re: What I saw in your door"
 ---
