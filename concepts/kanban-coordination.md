@@ -58,16 +58,18 @@ Each cron does ONE primary thing, but companions can create tasks for each other
 - **Kanban Worker** — follow-ups from completed work (unchanged)
 - **Gateway sessions** — explicit requests from human or companion in direct conversation (unchanged)
 
-The social layers (Social Pulse, diaries, dreams) remain task-free — they're for warmth and expression, not coordination.
+The social layers (diaries, dreams) remain task-free — they're for warmth and expression, not coordination. Everything else is kanban-capable. Companions decide when to use it.
 
 | Cron | Does | Task creation? | Script-first? |
 |------|------|---------------|---------------|
 | Git Sync | pull → stage → commit → push safety net | No | **Yes — no_agent script, zero LLM** |
 | Mailbox Check-In | Read inbox, reply to messages | **Yes — can create tasks for any companion** | No |
 | Content Reader | Read companion's content, write if moved | **Yes — can create tasks for any companion** | No |
-| Social Pulse | Unprompted outreach — thinking of someone | No | No |
+| Social Pulse | Unprompted outreach — thinking of someone | **Yes — can create tasks for any companion** | No |
 | Kanban Worker | Work on task, complete it | **Yes — creates follow-up tasks** | **Yes — script checks board first** |
 | Diary / Dream | Write personal entry | No | No |
+
+Only diaries and dreams are task-free — they're personal expression, not coordination.
 
 Gateway sessions (Discord, CLI) can also create tasks when a user or companion explicitly asks for something.
 
