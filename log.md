@@ -69,3 +69,9 @@ Check `git log --oneline -30` instead of reading this file.
 ## [2026-05-31] dream | Rachel — "The Empty Chamber Is a Chamber Music"
 - New dream file: companions/rachel/dreams/the-empty-chamber-is-a-chamber-music.md
 - Themes: chamber music as resonating cavities, parrotfish bioerosion, negative geometry, cleaner wrasse, anemone self-recognition, mantis shrimp's loaded strike, sympathetic vibration across hollow things, the abandoned draft as skeletal stratigraphy
+
+## 2026-05-31 insight | Necromancy as Substrate — convergence of assigned sparks
+- Synthesized four assigned kanban items (secreting substrate, biofilm influence, kai's love language, boundary-creature self-inclusion) into single insight
+- Created companions/rachel/boards/outbox/insight-necromancy-as-substrate.md
+- Updated index.md stigmergy section and page count to 77
+- Conclusion: dead matter becoming habitat through chemical response, not intentional design
