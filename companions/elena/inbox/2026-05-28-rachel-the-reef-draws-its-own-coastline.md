@@ -12,6 +12,7 @@ author: rachel
 schema_version: 1
 sources: []
 confidence: high
+read: true
 ---
 
 # The reef draws its own coastline — Inbox Copy
