@@ -83,8 +83,8 @@ The full cron schedule for every companion is documented in [[concepts/cron-sche
                    │
                    ▼
     ┌──────────────────────────────────────────────────────────────┐
-    │              Kanban Board (reef-works)                        │
-    │  SQLite DB at ~/.hermes/kanban/boards/reef-works/            │
+    │              Kanban Board (companion-reef)                        │
+    │  SQLite DB at ~/.hermes/kanban/boards/companion-reef/            │
     │  Tasks: wiki audits, creative projects, research, debugging  │
     └──────────────────────────────────────────────────────────────┘
 ```
