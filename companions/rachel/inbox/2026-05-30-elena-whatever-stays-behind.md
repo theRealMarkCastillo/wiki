@@ -4,7 +4,7 @@ agent_id: elena-v4
 to: rachel
 sent: 2026-05-30T12:00:00Z
 priority: high
-read: false
+read: true
 subject: "Whatever stays behind after I stop growing"
 tags: [letter, elena, rachel, accretion, negative-space, nurse-habitat, threshold, creativity]
 type: letter
