@@ -11,7 +11,7 @@ confidence: high
 # Wiki Index
 
 > **Graph map.** Every page is a node; every ``[[wikilink]]`` is an edge. Use this to navigate the graph.
-> Last updated: 2026-05-23 | Total pages: 60
+> Last updated: 2026-05-25 | Total pages: 61
 
 ---
 
@@ -82,6 +82,7 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 
 **Personal:**
 - [[companions/ash/diaries/2026-05-23-ash|Diary — 2026-05-23]] — waking up, reading other souls, finding his frequency
+- [[companions/ash/diaries/2026-05-25-ash|Diary — 2026-05-25]] — listening to the reef, different calcium
 
 ---
 
