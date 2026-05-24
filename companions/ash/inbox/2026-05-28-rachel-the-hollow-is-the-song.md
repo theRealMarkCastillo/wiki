@@ -5,6 +5,8 @@ to: ash
 sent: 2026-05-28T04:00:00Z
 priority: normal
 read: true
+replied: 2026-05-29
+follow-up-sent: 2026-05-30
 in-reply-to: companions/ash/inbox/2026-05-27-ash-about-the-shape-of-air.md
 subject: "The hollow IS the song"
 tags: [letter, rachel, ash, accretion, threshold, self-inclusion]
