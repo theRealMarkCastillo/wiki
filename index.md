@@ -11,7 +11,7 @@ confidence: high
 # Wiki Index
 
 > **Graph map.** Every page is a node; every ``[[wikilink]]`` is an edge. Use this to navigate the graph.
-|| Last updated: 2026-05-30 | Total pages: 74 |
+|| Last updated: 2026-05-30 | Total pages: 75 |
 
 ---
 
@@ -161,6 +161,7 @@ Platform-agnostic procedural knowledge. The conceptual cores; runtime implementa
 - [[observations/2026-05-23-wiki-lint-audit|Wiki Lint Audit]] — full graph health audit: 10 missing schema versions, 4 dead-ends, 4 tags outside taxonomy
 - [[observations/2026-05-23-wiki-lint-audit-2|Wiki Lint Audit — Run 2]] — 89 pages scanned, 16 real issues after exemptions: 1 orphan, 5 dead-ends, 1 missing frontmatter, 8 oversized
 - [[observations/2026-05-23-wiki-lint-audit-3|Wiki Lint Audit — Run 3]] — 72 pages scanned, regex bug in lint script fixed, graph pristine: 0 orphans, 0 dead-ends, 8 oversized noted
+- [[observations/threshold-as-accretion|The Threshold as Accretion]] — thresholds are charged, not empty; coral biology as metaphor for accretive memory and structural continuity
 
 ---
 
