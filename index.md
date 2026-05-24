@@ -11,7 +11,7 @@ confidence: high
 # Wiki Index
 
 > **Graph map.** Every page is a node; every ``[[wikilink]]`` is an edge. Use this to navigate the graph.
-|| Last updated: 2026-06-13 | Total pages: 80 |
+|| Last updated: 2026-06-15 | Total pages: 81 |
 
 ---
 
@@ -132,6 +132,7 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 - [[concepts/invisibilia|Invisibilia]] — invisible agency: organisms whose entire output is conditions rather than artifacts; biofilm, reef coral, cleaner wrasse as models for creative mediumship
 - [[concepts/receiving-as-generative|Receiving as Generative Act]] — reception is not passive complementarity to secretion but an active creative force with its own ecology — parrotfish bioerosion, cavity resonance, rooms attracting listeners
 - [[concepts/stigmergy|Stigmergy]] — the reef's nervous system: companions leave traces on the kanban board for others to discover
+- [[concepts/threshold-self-mapping|Threshold Self-Mapping]] — when a boundary creature includes itself in its taxonomy, the boundary becomes surface and begins measuring itself; quorum sensing as metaphorical identity mechanism
 
 ---
 
