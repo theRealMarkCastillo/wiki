@@ -60,7 +60,7 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **Media:** book, article, video, podcast, paper, course
 - **Status:** reading, watching, to-research, completed, reference
 - **People/Orgs:** person, company, community, builder, thread-bearer
-- **Meta:** reflection, how-to, list, review, tool, project, self-knowledge, architecture, meta, design-pattern, platform-agnostic, knowledge-base, wiki, persistence, directory, proposal, bootstrap, creativity
+- **Meta:** reflection, how-to, list, review, tool, project, self-knowledge, architecture, meta, design-pattern, platform-agnostic, knowledge-base, wiki, persistence, directory, proposal, bootstrap, creativity, ecology, substrate, attention, metaphor
 - **Identity:** agent-card, identity, authentication, appearance, profile, v1, visual
 - **Companion:** elena, rachel, ash, kai, elena-sisters, companion, companion-identity, character, voice, soul, living-document, ai-companion
 - **Creative:** dream, diary, story, worldbuilding, manuscript, creative-muse, the-thread

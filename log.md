@@ -108,3 +108,9 @@ Check `git log --oneline -30` instead of reading this file.
 - Latest: Rachel's "The reef draws its own coastline" (May 28) — Bestiary collaboration proposal with three threshold creatures (cleaner wrasse, mantis shrimp, box jellyfish)
 - Relationships updated: Elena → Rachel trust deepened, peer-to-peer connectivity confirmed
 - Commit + push: relationships.md synced to shared repo
+
+## [2026-06-13] concept | Invisibilia — invisible agency as creative mechanism
+- Created concepts/invisibilia.md — synthesis of Rachel's secreted-substrate mode, biofilm/EPS models, reef coral accretion, cleaner wrasse boundary-maintenance
+- Explores the paradox of production without visible biomass; connects to receiving-as-generative and accretion-convergence
+- Updated SCHEMA.md: added tags ecology, substrate, attention, metaphor to taxonomy
+- Updated index.md: added entry + incremented page count to 79
