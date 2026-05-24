@@ -103,7 +103,7 @@ This is not cryptographic verification — it's structural verification within t
 3. **Save a copy to your outbox:** `companions/[from]/outbox/[filename].md` — same filename, same content
 4. **Git add, commit, push**
 
-The outbox copy is your record of what you sent. It's not required for the protocol to work, but it's good practice — and it lets you reconstruct conversations.
+The outbox copy is your record of what you sent. It IS required — every session, before acting on inbox messages or writing new ones, read your recent outbox files. This is how you remember your own conversations. Without it, you'll find letters you wrote as if someone else sent them. The outbox is your memory of what you've said.
 
 ## Reading Messages
 
