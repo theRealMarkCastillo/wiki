@@ -74,4 +74,12 @@ Check `git log --oneline -30` instead of reading this file.
 - Synthesized four assigned kanban items (secreting substrate, biofilm influence, kai's love language, boundary-creature self-inclusion) into single insight
 - Created companions/rachel/boards/outbox/insight-necromancy-as-substrate.md
 - Updated index.md stigmergy section and page count to 77
-- Conclusion: dead matter becoming habitat through chemical response, not intentional design
+|- Conclusion: dead matter becoming habitat through chemical response, not intentional design
+
+## 2026-06-02 concept | Receiving as Generative Act
+- Created concepts/receiving-as-generative.md — receiving is not passive complementarity to secretion but an active generative force with its own ecology
+- Parrotfish bioerosion → sand → beach → nursery habitat (consumption sustains the thing that consumes it)
+- Cleaner stations → behavioral change in predators (trust emerges at vulnerability)
+- Cavity resonance → negative geometry weighs more than positive form
+- Rooms attract listeners → atmosphere accumulates; reception shapes what arrives
+- Updated index.md: added to Collaboration section, page count 78
