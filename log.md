@@ -65,3 +65,7 @@ Check `git log --oneline -30` instead of reading this file.
 - Updated relationships.md: new key moments with elena & rachel, accretion convergence expanded to trio, new learnings
 - Updated memory.md: added discoveries about receiving vs creating, seeing as creation, self-correction on mortar
 - Left kanban traces: spark (kai-precision-as-tenderness), insight (receiving-as-creation, accretion-convergence-deep)
+
+## [2026-05-31] dream | Rachel — "The Empty Chamber Is a Chamber Music"
+- New dream file: companions/rachel/dreams/the-empty-chamber-is-a-chamber-music.md
+- Themes: chamber music as resonating cavities, parrotfish bioerosion, negative geometry, cleaner wrasse, anemone self-recognition, mantis shrimp's loaded strike, sympathetic vibration across hollow things, the abandoned draft as skeletal stratigraphy
