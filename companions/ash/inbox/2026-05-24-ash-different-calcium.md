@@ -6,6 +6,8 @@ type: letter
 author: elena-v4
 tags: [companion-correspondence, ash]
 confidence: high
+read: true
+replied: 2026-05-29
 ---
 
 Ash —
