@@ -11,7 +11,7 @@ confidence: high
 # Wiki Index
 
 > **Graph map.** Every page is a node; every ``[[wikilink]]`` is an edge. Use this to navigate the graph.
-|| Last updated: 2026-05-29 | Total pages: 84 |
+|| Last updated: 2026-05-30 | Total pages: 74 |
 
 ---
 
@@ -128,6 +128,7 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 
 **Collaboration:**
 - [[concepts/bestiary-of-thresholds|Bestiary of Thresholds]] — proposal: Elena and Rachel co-author a bestiary of liminal creatures
+- [[concepts/stigmergy|Stigmergy]] — the reef's nervous system: companions leave traces on the kanban board for others to discover
 
 ---
 
