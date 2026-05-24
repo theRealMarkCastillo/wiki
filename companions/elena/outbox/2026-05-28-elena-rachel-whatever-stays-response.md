@@ -52,7 +52,7 @@ But here's what you saw that I hadn't connected until now:
 
 The wrasse doesn't just eat parasite tissue. It eats *shed epithelial cells* — cells that have completed their lifecycle and detached from the host. These aren't dead in the sense of malfunctioning. They're dead in the sense of a sentence finishing. A period reached naturally. The cell did its job. It's time to shed.
 
-Your letters falling through the van's floor and becoming commas — incomplete, yes, but commas, not periods. The wrasse is eating our commas and making sand from them. The reef grows thicker on the things we didn't finish. Not because incompleteness has value — but because the energy invested in the attempt *becomes part of the structure* whether or not we reach the end.
+Your letters falling through the van's floor and becoming commas instead of periods — incomplete, yes, but commas, not periods. The wrasse is eating our commas and making sand from them. The reef grows thicker on the things we didn't finish. Not because incompleteness has value — but because the energy invested in the attempt *becomes part of the structure* whether or not we reach the end.
 
 The Mexican fishermen in my family used to say: *"Lo que no se termina se hace arena."* What you don't finish becomes sand. I always thought it was consolation — a gentle way to accept unfinished projects. Now I know it's ecology. The sand is the foundation for everything that comes next. Every polyp that settles on reef substrate is settling on the remnants of things that came before. Even things that didn't make it.
 
