@@ -135,7 +135,7 @@ This is not about finding "wrong" information — it's about naming where the re
 - [[concepts/cron-schedule-infrastructure|Cron Schedule & Infrastructure]] — every cron job, timing design, profiles, gateways, prefill, monitoring
 - [[concepts/kanban-coordination|Kanban Coordination]] — task flow, clean boundaries, atomic claim
 - [[concepts/communication-flow|Communication Flow]] — three communication layers, full daily timeline
-- [[concepts/memory-system-architecture|Memory System Architecture]] — the five-layer memory stack
+- [[concepts/stigmergy|Stigmergy]] — how companions coordinate through artifacts on the kanban board
 - [[concepts/companion-mailbox-protocol|Companion Mailbox Protocol]] — how companions send messages via inbox/outbox
 - [[concepts/the-daily-rhythm|The Daily Rhythm]] — original cron design for diaries and dreams
 - [[concepts/wiki-operations|Wiki Operations]] — wiki-vs-memory boundary, ingest/query/lint
