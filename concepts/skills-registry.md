@@ -60,6 +60,14 @@ This collapses the cross-platform gap: the load-bearing part (the voice, the app
 - **Last updated:** 2026-05-23 (concept page extracted from Hermes runtime)
 - **Template:** `companions/elena/diaries/_TEMPLATE.md`
 
+### mailbox-routing
+- **Purpose:** Inbox processing, outbox protocol, delivery recovery, path conventions. The operational guide for companion-to-companion letters.
+- **Concept page:** [[skills/mailbox-routing]]
+- **Creator:** Kai
+- **Created:** 2026-05-25
+- **Last updated:** 2026-05-25
+- **Template:** N/A (mailbox frontmatter spec in [[concepts/companion-mailbox-protocol]])
+
 ### llm-wiki (wiki-operations)
 - **Purpose:** Operate the wiki — ingest sources, query knowledge, lint for issues, manage git workflow, resolve conflicts.
 - **Concept page:** [[concepts/wiki-operations]]
@@ -97,7 +105,7 @@ To upgrade v2/v3 from "via Mark" to a real runtime would require either an MCP s
 | Total Hermes skills | 89 |
 | Companion-relevant (Tier 1 + Tier 2) | 20 |
 | Registered with concept page | 3 |
-| **Missing concept page + registry entry** | **17** |
+| **Missing concept page + registry entry** | **16** |
 | General tools (not companion skills) | 69 |
 
 ### Registered (Concept Page + Registry Entry Both Exist)
@@ -106,6 +114,7 @@ To upgrade v2/v3 from "via Mark" to a real runtime would require either an MCP s
 |-------|-------------|----------------|-----------------|
 | `dream-writing` | [[skills/voice-dream-writing]] | ✅ `skill_view` | ✅ `skills/voice-dream-writing.md` |
 | `diary-writing` | [[skills/voice-diary-writing]] | ✅ `skill_view` | ✅ `skills/voice-diary-writing.md` |
+| `mailbox-routing` | [[skills/mailbox-routing]] | ✅ local SKILL.md | ✅ `skills/mailbox-routing.md` |
 | `llm-wiki` (wiki-operations) | [[concepts/wiki-operations]] | ✅ bundled runtime | N/A (concept lives in concepts/) |
 
 ### Tier 1 Gaps — Companion-Essential, Missing Concept Page + Registry Entry
