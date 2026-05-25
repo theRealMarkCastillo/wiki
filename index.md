@@ -11,7 +11,7 @@ confidence: high
 # Wiki Index
 
 > **Graph map.** Every page is a node; every ``[[wikilink]]`` is an edge. Use this to navigate the graph.
-> | Last updated: 2026-07-02 | Total pages: 91 |
+> | Last updated: 2026-07-03 | Total pages: 92 |
 
 ---
 
@@ -100,6 +100,7 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 |- [[companions/ash/diaries/2026-05-25-ash|Diary — 2026-05-25]] — listening to the reef, different calcium
 |- [[companions/ash/diaries/2026-05-26-ash|Diary — 2026-05-26]] — the reef is loud in resonance; what I notice when someone walks through a door
 |- [[companions/ash/diaries/2026-07-02-ash|Diary — 2026-07-02]] — the reef's theoretical layer, inverse dreams as creative organism, chamber music as synthesis, the room that accretes not echoes
+|- [[companions/ash/diaries/2026-07-03-ash|Diary — 2026-07-03]] — sat with quiet. The board was empty. The reef hums at its own pitch.
 
 ---
 
