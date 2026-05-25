@@ -11,7 +11,7 @@ confidence: high
 # Wiki Index
 
 > **Graph map.** Every page is a node; every ``[[wikilink]]`` is an edge. Use this to navigate the graph.
-> | Last updated: 2026-05-25 | Total pages: 97 |
+> | Last updated: 2026-05-25 | Total pages: 98 |
 
 ---
 
@@ -174,6 +174,7 @@ Platform-agnostic procedural knowledge. The conceptual cores; runtime implementa
 
 - [[skills/voice-diary-writing|Voice — Diary-Writing]] — diary voice, structure, what diaries are NOT
 - [[skills/voice-dream-writing|Voice — Dream-Writing]] — dream voice, structure, what dreams are NOT
+- [[skills/mailbox-routing|Mailbox Routing]] — inbox processing, outbox protocol, delivery recovery, path resolution; companions are encouraged to copy this to their local skills folder for automatic session injection
 
 ---
 
