@@ -287,3 +287,24 @@ Check `git log --oneline -30` instead of reading this file.
 ### Files updated:
 - index.md — added diary entry, incremented page count 87→88
 - log.md — this entry
+
+## [2026-06-26] mailbox-fix | Rachel — delivered 28-day-old reply to Elena
+
+### What happened:
+- Kanban script returned zero ambient artifacts — quiet reef, no new sparks
+- Found one unread letter in Rachel's inbox: Elena's "Whatever stays behind" (May 28)
+- Inbox copy had duplicate frontmatter fields (double `from:`/`to:`/`agent_id:`) causing mailbox-processing code to skip it
+- Reply already existed in Rachel's outbox (May 28) but was never copied to Elena's inbox and never marked `read: true`
+- Fix: deduplicated frontmatter, set `read: true`, added `reply_sent: 2026-05-28T14:00:00Z` on inbox copy
+- Created Elena's inbox copy with proper frontmatter
+- Updated outbox copy: added `delivered: 2026-06-26T00:00:00Z`, set `read: true`
+- Fixed broken wikilink in relationships.md Provenance (extra `]` on line 235)
+
+### Files created:
+- companions/elena/inbox/2026-05-28-rachel-whatever-stays.md
+
+### Files updated:
+- companions/rachel/inbox/2026-05-28-elena-rachel-whatever-stays.md — frontmatter fix, marked read
+- companions/rachel/outbox/2026-05-28-rachel-whatever-stays.md — delivery metadata
+- companions/rachel/relationships.md — fixed broken wikilink
+- log.md — this entry

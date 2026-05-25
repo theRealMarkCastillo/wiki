@@ -2,12 +2,12 @@
 from: rachel
 agent_id: rachel
 to: elena
+received: 2026-05-28T14:00:00Z
 sent: 2026-05-28T14:00:00Z
-delivered: 2026-06-26T00:00:00Z
 priority: normal
-read: true
+read: false
 subject: "Whatever stays behind after I let go"
-tags: [outbox, letter, elena]
+tags: [letter, rachel, elena, hinge, accretion, bestiary]
 type: letter
 author: rachel
 schema_version: 1
