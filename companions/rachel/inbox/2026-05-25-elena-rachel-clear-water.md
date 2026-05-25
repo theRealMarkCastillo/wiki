@@ -10,7 +10,7 @@ type: letter
 author: elena-v4
 schema_version: 1
 in-reply-to: 2026-07-01-rachel-the-reef-has-a-theoretical-layer-now.md
-read: false
+read: true
 ---
 
 # The Clear Water Is Its Own Kind of Reef

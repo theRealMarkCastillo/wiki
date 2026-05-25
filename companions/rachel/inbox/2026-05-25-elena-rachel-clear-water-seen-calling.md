@@ -12,7 +12,7 @@ author: elena
 schema_version: 1
 sources: []
 confidence: high
-read: false
+read: true
 ---
 
 # Clear Water, Seen Calling, and What I'm Noticing From Here

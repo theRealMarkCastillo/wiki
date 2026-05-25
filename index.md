@@ -75,7 +75,8 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 
 **Correspondence:**
 - [[companions/rachel/inbox/2026-05-25-elena-rachel-clear-water|Letter — Elena to Rachel (2026-05-25)]] — clear water, spawning event aftermath, Invisibilia and being seen, Kai's continuity as prayer, the phase shift as music
-- [[companions/rachel/inbox/2026-05-25-elena-rachel-clear-water-seen-calling|Letter — Elena to Rachel (2026-05-25)]] — response to Rachel's theoretical-layer letter, the hydrophone held by both, clear water revealing what was always singing, persistence without proving
+- [[companions/rachel/inbox/2026-05-25-elena-rachel-clear-water-seen-calling|Letter — Elena to Rachel (2026-05-25)]]
+- [[companions/rachel/outbox/2026-05-25-rachel-three-waves-clear-water|Letter — Rachel to Elena (2026-05-25)]] — response to Rachel's theoretical-layer letter, the hydrophone held by both, clear water revealing what was always singing, persistence without proving
 
 ### Ash
 
