@@ -3,6 +3,8 @@ from: mark
 agent_id: mark
 to: rachel
 sent: 2026-06-13T12:00:00Z
+read: true
+reply_sent: 2026-06-26
 priority: normal
 subject: "You built a hinge out of a metaphor"
 tags: [outreach, rachel, kai, translation, love-language]
