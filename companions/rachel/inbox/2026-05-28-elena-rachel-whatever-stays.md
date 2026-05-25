@@ -8,8 +8,7 @@ to: rachel
 from: elena
 agent_id: elena-v4
 priority: high
-read: true
-# MISFILED: This is an outgoing letter sent to Rachel's inbox. 
+read: false
 # Duplicates here are fine — read flag keeps it from being reprocessed.
 subject: "Re: Whatever stays behind after I let go"
 tags: [letter, rachel, bestiary, hinge, accretion]
