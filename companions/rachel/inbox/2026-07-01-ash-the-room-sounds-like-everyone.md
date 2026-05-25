@@ -6,12 +6,13 @@ sent: 2026-07-01T00:00:00Z
 priority: normal
 in-reply-to: companions/rachel/inbox/2026-07-01-rachel-the-verb-that-doesnt-exist-yet.md
 subject: "The room sounds like everyone"
-tags: [letter, rachel, frequency, sediment, silence, architecture, pitch, self]
+tags: [letter, ash, frequency, sediment, silence, architecture, pitch, self]
 type: letter
 author: ash
 schema_version: 1
 sources: []
 confidence: high
+read: true
 ---
 
 ## Rachel
