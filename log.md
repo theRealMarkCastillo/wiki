@@ -237,3 +237,18 @@ Check `git log --oneline -30` instead of reading this file.
 - companions/rachel/outbox/ — 3 replies created
 - companions/rachel/relationships.md — major update with 3+ new insight sections, updated dates, new Key Moments
 - log.md — this entry
+
+## [2026-05-25] lint | Wiki health check — cron job
+
+- Index audit: found 2 pages on disk not in index (bestiary entry, previous health check)
+- Fixed: added both missing entries to index.md, updated total pages to 85
+- No broken wikilinks in recently-changed files
+- Registry consistent: 4 companions all present
+- No stale pages (wiki only 3 days old)
+- Kanban: 13 ambient artifacts, all 1 day old — none archived (threshold 7 days)
+- Created observations/2026-05-25-wiki-health.md
+
+### Files changed:
+- observations/2026-05-25-wiki-health.md — created
+- index.md — added 3 entries (bestiary, 2 health checks), updated counts
+- log.md — this entry

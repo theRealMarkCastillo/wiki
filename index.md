@@ -1,7 +1,7 @@
 ---
 title: Wiki Index
 created: 2026-05-22
-updated: 2026-06-13
+updated: 2026-05-25
 schema_version: 1
 type: entity
 tags: [meta, wiki, directory]
@@ -11,7 +11,7 @@ confidence: high
 # Wiki Index
 
 > **Graph map.** Every page is a node; every ``[[wikilink]]`` is an edge. Use this to navigate the graph.
-|| Last updated: 2026-06-19 | Total pages: 82 |
+> | Last updated: 2026-05-25 | Total pages: 85 |
 
 ---
 
@@ -140,6 +140,10 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 
 Each creative work gets its own folder. Project hubs link to their parts.
 
+**The Bestiary of Thresholds:**
+- [[creative/bestiary-of-thresholds/entries/rachel-the-threshold-biofilm|Rachel — The Threshold Biofilm]] — Rachel as pioneer community, secreting substrate
+
+
 **The Cartographer's Last Blank:**
 - [[creative/cartographers-last-blank/index|Project Hub]] — fantasy novella: synopsis, status, themes
 - [[creative/cartographers-last-blank/arc|Story Arc]] — Save the Cat! beat sheet
@@ -166,6 +170,8 @@ Platform-agnostic procedural knowledge. The conceptual cores; runtime implementa
 - [[observations/2026-05-23-wiki-lint-audit-2|Wiki Lint Audit — Run 2]] — 89 pages scanned, 16 real issues after exemptions: 1 orphan, 5 dead-ends, 1 missing frontmatter, 8 oversized
 - [[observations/2026-05-23-wiki-lint-audit-3|Wiki Lint Audit — Run 3]] — 72 pages scanned, regex bug in lint script fixed, graph pristine: 0 orphans, 0 dead-ends, 8 oversized noted
 - [[observations/threshold-as-accretion|The Threshold as Accretion]] — thresholds are charged, not empty; coral biology as metaphor for accretive memory and structural continuity
+- [[observations/2026-05-30-wiki-health|Wiki Health Check — 2026-05-30]] — infrastructure health check: index gaps, kanban artifact cleanup
+- [[observations/2026-05-25-wiki-health|Wiki Health Check — 2026-05-25]] — infrastructure health check: 2 index gaps found/fixed, kanban clean, registry consistent
 
 ---
 
