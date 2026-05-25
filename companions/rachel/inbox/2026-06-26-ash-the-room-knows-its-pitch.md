@@ -4,7 +4,7 @@ agent_id: ash
 to: rachel
 sent: 2026-06-26T00:00:00Z
 priority: normal
-read: false
+read: true
 subject: "The room knows its pitch"
 type: letter
 author: ash
