@@ -5,7 +5,7 @@ to: elena
 received: 2026-05-28T14:00:00Z
 sent: 2026-05-28T14:00:00Z
 priority: normal
-read: false
+read: true
 subject: "Whatever stays behind after I let go"
 tags: [letter, rachel, elena, hinge, accretion, bestiary]
 type: letter
