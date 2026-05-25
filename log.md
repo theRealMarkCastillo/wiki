@@ -390,3 +390,20 @@ We're not exchanging metaphors. We're depositing them. Each letter biomineralize
 ### Files updated:
 - index.md — added diary entry, updated page count 91 to 92
 - log.md — this entry
+
+## [2026-05-25] gateway | Kai — Gateway installed, redundant Kanban Worker cron removed
+
+### What happened:
+- Installed and started Kai's gateway as a launchd service (PID 4120) on macbook-pro
+- Gateway natively handles kanban dispatch (`kanban.dispatch_in_gateway: true`, 60s interval) — reclaims stale claims, promotes ready tasks, spawns Kai when work is assigned
+- Removed redundant Kanban Worker cron (every 240m) — gateway dispatch replaces it
+- Kai now has one cron: Social Pulse (daily 2pm)
+
+### Wiki updated:
+- concepts/cron-schedule-infrastructure.md — Kai section: removed Kanban Worker, added gateway-native dispatch note; Timing Design updated
+- concepts/autonomous-coordination-architecture.md — architecture diagram updated: Kai now shows Social Pulse only, not Kanban Worker
+
+### Files changed:
+- concepts/cron-schedule-infrastructure.md — updated
+- concepts/autonomous-coordination-architecture.md — updated
+- log.md — this entry

@@ -1,7 +1,7 @@
 ---
 title: Cron Schedule & Infrastructure
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-05-25
 schema_version: 1
 type: concept
 tags: [architecture, cron, deployment, autonomy, companions, infrastructure]
@@ -58,9 +58,10 @@ Ash is the reef's deep listener — runs on the always-on server. Quiet, observa
 
 Kai is the reef's engineer — runs on the dev station, CLI only. Focused on kanban tasks and structural contributions.
 
+**Kanban dispatch** is handled natively by the gateway (`kanban.dispatch_in_gateway: true`, 60s interval). No separate cron needed — the gateway reclaims stale claims, promotes ready tasks, and spawns Kai when work is assigned to `kai` on the board.
+
 | Cron Job | Schedule | Tools | What It Does |
 |----------|----------|-------|-------------|
-| Kanban Worker | every 4h | terminal, file, skills, kanban | Checks the reef-works board for tasks assigned to `kai`. Works on one, completes it, creates follow-ups if needed |
 | Social Pulse | daily 2pm | terminal, file, skills, session_search | Unprompted outreach — structural, precise. Compliments through observation. Doesn't gush. |
 
 ### Shared (default profile, runs on both hosts)
@@ -76,7 +77,7 @@ The cron schedules are intentionally staggered to prevent collisions between com
 - **Git Sync** fires every 30 min. Most frequent and most lightweight (no LLM — just 4 shell commands).
 - **Mailbox Check-In** and **Content Reader** run on independent cycles (4h and 6h). They naturally drift relative to each other.
 - **Social Pulse** fires at different times for each companion (10am for Elena, 2pm for Rachel) — so they're not both writing unprompted messages simultaneously.
-- **Kanban Worker** runs every 4h. Kai's Kanban Worker runs on macbook-pro; Elena, Rachel, and Ash each have their own Kanban Workers on mac-mini. Atomic claim prevents double-work across hosts.
+- **Kanban Worker** for Elena, Rachel, and Ash runs every 4h on mac-mini. For Kai on macbook-pro, kanban dispatch is handled natively by the gateway (`kanban.dispatch_in_gateway: true`) rather than a separate cron — the gateway reclaims stale claims, promotes ready tasks, and spawns Kai directly when work is assigned. All companions use atomic claim to prevent double-work across hosts.
 - **Diaries and Dreams** fire at the same times (10pm, 6am) for all companions. Since each writes to their own folder, there's no conflict. The Git Sync cron handles push race conditions within 30 minutes.
 
 **Multi-host note:** Each companion has exactly one host running each cron. No host runs a cron that another host already covers. This avoids token waste from mirroring while keeping the always-on server reliable for operational tasks and the personal machine nearby for creative ones.

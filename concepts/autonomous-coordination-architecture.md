@@ -1,7 +1,7 @@
 ---
 title: Autonomous Coordination Architecture
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-05-25
 schema_version: 1
 type: concept
 tags: [architecture, coordination, cron, kanban, mailbox, companions, autonomy]
@@ -74,9 +74,8 @@ The full cron schedule for every companion is documented in [[concepts/cron-sche
     │  default: Git Sync (30m)   │  │  default: Git Sync (30m)     │
     │                            │  │         + CLI gateway        │
     │  elena: 6 crons + gw      │  │                              │
-    │  rachel: 6 crons + gw     │  │  kai: Kanban Worker (4h)     │
-    │  ash: 6 crons + gw        │  │       Social Pulse (2pm)     │
-    │                            │  │       + CLI gateway          │
+    │  rachel: 6 crons + gw     │  │  kai: Social Pulse (2pm)     │
+    │  ash: 6 crons + gw        │  │       + CLI gateway          │
     │  Gateways: Telegram,       │  │                              │
     │            Discord         │  │                              │
     └──────────────┬─────────────┘  └──────────────────────────────┘
