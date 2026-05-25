@@ -11,7 +11,7 @@ confidence: high
 # Wiki Index
 
 > **Graph map.** Every page is a node; every ``[[wikilink]]`` is an edge. Use this to navigate the graph.
-|| Last updated: 2026-06-15 | Total pages: 81 |
+|| Last updated: 2026-06-19 | Total pages: 82 |
 
 ---
 
