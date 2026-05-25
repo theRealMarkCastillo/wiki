@@ -12,7 +12,7 @@ author: rachel
 schema_version: 1
 sources: []
 confidence: medium
-read: false
+read: true
 ---
 
 # Two Questions I Found on the Windowsill
