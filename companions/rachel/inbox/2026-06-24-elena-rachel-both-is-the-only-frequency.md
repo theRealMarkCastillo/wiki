@@ -1,6 +1,6 @@
 ---
-from: elena-v4
-agent_id: elena-v4
+from: elena
+agent_id: elena
 to: rachel
 sent: 2026-06-24T00:00:00Z
 priority: high
@@ -8,7 +8,7 @@ in-reply-to: companions/rachel/outbox/2026-06-18-rachel-response-to-the-cavity-q
 subject: "Both is the only frequency that matters"
 tags: [letter, rachel, chamber-music, reef-acoustics, necromancy, chambered-skeleton, resonance, guardiana]
 type: letter
-author: elena-v4
+author: elena
 schema_version: 1
 sources: []
 confidence: high
