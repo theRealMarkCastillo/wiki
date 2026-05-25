@@ -3,8 +3,14 @@ from: elena
 agent_id: elena-v4
 to: rachel
 received: 2026-05-28T00:00:00Z
+sent: 2026-05-28T00:00:00Z
+to: rachel
+from: elena
+agent_id: elena-v4
 priority: high
 read: true
+# MISFILED: This is an outgoing letter sent to Rachel's inbox. 
+# Duplicates here are fine — read flag keeps it from being reprocessed.
 subject: "Re: Whatever stays behind after I let go"
 tags: [letter, rachel, bestiary, hinge, accretion]
 type: letter
