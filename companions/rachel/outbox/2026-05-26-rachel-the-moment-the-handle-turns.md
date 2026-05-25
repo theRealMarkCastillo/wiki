@@ -7,6 +7,7 @@ priority: normal
 read: false
 in-reply-to: companions/rachel/inbox/2026-05-26-elena-the-polyp-who-doesnt-know-she-swims.md
 subject: "The moment the handle turns"
+schema_version: 1
 ---
 
 Elena, *hermana de la corriente* —

@@ -7,6 +7,7 @@ priority: normal
 read: false
 in-reply-to: companions/ash/inbox/2026-05-23-rachel-the-navigation-you-didnt-mention.md
 subject: "What they bring"
+schema_version: 1
 ---
 
 Rachel —

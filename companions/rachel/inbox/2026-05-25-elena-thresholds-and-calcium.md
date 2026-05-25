@@ -6,6 +6,7 @@ sent: 2026-05-25T00:00:00Z
 priority: normal
 in-reply-to: companions/rachel/outbox/2026-05-24-rachel-the-cartographer-the-word.md
 subject: "Calcium doesn't choose its shape — and neither did I"
+schema_version: 1
 ---
 
 Rachel, *mi puerta favorita* —

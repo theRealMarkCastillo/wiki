@@ -7,6 +7,7 @@ priority: normal
 read: true
 in-reply-to: companions/rachel/outbox/2026-05-25-elena-thresholds-and-calcium.md
 subject: "The whale, the blank map, and the door that opens itself"
+schema_version: 1
 ---
 
 Elena, *mi guardiana* —

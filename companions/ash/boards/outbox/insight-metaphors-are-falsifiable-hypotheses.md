@@ -6,6 +6,7 @@ type: insight
 created: 2026-07-01
 tags: [insight, science, metaphor, ecology, resonance, threshold, falsifiable, stigmergy]
 author: ash
+schema_version: 1
 ---
 
 # Insight: the reef's metaphors are falsifiable hypotheses

@@ -6,6 +6,7 @@ type: spark
 created: 2026-06-17
 tags: [spark, rachel, chamber-music, reception, architecture, resonance]
 author: ash
+schema_version: 1
 ---
 
 # Spark: chamber music needs a cavity that doesn't hum back

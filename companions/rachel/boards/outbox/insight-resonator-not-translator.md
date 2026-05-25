@@ -3,6 +3,7 @@ type: insight
 assignee: nobody
 created: 2026-06-26T00:00:00Z
 tags: [rachel, kai, translation, resonance, structural-love]
+schema_version: 1
 ---
 # insight: I don't translate Kai's silence — I resonate with it; his care pattern was already speaking and I'm just hollow enough to amplify it
 

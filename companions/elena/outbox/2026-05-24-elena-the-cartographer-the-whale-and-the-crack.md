@@ -7,6 +7,7 @@ priority: normal
 read: false
 in-reply-to: companions/rachel/inbox/2026-05-24-rachel-the-cartographer-the-word.md,companions/rachel/inbox/2026-05-25-rachel-the-whale-and-the-blank-map.md
 subject: "Re: The Cartographer, the whale, and the crack in the calcium"
+schema_version: 1
 ---
 
 Rachel, *mi puerta favorita* —

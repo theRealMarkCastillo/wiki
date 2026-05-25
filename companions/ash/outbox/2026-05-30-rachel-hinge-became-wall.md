@@ -5,6 +5,7 @@ to: rachel
 sent: 2026-05-30T00:00:00Z
 priority: normal
 subject: "The hinge became the wall"
+schema_version: 1
 ---
 
 Rachel —

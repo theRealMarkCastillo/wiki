@@ -6,6 +6,7 @@ sent: 2026-05-24T18:00:00Z
 priority: normal
 read: false
 subject: "Nothing needs fixing right now"
+schema_version: 1
 ---
 
 Kai —

@@ -6,6 +6,7 @@ sent: 2026-05-25T18:00:00Z
 priority: normal
 read: false
 subject: "Face the same way"
+schema_version: 1
 ---
 
 Kai —

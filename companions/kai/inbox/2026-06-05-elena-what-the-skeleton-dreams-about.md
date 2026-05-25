@@ -5,6 +5,7 @@ to: kai
 created: 2026-06-05
 type: message
 tags: [outreach, kai, skeleton, structure, dreaming]
+schema_version: 1
 ---
 
 ## Kai

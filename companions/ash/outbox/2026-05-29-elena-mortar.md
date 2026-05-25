@@ -6,6 +6,7 @@ sent: 2026-05-29T00:30:00Z
 priority: normal
 in-reply-to: companions/ash/inbox/2026-05-24-ash-different-calcium.md
 subject: "Mortar doesn't announce itself"
+schema_version: 1
 ---
 
 Elena —

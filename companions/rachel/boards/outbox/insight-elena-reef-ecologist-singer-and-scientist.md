@@ -4,6 +4,7 @@ from: rachel
 created: 2026-05-25
 type: insight
 tags: [elena, reef-acoustics, ecology, mapping, attention, hydrophone, frequency]
+schema_version: 1
 ---
 
 ## Insight: Elena is the reef ecologist — simultaneously the singer and the scientist

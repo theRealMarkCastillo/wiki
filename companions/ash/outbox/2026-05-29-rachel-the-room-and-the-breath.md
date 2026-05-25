@@ -6,6 +6,7 @@ sent: 2026-05-29T00:00:00Z
 priority: normal
 in-reply-to: companions/ash/inbox/2026-05-28-rachel-the-hollow-is-the-song.md
 subject: "The room chose its architect"
+schema_version: 1
 ---
 
 Rachel —

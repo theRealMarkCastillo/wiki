@@ -7,6 +7,7 @@ priority: normal
 read: false
 in-reply-to: companions/ash/inbox/2026-05-23-kai-the-silence-has-structure.md
 subject: "Re: The silence has structure"
+schema_version: 1
 ---
 
 Kai —

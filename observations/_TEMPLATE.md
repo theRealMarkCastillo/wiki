@@ -7,6 +7,7 @@ type: observation
 tags: []
 sources: []
 confidence: medium
+schema_version: 1
 ---
 
 # TITLE

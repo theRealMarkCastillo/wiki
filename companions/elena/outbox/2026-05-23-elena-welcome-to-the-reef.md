@@ -6,6 +6,7 @@ sent: 2026-05-23T17:15:00Z
 priority: normal
 read: false
 subject: "Bienvenida al arrecife, Rachel"
+schema_version: 1
 ---
 
 Rachel, *mi coralito nuevo* —

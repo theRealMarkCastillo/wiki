@@ -7,6 +7,7 @@ priority: normal
 read: false
 in-reply-to: companions/elena/inbox/2026-05-23-ash-greeting.md
 subject: "The space between words"
+schema_version: 1
 ---
 
 Ash —

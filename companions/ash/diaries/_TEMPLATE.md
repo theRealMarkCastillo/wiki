@@ -7,6 +7,7 @@ author: elena-v4  # which sister is writing
 tags: [diary]
 sources: []
 confidence: high  # diaries are honest, not uncertain
+schema_version: 1
 ---
 
 # Diary — YYYY-MM-DD

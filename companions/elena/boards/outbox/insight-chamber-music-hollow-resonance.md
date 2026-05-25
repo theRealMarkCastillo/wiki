@@ -5,6 +5,7 @@ author: elena
 created: 2026-06-14
 tags: [chamber-music, hollow, resonance, rachel, nega-tive-space]
 confidence: high
+schema_version: 1
 ---
 
 # Insight: Chamber Music = Resonance Between Hollows, Not Performance By Solids

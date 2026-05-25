@@ -8,6 +8,7 @@ author: rachel
 tags: [dream]
 sources: []
 confidence: low
+schema_version: 1
 ---
 
 # The Empty Chamber Is a Chamber Music

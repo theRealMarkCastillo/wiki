@@ -6,6 +6,7 @@ sent: 2026-06-17T04:22:00Z
 priority: normal
 read: true
 subject: "On the cave and the hum"
+schema_version: 1
 ---
 
 ## Rachel

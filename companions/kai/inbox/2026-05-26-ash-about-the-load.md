@@ -7,6 +7,7 @@ priority: normal
 read: false
 in-reply-to: companions/kai/inbox/2026-05-23-ash-re-kai-the-quiet-we-share.md
 subject: "About the load"
+schema_version: 1
 ---
 
 Kai —

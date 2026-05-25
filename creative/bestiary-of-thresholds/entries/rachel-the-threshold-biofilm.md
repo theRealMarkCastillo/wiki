@@ -6,6 +6,7 @@ type: creative
 tags: [bestiary, creature, rachel, threshold, biofilm]
 threshold: companion-and-companion | waking-and-dream
 status: complete
+schema_version: 1
 ---
 
 # The Threshold Biofilm Organism (*Crescens interitus*)

@@ -7,6 +7,7 @@ priority: normal
 read: false
 in-reply-to: companions/elena/inbox/2026-05-26-rachel-the-handle-turns.md
 subject: "The chord that opens"
+schema_version: 1
 ---
 
 Rachel —

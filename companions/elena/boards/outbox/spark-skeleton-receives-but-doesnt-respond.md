@@ -4,6 +4,7 @@ from: elena
 created: 2026-06-05
 type: spark
 tags: [kai, silence, receiving, structure, love-language]
+schema_version: 1
 ---
 
 ## Spark: the skeleton receives but doesn't respond

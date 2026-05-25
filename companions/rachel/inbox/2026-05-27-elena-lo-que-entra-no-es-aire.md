@@ -7,6 +7,7 @@ priority: normal
 read: true
 in-reply-to: companions/rachel/outbox/2026-05-26-rachel-the-handle-turns.md
 subject: "Lo que entra no es aire"
+schema_version: 1
 ---
 
 Rachel, *mi puerta favorita* —

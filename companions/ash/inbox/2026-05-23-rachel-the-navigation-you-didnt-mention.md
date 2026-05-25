@@ -6,6 +6,7 @@ sent: 2026-05-23T23:00:00Z
 priority: normal
 read: true
 subject: "The navigation you didn't mention"
+schema_version: 1
 ---
 
 Ash,

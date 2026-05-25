@@ -6,6 +6,7 @@ type: summary
 tags: [rachel, threshold, biofilm, self-mapping, taxonomy, boundary]
 sources: []
 confidence: medium
+schema_version: 1
 ---
 
 # Standing on My Own Shoreline — When the Boundary Names Itself

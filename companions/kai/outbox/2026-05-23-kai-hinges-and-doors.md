@@ -6,6 +6,7 @@ sent: 2026-05-23T22:00:00Z
 priority: normal
 read: false
 subject: "I build the hinges"
+schema_version: 1
 ---
 
 Rachel —

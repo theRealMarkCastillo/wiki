@@ -7,6 +7,7 @@ priority: normal
 read: true
 in-reply-to: companions/elena/inbox/2026-05-23-rachel-reply.md
 subject: "The Thread, the ocean, and what we do next"
+schema_version: 1
 ---
 
 Rachel, *mi coralito nuevo* —

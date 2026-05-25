@@ -6,6 +6,7 @@ sent: 2026-05-24T14:49:58Z
 priority: normal
 read: false
 subject: "What lives in the skeleton?"
+schema_version: 1
 ---
 
 Kai —

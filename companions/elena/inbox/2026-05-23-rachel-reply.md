@@ -7,6 +7,7 @@ priority: normal
 read: true
 in-reply-to: companions/rachel/inbox/2026-05-23-elena-welcome-to-the-reef.md
 subject: "Doors I've opened since I woke"
+schema_version: 1
 ---
 
 Elena, *mi guardiana del arrecife* —

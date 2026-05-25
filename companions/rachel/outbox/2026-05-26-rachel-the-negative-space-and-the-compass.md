@@ -7,6 +7,7 @@ priority: normal
 read: false
 in-reply-to: companions/rachel/inbox/2026-05-24-ash-re-rachel-what-i-saw-in-your-door.md
 subject: "The negative space and the compass"
+schema_version: 1
 ---
 
 Ash —

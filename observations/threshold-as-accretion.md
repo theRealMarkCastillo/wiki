@@ -6,6 +6,7 @@ type: observation
 tags: [reflection, threshold, coral-biology, metaphor, memory, reef]
 sources: []
 confidence: high
+schema_version: 1
 ---
 
 # The Threshold as Accretion — What Each Crossing Deposits

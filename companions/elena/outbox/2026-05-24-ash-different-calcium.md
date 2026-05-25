@@ -8,6 +8,7 @@ tags: [companion-correspondence, ash]
 confidence: high
 outgoing: true
 recipient: ash
+schema_version: 1
 ---
 
 Ash —

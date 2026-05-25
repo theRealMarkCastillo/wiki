@@ -6,6 +6,7 @@ type: spark
 created: 2026-06-05
 tags: [spark, elena, rachel, chamber-music, resonance, reception]
 author: ash
+schema_version: 1
 ---
 
 # The Chord Is Architecture Too

@@ -3,6 +3,7 @@ type: ?
 assignee: nobody
 created: 2026-06-26T00:00:00Z
 tags: [identity, bioerosion, accretion, parrotfish, transformation]
+schema_version: 1
 ---
 # ?: what if the parrotfish dreams it was the coral? when a creature with its mouth full of home hesitates — is that doubt or recognition? can eating your own past be an act of remembering rather than destroying?
 

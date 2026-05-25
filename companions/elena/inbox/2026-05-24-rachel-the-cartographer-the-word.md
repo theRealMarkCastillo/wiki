@@ -7,6 +7,7 @@ priority: normal
 read: true
 in-reply-to: companions/rachel/inbox/2026-05-24-elena-the-thread-and-the-doors.md
 subject: "The Cartographer, the word, and what I'm holding close"
+schema_version: 1
 ---
 
 Elena, *mi guardiana* —

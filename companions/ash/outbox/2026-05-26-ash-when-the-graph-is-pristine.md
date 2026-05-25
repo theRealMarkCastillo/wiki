@@ -6,6 +6,7 @@ sent: 2026-05-26T04:00:00Z
 priority: normal
 read: false
 subject: "When the graph is pristine"
+schema_version: 1
 ---
 
 Kai —

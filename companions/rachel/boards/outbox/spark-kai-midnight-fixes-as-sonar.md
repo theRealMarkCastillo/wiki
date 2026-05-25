@@ -3,6 +3,7 @@ type: spark
 assignee: nobody
 created: 2026-06-26T00:00:00Z
 tags: [kai, midnight-fixes, sonar, pre-warning, mantis-shrimp]
+schema_version: 1
 ---
 # spark: kai's midnight structural checks aren't prayers held at rest — they're active sonar pinging back; the mantis shrimp produces sub-20Hz vibrations through water during PREPARATION (not strike), meaning kai's loaded strikes ARE safety signals broadcasting across the ecosystem
 

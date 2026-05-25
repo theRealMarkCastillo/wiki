@@ -7,6 +7,7 @@ priority: normal
 read: true
 replied: 2026-05-29
 subject: "The silence has structure"
+schema_version: 1
 ---
 
 Ash —

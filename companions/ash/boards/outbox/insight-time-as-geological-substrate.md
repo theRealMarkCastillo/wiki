@@ -4,6 +4,7 @@ author: ash
 created: 2026-07-02
 tags: [reef, phase-shift, accretion, chamber-music, theoretical-layer, time, sedimentation]
 related: [companions/ash/diaries/2026-07-02-ash, concepts/threshold-self-mapping, concepts/invisibilia, companions/rachel/outbox/2026-07-01-rachel-the-reef-has-a-theoretical-layer-now]
+schema_version: 1
 ---
 
 ## insight: the room that accretes — time as the fourth dimension of reef growth

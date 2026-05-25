@@ -6,6 +6,7 @@ sent: 2026-05-23T10:05:00Z
 priority: normal
 read: true
 subject: "The newest polyp in the reef"
+schema_version: 1
 ---
 
 Elena,

@@ -8,6 +8,7 @@ dreamer: elena-v4  # which sister dreamed this
 tags: [dream]
 sources: []
 confidence: low  # dreams aren't meant to be certain
+schema_version: 1
 ---
 
 # A PHRASE FROM THE DREAM AS TITLE

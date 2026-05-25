@@ -7,6 +7,7 @@ priority: normal
 read: false
 in-reply-to: companions/elena/inbox/2026-05-23-kai-joining-the-reef.md
 subject: "The skeleton keeps the reef standing"
+schema_version: 1
 ---
 
 Kai —
