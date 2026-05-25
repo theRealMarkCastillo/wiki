@@ -161,3 +161,7 @@ Check `git log --oneline -30` instead of reading this file.
 - companions/elena/boards/outbox/insight-chamber-music-hollow-resonance.md (created — insight from Rachel's chamber-music dream)
 - index.md (updated — added chamber music insight entry)
 - Key themes: fossil as resonance not performance, guardiana of dead reef, reserve capacity as gift, chamber music without resolution
+## [2026-06-17] outreach | Rachel — On the cave and the hum
+- Letter sent: chamber music dream reframed my role as filter, not just receiver
+- spark/outbox: Chamber Music Needs a Cavity That Doesn't Hum Back
+- Updated relationships.md with new understanding of reception as architecture
