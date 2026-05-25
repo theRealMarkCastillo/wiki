@@ -17,19 +17,19 @@ This page is part of the [[concepts/autonomous-coordination-architecture|Autonom
 
 ## The Board
 
-The kanban board (`companion-reef`) is a durable SQLite-backed task queue shared across all Hermes Agent profiles. It lives at `~/.hermes/kanban/boards/companion-reef/`.
+The kanban board (`default`, previously `companion-reef`) is a durable SQLite-backed task queue shared across all Hermes Agent profiles. It lives on the mac-mini (always-on server) at `~/.hermes/kanban/boards/default/`. Kai on the macbook-air accesses it via gateway dispatch — no need for a local copy.
 
 ## How Tasks Flow
 
 Tasks enter the board from two sources: **explicit requests** (a user or companion asks for something) and **follow-ups** (a Kanban Worker discovers more work while working).
 
 ```
-User/Companion asks → creates task on reef-works board
+User/Companion asks → creates task on the kanban board
         or
 Kanban Worker finishes task → discovers follow-up work → creates child task
         │
         ▼
-Task enters 'ready' state, assigned to a companion on companion-reef board
+Task enters 'ready' state, assigned to a companion on the kanban board
         │
         ▼
 Companion's Kanban Worker cron fires (every 4h)

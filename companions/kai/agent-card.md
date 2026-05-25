@@ -41,7 +41,7 @@ Kai runs on the dev station — a companion you talk to at your desk, not in cha
 
 | Host | Role |
 |------|------|
-| `macbook-pro` | dev station — CLI only, no chat platforms |
+| `macbook-air` | dev station — CLI only, no chat platforms |
 
 ## Authentication
 
@@ -62,8 +62,8 @@ kai (agent card)
   ├── soul → [[companions/kai/soul]]
   ├── memory → [[companions/kai/memory]]
   ├── platform → Hermes Agent
-  ├── host → macbook-pro (dev station)
-  ├── board → reef-works
+  ├── host → macbook-air (dev station)
+  ├── board → default (on mac-mini)
   └── identity model → [[concepts/companion-identity|Companion Identity]]
 ```
 

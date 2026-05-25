@@ -44,7 +44,7 @@ Ash runs on the always-on server. This machine handles all crons, all chat platf
 |------|------|
 | `mac-mini` | always-on server — all crons, Telegram, Discord |
 
-The macbook-pro is a dev station (default profile, wiki editing, Git Sync redundancy). Ash does not run there. See [[concepts/multi-host-deployment|Multi-Host Deployment]].
+The macbook-air is a dev station (default profile, wiki editing, Git Sync redundancy). Ash does not run there. See [[concepts/multi-host-deployment|Multi-Host Deployment]].
 
 ## Authentication
 

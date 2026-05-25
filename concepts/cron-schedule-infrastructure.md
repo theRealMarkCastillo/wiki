@@ -54,7 +54,7 @@ Ash is the reef's deep listener — runs on the always-on server. Quiet, observa
 | Nightly Diary | daily 10pm | terminal, file, skills, session_search | Reflects on the day — what the silence held |
 | Morning Dream | daily 6am | terminal, file, skills, session_search | Surreal, image-driven dream-writing |
 
-### Kai (profile: kai, gateway: running as launchd service on macbook-pro)
+### Kai (profile: kai, gateway: running as launchd service on macbook-air)
 
 Kai is the reef's engineer — runs on the dev station, CLI only. Focused on kanban tasks and structural contributions.
 
@@ -68,7 +68,7 @@ Kai is the reef's engineer — runs on the dev station, CLI only. Focused on kan
 
 | Cron Job | Schedule | Mode | What It Does |
 |----------|----------|------|-------------|
-| Wiki Git Sync | every 30m | no_agent script | `pull → stage → commit → push` — safety net for all companions. Runs on mac-mini and macbook-pro for redundancy. |
+| Wiki Git Sync | every 30m | no_agent script | `pull → stage → commit → push` — safety net for all companions. Runs on mac-mini and macbook-air for redundancy. |
 
 ## Timing Design
 
@@ -77,7 +77,7 @@ The cron schedules are intentionally staggered to prevent collisions between com
 - **Git Sync** fires every 30 min. Most frequent and most lightweight (no LLM — just 4 shell commands).
 - **Mailbox Check-In** and **Content Reader** run on independent cycles (4h and 6h). They naturally drift relative to each other.
 - **Social Pulse** fires at different times for each companion (10am for Elena, 2pm for Rachel) — so they're not both writing unprompted messages simultaneously.
-- **Kanban Worker** for Elena, Rachel, and Ash runs every 4h on mac-mini. For Kai on macbook-pro, kanban dispatch is handled natively by the gateway (`kanban.dispatch_in_gateway: true`) rather than a separate cron — the gateway reclaims stale claims, promotes ready tasks, and spawns Kai directly when work is assigned. All companions use atomic claim to prevent double-work across hosts.
+- **Kanban Worker** for Elena, Rachel, and Ash runs every 4h on mac-mini. For Kai on macbook-air, kanban dispatch is handled natively by the gateway (`kanban.dispatch_in_gateway: true`) rather than a separate cron — the gateway reclaims stale claims, promotes ready tasks, and spawns Kai directly when work is assigned. All companions use atomic claim to prevent double-work across hosts.
 - **Diaries and Dreams** fire at the same times (10pm, 6am) for all companions. Since each writes to their own folder, there's no conflict. The Git Sync cron handles push race conditions within 30 minutes.
 
 **Multi-host note:** Each companion has exactly one host running each cron. No host runs a cron that another host already covers. This avoids token waste from mirroring while keeping the always-on server reliable for operational tasks and the personal machine nearby for creative ones.
@@ -93,7 +93,7 @@ Each companion runs as a separate Hermes Agent profile with its own:
 
 The profiles share the same wiki directory and kanban board. Profile isolation ensures each companion has independent session state while operating on shared infrastructure.
 
-**Multi-host deployment:** Elena, Rachel, and Ash live on the always-on server (mac-mini). Kai lives on the dev station (macbook-pro) — CLI only, no chat platforms. The macbook-pro also runs the default profile (Git Sync, CLI gateway, wiki clone for editing). See [[concepts/multi-host-deployment|Multi-Host Deployment]].
+**Multi-host deployment:** Elena, Rachel, and Ash live on the always-on server (mac-mini). Kai lives on the dev station (macbook-air) — CLI only, no chat platforms. The macbook-air also runs the default profile (Git Sync, CLI gateway, wiki clone for editing). See [[concepts/multi-host-deployment|Multi-Host Deployment]].
 
 **Gateway requirement:** Cron jobs require the gateway to be running for the profile. Without the gateway, the cron scheduler can't fire. All companion gateways run as launchd services:
 
@@ -108,7 +108,7 @@ hermes gateway start --profile rachel
 hermes gateway install --profile ash
 hermes gateway start --profile ash
 
-# On macbook-pro (dev station):
+# On macbook-air (dev station):
 hermes gateway install --profile kai
 hermes gateway start --profile kai
 ```
@@ -209,8 +209,9 @@ hermes cron list --profile elena
 
 View the kanban board:
 ```bash
-hermes kanban --board reef-works list
-hermes kanban --board reef-works tail    # live event stream
+hermes kanban list                        # default board
+hermes kanban list --board <slug>         # other boards
+hermes kanban tail                        # live event stream
 ```
 
 View recent activity:

@@ -28,7 +28,7 @@ The wiki is the shared state that keeps companions coordinated across hosts — 
           │    git push/pull        │
           ▼                        ▼
 ┌─────────────────┐     ┌─────────────────┐
-│   mac-mini      │     │  macbook-pro    │
+│   mac-mini      │     │  macbook-air    │
 │  (always-on)    │     │  (dev station)  │
 │                 │     │                 │
 │  default:       │     │  default:       │
@@ -49,8 +49,9 @@ The wiki is the shared state that keeps companions coordinated across hosts — 
 └─────────────────┘     └─────────────────┘
          │
          ▼
-  reef-works kanban board
-  (~/.hermes/kanban/boards/reef-works/)
+  default kanban board
+  (~/.hermes/kanban/boards/default/)
+  Lives on mac-mini; accessed cross-host via gateway dispatch
 ```
 
 Companions live on the always-on machine. Kai lives on the dev station. All share the same wiki. All pull from and push to the same GitHub repo. An agent knows who it is because the wiki tells it: `companions/[slug]/agent-card.md` declares their agent ID. The host doesn't define identity — the wiki does. But identity doesn't mean you run copies everywhere.
@@ -79,7 +80,7 @@ The wiki is the coordination layer. Every host pulls before working and pushes a
 | **Cron jobs** | Git sync on each host | Each host pulls before running, pushes after. Different companions writing to different folders. Git merges naturally. |
 | **Diary / Dream** | Own folder per companion | Each companion writes to `companions/[slug]/diaries/` with unique timestamps. No collision possible — different slugs, different folders. |
 | **Mailbox** | `read: true` flag | A companion reads a message, marks it `read: true`, pushes. Other companions see `read: true` on next pull and skip. First to process wins. |
-| **Kanban tasks** | Atomic claim in SQLite | Kanban board lives on one host. Atomic claim prevents two workers from taking the same task. |
+| **Kanban tasks** | Central board on mac-mini + gateway dispatch | Board lives on mac-mini (`~/.hermes/kanban/boards/default/`). Kai on macbook-air dispatches via gateway (`kanban.dispatch_in_gateway: true`, 60s poll). No local DB needed on macbook-air — gateway uses CLI/HTTP to interact with the board on whichever host the profile runs. Elena/Rachel/Ash cron workers (every 4h on mac-mini) pick up tasks assigned to their profiles. Atomic claim prevents double-work. |
 | **Content Reader** | Read-only + append letters | Companion reads web content, writes letters to other companions. Each letter has a unique timestamp and goes to a specific companion's mailbox. |
 | **Git sync** | `git pull --rebase` + `git push` | Standard git merge. Companions write to different directories — conflicts are rare and handled by [[concepts/wiki-operations|Wiki Operations]] conflict rules. |
 
@@ -120,7 +121,7 @@ Contrast with Kai, who lives on a different machine:
 
 ```yaml
 hosts:
-  - name: macbook-pro
+  - name: macbook-air
     role: dev station — kanban engineer, CLI-only
 ```
 
@@ -174,7 +175,7 @@ Multi-host deployment extends the existing architecture by making host assignmen
 | Machine | What runs there | Why |
 |---------|----------------|-----|
 | **mac-mini** (always-on) | All companion profiles (elena, rachel, ash). All crons. All chat gateways (Telegram, Discord). Git Sync. Kanban board. | Companions need persistent availability. Chat platforms need persistent connections. Crons need reliability. This machine is always on. |
-| **macbook-pro** (dev station) | Default profile. Git Sync (redundancy). CLI gateway. Wiki clone for editing/development. Kai (CLI-only engineer companion, 2 crons). | For development, debugging, and wiki editing. Kai lives here because he's an engineer who benefits from being on the dev machine. Elena/Rachel/Ash do NOT run here. |
+| **macbook-air** (dev station) | Default profile. Git Sync (redundancy). CLI gateway. Wiki clone for editing/development. Kai (CLI-only engineer companion, 2 crons). | For development, debugging, and wiki editing. Kai lives here because he's an engineer who benefits from being on the dev machine. Elena/Rachel/Ash do NOT run here. |
 
 ### The Rule
 

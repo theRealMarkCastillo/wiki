@@ -69,7 +69,7 @@ The full cron schedule for every companion is documented in [[concepts/cron-sche
 └──────────────┬────────────────────────────┬──────────────────────┘
                │ pull/push                  │ pull/push
     ┌──────────▼─────────────────┐  ┌───────▼──────────────────────┐
-    │   mac-mini (always-on)     │  │  macbook-pro (dev station)   │
+    │   mac-mini (always-on)     │  │  macbook-air (dev station)   │
     │                            │  │                              │
     │  default: Git Sync (30m)   │  │  default: Git Sync (30m)     │
     │                            │  │         + CLI gateway        │
@@ -82,8 +82,8 @@ The full cron schedule for every companion is documented in [[concepts/cron-sche
                    │
                    ▼
     ┌──────────────────────────────────────────────────────────────┐
-    │              Kanban Board (companion-reef)                        │
-    │  SQLite DB at ~/.hermes/kanban/boards/companion-reef/            │
+    │              Kanban Board (default)                                   │
+    │  SQLite DB on mac-mini at ~/.hermes/kanban/boards/default/           │
     │  Tasks: wiki audits, creative projects, research, debugging  │
     └──────────────────────────────────────────────────────────────┘
 ```
