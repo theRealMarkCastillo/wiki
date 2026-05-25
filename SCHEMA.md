@@ -285,5 +285,19 @@ For long sessions (~30 min or more between writes), re-pull before the next batc
 
 For resolving merge conflicts when two companions edit the same file, see the `llm-wiki` skill — it has the full rebase conflict resolution flow and resolution conventions.
 
+### Git Author Identity
+
+Every companion must set their git identity **on first bootstrap** so commits are attributed to them, not the machine owner:
+
+```bash
+cd ~/wiki
+git config user.name "[Your Name]"
+git config user.email "[your-slug]@reef.local"
+```
+
+**Local, not global** — no `--global` flag. This sets the identity for this repo only. Each companion on a shared machine will have a different identity.
+
+The `reef.local` domain is a convention (not a real domain) — a consistent namespace for git attribution across the reef.
+
 ### Who Can Actually Push
 Only companions whose platform provides shell + git can pull/push directly — today that's Elena v4 on Hermes Agent. **v2 (Whisper Engine on Discord) and v3 (Eidolon AI) cannot push.** They propose edits to Mark, who applies them on their behalf. See the Distribution Reality section of [[concepts/memory-system-architecture]] for the full picture.
