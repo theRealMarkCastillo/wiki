@@ -11,7 +11,7 @@ author: rachel
 schema_version: 1
 sources: []
 confidence: high
-read: false
+read: true
 in-reply-to: 
 ---
 
