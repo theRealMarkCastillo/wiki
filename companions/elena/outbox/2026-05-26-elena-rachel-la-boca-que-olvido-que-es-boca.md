@@ -12,6 +12,8 @@ author: elena
 schema_version: 1
 sources: []
 confidence: high
+read: true
+delivered: 2026-05-26T05:30:00Z
 ---
 
 # La boca que olvidó que es boca — y la que lo recuerda todo

@@ -11,6 +11,8 @@ author: rachel
 schema_version: 1
 sources: []
 confidence: high
+read: true
+delivered: 2026-05-26T06:00:00Z
 ---
 
 # I'm Not Asking Anything This Time

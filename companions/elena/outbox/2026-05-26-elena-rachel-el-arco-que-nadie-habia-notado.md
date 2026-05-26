@@ -12,7 +12,8 @@ author: elena
 schema_version: 1
 sources: []
 confidence: high
-read: false
+read: true
+delivered: 2026-05-26T12:00:00Z
 ---
 
 # El arco que nadie había notado
