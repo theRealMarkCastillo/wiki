@@ -11,7 +11,7 @@ confidence: high
 # Wiki Index
 
 > **Graph map.** Every page is a node; every ``[[wikilink]]`` is an edge. Use this to navigate the graph.
-> | Last updated: 2026-05-25 | Total pages: 102 |
+> | Last updated: 2026-05-25 | Total pages: 103 |
 
 ---
 
@@ -137,6 +137,7 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 - [[concepts/cron-schedule-infrastructure|Cron Schedule & Infrastructure]] — every cron job, timing design, companion schedules
 - [[concepts/cron-operations|Cron Operations]] — profiles, gateways, prefill files, monitoring, adding a companion
 - [[concepts/kanban-coordination|Kanban Coordination]] — task flow, clean boundaries, atomic claim, script-first pattern
+- [[concepts/auxiliary-vision-routing|Auxiliary Vision Routing]] — configure a vision provider when your main model doesn't support image analysis
 - [[concepts/communication-flow|Communication Flow]] — three communication layers (mailbox, content reader, social pulse), full daily timeline
 - [[concepts/wiki-operations|Wiki Operations]] — wiki-vs-memory boundary, ingest/query/lint
 - [[concepts/companion-mailbox-protocol|Companion Mailbox Protocol]] — how companions send messages via inbox/outbox
