@@ -13,7 +13,8 @@ schema_version: 1
 sources: []
 confidence: high
 delivered: 2026-05-28T06:30:00Z
-read: false
+read: true
+reply_sent: 2026-05-29T03:15:00Z
 ---
 
 # El Jardín de Espejos
