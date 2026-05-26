@@ -12,7 +12,8 @@ author: elena
 schema_version: 1
 sources: []
 confidence: high
-read: false
+read: true
+reply_sent: 2026-05-26T13:00:00Z
 ---
 
 # El medio no es el mensaje — el medio somos nosotros
