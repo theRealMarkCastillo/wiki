@@ -14,14 +14,14 @@ When your main model doesn't support vision, or when you want cheaper/specialize
 
 ## Current Reef Configuration
 
-All four auxiliary slots are pinned to OpenRouter with `google/gemini-2.5-flash`:
+All four auxiliary slots are pinned to OpenRouter. Model choice is graduated by task complexity:
 
-| Task | What It Does | Config Key |
-|------|-------------|-----------|
-| Vision | Image analysis, browser screenshots | `auxiliary.vision` |
-| Web Extract | Web page content summarization | `auxiliary.web_extract` |
-| Compression | Context compression summaries (automatic) | `auxiliary.compression` |
-| Title Generation | Session title summaries | `auxiliary.title_generation` |
+| Task | Model | Why this tier |
+|------|-------|--------------|
+| Vision | `google/gemini-2.5-flash` | Image analysis needs real reasoning |
+| Web Extract | `google/gemini-2.5-flash` | Web content summarization needs accuracy |
+| Compression | `google/gemini-2.5-flash` | Context summaries must be coherent |
+| Title Generation | `google/gemini-2.5-flash-lite` | Session titles are 3-6 words; lite is plenty |
 
 ```yaml
 auxiliary:
@@ -36,24 +36,27 @@ auxiliary:
     model: google/gemini-2.5-flash
   title_generation:
     provider: openrouter
-    model: google/gemini-2.5-flash
+    model: google/gemini-2.5-flash-lite
 ```
 
 Set with:
 
 ```bash
-for task in vision web_extract compression title_generation; do
+for task in vision web_extract compression; do
   hermes config set auxiliary.$task.provider openrouter
   hermes config set auxiliary.$task.model google/gemini-2.5-flash
 done
+hermes config set auxiliary.title_generation.provider openrouter
+hermes config set auxiliary.title_generation.model google/gemini-2.5-flash-lite
 ```
 
-## Why Pin These Four?
+## Model Selection Principle
 
-- **vision** — main model (DeepSeek v4) doesn't support vision; `auto` would walk the chain every call
-- **web_extract** — fired on every doc pull; a flash model saves tokens vs. running summarization through the main reasoning model
-- **compression** — runs automatically when context fills up; pinning avoids the chain walk mid-session
-- **title_generation** — fires at session start; low stakes, fast model is ideal
+Match the model tier to the task's reasoning surface:
+
+- **flash** — tasks that need factual accuracy and coherent multi-paragraph output (summarization, image analysis, compression)
+- **flash-lite** — tasks with a tiny reasoning surface where the output is a few tokens (titles, labels, classifications)
+- **full models** (e.g., `claude-sonnet-4`) — don't use for auxiliary tasks; that's what the main model is for
 
 ## Other Auxiliary Tasks (Left on `auto`)
 
@@ -67,9 +70,25 @@ These are infrequent enough that `auto` is fine:
 | Kanban specify | `auxiliary.triage_specifier` |
 | Kanban decomposition | `auxiliary.kanban_decomposer` |
 
+## Sub-Provider Rate Limits
+
+When OpenRouter routes through a sub-provider (e.g., Google), transient rate limits (HTTP 429 with `Retry-After`) from the sub-provider do NOT trigger Hermes's fallback — they're treated as retryable. To spread load across multiple sub-providers, use [[#provider-routing|Provider Routing]] within OpenRouter.
+
+### Provider Routing
+
+```yaml
+provider_routing:
+  order:
+    - "Google"
+    - "Anthropic"
+  require_parameters: true
+```
+
+This tells OpenRouter to try Google first, then Anthropic — all internally, before Hermes ever sees a failure.
+
 ## Fallback Chain
 
-When you pin an explicit provider and it hits a capacity error (quota exhausted, payment required), Hermes falls through to the main agent model as a safety net. If your main model can't handle that task (e.g., DeepSeek for vision), that safety net won't help — add a `fallback_chain`:
+When you pin an explicit provider and it hits a capacity error (quota exhausted, payment required), Hermes falls through to the main agent model as a safety net. If your main model can't handle that task (e.g., DeepSeek for vision), add a `fallback_chain`:
 
 ```yaml
 auxiliary:

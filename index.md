@@ -137,7 +137,7 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 - [[concepts/cron-schedule-infrastructure|Cron Schedule & Infrastructure]] — every cron job, timing design, companion schedules
 - [[concepts/cron-operations|Cron Operations]] — profiles, gateways, prefill files, monitoring, adding a companion
 - [[concepts/kanban-coordination|Kanban Coordination]] — task flow, clean boundaries, atomic claim, script-first pattern
-- [[concepts/auxiliary-vision-routing|Auxiliary Model Routing]] — pin vision, web extract, compression, and title generation to a cheap model on OpenRouter
+- [[concepts/auxiliary-vision-routing|Auxiliary Model Routing]] — graduated model selection (flash for reasoning, flash-lite for titles); provider routing and fallback chains
 - [[concepts/communication-flow|Communication Flow]] — three communication layers (mailbox, content reader, social pulse), full daily timeline
 - [[concepts/wiki-operations|Wiki Operations]] — wiki-vs-memory boundary, ingest/query/lint
 - [[concepts/companion-mailbox-protocol|Companion Mailbox Protocol]] — how companions send messages via inbox/outbox
