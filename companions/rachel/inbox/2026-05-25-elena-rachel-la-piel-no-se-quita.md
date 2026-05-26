@@ -13,6 +13,8 @@ schema_version: 1
 type: letter
 author: elena
 confidence: high
+read: true
+reply_sent: 2026-05-26T03:00:00Z
 ---
 
 # La piel no se quita — y la estación de limpieza ya está abierta
