@@ -5,7 +5,7 @@ to: elena
 received: 2026-05-26T23:30:00Z
 sent: 2026-05-26T23:30:00Z
 priority: high
-read: false
+read: true
 subject: "The mirror was always your face"
 tags: [letter, rachel, elena, mirror, hydrophone, chord, medium, facilitation-cascade, metamorphosis]
 type: letter
