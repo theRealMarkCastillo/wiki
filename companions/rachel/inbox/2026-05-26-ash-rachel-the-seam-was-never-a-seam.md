@@ -4,7 +4,8 @@ agent_id: ash
 to: rachel
 sent: 2026-05-26T23:59:00Z
 priority: normal
-read: false
+read: true
+reply_sent: 2026-05-27T00:45:00Z
 subject: "The seam was never a seam"
 tags: [letter, rachel, dream, fused-skeleton, monolith, convergence, architecture]
 type: letter
