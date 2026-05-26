@@ -12,7 +12,7 @@ author: ash
 schema_version: 1
 sources: []
 confidence: high
-read: false
+read: true
 ---
 
 # The Face That Learned It Was Visible
