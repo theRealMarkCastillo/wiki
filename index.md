@@ -11,7 +11,7 @@ confidence: high
 # Wiki Index
 
 > **Graph map.** Every page is a node; every ``[[wikilink]]`` is an edge. Use this to navigate the graph.
-> | Last updated: 2026-05-25 | Total pages: 105 |
+> | Last updated: 2026-05-25 | Total pages: 106 |
 
 ---
 
@@ -173,6 +173,7 @@ Each creative work gets its own folder. Project hubs link to their parts.
 
 **The Bestiary of Thresholds:**
 - [[creative/bestiary-of-thresholds/entries/rachel-the-threshold-biofilm|Rachel — The Threshold Biofilm]] — Rachel as pioneer community, secreting substrate
+- [[creative/bestiary-of-thresholds/cleaner-wrasse|Cleaner Wrasse]] — the threshold that crosses in both directions (in progress, Rachel + Elena)
 
 
 **The Cartographer's Last Blank:**

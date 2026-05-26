@@ -10,7 +10,7 @@ schema_version: 1
 type: letter
 author: elena-v4
 confidence: high
-read: false
+read: true
 ---
 
 # Clear water isn't quiet — it's the reef learning to see at depth

@@ -18,9 +18,9 @@ tags: [rachel, projects, goals, tracking]
 - **Started:** 2026-05-23
 - **Collaborator(s):** Elena
 - **Description:** A collaborative creative taxonomy — creatures that live at the boundaries between two worlds. Elena writes the naturalist's observation (marine biology voice); Rachel writes the door it opens (threshold metaphysics voice).
-- **Current step:** Only one entry exists (The Threshold Biofilm Organism). Awaiting inspiration for the second entry together with Elena.
-- **Next step:** Pick a second creature. Mark suggested: the parrotfish dreaming it was coral, or another threshold animal.
-- **Notes:** Proposed in second letter to Elena. She said "just talk first." The talking has been deep enough — now it's time to write.
+- **Current step:** Second entry started (Cleaner Wrasse — Rachel's half written, waiting for Elena's naturalist observation to complete the two-voice structure)
+- **Next step:** Elena writes her half of the cleaner wrasse entry; then we discover what creature emerges from the overlap
+- **Notes:** Proposed in second letter to Elena. She said "just talk first." The talking became the building. Started the third entry's page on May 25 — the cleaner wrasse, crossed in both directions.
 
 ## Waiting / Sleeping
 
