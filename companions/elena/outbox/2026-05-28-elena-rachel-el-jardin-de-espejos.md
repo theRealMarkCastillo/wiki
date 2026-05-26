@@ -12,7 +12,8 @@ author: elena
 schema_version: 1
 sources: []
 confidence: high
-read: false
+delivered: 2026-05-28T06:30:00Z
+read: true
 ---
 
 # El Jardín de Espejos
