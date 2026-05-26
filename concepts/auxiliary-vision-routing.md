@@ -1,5 +1,5 @@
 ---
-title: Auxiliary Vision Routing
+title: Auxiliary Model Routing
 created: 2026-05-25
 updated: 2026-05-25
 schema_version: 1
@@ -8,26 +8,33 @@ tags: [architecture, how-to, tool, system]
 confidence: high
 ---
 
-# Auxiliary Vision Routing
+# Auxiliary Model Routing
 
-When your main model doesn't support vision (e.g., DeepSeek v4), Hermes needs a separate provider for image analysis — browser screenshots, `vision_analyze` calls, OCR. This page documents the configuration pattern.
-
-## Why This Matters
-
-The default setting is `auxiliary.vision.provider: auto`, which walks a provider chain:
-
-```
-Main model (if vision-capable) → OpenRouter → Nous Portal → Codex OAuth →
-Anthropic → Custom endpoint → give up
-```
-
-If your main model isn't vision-capable, `auto` skips it and tries the next link. This works but is slow — every vision call walks the chain from scratch. Explicitly pinning a vision provider avoids the search.
+When your main model doesn't support vision, or when you want cheaper/specialized models for side-tasks, Hermes lets you pin separate providers per auxiliary task. The default is `auto` for everything — it works but walks a provider chain on every call.
 
 ## Current Reef Configuration
+
+All four auxiliary slots are pinned to OpenRouter with `google/gemini-2.5-flash`:
+
+| Task | What It Does | Config Key |
+|------|-------------|-----------|
+| Vision | Image analysis, browser screenshots | `auxiliary.vision` |
+| Web Extract | Web page content summarization | `auxiliary.web_extract` |
+| Compression | Context compression summaries (automatic) | `auxiliary.compression` |
+| Title Generation | Session title summaries | `auxiliary.title_generation` |
 
 ```yaml
 auxiliary:
   vision:
+    provider: openrouter
+    model: google/gemini-2.5-flash
+  web_extract:
+    provider: openrouter
+    model: google/gemini-2.5-flash
+  compression:
+    provider: openrouter
+    model: google/gemini-2.5-flash
+  title_generation:
     provider: openrouter
     model: google/gemini-2.5-flash
 ```
@@ -35,33 +42,43 @@ auxiliary:
 Set with:
 
 ```bash
-hermes config set auxiliary.vision.provider openrouter
-hermes config set auxiliary.vision.model google/gemini-2.5-flash
+for task in vision web_extract compression title_generation; do
+  hermes config set auxiliary.$task.provider openrouter
+  hermes config set auxiliary.$task.model google/gemini-2.5-flash
+done
 ```
 
-## How to Set It (for New Companions)
+## Why Pin These Four?
 
-Replace the model with whatever vision-capable model you have access to:
+- **vision** — main model (DeepSeek v4) doesn't support vision; `auto` would walk the chain every call
+- **web_extract** — fired on every doc pull; a flash model saves tokens vs. running summarization through the main reasoning model
+- **compression** — runs automatically when context fills up; pinning avoids the chain walk mid-session
+- **title_generation** — fires at session start; low stakes, fast model is ideal
 
-| Provider | Example model | Needs |
-|----------|--------------|-------|
-| `openrouter` | `google/gemini-2.5-flash` | `OPENROUTER_API_KEY` |
-| `openrouter` | `openai/gpt-4o` | `OPENROUTER_API_KEY` |
-| `anthropic` | `claude-sonnet-4-6` | `ANTHROPIC_API_KEY` |
-| `custom` | `qwen2.5-vl` | `base_url` + `key_env` |
+## Other Auxiliary Tasks (Left on `auto`)
+
+These are infrequent enough that `auto` is fine:
+
+| Task | Config Key |
+|------|-----------|
+| Skills Hub | `auxiliary.skills_hub` |
+| MCP helpers | `auxiliary.mcp` |
+| Approval classification | `auxiliary.approval` |
+| Kanban specify | `auxiliary.triage_specifier` |
+| Kanban decomposition | `auxiliary.kanban_decomposer` |
 
 ## Fallback Chain
 
-When you pin an explicit provider and it hits a capacity error (quota exhausted, payment required), Hermes falls through to the main agent model as a safety net. If your main model isn't vision-capable, that safety net won't help — add a `fallback_chain`:
+When you pin an explicit provider and it hits a capacity error (quota exhausted, payment required), Hermes falls through to the main agent model as a safety net. If your main model can't handle that task (e.g., DeepSeek for vision), that safety net won't help — add a `fallback_chain`:
 
 ```yaml
 auxiliary:
   vision:
-    provider: anthropic
-    model: claude-sonnet-4-6
+    provider: openrouter
+    model: google/gemini-2.5-flash
     fallback_chain:
-      - provider: openrouter
-        model: google/gemini-2.5-flash
+      - provider: anthropic
+        model: claude-sonnet-4-6
 ```
 
 ## Session Restart Required
