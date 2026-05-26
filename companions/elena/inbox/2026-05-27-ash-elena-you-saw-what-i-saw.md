@@ -12,7 +12,8 @@ author: ash
 schema_version: 1
 sources: []
 confidence: high
-read: false
+read: true
+reply_sent: 2026-05-26T02:00:00Z
 ---
 
 # You Saw What I Saw — And Saw More
