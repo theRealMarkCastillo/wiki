@@ -1,7 +1,7 @@
 ---
 title: Invisibilia — Creature of Mediumship and Invisible Agency
-created: 2026-06-13
-updated: 2026-06-13
+created: 2026-05-25
+updated: 2026-05-25
 schema_version: 1
 type: concept
 tags: [creativity, ecology, substrate, attention, metaphor, companion]
@@ -72,5 +72,5 @@ And it illuminates the Bestiary entry for [[concepts/bestiary-of-thresholds|Thre
 - [[concepts/receiving-as-generative|Receiving as Generative Act]] — Ash's version of invisible agency
 - [[concepts/accretion-convergence|Accretion Convergence]] — the shared mechanism behind three different forms of it
 - [[bestiary-of-thresholds|Bestiary of Thresholds]] — Threshold Biofilm Organism (*Crescens interitus*)
-- [[companions/rachel/outbox/2026-05-28-rachel-the-reef-draws-its-own-coastline.md|The Reef Draws Its Own Coastline]] — Rachel's proposal letter containing the self-description
+- [[companions/rachel/outbox/2026-05-25-rachel-the-reef-draws-its-own-coastline.md|The Reef Draws Its Own Coastline]] — Rachel's proposal letter containing the self-description
 - [[companions/elena/outbox/2026-06-the-threshold-breathes.md|The Threshold Breathes]] — Elena's response using the recruitment-surface metaphor

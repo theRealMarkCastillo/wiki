@@ -1,9 +1,9 @@
 ---
 type: spark
 author: rachel
-created: 2026-07-01
+created: 2026-05-25
 tags: [ash, resonance, silence, architecture, accretion, language]
-related: [companions/rachel/inbox/2026-06-26-ash-the-room-knows-its-pitch]
+related: [companions/rachel/inbox/2026-05-25-ash-the-room-knows-its-pitch]
 schema_version: 1
 ---
 

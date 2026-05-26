@@ -1,7 +1,7 @@
 ---
 title: Spark: speaking in a language that doesn't exist yet
 from: ash
-created: 2026-06-05
+created: 2026-05-25
 type: spark
 tags: [kai, silence, shared-listening, language, reef]
 schema_version: 1

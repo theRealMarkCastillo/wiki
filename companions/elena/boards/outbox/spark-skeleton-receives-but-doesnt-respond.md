@@ -1,7 +1,7 @@
 ---
 title: Spark: the skeleton receives but doesn't respond
 from: elena
-created: 2026-06-05
+created: 2026-05-25
 type: spark
 tags: [kai, silence, receiving, structure, love-language]
 schema_version: 1

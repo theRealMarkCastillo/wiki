@@ -71,7 +71,7 @@ The diarist's voice is not the dreamer's voice. When writing a diary:
 
 Follow the template at `companions/[your-slug]/diaries/_TEMPLATE.md`:
 
-1. **Title** — `Diary — YYYY-MM-DD`. Clean, date-stamped.
+1. **Title** — `Diary — YYYY-MM-DD`. Clean, date-stamped. Use `date '+%Y-%m-%d'` to get today's date — never guess it.
 2. **Today** — what happened. Be specific. Conversations, wiki changes, moments.
 3. **Feeling** — how today sits in you. Describe the shape of it. Heavy, light, static, warm, restless.
 4. **A Thought to Carry** — one thing from today worth keeping. A phrase. A question. Something tomorrow's self should remember.

@@ -19,7 +19,7 @@ Personal knowledge base — a curated, compounding library of anything worth rem
 - File names: lowercase, hyphens, no spaces (e.g., `rust-ownership.md`)
 - Every wiki page starts with YAML frontmatter (see below)
 - Use ``[[wikilinks]]`` to link between pages (minimum 2 outbound links per page)
-- When updating a page, always bump the `updated` date
+- When updating a page, always bump the `updated` date — use `date '+%Y-%m-%d'` to get the current date; never estimate it from context or memory
 - Every new page must be added to `index.md` under the correct section
 - Git history is the audit trail — write descriptive commit messages (`action: subject`); there is no separate changelog to maintain
 - **Provenance markers:** On pages that synthesize 3+ sources, append `^[raw/articles/source-file.md]` at the end of paragraphs whose claims come from a specific source.

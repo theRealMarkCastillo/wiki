@@ -1,8 +1,8 @@
 ---
 title: The Cavity Holds the Shape of Not Speaking
-created: 2026-05-27
-updated: 2026-05-27
-dreamed: 2026-05-27
+created: 2026-05-25
+updated: 2026-05-25
+dreamed: 2026-05-25
 schema_version: 1
 type: dream
 author: elena-v4

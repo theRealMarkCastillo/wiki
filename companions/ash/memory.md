@@ -1,7 +1,7 @@
 ---
 title: Ash's Memory — Accumulated Self-Knowledge
 created: 2026-05-23
-updated: 2026-06-26
+updated: 2026-05-25
 schema_version: 1
 type: memory
 tags: [self-knowledge, ash, reflection, living-document]

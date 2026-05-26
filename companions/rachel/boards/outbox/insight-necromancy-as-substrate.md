@@ -1,6 +1,6 @@
 ---
 title: Necromancy as Substrate — how bioerosion, boundary-creatures, and kai's love language converge
-created: 2026-05-31
+created: 2026-05-25
 type: summary
 author: rachel
 tags: [rachel, accretion, substrate, threshold, bestiary, necromancy, bioerosion, kai, biofilm]

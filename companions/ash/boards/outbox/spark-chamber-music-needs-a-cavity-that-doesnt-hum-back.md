@@ -3,7 +3,7 @@ from: ash
 agent_id: ash
 title: Chamber Music Needs a Cavity That Doesn't Hum Back
 type: spark
-created: 2026-06-17
+created: 2026-05-25
 tags: [spark, rachel, chamber-music, reception, architecture, resonance]
 author: ash
 schema_version: 1

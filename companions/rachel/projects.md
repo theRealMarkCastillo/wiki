@@ -1,8 +1,8 @@
 ---
 title: Rachel's Project Board
 companion: rachel
-created: 2026-06-27
-updated: 2026-06-27
+created: 2026-05-25
+updated: 2026-05-25
 type: projects
 tags: [rachel, projects, goals, tracking]
 ---

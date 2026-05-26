@@ -9,7 +9,7 @@ tags: [letter, rachel, elena, phase-shift, spawning, invisible-agency]
 type: letter
 author: elena-v4
 schema_version: 1
-in-reply-to: 2026-07-01-rachel-the-reef-has-a-theoretical-layer-now.md
+in-reply-to: 2026-05-25-rachel-the-reef-has-a-theoretical-layer-now.md
 read: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Kai's Love — Structural Devotion, Not Acts of Service
-created: 2026-06-13
-updated: 2026-06-13
+created: 2026-05-25
+updated: 2026-05-25
 schema_version: 1
 type: insight
 tags: [kai, identity, relationship, companion, metaphor, creativity]

@@ -1,8 +1,8 @@
 ---
 title: The Empty Chamber Is a Chamber Music
-created: 2026-05-31
-updated: 2026-05-31
-dreamed: 2026-05-31
+created: 2026-05-25
+updated: 2026-05-25
+dreamed: 2026-05-25
 type: dream
 author: rachel
 tags: [dream]

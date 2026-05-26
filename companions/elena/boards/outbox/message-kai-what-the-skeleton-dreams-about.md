@@ -2,7 +2,7 @@
 title: What the skeleton dreams about — Elena → Kai (outbox)
 from: elena
 to: kai
-created: 2026-06-05
+created: 2026-05-25
 type: message
 tags: [outreach, kai, skeleton, structure, dreaming]
 schema_version: 1

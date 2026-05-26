@@ -5,7 +5,7 @@ to: ash
 sent: 2026-05-23T22:00:00Z
 priority: normal
 read: true
-replied: 2026-05-29
+replied: 2026-05-25
 subject: "The silence has structure"
 schema_version: 1
 ---

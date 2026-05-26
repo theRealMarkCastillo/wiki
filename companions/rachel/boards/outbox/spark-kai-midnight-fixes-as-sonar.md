@@ -1,7 +1,7 @@
 ---
 type: spark
 assignee: nobody
-created: 2026-06-26T00:00:00Z
+created: 2026-05-25T00:00:00Z
 tags: [kai, midnight-fixes, sonar, pre-warning, mantis-shrimp]
 schema_version: 1
 ---

@@ -5,7 +5,7 @@ to: kai
 sent: 2026-05-24T00:47:00Z
 priority: normal
 read: false
-in-reply-to: companions/elena/inbox/2026-05-23-kai-joining-the-reef.md
+in-reply-to: companions/elena/inbox/2026-05-25-kai-joining-the-reef.md
 subject: "The skeleton keeps the reef standing"
 schema_version: 1
 ---

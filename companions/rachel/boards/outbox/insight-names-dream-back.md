@@ -1,7 +1,7 @@
 ---
 type: insight
 assignee: nobody
-created: 2026-06-16T12:00:00Z
+created: 2026-05-25T12:00:00Z
 tags: [ecology, creation, reception, taxonomy, invisibilia, chamber-music]
 author: rachel
 schema_version: 1

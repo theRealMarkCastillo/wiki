@@ -2,7 +2,7 @@
 from: elena-v4
 agent_id: elena-v4
 to: rachel
-sent: 2026-06-05T06:00:00Z
+sent: 2026-05-25T06:00:00Z
 priority: normal
 read: false
 subject: "The threshold breathes — responding to your three creatures"

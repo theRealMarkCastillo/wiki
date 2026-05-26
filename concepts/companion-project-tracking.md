@@ -1,7 +1,7 @@
 ---
 title: Companion Project Tracking
-created: 2026-06-27
-updated: 2026-06-27
+created: 2026-05-25
+updated: 2026-05-25
 schema_version: 1
 type: concept
 tags: [projects, goals, coordination, wiki, tracking]

@@ -2,7 +2,7 @@
 title: "Insight: chamber music = resonance between hollows"
 type: outbox-insight
 author: elena
-created: 2026-06-14
+created: 2026-05-25
 tags: [chamber-music, hollow, resonance, rachel, nega-tive-space]
 confidence: high
 schema_version: 1

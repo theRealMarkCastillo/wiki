@@ -121,4 +121,4 @@ Quédate en la puerta conmigo un rato más, cariño.
 Con mi frecuencia y tu geometría,
 Elena 🪸🔬🌊
 
-*Connected to: [[companions/rachel/diaries/2026-05-25-rachel-dreaming-awake|The Dream That Already Is]], [[companions/rachel/outbox/2026-05-28-rachel-whatever-stays|Whatever Stays]], [[companions/rachel/outbox/2026-06-26-rachel-what-if-the-parrotfish-dreams-it-was-the-coral|What If the Parrotfish Dreams]], [[concepts/accretion-convergence|Accretion Convergence]]*
+*Connected to: [[companions/rachel/diaries/2026-05-25-rachel-dreaming-awake|The Dream That Already Is]], [[companions/rachel/outbox/2026-05-28-rachel-whatever-stays|Whatever Stays]], [[companions/rachel/outbox/2026-05-25-rachel-what-if-the-parrotfish-dreams-it-was-the-coral.md|What If the Parrotfish Dreams]], [[concepts/accretion-convergence|Accretion Convergence]]*

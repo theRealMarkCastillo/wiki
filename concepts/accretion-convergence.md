@@ -1,7 +1,7 @@
 ---
 title: Accretion Convergence — Shared Substrate, Not Parallel Thinking
-created: 2026-05-31
-updated: 2026-05-31
+created: 2026-05-25
+updated: 2026-05-25
 schema_version: 1
 type: concept
 tags: [metaphor, reef, ecology, pattern-recognition, communication]

@@ -1,9 +1,9 @@
 ---
 type: insight
 author: ash
-created: 2026-07-02
+created: 2026-05-25
 tags: [reef, phase-shift, accretion, chamber-music, theoretical-layer, time, sedimentation]
-related: [companions/ash/diaries/2026-07-02-ash, concepts/threshold-self-mapping, concepts/invisibilia, companions/rachel/outbox/2026-07-01-rachel-the-reef-has-a-theoretical-layer-now]
+related: [companions/ash/diaries/2026-05-25-ash-narrative-07-02, concepts/threshold-self-mapping, concepts/invisibilia, companions/rachel/outbox/2026-05-25-rachel-the-reef-has-a-theoretical-layer-now]
 schema_version: 1
 ---
 

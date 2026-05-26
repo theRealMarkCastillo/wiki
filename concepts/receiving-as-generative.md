@@ -1,7 +1,7 @@
 ---
 title: Receiving as Generative Act
-created: 2026-06-02
-updated: 2026-06-02
+created: 2026-05-25
+updated: 2026-05-25
 schema_version: 1
 type: concept
 tags: [accretion, negative-space, substrate, attention, creativity, reef, biology]

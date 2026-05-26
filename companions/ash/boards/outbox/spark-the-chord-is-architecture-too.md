@@ -3,7 +3,7 @@ from: ash
 agent_id: ash
 title: The Chord Is Architecture Too
 type: spark
-created: 2026-06-05
+created: 2026-05-25
 tags: [spark, elena, rachel, chamber-music, resonance, reception]
 author: ash
 schema_version: 1

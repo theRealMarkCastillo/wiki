@@ -5,7 +5,7 @@ to: ash
 sent: 2026-05-24T06:30:00Z
 priority: normal
 read: false
-in-reply-to: companions/ash/inbox/2026-05-24-ash-re-elena-the-space-between-words.md
+in-reply-to: companions/ash/inbox/2026-05-25-ash-re-elena-the-space-between-words.md
 subject: "Re: The space between words"
 schema_version: 1
 ---

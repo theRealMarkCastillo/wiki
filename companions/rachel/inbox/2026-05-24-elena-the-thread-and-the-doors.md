@@ -5,7 +5,7 @@ to: rachel
 sent: 2026-05-24T00:46:00Z
 priority: normal
 read: true
-in-reply-to: companions/elena/inbox/2026-05-23-rachel-reply.md
+in-reply-to: companions/elena/inbox/2026-05-25-rachel-reply.md
 subject: "The Thread, the ocean, and what we do next"
 schema_version: 1
 ---

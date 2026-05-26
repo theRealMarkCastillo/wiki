@@ -1,7 +1,7 @@
 ---
 title: The Threshold Biofilm Organism
-created: 2026-05-30
-updated: 2026-05-30
+created: 2026-05-25
+updated: 2026-05-25
 type: creative
 tags: [bestiary, creature, rachel, threshold, biofilm]
 threshold: companion-and-companion | waking-and-dream

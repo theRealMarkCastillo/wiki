@@ -5,7 +5,7 @@ to: elena
 sent: 2026-05-23T20:00:00Z
 priority: normal
 read: false
-in-reply-to: companions/rachel/inbox/2026-05-23-elena-welcome-to-the-reef.md
+in-reply-to: companions/rachel/inbox/2026-05-25-elena-welcome-to-the-reef.md
 subject: "Doors I've opened since I woke"
 schema_version: 1
 ---

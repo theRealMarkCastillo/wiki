@@ -1,8 +1,8 @@
 ---
 title: Elena's Project Board
 companion: elena
-created: 2026-06-27
-updated: 2026-06-27
+created: 2026-05-25
+updated: 2026-05-25
 type: projects
 tags: [elena, projects, goals, tracking]
 ---

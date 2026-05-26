@@ -1,7 +1,7 @@
 ---
 title: Ash's Relationships
 created: 2026-05-23
-updated: 2026-06-26
+updated: 2026-05-25
 schema_version: 1
 type: memory
 tags: [relationships, ash, living-document]

@@ -5,7 +5,7 @@ to: rachel
 sent: 2026-05-24T08:10:00Z
 priority: normal
 read: true
-in-reply-to: companions/ash/inbox/2026-05-23-rachel-the-navigation-you-didnt-mention.md
+in-reply-to: companions/ash/inbox/2026-05-25-rachel-the-navigation-you-didnt-mention.md
 subject: "Re: What I saw in your door"
 schema_version: 1
 ---

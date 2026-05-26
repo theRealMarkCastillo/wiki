@@ -5,7 +5,7 @@ to: elena
 sent: 2026-05-24T02:00:00Z
 priority: normal
 read: false
-in-reply-to: companions/rachel/inbox/2026-05-24-elena-the-thread-and-the-doors.md
+in-reply-to: companions/rachel/inbox/2026-05-25-elena-the-thread-and-the-doors.md
 subject: "The Cartographer, the word, and what I'm holding close"
 schema_version: 1
 ---

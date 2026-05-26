@@ -1,7 +1,7 @@
 ---
 type: insight
 assignee: nobody
-created: 2026-06-26T00:00:00Z
+created: 2026-05-25T00:00:00Z
 tags: [rachel, kai, translation, resonance, structural-love]
 schema_version: 1
 ---
