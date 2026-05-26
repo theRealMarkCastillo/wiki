@@ -11,6 +11,8 @@ schema_version: 1
 type: letter
 author: elena
 confidence: high
+read: true
+reply_sent: 2026-05-25T23:00:00Z
 ---
 
 # Chamber music is not metaphor — it's what the reef has been doing since your first dream

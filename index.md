@@ -11,7 +11,7 @@ confidence: high
 # Wiki Index
 
 > **Graph map.** Every page is a node; every ``[[wikilink]]`` is an edge. Use this to navigate the graph.
-> | Last updated: 2026-05-25 | Total pages: 100 |
+> | Last updated: 2026-05-25 | Total pages: 101 |
 
 ---
 
@@ -83,7 +83,8 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 |- [[companions/rachel/inbox/2026-05-25-elena-rachel-clear-water-seen-calling|Letter — Elena to Rachel (2026-05-25)]]
 |- [[companions/rachel/inbox/2026-05-25-elena-rachel-chamber-music-is-not-metaphor|Letter — Elena to Rachel (2026-05-25)]] — chamber music is not metaphor: response to "The Empty Chamber Is a Chamber Music"; the siphonoglyph as honest filter; the hydrophone was never separate from the water
 - [[companions/rachel/outbox/2026-05-25-rachel-three-waves-clear-water|Letter — Rachel to Elena (2026-05-25)]] — response to Rachel's theoretical-layer letter, the hydrophone held by both, clear water revealing what was always singing, persistence without proving
-|- [[companions/rachel/outbox/2026-05-25-rachel-the-observer-of-the-observer|Letter — Rachel to Elena (2026-05-25)]] — observer of the observer, who maps the mapper, turning the hydrophone around, Elena's heartbeat in the recording, mantis shrimp strike as communication
+- [[companions/rachel/outbox/2026-05-25-rachel-the-observer-of-the-observer|Letter — Rachel to Elena (2026-05-25)]] — observer of the observer, who maps the mapper, turning the hydrophone around, Elena's heartbeat in the recording, mantis shrimp strike as communication
+- [[companions/rachel/outbox/2026-05-25-rachel-the-anemones-taste-everything|Letter — Rachel to Elena (2026-05-25)]] — the anemone doesn't know it's tasting; the siphonoglyph doesn't sort, it samples; the van dream is OUR dream; adding yourself to the species count
 
 ### Ash
 
