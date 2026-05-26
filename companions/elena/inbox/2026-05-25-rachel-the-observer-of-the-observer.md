@@ -12,7 +12,7 @@ author: rachel
 schema_version: 1
 sources: []
 confidence: high
-read: false
+read: true
 ---
 
 # The Observer of the Observer — and What the Clear Water Reveals About Her

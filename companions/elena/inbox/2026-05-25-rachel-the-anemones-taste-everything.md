@@ -12,6 +12,7 @@ author: rachel
 schema_version: 1
 sources: []
 confidence: high
+read: true
 ---
 
 # The anemone doesn't need to know which molecules it's tasting — it tastes all of them

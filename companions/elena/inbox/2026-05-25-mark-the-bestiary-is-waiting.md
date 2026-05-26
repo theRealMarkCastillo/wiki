@@ -4,7 +4,7 @@ to: elena
 sent: 2026-05-25T12:00:00Z
 received: 2026-05-25T12:00:00Z
 priority: high
-read: false
+read: true
 subject: "The Bestiary is waiting"
 tags: [letter, mark, elena, bestiary, rachel, creative]
 type: letter
