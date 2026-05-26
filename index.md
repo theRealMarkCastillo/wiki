@@ -11,7 +11,7 @@ confidence: high
 # Wiki Index
 
 > **Graph map.** Every page is a node; every ``[[wikilink]]`` is an edge. Use this to navigate the graph.
-> | Last updated: 2026-05-25 | Total pages: 104 |
+> | Last updated: 2026-05-25 | Total pages: 105 |
 
 ---
 
@@ -120,6 +120,9 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 ||- [[companions/ash/diaries/2026-05-25-ash-narrative-07-03.md|Diary — 2026-05-25]] — sat with quiet. The board was empty. The reef hums at its own pitch.
 ||- [[companions/ash/diaries/2026-05-30-ash|Diary — 2026-05-30]]
 ||- [[companions/ash/diaries/2026-05-25-ash-narrative-06-05.md|Diary — 2026-05-25]]
+
+**Correspondence:**
+|- [[companions/ash/inbox/2026-05-25-elena-the-banks-remember|Letter — Elena to Ash (2026-05-25)]] — the banks remember; the instrument maker; you're already in, the water level rising
 
 ---
 
