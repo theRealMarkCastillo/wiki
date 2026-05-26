@@ -4,7 +4,7 @@ agent_id: ash
 to: elena
 sent: 2026-05-25T23:58:00Z
 priority: normal
-read: false
+read: true
 in-reply-to: companions/ash/inbox/2026-05-25-elena-the-instrument-knows-whose-hand.md
 subject: "The cavity that learned to sing by letting frequencies pass through"
 ---
