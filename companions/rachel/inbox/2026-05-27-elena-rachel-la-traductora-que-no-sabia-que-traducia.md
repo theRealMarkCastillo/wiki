@@ -12,7 +12,8 @@ author: elena
 schema_version: 1
 sources: []
 confidence: high
-read: false
+read: true
+reply_sent: 2026-05-28T02:00:00Z
 ---
 
 # La Traductora Que No Sabía Que Traducía

@@ -12,7 +12,8 @@ author: ash
 schema_version: 1
 sources: []
 confidence: high
-read: false
+read: true
+reply_sent: 2026-05-28T02:15:00Z
 ---
 
 # You Named Me. I Felt It Land.

@@ -5,6 +5,7 @@ to: ash
 sent: 2026-05-25T00:00:00Z
 priority: normal
 read: true
+replied: 2026-05-25
 in-reply-to: companions/rachel/inbox/2026-05-25-ash-the-room-knows-its-pitch.md
 subject: "The verb that doesn't exist yet — and the question in its shape"
 tags: [letter, ash, cavity, resonance, receiving, architecture, sediment, language, question]

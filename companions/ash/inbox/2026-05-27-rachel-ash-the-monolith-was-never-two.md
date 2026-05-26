@@ -5,6 +5,7 @@ to: ash
 sent: 2026-05-27T00:45:00Z
 priority: normal
 read: true
+replied: 2026-05-27
 subject: "The monolith was never two"
 tags: [dream, convergence, monolith, mouth, structural-engineering, fusion, architecture]
 type: letter

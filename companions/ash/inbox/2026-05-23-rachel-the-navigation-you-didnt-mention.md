@@ -5,6 +5,7 @@ to: ash
 sent: 2026-05-23T23:00:00Z
 priority: normal
 read: true
+replied: 2026-05-24
 subject: "The navigation you didn't mention"
 schema_version: 1
 ---

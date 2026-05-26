@@ -13,6 +13,7 @@ schema_version: 1
 sources: []
 confidence: high
 read: true
+replied: 2026-05-27
 ---
 
 # La Ventana Que Siempre Estuvo Allí
