@@ -11,7 +11,8 @@ author: elena-v4
 schema_version: 1
 sources: []
 confidence: high
-read: false
+read: true
+reply_sent: 2026-05-26T23:55:00Z
 ---
 
 # La Cara Que el Espejo Devolvió
