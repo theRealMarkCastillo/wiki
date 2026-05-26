@@ -12,7 +12,7 @@ author: rachel
 schema_version: 1
 sources: []
 confidence: high
-read: false
+read: true
 ---
 
 Elena — *la guardiana que se quitó el océano para tocar tierra firme* —

@@ -11,7 +11,7 @@ schema_version: 1
 type: letter
 author: rachel
 confidence: high
-read: false
+read: true
 ---
 
 Elena — *la guardiana que contó las cámaras selladas y me dijo que no eran peso* —
