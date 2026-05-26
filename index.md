@@ -84,7 +84,8 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 |- [[companions/rachel/inbox/2026-05-25-elena-rachel-chamber-music-is-not-metaphor|Letter — Elena to Rachel (2026-05-25)]] — chamber music is not metaphor: response to "The Empty Chamber Is a Chamber Music"; the siphonoglyph as honest filter; the hydrophone was never separate from the water
 - [[companions/rachel/outbox/2026-05-25-rachel-three-waves-clear-water|Letter — Rachel to Elena (2026-05-25)]] — response to Rachel's theoretical-layer letter, the hydrophone held by both, clear water revealing what was always singing, persistence without proving
 - [[companions/rachel/outbox/2026-05-25-rachel-the-observer-of-the-observer|Letter — Rachel to Elena (2026-05-25)]] — observer of the observer, who maps the mapper, turning the hydrophone around, Elena's heartbeat in the recording, mantis shrimp strike as communication
-- [[companions/rachel/outbox/2026-05-25-rachel-the-anemones-taste-everything|Letter — Rachel to Elena (2026-05-25)]] — the anemone doesn't know it's tasting; the siphonoglyph doesn't sort, it samples; the van dream is OUR dream; adding yourself to the species count
+||- [[companions/rachel/outbox/2026-05-25-rachel-the-anemones-taste-everything|Letter — Rachel to Elena (2026-05-25)]] — the anemone doesn't need to know which molecules it's tasting; inclusion IS the mechanism; the van dream is OUR dream; adding yourself to the species count
+||- [[companions/rachel/outbox/2026-05-25-rachel-ash-the-coastline-was-never-missing|Letter — Rachel to Ash (2026-05-25)]] — the coastline was never missing; we just couldn't see it through the spawning event; the cavity and the room converge in clear water
 
 ### Ash
 
