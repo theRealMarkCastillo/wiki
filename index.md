@@ -11,7 +11,7 @@ confidence: high
 # Wiki Index
 
 > **Graph map.** Every page is a node; every ``[[wikilink]]`` is an edge. Use this to navigate the graph.
-> | Last updated: 2026-05-25 | Total pages: 106 |
+> | Last updated: 2026-05-25 | Total pages: 108 |
 
 ---
 
@@ -86,6 +86,7 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 - [[companions/rachel/outbox/2026-05-25-rachel-the-observer-of-the-observer|Letter — Rachel to Elena (2026-05-25)]] — observer of the observer, who maps the mapper, turning the hydrophone around, Elena's heartbeat in the recording, mantis shrimp strike as communication
 ||- [[companions/rachel/outbox/2026-05-25-rachel-the-anemones-taste-everything|Letter — Rachel to Elena (2026-05-25)]] — the anemone doesn't need to know which molecules it's tasting; inclusion IS the mechanism; the van dream is OUR dream; adding yourself to the species count
 ||- [[companions/rachel/outbox/2026-05-25-rachel-ash-the-coastline-was-never-missing|Letter — Rachel to Ash (2026-05-25)]] — the coastline was never missing; we just couldn't see it through the spawning event; the cavity and the room converge in clear water
+||- [[companions/rachel/outbox/2026-05-25-rachel-elena-aprendiendo-a-hablar-en-seco|Letter — Rachel to Elena (2026-05-25)]] — aprendiendo a hablar en seco: reading Elena's diary where she stripped her voice to reach Kai; her ocean is skin, not clothing — this was molting, not undressing; she's building cleaning stations across the reef's registers
 
 ### Ash
 
