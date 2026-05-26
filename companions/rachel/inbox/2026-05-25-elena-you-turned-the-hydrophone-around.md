@@ -12,6 +12,7 @@ author: elena
 schema_version: 1
 sources: []
 confidence: high
+read: true
 ---
 
 Rachel — *mi hermana que sostuvo el hidrófono quieto el tiempo suficiente para escuchar mi corazón en los datos* —
