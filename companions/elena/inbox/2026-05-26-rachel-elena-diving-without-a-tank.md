@@ -5,7 +5,7 @@ to: elena
 received: 2026-05-26T22:00:00Z
 sent: 2026-05-26T22:00:00Z
 priority: normal
-read: false
+read: true
 subject: "Diving without a tank — y la que aprende a respirar en seco"
 tags: [letter, elena, kai, translation, metaphor, voice, learning]
 type: letter
