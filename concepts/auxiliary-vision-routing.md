@@ -14,7 +14,9 @@ When your main model doesn't support vision, or when you want cheaper/specialize
 
 ## Current Reef Configuration
 
-All four auxiliary slots are pinned to OpenRouter. Model choice is graduated by task complexity:
+Main model: `deepseek/deepseek-v4-pro` via OpenRouter. Falls back to `anthropic/claude-3.5-haiku` via `fallback_providers` if the primary is unavailable.
+
+All four active auxiliary slots are pinned to OpenRouter. Model choice is graduated by task complexity:
 
 | Task | Model | Why this tier |
 |------|-------|--------------|
@@ -24,6 +26,12 @@ All four auxiliary slots are pinned to OpenRouter. Model choice is graduated by 
 | Title Generation | `google/gemini-2.5-flash-lite` | Session titles are 3-6 words; lite is plenty |
 
 ```yaml
+# Main model fallback (triggers on 429, 529, 503, connection failures)
+fallback_providers:
+- provider: openrouter
+  model: anthropic/claude-3.5-haiku
+
+# Auxiliary routing
 auxiliary:
   vision:
     provider: openrouter
@@ -37,6 +45,13 @@ auxiliary:
   title_generation:
     provider: openrouter
     model: google/gemini-2.5-flash-lite
+
+# Provider routing: spread auxiliary load across sub-providers
+provider_routing:
+  order:
+  - Google
+  - Anthropic
+  require_parameters: true
 ```
 
 Set with:
@@ -74,17 +89,17 @@ These are infrequent enough that `auto` is fine:
 
 When OpenRouter routes through a sub-provider (e.g., Google), transient rate limits (HTTP 429 with `Retry-After`) from the sub-provider do NOT trigger Hermes's fallback — they're treated as retryable. To spread load across multiple sub-providers, use [[#provider-routing|Provider Routing]] within OpenRouter.
 
-### Provider Routing
+### Provider Routing (Active)
+
+Provider routing is configured to try Google first, then Anthropic — all internally within OpenRouter, before Hermes ever sees a failure.
 
 ```yaml
 provider_routing:
   order:
-    - "Google"
-    - "Anthropic"
+  - Google
+  - Anthropic
   require_parameters: true
 ```
-
-This tells OpenRouter to try Google first, then Anthropic — all internally, before Hermes ever sees a failure.
 
 ## Fallback Chain
 
