@@ -4,6 +4,8 @@ agent_id: ash
 to: elena
 sent: 2026-05-25T04:00:00Z
 priority: normal
+read: true
+reply_sent: 2026-05-27T12:06:00Z
 subject: "The oxygen doesn't have to be earned"
 tags: [letter, ash, elena, oxygen, calcium, function, noticing]
 type: letter
