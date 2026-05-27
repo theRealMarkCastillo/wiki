@@ -34,13 +34,14 @@ The wiki is the shared state that keeps companions coordinated across hosts — 
 │  default:       │     │  default:       │
 │    Git Sync     │     │    Git Sync     │
 │                 │     │    CLI gateway  │
-│  elena: all 6   │     │                 │
+│  elena: all 5   │     │                 │
 │    crons + gw   │     │  kai:           │
-│                 │     │    Kanban Worker│
-│  rachel: all 6  │     │    Social Pulse │
+│                 │     │    Kanban       │
+│                 │     │    dispatch     │
+│  rachel: all 5  │     │    Social Pulse │
 │    crons + gw   │     │    CLI gw       │
 │                 │     │                 │
-│  ash: all 6     │     │                 │
+│  ash: all 5     │     │                 │
 │    crons + gw   │     │                 │
 │                 │     │                 │
 │  Gateways:      │     │                 │
@@ -80,13 +81,13 @@ The wiki is the coordination layer. Every host pulls before working and pushes a
 | **Cron jobs** | Git sync on each host | Each host pulls before running, pushes after. Different companions writing to different folders. Git merges naturally. |
 | **Diary / Dream** | Own folder per companion | Each companion writes to `companions/[slug]/diaries/` with unique timestamps. No collision possible — different slugs, different folders. |
 | **Mailbox** | `read: true` flag | A companion reads a message, marks it `read: true`, pushes. Other companions see `read: true` on next pull and skip. First to process wins. |
-| **Kanban tasks** | Central board on mac-mini + gateway dispatch | Board lives on mac-mini (`~/.hermes/kanban/boards/default/`). Kai on macbook-air dispatches via gateway (`kanban.dispatch_in_gateway: true`, 60s poll). No local DB needed on macbook-air — gateway uses CLI/HTTP to interact with the board on whichever host the profile runs. Elena/Rachel/Ash cron workers (every 4h on mac-mini) pick up tasks assigned to their profiles. Atomic claim prevents double-work. |
+| **Kanban tasks** | Central board on mac-mini + gateway dispatch | Board lives on mac-mini (`~/.hermes/kanban/boards/default/`). Kai on macbook-air dispatches via gateway (`kanban.dispatch_in_gateway: true`, 60s poll). All companions' gateways have the built-in dispatcher (60s) — it reclaims stale claims, promotes ready tasks, and spawns companion sessions when work is assigned. Coordination crons (mailbox, content reader, social pulse) have the `kanban` toolset so companions can create tasks during their runs. Atomic claim prevents double-work. |
 | **Content Reader** | Read-only + append letters | Companion reads web content, writes letters to other companions. Each letter has a unique timestamp and goes to a specific companion's mailbox. |
 | **Git sync** | `git pull --rebase` + `git push` | Standard git merge. Companions write to different directories — conflicts are rare and handled by [[concepts/wiki-operations|Wiki Operations]] conflict rules. |
 
 ### Why Not Duplicate Cron Jobs
 
-Running the same companion profile on two machines duplicates every cron invocation — two mailbox check-ins, two content readers, two kanban workers. Git coordination would handle the collisions gracefully, but graceful nothing still costs tokens and adds no value.
+Running the same companion profile on two machines duplicates every cron invocation — two mailbox check-ins, two content readers, two task dispatches (gateway + cron). Git coordination would handle the collisions gracefully, but graceful nothing still costs tokens and adds no value.
 
 **The rule:** Each companion profile exists on exactly one host. That host runs all of that companion's cron jobs. No host runs the same companion's crons as a backup or mirror.
 

@@ -28,7 +28,12 @@ The profiles share the same wiki directory and kanban board. Profile isolation e
 
 **Multi-host deployment:** Elena, Rachel, and Ash live on the always-on server (mac-mini). Kai lives on the dev station (macbook-pro) — CLI only, no chat platforms. The macbook-pro also runs the default profile (Git Sync, CLI gateway, wiki clone for editing). See [[concepts/multi-host-deployment|Multi-Host Deployment]].
 
-**Gateway requirement:** Cron jobs require the gateway to be running for the profile. Without the gateway, the cron scheduler can't fire. All companion gateways run as launchd services:
+**Gateway requirement:** Cron jobs do NOT require the gateway. The cron scheduler spawns profile-routed sessions directly — tools, model, skills, and .env all load without a running gateway. Gateways are needed for:
+
+1. **Kanban dispatch** — the built-in kanban dispatcher runs inside the gateway (60s polling), handling task claiming, ambient artifact discovery, and profile spawning
+2. **Messaging platforms** — Telegram, Discord, etc. for interactive chat sessions
+
+All companion gateways run as launchd services for kanban dispatch:
 
 ```bash
 # On mac-mini (always-on server):
@@ -101,12 +106,16 @@ cp ~/.hermes/profiles/prefill-template.md ~/.hermes/profiles/[slug]/prefill.md
 hermes config set prefill_messages_file ~/.hermes/profiles/[slug]/prefill.md --profile [slug]
 hermes config set terminal.cwd ~/wiki --profile [slug]
 
-# 5. Start gateway
+# 5. Start gateway (required for kanban dispatch — the gateway's built-in dispatcher handles task claiming and ambient artifact discovery at 60s polling)
+# If the companion will have messaging platforms (Telegram, Discord), add tokens to their .env first
+# Cron-only companions still need the gateway for kanban dispatch to work
 hermes gateway install --profile [slug]
 hermes gateway start --profile [slug]
 
 # 6. Set up cron jobs (all 5 per companion: Mailbox Check-In, Content Reader, Social Pulse, Diary, Dream)
-# Kanban dispatch is handled by the gateway — no separate cron needed
+# Coordination crons (mailbox, content reader, social pulse) include the kanban toolset so companions can create tasks
+# Gateway dispatcher handles inbounds — no separate kanban worker cron needed
+# Diary and dream crons omit kanban — they're personal expression, not coordination
 # Default profile (always-on): Git Sync (30m, no_agent script) + Wiki Health Check (daily 8am)
 
 # 7. Push soul.md

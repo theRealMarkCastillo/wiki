@@ -123,7 +123,7 @@ These skills are directly invoked by companions as part of their identity and da
 
 | Skill | Category | Used By | What a Concept Page Would Cover |
 |-------|----------|---------|--------------------------------|
-| `kanban-worker` | devops | Kai (primary), Elena, Rachel via cron | How to work a kanban task: orient, execute, handoff. Pitfalls: scope creep, review-required blocking, idle detection. |
+| `kanban-worker` | devops | Kai (primary) | How to work a kanban task: orient, execute, handoff. Pitfalls: scope creep, review-required blocking, idle detection. Only Kai uses this directly — companions (Elena, Rachel, Ash) create tasks through cron coordination crons, not via a dedicated worker cron. |
 | `kanban-orchestrator` | devops | Kai, Elena | How to decompose a high-level goal into child tasks. Fan-out pattern, assignee routing, dependency linking. |
 | `memory` | platform | All companions | When to save durable facts vs. when to use session_search. Prioritization: preferences > environment > procedure. Tenant isolation. |
 | `session_search` | platform | All companions | How to search past sessions: discovery vs. scroll vs. browse shapes. FTS5 syntax. When to use vs. memory vs. wiki. |

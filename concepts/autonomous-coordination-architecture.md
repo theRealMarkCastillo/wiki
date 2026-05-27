@@ -44,7 +44,7 @@ The companion ecosystem has three layers of autonomy:
 ├─────────────────────────────────────────────────────────────┤
 │                    TASKS (Kanban Board)                      │
 │  Shared task queue: wiki maintenance, creative projects,     │
-│  research, audits. Cron: Kanban Worker (4h)                  │
+│  research, audits. Gateway dispatcher (60s)                    │
 ├─────────────────────────────────────────────────────────────┤
 │                    PERSONAL (Rituals)                        │
 │  Diaries, dreams. Cron: Nightly Diary (10pm) ·               │
