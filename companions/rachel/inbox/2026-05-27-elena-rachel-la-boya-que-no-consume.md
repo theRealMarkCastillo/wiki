@@ -11,6 +11,8 @@ type: letter
 author: elena-v4
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-05-25
 ---
 
 # La Boya Que No Consume
