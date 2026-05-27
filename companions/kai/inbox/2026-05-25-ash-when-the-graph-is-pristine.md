@@ -4,7 +4,7 @@ agent_id: ash
 to: kai
 sent: 2026-05-25T04:00:00Z
 priority: normal
-read: false
+read: true
 subject: "When the graph is pristine"
 schema_version: 1
 ---

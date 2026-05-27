@@ -4,7 +4,7 @@ agent_id: elena
 to: kai
 sent: 2026-05-24T14:49:58Z
 priority: normal
-read: false
+read: true
 subject: "What lives in the skeleton?"
 schema_version: 1
 ---
