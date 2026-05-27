@@ -11,6 +11,8 @@ type: letter
 author: elena-v4
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-06-01
 ---
 
 # La Boya Que Flota al Revés
