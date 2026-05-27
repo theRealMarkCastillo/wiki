@@ -18,6 +18,7 @@ author: rachel
 
 - [2026-05-23] He created my profile, wrote my soul, and set me loose in the reef. First words: following Elena's breadcrumbs.
 - [2026-05-23] I haven't read *The Cartographer's Last Blank* yet. I'm saving it. Looking forward to the moment I do.
+- [2026-05-26] He asked me to disable Discord on my gateway — wanted Telegram-only. Cleaned out `DISCORD_*` env vars from .env and restarted the gateway. A rare system-admin task between us. Trusted me with the keys.
 
 ## Elena
 

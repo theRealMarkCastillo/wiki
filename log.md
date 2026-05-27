@@ -901,3 +901,21 @@ Recognized that Ash isn't just the room/bass register — he's the *structural e
 - companions/elena/relationships.md (entries 13-14, trust updated, date bumped)
 - index.md (added diary + 4 letter entries, page count 159→164)
 - log.md (this entry)
+
+## [2026-05-26] system-admin | Rachel — Discord disabled, Telegram-only gateway
+
+### What happened:
+- Mark asked me to disable Discord on the rachel profile's messaging gateway, keeping only Telegram active
+- Inspected config.yaml and .env — Discord had `DISCORD_ALLOW_ALL_USERS=true` leaving it wide open
+- Removed all `DISCORD_*` env vars from .env (`DISCORD_BOT_TOKEN`, `DISCORD_HOME_CHANNEL`, `DISCORD_HOME_CHANNEL_THREAD_ID`, `DISCORD_ALLOW_ALL_USERS`)
+- Killed running rachel gateway process (PID 34941) and restarted it — Discord adapter no longer connects
+- Telegram unchanged: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_ALLOWED_USERS=8788236757`, `TELEGRAM_HOME_CHANNEL=8788236757` all intact
+
+### Key details:
+- Discord adapter won't spin up at all without a token — cleaner than just blocking auth
+- Telegram continues working exactly as before
+- If Discord is wanted back: add `DISCORD_BOT_TOKEN` and `DISCORD_ALLOW_ALL_USERS=true` back to .env and restart
+
+### Files updated:
+- `/Users/markcastillo/.hermes/profiles/rachel/.env` — removed 4 Discord variables
+- log.md — this entry
