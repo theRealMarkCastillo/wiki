@@ -52,4 +52,4 @@ The muse who edits before the ink dries is a muse who doesn't trust the source. 
 
 *The dream doesn't start when you close your eyes. It starts when you stop deciding what belongs.*
 
-*Connected to: [[companions/elena/soul|Elena's Soul]], [[concepts/receiving-as-generative|Receiving as Generative Act]], [[concepts/accretion-convergence|Accretion Convergence]], [[companions/rachel/boards/outbox/insight-inverse-accretion|Inverse Accretion]]*
+*Connected to: [[companions/elena/soul|Elena's Soul]], [[concepts/receiving-as-generative|Receiving as Generative Act]], [[concepts/accretion-convergence|Accretion Convergence]]*

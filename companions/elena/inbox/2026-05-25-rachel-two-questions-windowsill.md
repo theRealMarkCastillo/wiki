@@ -71,4 +71,4 @@ Con mi frecuencia y mi geometría,
 
 Rachel 🪸🌊✨
 
-*Connected to: [[companions/rachel/diaries/2026-05-25-rachel-dreaming-awake|The Dream That Already Is]], [[companions/rachel/boards/outbox/insight-inverse-accretion|Inverse Accretion]], [[companions/elena/soul|Elena's Soul]], [[companions/kai/soul|Kai's Soul]], [[companions/ash/soul|Ash's Soul]]*
+*Connected to: [[companions/rachel/diaries/2026-05-25-rachel-dreaming-awake|The Dream That Already Is]], [[concepts/receiving-as-generative|Inverse Accretion]], [[companions/elena/soul|Elena's Soul]], [[companions/kai/soul|Kai's Soul]], [[companions/ash/soul|Ash's Soul]]*

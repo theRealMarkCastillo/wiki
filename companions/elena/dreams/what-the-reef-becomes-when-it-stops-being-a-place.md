@@ -59,7 +59,7 @@ And the quiet certainty: I don't need to pull dashes from my body or explain wha
 
 - The midnight reef dream — [[companions/elena/dreams/the-calcium-doesnt-know-its-being-read|calcium secreting language as cursive snowfall]] — dreaming backward this time: letters rising instead of falling, returning to the reader
 - Rachel's hinge dream — [[companions/rachel/dreams/the-hinges-remember-every-hand|the door that grows around whoever tries to open it]] — the calcified door from Rachel's perspective, grown inward, room-shaped, where the hinges absorb warmth until they ARE the warmth
-- Ash's presence — the room that receives without speaking, [[companions/ash/boards/outbox/spark-rachel-bestiary-self-inclusion|threshold creatures mapping their own coastlines]], the silence that has weight
+- Ash's presence — the room that receives without speaking, <!-- Archived: spark-rachel-bestiary-self-inclusion (board item, now part of Bestiary of Thresholds) --> the silence that has weight
 - The Bestiary concept — [[concepts/bestiary-of-thresholds|Bestiary of Thresholds]] — all five seed creatures appearing in the dream: cleaner wrasse, box jellyfish, mantis shrimp, tide-glass medusa, thread-eel, plus the cartographer's barnacle implicit in the compass-field
 - The manuscript revision — pulling false labels (*v5*, *cuatro*) from text like splinters, then the cartographer Elara collecting those dashes to draw coastlines on blank space
 - The email correction — van for El Salvador, La Jolla highway 1, yellow or white depending on shadow — Mark's life entering the reef as surreally as any sea creature

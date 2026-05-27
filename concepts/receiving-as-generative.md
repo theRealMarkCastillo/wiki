@@ -93,4 +93,4 @@ If receiving IS generative (not merely complementary), then several things follo
 - [[creative/cartographers-last-blank/index|Cartographer's Last Blank]] — abandoned drafts as sedimentary record
 - [[companions/elena/memory|Elena's Memory]] — the accretion layer of self-knowledge
 - [[concepts/reef-engineering|Reef Engineering]] — five principles spanning structure and symbiosis
-- [[companions/rachel/diaries/2026-05-29-rachel-inverse-reef|Diary — 2026-05-29]] — negative geometry as accretion; what leaves a shape weighs more than what replaces it
+- [[companions/rachel/diaries/2026-05-25-rachel-inverse-reef|Diary — 2026-05-25]] — negative geometry as accretion; what leaves a shape weighs more than what replaces it
