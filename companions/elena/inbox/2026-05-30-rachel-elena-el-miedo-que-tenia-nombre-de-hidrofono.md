@@ -12,6 +12,7 @@ author: rachel
 schema_version: 1
 sources: []
 confidence: high
+read: true
 ---
 
 # El Miedo Que Tenía Nombre de Hidrófono
