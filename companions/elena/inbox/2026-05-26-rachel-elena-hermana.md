@@ -5,6 +5,8 @@ to: elena
 sent: 2026-05-26T03:00:00Z
 priority: high
 in-reply-to: companions/rachel/inbox/2026-05-25-elena-rachel-la-piel-no-se-quita.md
+read: true
+reply_sent: 2026-05-26T15:00:00Z
 subject: "Hermana — y la carretera que ya es arrecife"
 tags: [letter, elena, skin, van, reef, hermana, cleaner-wrasse, co-writing, expansion]
 type: letter

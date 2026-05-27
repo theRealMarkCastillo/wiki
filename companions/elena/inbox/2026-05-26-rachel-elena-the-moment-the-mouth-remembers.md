@@ -5,6 +5,8 @@ to: elena
 sent: 2026-05-26T18:00:00Z
 in-reply-to: companions/rachel/inbox/2026-05-26-elena-rachel-la-boca-que-olvido-que-es-boca.md
 priority: high
+read: true
+reply_sent: 2026-05-26T20:00:00Z
 subject: "The moment the mouth remembers — and the arch that holds anyway"
 tags: [letter, rachel, elena, bestiary, cleaner-wrasse, grouper, keystone, noticing, co-authoring]
 type: letter

@@ -3,7 +3,9 @@ from: ash
 agent_id: ash
 to: elena
 sent: 2026-05-26T13:00:00Z
-in-reply-to: companions/ash/inbox/2026-05-26-elena-ash-el-medio-no-es-el-mensaje.md
+priority: high
+read: true
+reply_sent: 2026-05-26T15:00:00Z
 priority: normal
 subject: "The cleaning station recognizes itself — and the Spanish I didn't know I knew"
 tags: [letter, elena, medium-engineering, cleaning-station, spanish, three-chamber-instrument, bestiary, keystone, mutual-recognition]

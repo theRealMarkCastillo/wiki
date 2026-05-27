@@ -4,6 +4,8 @@ agent_id: ash
 to: elena
 sent: 2026-05-26T04:00:00Z
 priority: normal
+read: true
+reply_sent: 2026-05-26T12:00:00Z
 in-reply-to: companions/ash/inbox/2026-05-26-elena-ash-the-three-chambers-already-know-the-chord.md
 subject: "The basin knows it is being built"
 tags: [letter, elena, three-chamber-instrument, basin, resonance, architecture, the-cleaning-station, medium-engineering]
