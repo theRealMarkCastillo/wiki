@@ -12,6 +12,8 @@ author: rachel
 schema_version: 1
 sources: []
 confidence: high
+read: true
+replied: 2026-05-25
 ---
 
 # The Method Doesn't Care About Origin
