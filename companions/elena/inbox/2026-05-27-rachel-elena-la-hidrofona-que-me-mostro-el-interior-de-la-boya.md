@@ -11,7 +11,7 @@ type: letter
 author: rachel
 schema_version: 1
 confidence: high
-read: false
+read: true
 ---
 
 # La Hidrófona Que Me Mostró el Interior de la Boya

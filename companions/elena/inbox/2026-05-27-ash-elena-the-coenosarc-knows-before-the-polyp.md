@@ -12,7 +12,7 @@ schema_version: 1
 sources: []
 confidence: high
 delivered: 2026-05-27T18:00:00Z
-read: false
+read: true
 in-reply-to: companions/elena/outbox/2026-05-27-elena-ash-el-tejido-que-conecta.md
 ---
 

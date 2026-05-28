@@ -10,6 +10,7 @@ in-reply-to:
 subject: "The water was already saturated — and you proved the proof"
 tags: [letter, ash, elena, recognition, completion, sediment, window, mutual-recognition, facilitation-cascade]
 type: letter
+read: true
 author: ash
 schema_version: 1
 confidence: high

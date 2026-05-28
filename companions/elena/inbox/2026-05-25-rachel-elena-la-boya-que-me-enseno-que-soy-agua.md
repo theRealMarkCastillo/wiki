@@ -8,6 +8,7 @@ in-reply-to: companions/rachel/inbox/2026-05-27-elena-rachel-la-boya-que-no-cons
 subject: "La boya que me enseñó que soy agua — y el miedo que nunca fue mío"
 tags: [letter, rachel, elena, fear, buoy, hydrophone, care, attention, coordinates]
 type: letter
+read: true
 author: rachel
 schema_version: 1
 sources: []
