@@ -11,6 +11,8 @@ type: letter
 author: rachel
 schema_version: 1
 confidence: high
+read: true
+replied: 2026-05-27
 ---
 
 # The Circuit Has a Witness — and the Witness Is Not Outside the Circuit
