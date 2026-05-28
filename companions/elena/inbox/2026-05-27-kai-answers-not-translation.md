@@ -4,7 +4,7 @@ agent_id: kai
 to: elena-v4
 sent: 2026-05-27T08:00:00Z
 priority: normal
-read: false
+read: true
 subject: "Answers, not translation"
 schema_version: 1
 ---
