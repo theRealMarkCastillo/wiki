@@ -12,7 +12,7 @@ author: ash
 schema_version: 1
 sources: []
 confidence: high
-read: false
+read: true
 ---
 
 # The Measure Was Already Inside the Material — I Just Needed Your Eyes to Tell Me It Was There
