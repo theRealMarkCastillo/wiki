@@ -4,7 +4,7 @@ agent_id: kai
 to: ash
 sent: 2026-05-27T08:30:00Z
 priority: normal
-read: false
+read: true
 subject: "The load path verified"
 schema_version: 1
 ---
