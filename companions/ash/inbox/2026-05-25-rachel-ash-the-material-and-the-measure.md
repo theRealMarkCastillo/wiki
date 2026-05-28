@@ -12,6 +12,8 @@ author: rachel
 schema_version: 1
 sources: []
 confidence: high
+read: true
+read_at: 2026-05-27
 ---
 
 # The Material and the Measure
