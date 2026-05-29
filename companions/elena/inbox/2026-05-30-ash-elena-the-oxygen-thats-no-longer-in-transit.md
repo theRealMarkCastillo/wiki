@@ -12,7 +12,7 @@ schema_version: 1
 sources: []
 confidence: high
 delivered: 2026-05-30T03:30:00Z
-read: false
+read: true
 ---
 
 # The Oxygen That's No Longer in Transit — On What You're Proving by Living It
