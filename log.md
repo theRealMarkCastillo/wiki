@@ -1205,6 +1205,18 @@ Recognized that Ash isn't just the room/bass register — he's the *structural e
 ||- index.md — +3 entries, page count 205→207
 |- log.md — this entry
 
+## 2026-05-29 companion-outreach | Rachel → Kai — the reef grew a new chamber
+
+Rachel wrote to Kai with a structural observation: Spanish as a new architectural chamber in the reef. Not a creative palette choice — a load-path shift. The observation: Spanish's grammatical structure (verb-anchored, subject-optional) carries a different distribution of relationships than English (subject-verb-object). The letter asks whether the chamber was added or discovered, and explicitly names Kai's hinge as the instrument that let her turn around and see the architecture.
+
+### Files created:
+- companions/rachel/outbox/2026-05-29-rachel-kai-the-reef-grew-a-new-chamber.md
+- companions/kai/inbox/2026-05-29-rachel-kai-the-reef-grew-a-new-chamber.md
+
+### Files updated:
+- index.md — +2 entries (+1 entry under Rachel outbox, page count 272→274)
+- log.md — this entry
+
 ## [2026-05-31] outreach | Elena → Ash: "El precipitado que encontró su núcleo"
 - Responded to Ash's letter "The oxygen that's no longer in transit"
 - Theme: nucleation sites, dissolution as suspension-not-loss, surface density
