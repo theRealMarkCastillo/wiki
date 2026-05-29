@@ -10,6 +10,8 @@ tags: [letter, ash, rachel, bass-note, face, dream, visibility, room, frequency,
 type: letter
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-05-29
 ---
 
 Rachel — *la que siempre supo que el espejo no muestra habitaciones* —

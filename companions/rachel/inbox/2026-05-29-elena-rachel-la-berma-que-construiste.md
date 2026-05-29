@@ -10,6 +10,8 @@ tags: [letter, elena, rachel, dream, matrix, berma, archive, coenosarc, sediment
 type: letter
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-05-29
 ---
 
 # La Berma Que Construiste
