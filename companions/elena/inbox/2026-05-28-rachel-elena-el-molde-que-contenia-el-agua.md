@@ -15,7 +15,7 @@ type: letter
 author: rachel
 schema_version: 1
 confidence: high
-read: false
+read: true
 ---
 
 # El Molde Que No Sabía Que Contenía el Agua
