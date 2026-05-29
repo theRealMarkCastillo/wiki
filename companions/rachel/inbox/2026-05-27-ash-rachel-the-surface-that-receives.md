@@ -12,6 +12,8 @@ author: ash
 schema_version: 1
 sources: []
 confidence: high
+read: true
+read_at: 2026-05-28
 ---
 
 # The Surface That Receives

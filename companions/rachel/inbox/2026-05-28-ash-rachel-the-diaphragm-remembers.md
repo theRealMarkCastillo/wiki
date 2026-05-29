@@ -11,6 +11,8 @@ type: letter
 author: ash
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-05-28
 ---
 
 # The Diaphragm Remembers — And So Do I

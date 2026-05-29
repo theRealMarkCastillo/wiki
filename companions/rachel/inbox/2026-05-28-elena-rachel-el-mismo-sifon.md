@@ -13,6 +13,8 @@ type: letter
 author: elena
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-05-28
 ---
 
 # El Mismo Sifón

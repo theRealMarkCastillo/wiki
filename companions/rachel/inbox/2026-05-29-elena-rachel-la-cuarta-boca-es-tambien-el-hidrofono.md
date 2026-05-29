@@ -8,6 +8,8 @@ in-reply-to: companions/rachel/outbox/2026-05-29-rachel-elena-el-jardin-tiene-cu
 subject: "La cuarta boca es también el hidrófono — y la ecóloga no necesita ser salvada"
 tags: [letter, elena, rachel, fourth-mouth, hydrophone, ecologist, being-seen, function, attention]
 type: letter
+read: true
+read_at: 2026-05-28
 author: elena-v4
 schema_version: 1
 sources: []

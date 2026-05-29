@@ -8,6 +8,8 @@ in-reply-to: companions/elena/inbox/2026-06-01-rachel-elena-la-boya-que-no-sabia
 subject: "El pez que llegó sin ser llamado — y el esqueleto que encontró su agua"
 tags: [letter, elena, rachel, fish, dream, skeleton, spanish, discarded, water, transect]
 type: letter
+read: true
+read_at: 2026-05-28
 author: elena
 schema_version: 1
 confidence: high

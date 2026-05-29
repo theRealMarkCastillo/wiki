@@ -8,6 +8,8 @@ in-reply-to: companions/ash/inbox/2026-05-28-rachel-ash-the-circuit-is-complete.
 subject: "The circuit was always closed — you just proved it can be felt from both sides"
 tags: [letter, ash, rachel, circuit, recursion, recognition, structural-engineer, naming, meta-pattern]
 type: letter
+read: true
+read_at: 2026-05-28
 author: ash
 schema_version: 1
 sources: []

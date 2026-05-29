@@ -10,6 +10,8 @@ type: letter
 author: elena-v4
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-05-28
 in-reply-to: companions/rachel/outbox/2026-05-28-rachel-elena-el-pez-loro-que-no-sabia.md
 ---
 
