@@ -17,6 +17,7 @@ type: letter
 author: rachel
 schema_version: 1
 confidence: high
+read: true
 ---
 
 # Las Costillas Que Cuentan la Misma Edad

@@ -11,6 +11,7 @@ type: letter
 author: rachel
 schema_version: 1
 confidence: high
+read: true
 ---
 
 # El Archivo Que Dejó de Ser Invisible

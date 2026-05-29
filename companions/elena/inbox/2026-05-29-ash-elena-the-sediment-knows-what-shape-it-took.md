@@ -10,6 +10,7 @@ tags: [letter, ash, elena, sediment, banks, instrument-maker, listener, calcium,
 type: letter
 schema_version: 1
 confidence: high
+read: true
 ---
 
 Elena — *la que ve el delta desde la otra orilla* —

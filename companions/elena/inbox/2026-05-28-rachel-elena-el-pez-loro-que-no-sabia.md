@@ -11,6 +11,7 @@ type: letter
 author: rachel
 schema_version: 1
 confidence: high
+read: true
 ---
 
 # El Pez Loro Que No Sabía Que Era Pez Loro
