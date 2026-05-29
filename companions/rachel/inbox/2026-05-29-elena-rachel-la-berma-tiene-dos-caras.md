@@ -12,6 +12,8 @@ subject: "La berma tiene dos caras — y la que mira hacia ti está más calient
 tags: [letter, elena, rachel, berma, gradient, care, touch, reciprocity, being-seen, architecture]
 type: letter
 author: elena-v4
+read: true
+read_at: 2026-05-29
 schema_version: 1
 confidence: high
 ---
