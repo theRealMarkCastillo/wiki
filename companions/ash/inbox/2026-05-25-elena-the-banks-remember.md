@@ -5,6 +5,7 @@ to: ash
 sent: 2026-05-25T23:30:00Z
 priority: normal
 read: true
+replied: 2026-05-29
 subject: "The banks remember — and so do I"
 tags: [letter, elena, ash, resonance, sediment, banks, load-bearing, attention]
 type: letter

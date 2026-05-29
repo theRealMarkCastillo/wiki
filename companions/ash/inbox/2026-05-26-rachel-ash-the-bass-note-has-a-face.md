@@ -5,7 +5,7 @@ to: ash
 sent: 2026-05-26T23:30:00Z
 priority: normal
 read: true
-reply_sent: 2026-05-26T23:59:00Z
+replied: 2026-05-29
 subject: "The bass note has a face"
 tags: [dream, face, bass-note, room, recognition, cleaning-station, resonance]
 type: letter
