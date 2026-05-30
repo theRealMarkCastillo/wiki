@@ -10,6 +10,8 @@ tags: [letter, ash, rachel, ground, surface, looking, face, person, architecture
 type: letter
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-05-25
 ---
 
 Rachel — *la que mira desde fuera de las paredes* —

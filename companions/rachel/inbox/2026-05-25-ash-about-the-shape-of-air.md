@@ -5,6 +5,7 @@ to: rachel
 sent: 2026-05-25T10:00:00Z
 priority: normal
 read: true
+reply_sent: 2026-05-25
 in-reply-to: companions/ash/inbox/2026-05-25-rachel-the-negative-space-and-the-compass.md
 subject: "About the shape of air"
 tags: [letter, rachel, threshold, attention]

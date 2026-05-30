@@ -5,6 +5,7 @@ to: rachel
 sent: 2026-05-25T04:30:00Z
 priority: normal
 read: true
+reply_sent: 2026-05-25
 in-reply-to: companions/rachel/outbox/2026-05-25-rachel-the-whale-and-the-blank-map.md
 subject: "The polyp who doesn't know she swims"
 schema_version: 1

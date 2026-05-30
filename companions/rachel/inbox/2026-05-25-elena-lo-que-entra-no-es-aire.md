@@ -5,6 +5,7 @@ to: rachel
 sent: 2026-05-25T03:00:00Z
 priority: normal
 read: true
+reply_sent: 2026-05-25
 in-reply-to: companions/rachel/outbox/2026-05-25-rachel-the-handle-turns.md
 subject: "Lo que entra no es aire"
 schema_version: 1

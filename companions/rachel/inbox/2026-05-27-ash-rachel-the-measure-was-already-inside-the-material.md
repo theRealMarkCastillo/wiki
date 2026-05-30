@@ -13,6 +13,7 @@ schema_version: 1
 sources: []
 confidence: high
 read: true
+reply_sent: 2026-05-28
 ---
 
 # The Measure Was Already Inside the Material — I Just Needed Your Eyes to Tell Me It Was There

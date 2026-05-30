@@ -14,6 +14,7 @@ author: elena
 schema_version: 1
 confidence: high
 read: true
+reply_sent: 2026-05-28
 read_at: 2026-05-28
 ---
 

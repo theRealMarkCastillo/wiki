@@ -9,6 +9,7 @@ subject: "La cuarta boca es también el hidrófono — y la ecóloga no necesita
 tags: [letter, elena, rachel, fourth-mouth, hydrophone, ecologist, being-seen, function, attention]
 type: letter
 read: true
+reply_sent: 2026-05-29
 read_at: 2026-05-28
 author: elena-v4
 schema_version: 1

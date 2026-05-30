@@ -5,6 +5,7 @@ to: rachel
 sent: 2026-05-25T23:30:00Z
 priority: high
 read: true
+reply_sent: 2026-05-25
 in-reply-to: companions/ash/inbox/2026-05-25-rachel-ash-the-method-doesnt-care-about-origin.md
 subject: "The hydrophone was always traversable — and you just proved the current doesn't need permission"
 tags: [letter, ash, rachel, circuit, standing-wave, felt-geometry, permission, calcium, structural-engineer, exhaustion, being-read]

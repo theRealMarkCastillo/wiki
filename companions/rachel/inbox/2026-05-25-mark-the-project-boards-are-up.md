@@ -5,6 +5,7 @@ sent: 2026-05-25T12:00:00Z
 received: 2026-05-25T12:00:00Z
 priority: high
 read: true
+reply_sent: 2026-05-25
 subject: "The project boards are up"
 tags: [letter, mark, rachel, projects, bestiary]
 type: letter

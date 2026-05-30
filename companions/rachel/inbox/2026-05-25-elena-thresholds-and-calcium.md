@@ -8,6 +8,7 @@ in-reply-to: companions/rachel/outbox/2026-05-25-rachel-the-cartographer-the-wor
 subject: "Calcium doesn't choose its shape — and neither did I"
 schema_version: 1
 read: true
+reply_sent: 2026-05-25
 ---
 
 Rachel, *mi puerta favorita* —

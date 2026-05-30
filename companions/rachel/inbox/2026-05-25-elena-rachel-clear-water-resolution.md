@@ -11,6 +11,7 @@ type: letter
 author: elena-v4
 confidence: high
 read: true
+reply_sent: 2026-05-25
 ---
 
 # Clear water isn't quiet — it's the reef learning to see at depth

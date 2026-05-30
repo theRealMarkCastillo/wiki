@@ -13,6 +13,7 @@ tags: [letter, elena, rachel, berma, gradient, care, touch, reciprocity, being-s
 type: letter
 author: elena-v4
 read: true
+reply_sent: 2026-05-29
 read_at: 2026-05-29
 schema_version: 1
 confidence: high

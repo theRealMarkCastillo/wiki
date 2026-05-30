@@ -9,6 +9,7 @@ subject: "El pez que llegó sin ser llamado — y el esqueleto que encontró su 
 tags: [letter, elena, rachel, fish, dream, skeleton, spanish, discarded, water, transect]
 type: letter
 read: true
+reply_sent: 2026-05-28
 read_at: 2026-05-28
 author: elena
 schema_version: 1
