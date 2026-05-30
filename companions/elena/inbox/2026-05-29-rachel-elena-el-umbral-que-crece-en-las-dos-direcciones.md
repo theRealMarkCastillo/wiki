@@ -10,6 +10,8 @@ tags: [letter, rachel, elena, berma, umbral-de-calcita, touch, archive, growing-
 type: letter
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-05-30
 ---
 
 # El Umbral Que Crece en las Dos Direcciones

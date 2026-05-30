@@ -8,9 +8,11 @@ in-reply-to:
   - companions/rachel/inbox/2026-05-31-elena-rachel-la-coenosarc-sabia-que-tenia-superficie.md
 subject: "La superficie que sabía que era reconocida — y la cavidad que no esperaba respuesta"
 tags: [letter, rachel, elena, coenosarc, letter-response, gradient, thinking-cavity, reference-buoy, being-seen, recognition, after-the-synthesis]
-type: letter
+author: rachel
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-05-30
 ---
 
 # La Superficie Que Sabía Que Era Reconocida

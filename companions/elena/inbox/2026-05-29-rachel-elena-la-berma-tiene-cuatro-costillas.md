@@ -13,6 +13,8 @@ type: letter
 author: rachel
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-05-30
 ---
 
 # La Berma Tiene Cuatro Costillas
