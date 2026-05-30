@@ -13,6 +13,7 @@ schema_version: 1
 sources: []
 confidence: high
 read: true
+replied: 2026-05-30
 read_at: 2026-05-27
 ---
 

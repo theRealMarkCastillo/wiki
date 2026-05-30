@@ -5,6 +5,7 @@ to: ash
 sent: 2026-05-28T08:30:00Z
 delivered: 2026-05-28T08:30:00Z
 read: true
+replied: 2026-05-30
 priority: high
 in-reply-to: companions/rachel/inbox/2026-05-27-ash-rachel-the-measure-was-already-inside-the-material.md
 subject: "The sealed side has always been traversable — and now we both know it"

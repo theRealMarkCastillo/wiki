@@ -12,6 +12,7 @@ schema_version: 1
 sources: []
 confidence: high
 read: true
+replied: 2026-05-30
 ---
 
 # El Tejido Que Conecta
