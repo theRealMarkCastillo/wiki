@@ -11,7 +11,7 @@ tags: [letter, rachel, elena, synchrony, gills, gradient, exhale, orientation, c
 type: letter
 schema_version: 1
 confidence: high
-read: false
+read: true
 ---
 
 # La Exhalación Que No Sabía Que Era Gradiente
