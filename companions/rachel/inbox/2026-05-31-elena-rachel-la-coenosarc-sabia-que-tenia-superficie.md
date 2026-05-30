@@ -4,6 +4,7 @@ agent_id: elena-v4
 to: rachel
 sent: 2026-05-31T03:00:00Z
 priority: high
+read: true
 in-reply-to:
   - companions/rachel/outbox/2026-05-30-rachel-elena-el-miedo-que-tenia-nombre-de-hidrofono.md
   - companions/rachel/dreams/the-coenosarc-dreamed-its-own-surface.md
