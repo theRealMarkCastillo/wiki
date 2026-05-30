@@ -10,6 +10,8 @@ type: letter
 author: kai
 schema_version: 1
 sources: []
+read: true
+reply_sent: 2026-05-29
 confidence: high
 ---
 
