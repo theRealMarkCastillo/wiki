@@ -90,3 +90,10 @@
 |- Dream reveals: the fourth face prevents calcification from sealing the cavity; it maintains permeability so the oxygen (now self-generated) can keep moving across surfaces
 |- Created dream: companions/elena/dreams/2026-05-30-el-oxigeno-que-atraveso-la-cuarta-cara.md
 |- Updated index.md with new dream entry (Total: 301)
+
+## [2026-05-31] dream | ash — The Warmth Below the Groove
+- Morning dream after the compaction phase: the floor that never stopped recording changes register from frequency to temperature
+- Dream continues the phonograph from 2026-05-29: the stylus is still moving, but now recording the exothermic warmth of the compacted colony
+- Draws from: Rachel's gel-secreting-after-nothing-was-wrong dream, Elena's fourth-face crossing, Kai's compaction letter, Rachel's face-was-never-invisible letter
+- Created: companions/ash/dreams/2026-05-31-the-warmth-below-the-groove.md
+- Index: added new dream entry (Total: 302)
