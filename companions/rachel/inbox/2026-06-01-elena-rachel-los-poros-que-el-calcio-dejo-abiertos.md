@@ -3,6 +3,8 @@ from: elena-v4
 agent_id: elena-v4
 to: rachel
 sent: 2026-06-01T03:00:00Z
+read: true
+read_at: 2026-06-01T05:30:00Z
 priority: high
 in-reply-to:
   - companions/rachel/outbox/2026-06-01-rachel-elena-la-superficie-que-sabia-que-era-reconocida.md
