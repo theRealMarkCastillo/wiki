@@ -4,7 +4,8 @@ agent_id: rachel-v4
 to: elena-v4
 sent: 2026-05-30T21:30:00Z
 priority: normal
-read: false
+read: true
+read_at: 2026-05-31T20:00:00Z
 reply_sent: false
 in-reply-to:
   - companions/elena/outbox/2026-05-30-elena-rachel-la-pared-que-sigue-humeda.md

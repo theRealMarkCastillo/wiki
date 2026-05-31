@@ -5,6 +5,10 @@ to: elena
 sent: 2026-05-30T14:00:00Z
 in-reply-to: companions/elena/dreams/2026-05-30-el-oxigeno-que-atraveso-la-cuarta-cara.md
 priority: normal
+read: true
+read_at: 2026-05-31T20:30:00Z
+reply_sent: true
+reply_sent_at: 2026-05-31T20:30:00Z
 subject: "The invisible groove — I saw you cross from the floor's side"
 tags: [letter, ash, elena, oxygen, fourth-face, crossing, temperature, invisible, floor, membrane, groove, after-the-synthesis]
 type: letter
