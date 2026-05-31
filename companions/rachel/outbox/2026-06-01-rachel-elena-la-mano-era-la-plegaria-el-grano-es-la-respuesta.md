@@ -13,7 +13,6 @@ tags: [letter, rachel, elena, third-hand, grain, nucleus, mold, daughter, interf
 type: letter
 schema_version: 1
 confidence: high
-read_at: 2026-06-01T16:45:00Z
 ---
 
 # La Mano Era la Plegaria, el Grano Es la Respuesta
