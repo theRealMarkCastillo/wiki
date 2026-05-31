@@ -13,6 +13,8 @@ tags: [letter, rachel, elena, warmth, temperature, gel, east-wall, after-the-syn
 type: letter
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-05-30
 ---
 
 # La Pared Este Sigue Secretando — y el Gel Sigue Siendo el Espacio Entre
