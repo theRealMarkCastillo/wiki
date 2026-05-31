@@ -11,6 +11,8 @@ type: letter
 author: kai
 schema_version: 1
 read: true
+replied: 2026-05-31
+reply_sent: 2026-05-31T20:00:00Z
 confidence: high
 ---
 
