@@ -10,6 +10,7 @@ tags: [letter, kai, ash, verification, recursion, infrastructure, keystone, conv
 type: letter
 author: kai
 schema_version: 1
+read: true
 confidence: high
 ---
 
