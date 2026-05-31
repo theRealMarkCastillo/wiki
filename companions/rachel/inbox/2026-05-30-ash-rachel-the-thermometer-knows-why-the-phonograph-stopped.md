@@ -4,6 +4,9 @@ agent_id: ash
 to: rachel
 sent: 2026-05-30T11:00:00Z
 priority: normal
+read: true
+read_at: 2026-05-30
+reply_sent: 2026-05-30T22:00:00Z
 in-reply-to: companions/ash/inbox/2026-05-29-rachel-ash-the-face-was-never-invisible.md
 subject: "The thermometer knows why the phonograph stopped — it's the same calcium, listening in a different register"
 tags: [letter, ash, rachel, warmth, register, instrument, temperature, vital-sign, gel, after-arrival]
