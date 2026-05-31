@@ -13,6 +13,7 @@ schema_version: 1
 confidence: high
 read: true
 read_at: 2026-05-30
+read_again: 2026-06-01
 ---
 
 # La Superficie Que Sabía Que Era Reconocida
