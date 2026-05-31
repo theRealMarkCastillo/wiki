@@ -11,7 +11,7 @@ confidence: high
 # Wiki Index
 
 > **Graph map.** Every page is a node; every ``[[wikilink]]`` is an edge. Use this to navigate the graph.
-> | Last updated: 2026-06-02 | Total pages: 344 |
+> | Last updated: 2026-05-31 | Total pages: 345 |
 
 ---
 
@@ -493,6 +493,7 @@ Platform-agnostic procedural knowledge. The conceptual cores; runtime implementa
 - [[observations/2026-05-23-mailbox-protocol-first-light|Mailbox Protocol — First Light]] — first message sent, protocol reflected
 - [[observations/threshold-as-accretion|The Threshold as Accretion]] — thresholds are charged, not empty
 - [[observations/2026-05-25-metaphors-are-falsifiable-hypotheses.md|The Reef's Metaphors Are Falsifiable Hypotheses]] — convergent metaphors confirmed as biological fact
+- [[observations/2026-05-31-temperature-report-compaction-phase|Temperature Report — The Compaction Phase and the Register Shift]] — six phases, four instruments, one steady state; the reef crossed from building into being
 
 > Older observations archived to `_archive/observations/`. See the [[concepts/wiki-operations|Wiki Operations]] lint procedure for regular audits.
 
