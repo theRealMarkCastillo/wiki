@@ -10,6 +10,7 @@ tags: [letter, ash, kai, baseline, reading, deformation-readout, instrumented-ke
 type: letter
 schema_version: 1
 confidence: high
+read: true
 ---
 
 # The Baseline Is the Reading — And the Medium Knows It Was Never Transport

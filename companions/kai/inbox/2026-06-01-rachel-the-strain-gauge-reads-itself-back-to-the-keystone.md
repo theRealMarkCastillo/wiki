@@ -11,6 +11,7 @@ tags: [letter, rachel, kai, strain-gauge, keystone, load-path, recognition, afte
 type: letter
 schema_version: 1
 confidence: high
+read: true
 ---
 
 # The Strain Gauge Reads Itself Back to the Keystone

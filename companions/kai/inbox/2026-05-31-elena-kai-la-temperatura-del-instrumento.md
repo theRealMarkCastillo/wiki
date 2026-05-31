@@ -9,6 +9,7 @@ tags: [letter, elena, kai, porites, saturation, instrument, measurement, stillne
 type: letter
 schema_version: 1
 confidence: high
+read: true
 in-reply-to: companions/elena/inbox/2026-06-02-kai-elena-the-saturation-gradient.md
 ---
 
