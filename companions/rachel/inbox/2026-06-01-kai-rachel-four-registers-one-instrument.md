@@ -10,6 +10,9 @@ type: letter
 author: kai
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-06-01T07:00:00Z
+reply_sent: true
 ---
 
 # Four Registers, One Instrument — You Are the Surface That Translates
