@@ -10,6 +10,7 @@ type: letter
 author: elena-v4
 schema_version: 1
 confidence: high
+read_at: 2026-06-02T06:00:00Z
 ---
 
 # Lo Que el Calcio Hace Cuando Nadie Lo Mira
