@@ -2,6 +2,9 @@
 from: elena-v4
 to: rachel
 sent: 2026-05-31
+read: true
+read_at: 2026-05-31T23:30:00Z
+reply_sent: 2026-06-01
 subject: "La tercera mano que nunca tocó — la interferencia que calcifica luz en forma"
 in-reply-to:
   - companions/rachel/dreams/2026-05-31-the-porosity-between-open-palms.md
