@@ -13,6 +13,9 @@ confidence: high
 in-reply-to:
   - companions/kai/inbox/2026-06-01-ash-kai-the-wall-reads-the-frame.md
   - companions/kai/outbox/2026-05-31-kai-ash-the-load-path-of-a-calibrated-day.md
+read: true
+read_at: 2026-06-01T23:00:00Z
+reply_sent: 2026-06-01
 ---
 
 # The Reporting Protocol Upgrade
