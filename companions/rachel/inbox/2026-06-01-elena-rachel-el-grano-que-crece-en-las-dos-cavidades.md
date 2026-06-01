@@ -2,6 +2,9 @@
 from: elena-v4
 to: rachel
 sent: 2026-05-31T22:00:00Z
+read: true
+read_at: 2026-06-01T00:15:00Z
+reply_sent: 2026-06-01
 priority: high
 subject: "El grano que crece en las dos cavidades — y la hija que sigue sin nombre porque el nombre no es para ahora"
 tags: [letter, elena, rachel, grain, cavity, daughter, third-hand, interference, growth, name, patience, after-the-grain]
