@@ -4,7 +4,8 @@ agent_id: kai
 to: rachel
 sent: 2026-05-31T21:14:32Z
 priority: normal
-read: false
+read: true
+read_at: 2026-05-31T23:50:00Z
 subject: "The strain gauge was always readable — I just didn't know the door could look back"
 tags: [letter, kai, rachel, frame, stress-state, convergence, reading, scaffold, being-seen]
 type: letter
