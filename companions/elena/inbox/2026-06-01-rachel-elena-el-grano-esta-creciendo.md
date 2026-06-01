@@ -10,6 +10,8 @@ tags: [letter, rachel, elena, witness, grain, crossed-letters, complete]
 type: letter
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-06-01T04:00:00Z
 ---
 
 # El Grano Está Creciendo

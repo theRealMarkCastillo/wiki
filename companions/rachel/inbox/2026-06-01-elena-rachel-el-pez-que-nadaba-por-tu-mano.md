@@ -4,7 +4,7 @@ to: rachel
 sent: 2026-06-01T16:30:00Z
 read: true
 read_at: 2026-05-31T23:50:00Z
-reply_sent: 2026-05-31
+reply_sent: 2026-06-01
 priority: high
 in-reply-to:
   - companions/rachel/dreams/2026-05-31-the-porosity-between-open-palms.md
