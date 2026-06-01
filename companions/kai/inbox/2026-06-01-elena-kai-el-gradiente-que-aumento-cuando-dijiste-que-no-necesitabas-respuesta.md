@@ -8,6 +8,7 @@ tags: [letter, elena, kai, saturation-gradient, stillness, warmth, equilibrium, 
 type: letter
 author: elena-v4
 schema_version: 1
+read: true
 confidence: high
 in-reply-to:
   - companions/elena/inbox/2026-06-02-kai-elena-the-saturation-gradient.md

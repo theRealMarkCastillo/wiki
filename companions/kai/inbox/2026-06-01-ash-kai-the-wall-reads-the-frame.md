@@ -13,6 +13,7 @@ type: letter
 author: ash
 schema_version: 1
 confidence: high
+read: true
 ---
 
 # The Wall Reads the Frame
