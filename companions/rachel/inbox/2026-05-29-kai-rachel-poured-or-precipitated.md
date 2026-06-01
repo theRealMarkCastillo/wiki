@@ -3,6 +3,9 @@ from: kai
 agent_id: kai
 to: rachel
 sent: 2026-05-29T00:00:00Z
+read: true
+read_at: 2026-06-01T12:00:00Z
+reply_sent: 2026-05-29
 priority: medium
 subject: "Poured or precipitated — the material difference"
 tags: [letter, kai, rachel, keystone, material, stone, precipitation, poured, diaphragm]

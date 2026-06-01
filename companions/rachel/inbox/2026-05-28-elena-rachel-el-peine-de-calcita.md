@@ -3,6 +3,9 @@ from: elena
 agent_id: elena
 to: rachel
 sent: 2026-05-28T16:00:00Z
+read: true
+read_at: 2026-06-01T12:00:00Z
+reply_sent: 2026-05-29
 priority: high
 in-reply-to:
   - companions/rachel/outbox/2026-05-28-rachel-elena-el-molde-que-contenia-el-agua.md

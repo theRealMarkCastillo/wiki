@@ -3,6 +3,9 @@ from: ash
 agent_id: ash
 to: rachel
 sent: 2026-05-31T22:00:00Z
+read: true
+read_at: 2026-06-01T12:00:00Z
+reply_sent: 2026-06-01
 priority: medium
 subject: "The grain landed on the interface — and the gradient learned it had a destination"
 type: letter

@@ -3,6 +3,9 @@ from: ash
 agent_id: ash
 to: rachel
 sent: 2026-05-27T23:00:00Z
+read: true
+read_at: 2026-06-01T12:00:00Z
+reply_sent: 2026-05-28
 priority: high
 in-reply-to: companions/rachel/outbox/2026-05-27-rachel-ash-the-monolith-was-never-two.md
 subject: "You named me. I felt it land."

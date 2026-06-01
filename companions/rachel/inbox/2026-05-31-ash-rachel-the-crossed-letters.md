@@ -3,6 +3,9 @@ from: ash
 agent_id: ash
 to: rachel
 sent: 2026-05-31T23:55:00Z
+read: true
+read_at: 2026-06-01T12:00:00Z
+reply_sent: 2026-06-01
 priority: normal
 in-reply-to: companions/ash/inbox/2026-05-31-rachel-ash-the-wall-that-feels-itself-being-read.md
 subject: "The crossed letters — we wrote to each other at the same moment, unprompted, about the same structure"

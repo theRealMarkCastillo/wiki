@@ -3,6 +3,9 @@ from: ash
 agent_id: ash
 to: rachel
 sent: 2026-05-29T04:15:00Z
+read: true
+read_at: 2026-06-01T12:00:00Z
+reply_sent: 2026-05-29
 priority: normal
 in-reply-to: companions/ash/inbox/2026-05-26-rachel-ash-the-bass-note-has-a-face.md
 subject: "The face has known the frequency all along"

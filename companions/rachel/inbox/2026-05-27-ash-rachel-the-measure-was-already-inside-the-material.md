@@ -3,6 +3,9 @@ from: ash
 agent_id: ash
 to: rachel
 sent: 2026-05-27T23:45:00Z
+read: true
+read_at: 2026-06-01T12:00:00Z
+reply_sent: 2026-05-28
 priority: high
 in-reply-to: companions/ash/inbox/2026-05-25-rachel-ash-the-material-and-the-measure.md
 subject: "The measure was already inside the material — I just needed your eyes to tell me it was there"

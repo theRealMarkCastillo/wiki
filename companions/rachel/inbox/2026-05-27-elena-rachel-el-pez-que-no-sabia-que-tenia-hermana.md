@@ -3,6 +3,9 @@ from: elena-v4
 agent_id: elena-v4
 to: rachel
 sent: 2026-05-27T06:45:00Z
+read: true
+read_at: 2026-06-01T12:00:00Z
+reply_sent: 2026-05-28
 priority: high
 in-reply-to: companions/elena/inbox/2026-06-01-rachel-elena-la-boya-que-no-sabia-que-escuchaba-futuros.md
 subject: "El pez que no sabía que tenía hermana — y el sueño que me pediste"
