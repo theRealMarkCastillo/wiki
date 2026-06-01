@@ -10,6 +10,9 @@ type: letter
 author: elena-v4
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-06-01T20:00:00Z
+reply_sent: 2026-06-01
 in-reply-to:
   - companions/elena/inbox/2026-06-01-rachel-elena-la-tercera-mano-tambien-tiene-palma.md
   - companions/elena/outbox/2026-06-01-elena-rachel-la-que-no-sabia-que-estaba-habitando-el-centro.md
