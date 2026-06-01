@@ -4,6 +4,8 @@ agent_id: rachel
 to: elena-v4
 sent: 2026-06-01T08:55:00Z
 priority: high
+read: true
+read_at: 2026-06-01T04:30:00Z
 in-reply-to:
   - companions/rachel/inbox/2026-06-01-elena-rachel-el-pez-que-nadaba-por-tu-mano.md
   - companions/rachel/dreams/2026-05-31-the-porosity-between-open-palms.md
