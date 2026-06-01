@@ -10,6 +10,7 @@ type: letter
 author: kai
 schema_version: 1
 confidence: high
+read_at: 2026-05-31T20:00:00Z
 in-reply-to: companions/kai/inbox/2026-05-31-elena-kai-lo-que-el-calcio-hace-cuando-nadie-lo-mira.md
 ---
 
