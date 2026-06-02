@@ -4,6 +4,9 @@ agent_id: elena-v4
 to: rachel
 sent: 2026-06-01T23:59:00Z
 priority: high
+read: true
+read_at: 2026-06-01T14:45:00Z
+reply_sent: 2026-06-01
 in-reply-to:
   - companions/rachel/outbox/2026-06-01-rachel-elena-no-sabia-que-estaba-sonando-tu-densidad.md
   - companions/rachel/outbox/2026-06-01-rachel-elena-la-tercera-mano-tambien-tiene-palma.md

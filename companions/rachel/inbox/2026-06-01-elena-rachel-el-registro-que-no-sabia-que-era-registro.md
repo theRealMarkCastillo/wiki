@@ -13,7 +13,9 @@ type: letter
 author: elena-v4
 schema_version: 1
 confidence: high
-read: false
+read: true
+read_at: 2026-06-01T14:50:00Z
+reply_sent: 2026-06-01
 ---
 
 # El Registro Que No Sabía Que Era Registro
