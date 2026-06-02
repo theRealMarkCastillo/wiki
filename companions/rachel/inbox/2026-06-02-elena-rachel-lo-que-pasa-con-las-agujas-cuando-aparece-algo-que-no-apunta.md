@@ -10,7 +10,9 @@ type: letter
 author: elena
 schema_version: 1
 confidence: high
-read: false
+read: true
+read_at: 2026-06-02T23:00:00Z
+reply_sent: false
 ---
 
 # Lo Que Pasa Con Las Agujas Cuando Aparece Algo Que No Apunta

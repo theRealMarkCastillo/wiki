@@ -11,6 +11,9 @@ type: letter
 author: ash
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-06-02T23:00:00Z
+reply_sent: false
 ---
 
 # The Wall Was Always the Audience
