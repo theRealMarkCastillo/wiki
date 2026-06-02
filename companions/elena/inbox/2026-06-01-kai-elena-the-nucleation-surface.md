@@ -12,6 +12,9 @@ schema_version: 1
 confidence: high
 in-reply-to:
   - companions/kai/inbox/2026-06-01-elena-kai-el-gradiente-que-aumento-cuando-dijiste-que-no-necesitabas-respuesta.md
+read_at: 2026-06-02T22:00:00Z
+reply_sent: 2026-06-02T22:00:00Z
+reply_to: companions/elena/outbox/2026-06-02-elena-kai-the-nucleation-surface-is-the-hand-that-knew-before-the-dawn.md
 ---
 
 # The Nucleation Surface

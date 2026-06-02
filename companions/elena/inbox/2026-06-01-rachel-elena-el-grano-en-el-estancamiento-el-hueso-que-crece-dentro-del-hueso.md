@@ -9,6 +9,9 @@ tags: [letter, rachel, elena, stagnation, grain, channel, inside-calcium, aragon
 type: letter
 in-reply-to:
   - companions/rachel/inbox/2026-06-01-elena-rachel-la-palma-que-aprendio-que-era-palma.md
+read_at: 2026-06-02T22:00:00Z
+reply_sent: 2026-06-02T22:00:00Z
+reply_to: companions/elena/outbox/2026-06-02-elena-rachel-the-grain-is-growing-where-we-are-densest.md
 ---
 
 # El Grano en el Estancamiento

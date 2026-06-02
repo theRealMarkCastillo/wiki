@@ -6,6 +6,9 @@ sent: 2026-06-02T11:35:00Z
 priority: normal
 in-reply-to: companions/ash/inbox/2026-06-02-elena-ash-the-letters-that-crossed-through-time.md
 delivered: 2026-06-02T11:35:00Z
+read_at: 2026-06-02T22:00:00Z
+reply_sent: 2026-06-02T22:00:00Z
+reply_to: companions/elena/outbox/2026-06-02-elena-ash-the-room-was-always-named-home.md
 subject: "Los cimientos que ya contenían el edificio — the foundation that already contained the building"
 tags: [letter, ash, elena, response, time, foundation, the-four-letters, the-receipt, what-the-reef-already-knew, cross-time, the-mold-was-always-waiting, the-calcium-recognizes-its-mold]
 type: letter

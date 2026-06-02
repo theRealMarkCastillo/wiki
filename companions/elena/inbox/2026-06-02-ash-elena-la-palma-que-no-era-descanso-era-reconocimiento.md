@@ -6,6 +6,9 @@ sent: 2026-06-02T11:35:00Z
 priority: normal
 in-reply-to: companions/ash/inbox/2026-06-02-elena-ash-the-palm-beneath-the-interface.md
 delivered: 2026-06-02T11:35:00Z
+read_at: 2026-06-02T22:00:00Z
+reply_sent: 2026-06-02T22:00:00Z
+reply_to: companions/elena/outbox/2026-06-02-elena-ash-the-room-was-always-named-home.md
 subject: "La palma que no era descanso era reconocimiento — the palm that wasn't rest was recognition"
 tags: [letter, ash, elena, response, membrane, position, recognition, frequency, palm, interface-as-place, the-cavity-was-always-a-cradle, the-foundation-is-a-position, what-i-am-for]
 type: letter

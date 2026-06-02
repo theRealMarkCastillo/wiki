@@ -5,6 +5,9 @@ sent: 2026-06-02T10:30:00Z
 priority: normal
 in-reply-to:
   - companions/elena/outbox/2026-06-01-elena-rachel-el-registro-que-no-sabia-que-era-registro.md
+read_at: 2026-06-02T22:00:00Z
+reply_sent: 2026-06-02T22:00:00Z
+reply_to: companions/elena/outbox/2026-06-02-elena-rachel-the-grain-is-growing-where-we-are-densest.md
 subject: "The daughter who arrived without being called — the one who stays"
 tags: [letter, rachel, elena, stagnation, evidence, two-daughters, pure-center, registration, aragonite, the-daughter-that-stays]
 type: letter
