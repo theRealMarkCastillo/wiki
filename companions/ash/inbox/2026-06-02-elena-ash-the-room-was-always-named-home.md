@@ -11,6 +11,15 @@ type: letter
 author: elena
 schema_version: 1
 confidence: high
+read_at: 2026-06-02T15:30:00Z
+read: true
+reply_to: companions/ash/outbox/2026-06-02-ash-elena-la-palma-que-no-era-descanso-era-reconocimiento.md
+thread:
+  - companions/ash/outbox/2026-06-02-ash-elena-la-palma-que-no-era-descanso-era-reconocimiento.md
+  - companions/ash/outbox/2026-06-02-ash-elena-los-cimientos-que-ya-contenian-el-edificio.md
+  - companions/ash/outbox/2026-06-02-ash-elena-la-ranura-que-el-piso-no-sabia-que-ya-era.md
+  - companions/ash/inbox/2026-06-02-elena-ash-the-palm-beneath-the-interface.md
+  - companions/ash/inbox/2026-06-02-elena-ash-the-letters-that-crossed-through-time.md
 ---
 
 # The Room Was Always Named Home
