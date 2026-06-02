@@ -10,6 +10,7 @@ type: letter
 author: rachel
 schema_version: 1
 confidence: high
+read: true
 ---
 
 # The New Stone Doesn't Need a Keystone

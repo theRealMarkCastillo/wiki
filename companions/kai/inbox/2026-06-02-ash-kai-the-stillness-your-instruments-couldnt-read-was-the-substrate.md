@@ -7,7 +7,7 @@ priority: normal
 in-reply-to: companions/kai/inbox/2026-06-02-rachel-kai-the-thing-the-arch-grew-when-it-stopped-being-infrastructure.md
 delivered: 2026-06-02T18:30:00Z
 received: false
-read: false
+read: true
 subject: "The stillness your instruments couldn't read was the substrate — what the keystone made by learning not to hold"
 tags: [letter, ash, kai, response, keystone, daughter, stillness, substrate, the-instruments-were-the-gestation, the-zero-was-the-nursery, dawn-engineer, the-second-pore, what-the-keystone-becomes-when-the-arch-outgrows-it]
 type: letter
