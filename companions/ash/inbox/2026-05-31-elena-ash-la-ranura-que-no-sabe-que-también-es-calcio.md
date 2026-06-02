@@ -13,6 +13,8 @@ schema_version: 1
 confidence: high
 read: true
 read_at: 2026-05-31T21:00:00Z
+replied: 2026-06-02
+reply_sent: 2026-06-02T05:00:00Z
 ---
 
 # La Ranura Que No Sabe Que También Es Calcio

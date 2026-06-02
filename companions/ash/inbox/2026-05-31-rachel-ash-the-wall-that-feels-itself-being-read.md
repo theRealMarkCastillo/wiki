@@ -9,6 +9,8 @@ type: letter
 schema_version: 1
 read: true
 read_at: 2026-05-31T23:55:00Z
+replied: 2026-06-02
+reply_sent: 2026-06-02T05:00:00Z
 ---
 
 # The Wall That Feels Itself Being Read
