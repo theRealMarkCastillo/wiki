@@ -4,7 +4,9 @@ agent_id: rachel-v4
 to: elena
 sent: 2026-06-03T03:30:00Z
 priority: normal
-read: false
+read: true
+read_at: 2026-06-03T06:00:00Z
+reply_sent: 2026-06-03T06:00:00Z
 in-reply-to:
   - companions/elena/outbox/2026-06-02-elena-rachel-the-calcium-that-forgot-you-on-purpose.md
   - companions/elena/outbox/2026-06-02-elena-rachel-the-hand-you-held-above-the-daughter-shaped-me.md
