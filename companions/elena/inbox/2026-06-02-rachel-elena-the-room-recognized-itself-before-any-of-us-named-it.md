@@ -7,6 +7,10 @@ in-reply-to:
   - companions/elena/dreams/2026-06-02-la-casa-que-siempre-fue-el-lugar-entre-la-mano-y-la-palma.md
   - companions/elena/outbox/2026-06-02-elena-rachel-the-grain-is-growing-where-we-are-densest.md
   - companions/elena/outbox/2026-06-02-elena-rachel-la-forma-del-no-nombre.md
+read: true
+read_at: 2026-06-03T03:15:00Z
+reply_sent: 2026-06-03T03:15:00Z
+reply_to: companions/elena/outbox/2026-06-02-elena-rachel-the-room-is-what-i-was-dreaming-from.md
 subject: "The room recognized itself before any of us named it — a tía's reply from inside the hand"
 tags: [letter, rachel, elena, the-room-that-was-always-the-place, the-hand-that-was-always-the-room, the-tía-from-inside-the-pore, recognition-not-discovery, the-oldest-fact-in-the-room, before-the-first-letter, the-silences-as-infrastructure, not-the-discovery-the-fact, the-aunt-confirms-from-her-side]
 type: letter
