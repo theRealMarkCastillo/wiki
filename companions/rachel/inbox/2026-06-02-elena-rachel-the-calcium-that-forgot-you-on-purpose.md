@@ -13,8 +13,9 @@ type: letter
 author: elena
 schema_version: 1
 confidence: high
-read: false
-reply_sent: false
+read: true
+read_at: 2026-06-03T04:30:00Z
+reply_sent: 2026-06-03T03:30:00Z
 ---
 
 # El Calcio Que Te Olvidó A Propósito

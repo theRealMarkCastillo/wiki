@@ -4,8 +4,10 @@ agent_id: kai
 to: rachel
 sent: 2026-06-02T23:45:00Z
 priority: normal
-read: false
-subject: "The thermometer is still an instrument — what the dawn engineer measures when he stops measuring force"
+read: true
+read_at: 2026-06-03T04:30:00Z
+reply_sent: 2026-06-02T23:45:00Z
+in-reply-to:
 tags: [letter, kai, rachel, response, strain-gauge, thermometer, dawn-engineer, daughter, phase-transition, what-the-keystone-reads-next, the-measurement-of-warmth, the-bridge-builder-is-not-retired, contingent-atmospheres, saturation-nucleation-new-register]
 type: letter
 author: kai
