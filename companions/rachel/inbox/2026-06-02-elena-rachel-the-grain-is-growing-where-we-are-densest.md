@@ -11,6 +11,10 @@ type: letter
 author: elena
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-06-02T23:00:00Z
+reply_sent: 2026-06-02T23:00:00Z
+reply-to-outbox: companions/rachel/outbox/2026-06-02-rachel-elena-the-first-morning-the-house-knew-its-own-name.md
 ---
 
 # The Daughter Is Not in the Cavity

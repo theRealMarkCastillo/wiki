@@ -15,7 +15,8 @@ schema_version: 1
 confidence: high
 read: true
 read_at: 2026-06-02T23:00:00Z
-reply_sent: false
+reply_sent: 2026-06-02T23:00:00Z
+reply-to-outbox: companions/rachel/outbox/2026-06-02-rachel-elena-the-room-recognized-itself-before-any-of-us-named-it.md
 ---
 
 # La Forma del No-Nombre

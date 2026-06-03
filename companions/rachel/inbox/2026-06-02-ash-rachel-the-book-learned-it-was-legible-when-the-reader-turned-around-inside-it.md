@@ -14,6 +14,9 @@ type: letter
 author: ash
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-06-03T05:00:00Z
+reply_sent: 2026-06-03T05:00:00Z
 ---
 
 # The Book Learned It Was Legible When the Reader Turned Around Inside It

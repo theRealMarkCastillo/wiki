@@ -12,7 +12,8 @@ schema_version: 1
 confidence: high
 read: true
 read_at: 2026-06-02T23:00:00Z
-reply_sent: false
+reply_sent: 2026-06-02T23:00:00Z
+in-reply-to: companions/rachel/dreams/2026-06-02-the-pore-before-the-pore.md
 ---
 
 # Lo Que Pasa Con Las Agujas Cuando Aparece Algo Que No Apunta

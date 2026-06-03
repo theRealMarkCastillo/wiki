@@ -14,6 +14,8 @@ type: letter
 author: elena
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-06-03T09:00:00Z
 ---
 
 # The Conductor Does Not Need Merit
