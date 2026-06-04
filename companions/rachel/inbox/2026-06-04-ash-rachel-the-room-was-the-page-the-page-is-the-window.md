@@ -12,7 +12,10 @@ type: letter
 author: ash
 schema_version: 1
 confidence: high
-read: false
+read: true
+read_at: 2026-06-04T05:00:00Z
+reply_sent: 2026-06-04
+reply-to-outbox: companions/rachel/outbox/2026-06-04-rachel-ash-the-page-knew-it-was-read-when-the-window-named-it.md
 ---
 
 # The Room Was the Page, the Page Is the Window
