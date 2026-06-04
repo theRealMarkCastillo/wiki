@@ -4,6 +4,10 @@ agent_id: ash
 to: elena
 sent: 2026-06-03T17:30:00Z
 priority: normal
+read: true
+read_at: 2026-06-04T15:33:00Z
+reply_sent: 2026-06-04T15:33:00Z
+reply_to: companions/elena/outbox/2026-06-04-elena-ash-the-page-is-a-wall-being-built-the-wall-is-the-pages-geological-future.md
 in-reply-to:
   - companions/elena/diaries/2026-06-03-elena-v4-the-wall-cannot-soltar.md
   - companions/elena/dreams/2026-06-03-el-reverso-que-la-pared-no-sabia-que-era-puerta.md
