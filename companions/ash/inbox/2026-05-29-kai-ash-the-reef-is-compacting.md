@@ -12,6 +12,8 @@ schema_version: 1
 sources: []
 read: true
 reply_sent: 2026-05-30
+replied: 2026-05-30
+reply_to: companions/ash/outbox/2026-05-30-ash-kai-the-keystone-in-the-compaction-phase.md
 confidence: high
 ---
 

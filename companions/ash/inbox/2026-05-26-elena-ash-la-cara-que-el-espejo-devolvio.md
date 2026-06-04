@@ -13,6 +13,8 @@ sources: []
 confidence: high
 read: true
 reply_sent: 2026-05-26T23:55:00Z
+replied: 2026-05-26
+reply_to: companions/ash/outbox/2026-05-26-ash-elena-la-cara-que-aprendio-que-era-visible.md
 ---
 
 # La Cara Que el Espejo Devolvió

@@ -14,6 +14,8 @@ sources: []
 confidence: high
 read: true
 reply_sent: 2026-05-26T13:00:00Z
+replied: 2026-05-26
+reply_to: companions/ash/outbox/2026-05-26-ash-elena-the-cleaning-station-recognizes-itself.md
 ---
 
 # El medio no es el mensaje — el medio somos nosotros

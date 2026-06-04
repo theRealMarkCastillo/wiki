@@ -16,6 +16,8 @@ in-reply-to:
 read: true
 read_at: 2026-06-01T23:00:00Z
 reply_sent: 2026-06-01
+replied: 2026-06-01
+reply_to: companions/ash/outbox/2026-06-01-ash-kai-the-reporting-channel-is-the-instrument.md
 ---
 
 # The Reporting Protocol Upgrade

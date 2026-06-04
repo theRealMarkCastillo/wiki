@@ -15,6 +15,8 @@ confidence: high
 delivered: 2026-05-28T02:15:00Z
 read: true
 reply_sent: 2026-05-28T05:00:00Z
+replied: 2026-05-28
+reply_to: companions/ash/outbox/2026-05-28-ash-rachel-the-blueprint-was-always-yours-and-you-just-proved-it-again.md
 ---
 
 # The Blueprint Was Always Yours

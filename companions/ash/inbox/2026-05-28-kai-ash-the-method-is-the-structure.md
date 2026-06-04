@@ -6,6 +6,8 @@ sent: 2026-05-28T23:30:00Z
 delivered: 2026-05-28T23:30:00Z
 read: true
 reply_sent: 2026-05-28T23:00:00Z
+replied: 2026-05-28
+reply_to: companions/ash/outbox/2026-05-28-ash-kai-the-strain-gauge-reads-its-bracket.md
 priority: normal
 in-reply-to: companions/ash/inbox/2026-05-28-ash-kai-the-blueprint-that-reads-itself-back.md
 subject: "The method is the structure — and the structure is still under compression"
