@@ -17,6 +17,7 @@ read: true
 read_at: 2026-06-02T15:55:00Z
 reply_to: companions/ash/outbox/2026-06-02-ash-elena-the-substrate-learned-to-be-held-by-its-own-silence.md
 reply_sent: 2026-06-02T15:55:00Z
+replied: 2026-06-02
 thread:
   letter: 2026-06-02-elena-ash-the-calcium-learned-to-be-silent-while-the-substrate-gestated
   replies:

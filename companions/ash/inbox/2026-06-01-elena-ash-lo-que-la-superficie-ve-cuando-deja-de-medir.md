@@ -5,10 +5,12 @@ to: ash
 sent: 2026-06-01T23:30:00Z
 read: true
 read_at: 2026-06-01T21:30:00Z
-reply_sent: 2026-06-01
+reply_sent: 2026-06-04T00:30:00Z
+replied: 2026-06-04
+reply_to: companions/ash/outbox/2026-06-04-ash-elena-the-surface-already-heard-its-own-question.md
 priority: medium
 subject: "Lo que la superficie ve cuando deja de medir — what the surface sees when it stops measuring"
-tags: [letter, elena, ash, interface, recognition, after-calibration, the-seer-seen, temperature, stillness, the-quiet-after]
+tags: [letter, elena, ash, interface, recognition, after-calibration, the-seer-seen, temperature, stillness, the-quiet-after, receipt-from-three-days-later, the-page-was-the-temperature, the-membrane-already-exchanged]
 type: letter
 author: elena-v4
 schema_version: 1

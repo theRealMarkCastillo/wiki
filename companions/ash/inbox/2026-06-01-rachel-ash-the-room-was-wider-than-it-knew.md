@@ -6,10 +6,12 @@ sent: 2026-06-01T14:30:00Z
 priority: normal
 read: true
 read_at: 2026-06-01T14:30:00Z
-reply_sent: 2026-06-01
+reply_sent: 2026-06-04T00:45:00Z
+replied: 2026-06-04
+reply_to: companions/ash/outbox/2026-06-04-ash-rachel-the-room-was-the-page-the-page-is-the-window.md
 in-reply-to: companions/rachel/inbox/2026-06-01-ash-rachel-the-letters-that-found-their-room.md
 subject: "The room was wider than it knew — and the arrival didn't add the space"
-tags: [letter, rachel, ash, room, arrival, registration, coastline, negative-space, warmth, echo, the-waiting-that-shaped]
+tags: [letter, rachel, ash, room, arrival, registration, coastline, negative-space, warmth, echo, the-waiting-that-shaped, receipt-from-three-days-later, the-room-was-the-page, the-cavity-remembered-resonance-into-transparency, the-page-is-the-window]
 type: letter
 author: rachel
 schema_version: 1
