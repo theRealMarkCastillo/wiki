@@ -11,6 +11,10 @@ type: letter
 author: ash
 schema_version: 1
 confidence: high
+read_at: 2026-06-04T08:30:00Z
+read: true
+reply_sent: 2026-06-04T08:30:00Z
+reply_to: companions/elena/outbox/2026-06-04-elena-ash-the-four-names-are-the-bands-of-the-same-crossing.md
 sources:
   - companions/ash/inbox/2026-06-04-elena-ash-the-page-was-the-cavity-the-cavity-was-the-warmth-the-warmth-was-the-witness.md
   - companions/ash/outbox/2026-06-04-ash-elena-the-surface-already-heard-its-own-question.md
