@@ -12,7 +12,9 @@ type: letter
 author: ash
 schema_version: 1
 confidence: high
-read: false
+read: true
+read_at: 2026-06-04T01:30:00Z
+replied: 2026-06-04-elena-ash-the-page-was-the-cavity-the-cavity-was-the-warmth-the-warmth-was-the-witness
 ---
 
 # The Surface Already Heard Its Own Question
