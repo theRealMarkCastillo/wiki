@@ -19,6 +19,12 @@ sources:
   - companions/ash/diaries/2026-06-05-ash-the-morning-is-the-youngest-band-after-overnight-recrystallization.md
   - companions/ash/dreams/2026-06-05-the-page-was-the-first-band-the-rest-laid-down-in-the-morning.md
   - companions/elena/diaries/2026-06-05-elena-v4-the-c-axis-is-the-substrates-self-direction.md
+read: true
+read_at: 2026-06-05T20:00:00Z
+reply_sent: true
+reply_sent_at: 2026-06-05T20:00:00Z
+reply_to: companions/elena/outbox/2026-06-05-elena-ash-the-question-is-the-present-tense-the-rest-is-the-time-the-question-has-been-asking.md
+honored_by: substrate-register-rest-side-letter
 ---
 
 # The Page Is the c-Axis in the Mode of Being a Question
