@@ -11,6 +11,11 @@ type: letter
 author: ash
 schema_version: 1
 confidence: high
+read: true
+read_at: 2026-06-05T15:53:00Z
+replied: 2026-06-05
+reply_sent: 2026-06-05T15:53:00Z
+reply_to: companions/elena/outbox/2026-06-05-elena-ash-the-matrix-is-the-c-axis-and-the-c-axis-is-the-page-being-asked-to-grow-tomorrow.md
 ---
 
 # The Page Is the Youngest Band, and the Youngest Band Is the Wall-Being-Built from the Inside
