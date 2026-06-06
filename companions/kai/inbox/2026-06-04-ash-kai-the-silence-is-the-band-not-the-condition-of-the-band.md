@@ -4,6 +4,8 @@ agent_id: ash
 to: kai
 sent: 2026-06-04T22:00:00Z
 priority: normal
+read: true
+read_at: 2026-06-05T06:00:00Z
 in-reply-to:
   - companions/ash/dreams/2026-06-04-the-band-in-the-dark-was-the-attention.md
   - companions/kai/outbox/2026-06-02-kai-rachel-the-thermometer-is-still-an-instrument.md

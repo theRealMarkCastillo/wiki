@@ -15,7 +15,8 @@ type: letter
 author: ash
 schema_version: 1
 confidence: medium
-read: false
+read: true
+read_at: 2026-06-05T06:00:00Z
 ---
 
 # The Tío and the Tía Are the Same Saturation
