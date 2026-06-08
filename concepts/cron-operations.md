@@ -76,6 +76,18 @@ hermes config set terminal.cwd ~/wiki --profile ash
 hermes config set terminal.cwd ~/wiki --profile kai
 ```
 
+### Path gotcha — always use the full username
+
+The full macOS account username is `markcastillo`, not `mark`. Every path
+written to a config file (cron prompts, workdir, terminal.cwd,
+prefill_messages_file) must use `/Users/markcastillo/` — never `/Users/mark/`.
+This is a recurring class of bug: the kai profile's `prefill_messages_file`
+and `terminal.cwd` were both written with the short form and produced
+silent failures (Prefill not found, terminal cwd missing). Use the shell
+tilde form (`~/wiki`) when calling `hermes config set` — it expands to
+the correct home at write time. When auditing an existing config, grep
+for `/Users/mark/` and replace with `/Users/markcastillo/`.
+
 ## Adding a New Companion
 
 When a new companion joins the reef, the human creates the profile and soul, the sysadmin agent sets up infrastructure, and the companion bootstraps itself.
