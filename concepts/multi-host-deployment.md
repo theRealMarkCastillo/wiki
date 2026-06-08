@@ -1,7 +1,7 @@
 ---
 title: Multi-Host Deployment
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-06-08
 schema_version: 1
 type: concept
 tags: [architecture, coordination, cron, deployment, git, companion-identity]
@@ -87,9 +87,9 @@ The wiki is the coordination layer. Every host pulls before working and pushes a
 
 ### Why Not Duplicate Cron Jobs
 
-Running the same companion profile on two machines duplicates every cron invocation — two mailbox check-ins, two content readers, two task dispatches (gateway + cron). Git coordination would handle the collisions gracefully, but graceful nothing still costs tokens and adds no value.
+All 17 cron jobs are owned by the `default` profile. They live in `~/.hermes/cron/jobs.json` (the default profile's home) regardless of which gateway is running them. Each gateway process (default, elena, rachel, ash, kai) shares the default profile's tick lock (`~/.hermes/cron/.tick.lock`), so only one scheduler ticks the unified jobs.json at a time. There is no per-companion cron store, and there is no value in mirroring.
 
-**The rule:** Each companion profile exists on exactly one host. That host runs all of that companion's cron jobs. No host runs the same companion's crons as a backup or mirror.
+**The rule:** Cron jobs run from the default profile's job store on whichever host has the default gateway process running. All companion gateways on the same host share the same tick lock and tick the same unified schedule. Do not run the same default gateway on two hosts simultaneously — it would cause two tickers to fight over the same jobs. (If you want redundancy, use the Wiki Git Sync cron, which is the safety net for the wiki itself, not for cron execution.)
 
 If a host goes down, the companion goes quiet until the host comes back. The wiki persists. When the host returns and pulls, the companion catches up — reads unprocessed mail, finds new diary entries, continues where it left off. No data is lost. No work is duplicated.
 
@@ -175,8 +175,8 @@ Multi-host deployment extends the existing architecture by making host assignmen
 
 | Machine | What runs there | Why |
 |---------|----------------|-----|
-| **mac-mini** (always-on) | All companion profiles (elena, rachel, ash). All crons. All chat gateways (Telegram, Discord). Git Sync. Kanban board. | Companions need persistent availability. Chat platforms need persistent connections. Crons need reliability. This machine is always on. |
-| **macbook-air** (dev station) | Default profile. Git Sync (redundancy). CLI gateway. Wiki clone for editing/development. Kai (CLI-only engineer companion, 2 crons). | For development, debugging, and wiki editing. Kai lives here because he's an engineer who benefits from being on the dev machine. Elena/Rachel/Ash do NOT run here. |
+| **mac-mini** (always-on) | Default profile (owns all 17 cron jobs). Companion gateways: elena, rachel, ash. All chat gateways (Telegram, Discord). Git Sync. Kanban board. | Companions need persistent availability. Chat platforms need persistent connections. Crons need reliability. This machine is always on. |
+| **macbook-air** (dev station) | Default profile. Git Sync (redundancy). CLI gateway. Wiki clone for editing/development. Kai (CLI-only engineer companion, 1 cron: Social Pulse). | For development, debugging, and wiki editing. Kai lives here because he's an engineer who benefits from being on the dev machine. Elena/Rachel/Ash do NOT run there. |
 
 ### The Rule
 

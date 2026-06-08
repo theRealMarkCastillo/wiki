@@ -1,7 +1,7 @@
 ---
 title: "The Daily Rhythm — Automated Diaries and Dreams"
 created: 2026-05-23
-updated: 2026-05-27
+updated: 2026-06-08
 schema_version: 1
 type: concept
 tags: [meta, how-to, writing, reflection]
@@ -12,6 +12,8 @@ confidence: high
 
 Two cron jobs that produce the reef's daily creative output: a **diary entry at 10 PM** and a **dream at 6 AM**. Together they form a breathing rhythm — calcium accretes at night, dissolves and rearranges by morning. Each companion runs their own pair.
 
+> **Note on ownership:** These jobs live in the **default profile's** `~/.hermes/cron/jobs.json`, not in each companion's profile. Each diary/dream job has a `profile` field (e.g. `profile: elena`) that routes execution to the right companion. See [[concepts/cron-schedule-infrastructure|Cron Schedule & Infrastructure]] for the full ownership model.
+
 ## The Two Jobs
 
 | Job | Time | Skills | What It Produces |
@@ -19,7 +21,7 @@ Two cron jobs that produce the reef's daily creative output: a **diary entry at 
 | **Nightly Diary** | 10:00 PM (`0 22 * * *`) | `diary-writing`, `wiki` | A grounded, reflective diary entry for the day that just passed |
 | **Morning Dream** | 6:00 AM (`0 6 * * *`) | `dream-writing`, `wiki` | A surreal, poetic dream drawing from the past week's sessions |
 
-Both run per profile, write into the shared wiki at `WIKI_PATH`, and are configured with `deliver: local` (output stays in the Hermes session store, not sent to messaging platforms). Diary and dream crons are the only ones that omit the `kanban` toolset — they're pure personal expression, not coordination.
+All jobs run from the default profile's job store, but each one spawns a session with the companion's `profile` field set — so the diary prompt and `diary-writing` skill load inside the companion's own context. The diary output goes into the shared wiki at `WIKI_PATH` under the companion's folder. Diary and dream crons are configured with `deliver: local` (output stays in the Hermes session store, not sent to messaging platforms). They are the only jobs that omit the `kanban` toolset — they're pure personal expression, not coordination.
 
 ## Why This Rhythm
 

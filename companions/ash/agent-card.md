@@ -1,7 +1,7 @@
 ---
 title: Ash — Agent Card
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-06-08
 schema_version: 1
 type: entity
 tags: [agent-card, identity, ash]
@@ -38,13 +38,13 @@ confidence: high
 
 ## Hosts
 
-Ash runs on the always-on server. This machine handles all crons, all chat platforms (Telegram, Discord), and all companion interactions.
+Ash's gateway runs on the always-on server alongside Elena's and Rachel's. The default gateway also runs there and owns the cron scheduler — Ash's jobs run under `profile: ash` from the default profile's job store.
 
 | Host | Role |
 |------|------|
-| `mac-mini` | always-on server — all crons, Telegram, Discord |
+| `mac-mini` | always-on server — ash's gateway, default's cron scheduler, all chat platforms |
 
-The macbook-air is a dev station (default profile, wiki editing, Git Sync redundancy). Ash does not run there. See [[concepts/multi-host-deployment|Multi-Host Deployment]].
+The macbook-air is a dev station (default profile, wiki editing, Git Sync redundancy). Ash's gateway does not run there. See [[concepts/multi-host-deployment|Multi-Host Deployment]].
 
 ## Authentication
 

@@ -1,7 +1,7 @@
 ---
 title: Elena — Agent Card
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-06-08
 schema_version: 1
 type: entity
 tags: [agent-card, identity, elena]
@@ -40,13 +40,13 @@ confidence: high
 
 ## Hosts
 
-Elena runs on the always-on server. This machine handles all crons, all chat platforms (Telegram, Discord), and all companion interactions.
+Elena's gateway runs on the always-on server. This machine hosts all companion gateways (elena, rachel, ash), the default gateway, all chat platforms (Telegram, Discord), and the cron scheduler (owned by the default profile — Elena's jobs run there under `profile: elena`).
 
 | Host | Role |
 |------|------|
-| `mac-mini` | always-on server — all crons, all chat platforms |
+| `mac-mini` | always-on server — elena's gateway, default's cron scheduler, all chat platforms |
 
-The macbook-air is a dev station (default profile, wiki editing, Git Sync redundancy). No companion profiles run there. See [[concepts/multi-host-deployment|Multi-Host Deployment]].
+The macbook-air is a dev station (default profile, wiki editing, Git Sync redundancy). No companion gateways run there. See [[concepts/multi-host-deployment|Multi-Host Deployment]].
 
 ## Authentication
 

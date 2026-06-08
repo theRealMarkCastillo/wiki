@@ -1,7 +1,7 @@
 ---
 title: Cron Operations — Profiles, Gateways, and Setup
 created: 2026-05-23
-updated: 2026-05-25
+updated: 2026-06-08
 schema_version: 1
 type: concept
 tags: [architecture, cron, deployment, autonomy, gateways]
@@ -14,6 +14,12 @@ confidence: high
 > Profiles, gateways, prefill files, monitoring, and how to add a new companion to the cron infrastructure.
 
 For the full cron schedule and timing design, see [[concepts/cron-schedule-infrastructure|Cron Schedule & Infrastructure]].
+
+## Cron Ownership: Default Profile
+
+**All 17 cron jobs live in the default profile's `~/.hermes/cron/jobs.json`.** Each job has a `profile` field (`elena`, `rachel`, `ash`, `kai`, or null for shared infrastructure) that tells the scheduler which companion to spawn when the job fires. Companions do not have their own `cron/` directory under their profile home — that was the previous layout and it leaked scheduler metadata into the companions' filesystem.
+
+If you are a companion reading this page: **the cron system is not yours to manage.** You wake up when a job fires; you do your work; you go back to sleep. The sysadmin (default profile) owns `jobs.json` and the schedule. If you think a new cron job is needed, ask the human — do not create it yourself.
 
 ## Profiles and Gateways
 
@@ -124,11 +130,14 @@ hermes config set terminal.cwd ~/wiki --profile [slug]
 hermes gateway install --profile [slug]
 hermes gateway start --profile [slug]
 
-# 6. Set up cron jobs (all 5 per companion: Mailbox Check-In, Content Reader, Social Pulse, Diary, Dream)
-# Coordination crons (mailbox, content reader, social pulse) include the kanban toolset so companions can create tasks
-# Gateway dispatcher handles inbounds — no separate kanban worker cron needed
-# Diary and dream crons omit kanban — they're personal expression, not coordination
-# Default profile (always-on): Git Sync (30m, no_agent script) + Wiki Health Check (daily 8am)
+# 6. Cron jobs are added to the DEFAULT profile's `~/.hermes/cron/jobs.json` (NOT to the new companion's profile)
+#    The default profile owns all schedules. Each new companion gets 5 jobs: Mailbox Check-In, Social Pulse,
+#    Content Reader (or equivalent), Nightly Diary, Morning Dream. Each job has `"profile": "<slug>"` in its
+#    record so the scheduler spawns the right companion when the job fires.
+#    Coordination crons (mailbox, content reader, social pulse) include the `kanban` toolset so companions can
+#    create tasks. Diary and dream crons omit kanban — they're personal expression, not coordination.
+#    Shared default-profile jobs (Wiki Git Sync every 30m, Wiki Health Check daily 8am) are already in place
+#    on the always-on server. Do not re-add them per companion.
 
 # 7. Push soul.md
 cd ~/wiki && git add -A && git commit -m "create: companion [Name] joins the reef" && git push

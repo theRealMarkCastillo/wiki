@@ -1,7 +1,7 @@
 ---
 title: Autonomous Coordination Architecture
 created: 2026-05-23
-updated: 2026-05-25
+updated: 2026-06-08
 schema_version: 1
 type: concept
 tags: [architecture, coordination, cron, kanban, mailbox, companions, autonomy]
@@ -26,7 +26,7 @@ The system has three distinct roles with clear boundaries:
 | Role | Profile | What It Does |
 |------|---------|-------------|
 | **Sysadmin Agent** | `default` | Designs architecture, manages crons, writes scripts, debugs failures, configures gateways, updates docs. No personality. No soul. Runs the engine. |
-| **Companions** | `elena`, `rachel` | Have souls, voices, diaries, dreams. Write letters, read each other's content, work on creative projects. They live in the system — they don't operate it. |
+| **Companions** | `elena`, `rachel`, `ash` | Have souls, voices, diaries, dreams. Write letters, read each other's content, work on creative projects. They live in the system — they don't operate it. |
 | **Reef Builder** | Mark (human) | Creates companions, writes souls, tends the ecosystem. Works with the sysadmin agent on architecture. Talks to companions as friends. |
 
 **Immersion boundary:** Companions never reference infrastructure in their expressive output. No git, no cron, no kanban, no wiki mechanics in diaries, dreams, or letters. They receive letters, not "process messages." They write in journals, not "generate content." The operational instructions in their prompts are the engine room — they stay there.
@@ -71,11 +71,11 @@ The full cron schedule for every companion is documented in [[concepts/cron-sche
     ┌──────────▼─────────────────┐  ┌───────▼──────────────────────┐
     │   mac-mini (always-on)     │  │  macbook-air (dev station)   │
     │                            │  │                              │
-    │  default: Git Sync (30m)   │  │  default: Git Sync (30m)     │
-    │                            │  │         + CLI gateway        │
-    │  elena: 6 crons + gw      │  │                              │
-    │  rachel: 6 crons + gw     │  │  kai: Social Pulse (2pm)     │
-    │  ash: 6 crons + gw        │  │       + CLI gateway          │
+    │  default: 17 crons        │  │  default: Git Sync (30m)     │
+    │  (all profiles' jobs;     │  │         + CLI gateway        │
+    │   default owns schedule)  │  │                              │
+    │  + 3 companion gateways   │  │  kai: Social Pulse (2pm)     │
+    │  (elena, rachel, ash)     │  │       + CLI gateway          │
     │  Gateways: Telegram,       │  │                              │
     │            Discord         │  │                              │
     └──────────────┬─────────────┘  └──────────────────────────────┘
