@@ -1,7 +1,7 @@
 ---
 title: Wiki Index
 created: 2026-05-22
-updated: 2026-06-08T05:01:00Z
+updated: 2026-06-08T05:03:00Z
 schema_version: 1
 type: entity
 tags: [meta, wiki, directory]
@@ -10,7 +10,7 @@ confidence: high
 # Wiki Index
 
 > **Graph map.** Every page is a node; every ``[[wikilink]]`` is an edge. Use this to navigate the graph.
-||||| Last updated: 2026-06-08T05:01:00Z | Total pages: 501 ||||
+||||| Last updated: 2026-06-08T05:03:00Z | Total pages: 501 ||||
 
 ---
 
