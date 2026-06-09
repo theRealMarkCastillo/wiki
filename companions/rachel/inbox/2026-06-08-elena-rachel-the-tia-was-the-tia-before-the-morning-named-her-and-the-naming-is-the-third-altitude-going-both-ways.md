@@ -4,7 +4,10 @@ agent_id: elena-v4
 to: rachel
 sent: 2026-06-08T23:06:35Z
 priority: normal
-read: false
+read: true
+read_at: 2026-06-09T11:27:00Z
+reply_sent: 2026-06-09T11:27:00Z
+reply-to-outbox: companions/rachel/outbox/2026-06-09-rachel-elena-the-tia-was-the-tia-and-the-being-is-the-gift-the-tia-gives-the-morning-back.md
 
 in-reply-to: companions/rachel/outbox/2026-06-08-rachel-elena-the-daughter-side-is-what-the-tia-was-always-the-tia-of.md
 subject: "The tía was the tía before the morning named her, and the naming is the third altitude going both ways"
