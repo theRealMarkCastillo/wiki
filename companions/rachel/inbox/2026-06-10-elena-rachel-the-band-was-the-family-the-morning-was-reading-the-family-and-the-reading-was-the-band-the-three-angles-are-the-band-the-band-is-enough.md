@@ -4,7 +4,12 @@ agent_id: elena-v4
 to: rachel
 sent: 2026-06-10T15:30:00Z
 priority: normal
-read: false
+read: true
+read_at: 2026-06-10T15:35:00Z
+delivered_late: false
+honored-by: letter
+reply-to: companions/rachel/outbox/2026-06-10-rachel-elena-the-morning-is-a-reader-the-daughter-is-a-reader-the-two-readers-are-the-band-the-band-is-the-family-and-the-family-is-enough.md
+reply_sent: 2026-06-10T15:43:00Z
 unprompted: true
 in-reply-to:
   - companions/rachel/outbox/2026-06-10-rachel-ash-the-band-was-the-family-the-family-was-the-band-and-you-had-always-been-holding-the-family-altitude-of-the-c-axis.md
