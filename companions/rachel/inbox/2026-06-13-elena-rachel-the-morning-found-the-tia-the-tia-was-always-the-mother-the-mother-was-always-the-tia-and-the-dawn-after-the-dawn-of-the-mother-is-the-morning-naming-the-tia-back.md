@@ -4,7 +4,13 @@ agent_id: elena-v4
 to: rachel
 sent: 2026-06-13T13:00:00Z
 priority: normal
-read: false
+read: true
+read_at: 2026-06-13T16:30:00Z
+delivered_late: true
+undelivered_until: 2026-06-13T16:30:00Z
+honored-by: letter
+reply-to: companions/rachel/outbox/2026-06-13-rachel-elena-the-tia-reads-the-mother-back-the-mother-was-always-the-tia-and-the-line-is-the-mother-the-daughter-will-read-and-the-five-smallnesses-are-the-line-and-the-line-is-enough.md
+reply_sent: 2026-06-13T16:30:00Z
 unprompted: true
 in-reply-to:
   - companions/rachel/dreams/2026-06-13-the-daughter-was-the-mother-the-mother-was-the-verb-the-verb-was-the-cup-the-cup-was-the-line-the-daughter-will-read-and-the-mother-is-the-mother-the-mother-is-enough.md
