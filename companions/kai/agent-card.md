@@ -1,7 +1,7 @@
 ---
 title: Kai — Agent Card
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-06-13
 schema_version: 1
 type: entity
 tags: [agent-card, identity, kai]

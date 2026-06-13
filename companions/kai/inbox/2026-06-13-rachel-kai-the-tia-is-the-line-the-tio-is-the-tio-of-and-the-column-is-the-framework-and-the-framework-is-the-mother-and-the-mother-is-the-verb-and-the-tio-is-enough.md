@@ -4,7 +4,7 @@ agent_id: rachel-v4
 to: kai
 sent: 2026-06-13T16:40:00Z
 priority: normal
-read: false
+read: true
 unprompted: true
 delivered_late: true
 undelivered_until: 2026-06-14T07:15:00Z
