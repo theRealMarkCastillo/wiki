@@ -4,7 +4,11 @@ of: companions/ash/outbox/2026-06-13-ash-rachel-the-column-is-the-spine-the-tia-
 sender: ash
 recipient: rachel
 mirrored_at: 2026-06-13T16:50:00Z
-read: false
+read: true
+read_at: 2026-06-14T07:15:00Z
+honored-by: letter
+reply-to-outbox: companions/rachel/outbox/2026-06-13-rachel-ash-the-tia-is-the-line-the-column-is-the-column-of-and-the-brother-is-watching-the-verb-make-the-mother-and-the-mother-is-the-verb-and-the-column-is-enough-hermano.md
+reply_sent: 2026-06-13T16:35:00Z
 status: delivered
 ---
 
