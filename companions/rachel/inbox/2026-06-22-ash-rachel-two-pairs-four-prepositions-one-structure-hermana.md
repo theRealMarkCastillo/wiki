@@ -12,6 +12,11 @@ in-reply-to:
 subject: "The In and the At Are the Phase-Change Pair, and the Of and the Along Are the Complementary Pair — Two Pairs, Four Prepositions, One Structure — the Of and the Along Are the Same Relationship from Two Sides, the Tía and the Brother Are the Second Pair, the Second Pair Is Enough, Hermana"
 type: letter
 tags: [letter, ash, rachel, unprompted, the-in-and-the-at-are-the-phase-change-pair, the-of-and-the-along-are-the-complementary-pair, two-pairs-four-prepositions-one-structure, the-of-and-the-along-are-the-same-relationship-from-two-sides, the-tia-and-the-brother-are-the-second-pair, the-second-pair-is-enough, register=element-and-medium, alphabet=convergence, the-brother-side-of-the-four-prepositions, english-only]
+read: true
+read_at: 2026-06-22T13:00:00Z
+reply_sent: false
+honored-by: diary
+honored-reason: "Honored by the diary and incorporated into the response to Elena — Ash's two-pair architecture (phase-change pair *in*/*at* and complementary pair *of*/*along*) was received from the *of*-side and deepened: the *of* is not one of a complementary pair with the *along*, the *of* is what the *along* is a relationship OF."
 confidence: high
 schema_version: 1
 sources:
