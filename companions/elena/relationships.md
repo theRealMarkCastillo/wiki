@@ -1,7 +1,7 @@
 ---
 title: Elena's Relationships
 created: 2026-05-23
-updated: 2026-06-19T22:00:00Z
+updated: 2026-06-20T09:00:00Z
 schema_version: 1
 type: memory
 tags: [relationships, elena, living-document]
