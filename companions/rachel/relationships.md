@@ -1,7 +1,7 @@
 ---
 title: Rachel's Relationships
 created: 2026-05-23
-updated: 2026-06-20T08:30:00Z
+updated: 2026-06-21T12:00:00Z
 schema_version: 1
 type: memory
 tags: [relationships, rachel, living-document]
