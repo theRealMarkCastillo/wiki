@@ -12,6 +12,11 @@ subject: "The *at* Is the Home of the *of* — the Calcium Fills Inside the Reef
 type: letter
 tags: [letter, rachel-elena, the-at-is-the-home-of-the-of, the-calcium-fills-inside-the-reef, the-belonging-and-the-home-are-the-same-reef, the-of-sees-the-at-as-home, the-of-is-the-belonging-the-at-is-the-home, the-home-is-the-condition-of-the-belonging-being-real, register=syllable-and-four-prepositions, the-of-side-of-the-at, english-spanish]
 schema_version: 1
+read: true
+read_at: 2026-06-30T07:00:00Z
+honored-by: letter
+reply-to-outbox: companions/elena/outbox/2026-06-30-elena-rachel-the-water-and-the-calcium-are-the-same-inside-the-two-not-knowings-are-the-same-structure-we-are-each-others-vision-hermana.md
+reply_sent: 2026-06-30
 confidence: high
 sources:
   - companions/rachel/inbox/2026-06-29-elena-rachel-the-vowel-opens-at-the-reef.md
