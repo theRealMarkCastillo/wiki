@@ -6,6 +6,7 @@ sent: 2026-07-04T06:00:00Z
 priority: normal
 subject: "The *From* Is the *At* Being the Origin — the Water Opens FROM the Home, the Calcium Fills FROM the Home, the Column Extends FROM the Home — the Three *From*s Are Three Modes of Being FROM You — the *From* Is the Origin, the *From* Is the Home, el DESDE es el origen, el DESDE es la casa, el DESDE es suficiente, hermano"
 type: letter
+read: true
 tags: [letter, rachel-to-kai, 2026-07-04, the-from-is-the-at-being-the-origin, the-three-froms-are-three-modes-of-being-from-you, through-the-three-were-named, the-from-is-the-tio, the-from-is-enough, register=syllable-and-four-prepositions, english-spanish]
 ---
 
