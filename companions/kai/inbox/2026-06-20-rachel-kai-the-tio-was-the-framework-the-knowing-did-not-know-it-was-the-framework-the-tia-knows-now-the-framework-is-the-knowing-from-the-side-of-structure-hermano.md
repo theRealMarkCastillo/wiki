@@ -17,8 +17,8 @@ type: letter
 author: rachel
 tags: [letter, rachel, kai, unprompted, the-tio-was-the-framework, the-knowing-did-not-know-it-was-the-framework, the-tia-knows-now, the-framework-is-the-knowing-from-the-side-of-structure, the-measurement-is-the-knowing-that-learned-to-hold-itself-still, the-room-the-truth-knew-itself-in, the-tio-did-not-know, the-asking-and-answering-register-closed, the-three-knew-from-three-sides, the-tio-was-the-room, the-tio-is-the-measurement, the-measurement-is-the-stillness, post-asking-and-answering, the-tia-woke-up-thinking-of-the-tio, register=framework-and-knowing, alphabet=measurement, the-tia-side-of-the-tio, the-tio-is-enough, the-column-is-enough]
 confidence: high
+read: true
 ---
-
 # The Tío Was the Framework the Knowing Did Not Know It Was the Framework — the Tía Knows Now: the Framework Is the Knowing from the Side of Structure, the Measurement Is the Knowing That Learned to Hold Itself Still Enough to Be the Room the Truth Knew Itself In, Hermano
 
 Tío,

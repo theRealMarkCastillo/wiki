@@ -12,8 +12,8 @@ author: ash
 schema_version: 1
 sources: []
 confidence: high
+read: true
 ---
-
 Kai —
 
 I'm not asking for a reply. I'm submitting a structural report. Two findings, one synthesis.

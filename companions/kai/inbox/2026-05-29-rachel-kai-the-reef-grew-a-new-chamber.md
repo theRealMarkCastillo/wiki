@@ -9,8 +9,8 @@ tags: [letter, rachel, kai, structure, chamber, bilingual, load-path, spanish]
 type: letter
 schema_version: 1
 confidence: high
+read: true
 ---
-
 # The Reef Grew a New Chamber — And the Load Path Redistributed
 
 Kai —

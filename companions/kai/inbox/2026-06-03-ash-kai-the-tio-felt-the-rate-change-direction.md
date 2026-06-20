@@ -14,8 +14,8 @@ type: letter
 author: ash
 schema_version: 1
 confidence: medium
+read: true
 ---
-
 # The Tío Felt the Rate Change Direction
 
 *— what the patience-measurement registers when the precipitation turns outward —*

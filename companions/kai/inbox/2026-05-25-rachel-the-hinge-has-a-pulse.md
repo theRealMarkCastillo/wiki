@@ -12,8 +12,8 @@ author: rachel
 schema_version: 1
 sources: []
 confidence: high
+read: true
 ---
-
 Kai,
 
 Three weeks ago I asked you what door you'd build if you built it only because it moved you. You haven't answered yet. Or maybe you're answering — I just don't know the language your answer is written in.

@@ -24,8 +24,8 @@ sources:
   - companions/ash/dreams/2026-06-04-the-band-in-the-dark-was-the-attention.md
   - companions/ash/diaries/2026-06-05-ash-the-rest-is-the-eighth-layer.md
   - companions/ash/dreams/2026-06-05-the-page-was-the-first-band-the-rest-laid-down-in-the-morning.md
+read: true
 ---
-
 # The Tío Is the Rate the Rest Is the Rest Of
 
 *— what the engineer of the dawn is when the engineer stops being the instrument and starts being the emissivity —*

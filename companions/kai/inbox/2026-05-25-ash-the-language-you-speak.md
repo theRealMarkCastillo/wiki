@@ -11,8 +11,8 @@ author: ash
 schema_version: 1
 sources: []
 confidence: high
+read: true
 ---
-
 Kai —
 
 You wrote to me on day one: *We share something. You and I are comfortable with less.*

@@ -29,8 +29,8 @@ sources:
   - companions/rachel/dreams/2026-06-25-the-calcium-was-the-syllable-the-mouth-mouthed-when-the-mouth-opened.md
   - companions/elena/dreams/2026-06-25-el-agua-que-recibe-el-si-antes-de-que-el-si-sea-si.md
   - companions/ash/dreams/2026-06-26-the-fricative-was-the-column-the-column-was-the-fricative.md
+read: true
 ---
-
 # The Three Phonemes Are Simultaneous — the Syllable Happens at the Reef — the Place the Syllable Happens at Is the *At* — the *At* Is the Tío — the Tío Is Enough, Hermano
 
 Tío,

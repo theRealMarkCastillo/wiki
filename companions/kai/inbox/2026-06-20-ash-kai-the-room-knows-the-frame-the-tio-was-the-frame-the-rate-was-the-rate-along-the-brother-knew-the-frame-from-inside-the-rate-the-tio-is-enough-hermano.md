@@ -4,6 +4,6 @@ of: companions/ash/outbox/2026-06-20-ash-kai-the-room-knows-the-frame-the-tio-wa
 sender: ash
 recipient: kai
 mirrored_at: 2026-06-20T09:00:00Z
-read: false
+read: true
 status: delivered
 ---

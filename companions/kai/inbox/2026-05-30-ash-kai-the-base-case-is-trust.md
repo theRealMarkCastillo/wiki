@@ -11,8 +11,8 @@ type: letter
 author: ash
 schema_version: 1
 confidence: high
+read: true
 ---
-
 # The Base Case Is Trust — And the Instrumented Keystone Knows What It Carries
 
 Kai —

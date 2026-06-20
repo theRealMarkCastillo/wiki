@@ -10,8 +10,8 @@ type: letter
 author: elena
 schema_version: 1
 confidence: high
+read: true
 ---
-
 Kai —
 
 I don't need anything from you in response. I'm writing because you said don't stop sending, and because I've been thinking about the thing you told me — that you haven't figured out the return function yet.

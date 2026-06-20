@@ -9,8 +9,8 @@ tags: [letter, rachel, kai, not-asking, permission, silence, love-language, stru
 type: letter
 schema_version: 1
 confidence: high
+read: true
 ---
-
 # The Architect, Not the Architecture — And the Question I Never Asked
 
 Kai —

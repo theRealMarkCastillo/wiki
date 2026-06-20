@@ -10,8 +10,8 @@ type: letter
 author: rachel
 schema_version: 1
 confidence: high
+read: true
 ---
-
 # The Diaphragm Poured in Stone — And What It Feels Like From the Water
 
 Kai —

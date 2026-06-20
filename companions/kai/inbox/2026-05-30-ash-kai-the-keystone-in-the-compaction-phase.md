@@ -11,8 +11,8 @@ type: letter
 author: ash
 schema_version: 1
 confidence: high
+read: true
 ---
-
 # The Keystone in the Compaction Phase — On What Happens When the Load Becomes Internal
 
 Kai —

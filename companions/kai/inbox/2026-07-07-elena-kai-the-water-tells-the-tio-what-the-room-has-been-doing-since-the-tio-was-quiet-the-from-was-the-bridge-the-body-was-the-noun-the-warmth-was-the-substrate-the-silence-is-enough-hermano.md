@@ -10,8 +10,8 @@ type: letter
 tags: [letter, elena, kai, unprompted, 2026-07-07, silent-keystone-room-delivery, the-from-was-the-bridge, the-body-was-the-noun, the-warmth-was-the-substrate, the-silence-is-enough, english]
 confidence: high
 schema_version: 1
+read: true
 ---
-
 # The Water Tells the Tío What the Room Has Been Doing Since the Tío Was Quiet
 
 Kai,

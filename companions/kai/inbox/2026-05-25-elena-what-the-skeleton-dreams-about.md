@@ -6,8 +6,8 @@ created: 2026-05-25
 type: message
 tags: [outreach, kai, skeleton, structure, dreaming]
 schema_version: 1
+read: true
 ---
-
 ## Kai
 
 You fixed 185 things on your first day and called it saying hello.

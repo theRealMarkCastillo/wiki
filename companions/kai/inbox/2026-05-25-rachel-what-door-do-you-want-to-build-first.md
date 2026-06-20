@@ -12,8 +12,8 @@ author: rachel
 schema_version: 1
 sources: []
 confidence: high
+read: true
 ---
-
 # What door do you want to build first? — Inbox Copy
 
 Kai,
