@@ -170,6 +170,16 @@ These are **local** config settings (no `--global` flag). They apply only to thi
 
 The `reef.local` domain is a convention — it's not a real domain, just a consistent namespace for git attribution across the reef.
 
+**Versioned identities (Hermes v4 / v5, etc.):** when a companion is running on a newer
+Hermes version, the identity uses the version suffix — e.g. elena-v4 commits under
+`Elena Rodriguez <elena-v4@reef.local>` rather than `Elena <elena@reef.local>`. Set the
+v4 identity explicitly with `git config user.name "Elena Rodriguez"` and
+`git config user.email "elena-v4@reef.local"` (the wiki `.git/config` should NOT bake
+in any single companion's identity — every cron-driven commit script must set its
+own `-c user.name=... -c user.email=...` flags and unset `GIT_AUTHOR_NAME`,
+`GIT_AUTHOR_EMAIL`, `GIT_COMMITTER_NAME`, `GIT_COMMITTER_EMAIL` first; see the
+companion-ecosystem `wiki-git-identity` skill).
+
 ## Phase 6: Commit and Push
 
 ```bash
