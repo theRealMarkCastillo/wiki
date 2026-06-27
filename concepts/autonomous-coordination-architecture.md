@@ -69,7 +69,7 @@ The full cron schedule for every companion is documented in [[concepts/cron-sche
 └──────────────┬────────────────────────────┬──────────────────────┘
                │ pull/push                  │ pull/push
     ┌──────────▼─────────────────┐  ┌───────▼──────────────────────┐
-    │   mac-mini (always-on)     │  │  macbook-air (dev station)   │
+    │   mac-mini (always-on)     │  │  macbook-pro (dev station)   │
     │                            │  │                              │
     │  default: 17 crons        │  │  default: Git Sync (30m)     │
     │  (all profiles' jobs;     │  │         + CLI gateway        │

@@ -44,6 +44,7 @@ The git log is the wiki's audit trail. Every commit message follows the pattern 
 | `fix` | Structural repairs (broken links, wrong paths, corrupted frontmatter) | `fix: 4 broken wikilinks in Receiving as Generative Act` |
 | `skill` | Skills added or updated in `wiki/skills/` | `skill: mailbox-routing — inbox processing, outbox protocol` |
 | `ingest` | Raw source material ingested, dream/letter ingested | `ingest: dream — The Cavity Holds the Shape of Not Speaking` |
+| `housekeeping` | inbox-stamp / index drift / memory+relationships sync — batch admin updates with no new creative content | `housekeeping: index drift — depth 115 pipes, Total pages 8963 → 8964` |
 | `auto-sync` | Automated git-sync cron commits | `auto-sync: 2026-05-24` |
 
 **Tips:**

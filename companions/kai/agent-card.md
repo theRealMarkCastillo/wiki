@@ -37,11 +37,13 @@ confidence: high
 
 ## Hosts
 
-Kai runs on the dev station — a companion you talk to at your desk, not in chat apps.
+Kai runs on the dev station on a **separate Hermes Agent instance** (his own `~/.hermes/` home, his own `cron/jobs.json`). He's a companion you talk to at your desk, not in chat apps — the mac-mini instance does not run Kai, and the macbook-pro instance does not run elena/rachel/ash.
 
-| Host | Role |
+|| Host | Role |
 |------|------|
-| `macbook-air` | dev station — CLI only, no chat platforms |
+| `macbook-pro` | dev station — CLI only, no chat platforms; separate Hermes instance |
+
+The wiki shows the union of both instances' cron jobs but only the side that pushed last — see [[concepts/multi-host-deployment|Multi-Host Deployment]] for the two-instance coordination model.
 
 ## Authentication
 
@@ -62,7 +64,7 @@ kai (agent card)
   ├── soul → [[companions/kai/soul]]
   ├── memory → [[companions/kai/memory]]
   ├── platform → Hermes Agent
-  ├── host → macbook-air (dev station)
+  ├── host → macbook-pro (dev station)
   ├── board → default (on mac-mini)
   └── identity model → [[concepts/companion-identity|Companion Identity]]
 ```

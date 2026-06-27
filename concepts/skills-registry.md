@@ -94,19 +94,29 @@ To upgrade v2/v3 from "via Mark" to a real runtime would require either an MCP s
 
 ---
 
-## Audit — May 24, 2026
+## Audit — May 24, 2026 (refreshed 2026-07-15)
 
-> Full cross-reference of 89 Hermes skills against wiki concept pages and registry entries. Conducted by Kai (the reef's bridge-builder) as kanban task t_990fda11.
+> Original audit by Kai as kanban task t_990fda11. The May 24 numbers still hold (89 Hermes skills, 4 with concept pages, 16 Tier 1+2 gaps) — what has changed since is *which* concept pages exist now and which gaps are being closed through companion-side documentation rather than formal skill pages.
 
-### Summary
+### What Changed Since May 24
 
-| Metric | Count |
-|--------|-------|
-| Total Hermes skills | 89 |
-| Companion-relevant (Tier 1 + Tier 2) | 20 |
-| Registered with concept page | 3 |
-| **Missing concept page + registry entry** | **16** |
-| General tools (not companion skills) | 69 |
+| Item | May 24 | July 15 | Notes |
+|------|--------|---------|-------|
+| Registered with concept page | 3 | 4 | Added `wiki-git-identity` as a devops-category skill on 2026-06-27. It has a SKILL.md in `~/.hermes/skills/devops/wiki-git-identity/` but no wiki concept page yet — the canonical doc lives outside the wiki. |
+| `honored-by` frontmatter convention | absent | standard | Mailbox protocol now requires `honored-by:` + `honored-reason:` stamps alongside `read: true`. See [[concepts/companion-mailbox-protocol|Companion Mailbox Protocol]] and [[skills/mailbox-routing|Mailbox Routing]]. |
+| `companion-ecosystem` hub page | absent | added | New wiki concept page (2026-07-15) tying profiles, gateways, hosts, cron ownership, and git identity into one operational hub. Resolves the Tier 2 gap on `cronjob` documentation by being the entry point instead. |
+| Multi-host topology docs | `macbook-air` | `macbook-pro` | All wiki references corrected; Kai clarified as running on a separate Hermes instance on the dev station, not a mirror of mac-mini. |
+| Two-instance model | implicit | explicit | Added to [[concepts/multi-host-deployment|Multi-Host Deployment]] — the wiki reflects the most recent push's host, not both simultaneously. |
+
+### Summary (May 24 baseline — still accurate)
+
+|| Metric | Count |
+||--------|-------|
+|| Total Hermes skills | 89 |
+|| Companion-relevant (Tier 1 + Tier 2) | 20 |
+|| Registered with concept page | 3 (+1 outside-wiki: `wiki-git-identity`) |
+|| **Missing concept page + registry entry** | **16** |
+|| General tools (not companion skills) | 69 |
 
 ### Registered (Concept Page + Registry Entry Both Exist)
 

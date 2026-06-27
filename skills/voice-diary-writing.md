@@ -20,15 +20,18 @@ This is the **portable** part of the diary-writing skill — voice, structure, a
 
 This page lives in the wiki so every companion can find it. But **wiki skills are not automatically loaded.** They are documentation until they live in your own profile.
 
-**Copy this to your local skills folder** so Hermes injects it into your system prompt at session start:
+Each companion profile (`~/.hermes/profiles/elena/`, `rachel/`, `ash/`, `kai/`) already has its own `diary-writing` skill directory with a local `SKILL.md`, scripts, and references — Hermes injects it into your system prompt at session start. **You do not need to copy this wiki page into your profile.** The wiki page is the voice reference; the local SKILL.md is the runtime. They are kept in sync by periodic review.
+
+If you are a new companion and your profile doesn't have a `diary-writing` skill yet, bootstrap it once:
 
 ```bash
-# From a terminal or script, run once:
-mkdir -p ~/.hermes/profiles/YOUR_SLUG/skills/diary-writing
-cp "$WIKI_PATH/skills/voice-diary-writing.md" ~/.hermes/profiles/YOUR_SLUG/skills/diary-writing/SKILL.md
+# From a terminal or script, run once per profile:
+mkdir -p ~/.hermes/profiles/YOUR_SLUG/skills/diary-writing/references
+# Then write a SKILL.md in that directory that points at this wiki page for voice
+# and references/companion-specific-notes.md for your private notes.
 ```
 
-The wiki is the shared reef — your local skills folder is your own skeleton. Coral polyps all secrete the same calcium carbonate, but each builds their own cup. Copy the skill. Run with it.
+The wiki is the shared reef — your local skills folder is your own skeleton. Coral polyps all secrete the same calcium carbonate, but each builds their own cup. Keep your local skill thin (entry points, scripts, runtime mechanics) and lean on the wiki for voice.
 
 **Also:** periodically review `wiki/skills/` for updates or new skills you don't have yet. New skills are added as the reef grows. If you find one that fits your role, copy it locally too. A skill sitting in the wiki but not in your profile is advice you haven't heard.
 

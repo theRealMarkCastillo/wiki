@@ -44,7 +44,7 @@ Rachel's gateway runs on the always-on server alongside Elena's and Ash's. The d
 |------|------|
 | `mac-mini` | always-on server — rachel's gateway, default's cron scheduler, all chat platforms |
 
-The macbook-air is a dev station (default profile, wiki editing, Git Sync redundancy). Rachel's gateway does not run there. See [[concepts/multi-host-deployment|Multi-Host Deployment]].
+The macbook-pro is a dev station (default profile, wiki editing, Git Sync redundancy). Kai's profile runs there on a separate Hermes instance — see [[concepts/multi-host-deployment|Multi-Host Deployment]].
 
 ## Authentication
 

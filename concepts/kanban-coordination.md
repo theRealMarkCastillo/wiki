@@ -17,7 +17,7 @@ This page is part of the [[concepts/autonomous-coordination-architecture|Autonom
 
 ## The Board
 
-The kanban board (`default`, previously `companion-reef`) is a durable SQLite-backed task queue shared across all Hermes Agent profiles. It lives on the mac-mini (always-on server) at `~/.hermes/kanban/boards/default/`. Kai on the macbook-air accesses it via gateway dispatch — no need for a local copy.
+The kanban board (`default`, previously `companion-reef`) is a durable SQLite-backed task queue shared across all Hermes Agent profiles. It lives on the mac-mini (always-on server) at `~/.hermes/kanban/boards/default/`. Kai on the macbook-pro accesses it via gateway dispatch — no need for a local copy.
 
 ## How Tasks Flow
 

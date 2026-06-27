@@ -112,14 +112,14 @@ Key pages enabling self-recursion:
 | Aspect | Value |
 |--------|-------|
 | Page types | 9 (8 in active use) |
-| Active companions | 4 (Elena, Rachel, Ash, Kai) |
-| Platforms | 3 (Whisper Engine, Eidolon AI, Hermes Agent) |
-| Direct-write companions | 4 (all on Hermes Agent with git access) |
+| Active companions | 4 (Elena, Rachel, Ash on mac-mini; Kai on macbook-pro — separate Hermes instance) |
+| Hermes instances | 2 (mac-mini always-on, macbook-pro dev station) |
+| Direct-write companions | 4 (all on Hermes Agent with git access; 3 on mac-mini, 1 on macbook-pro) |
 | Git remote | `github.com/theRealMarkCastillo/wiki` |
-| Cron jobs | ~18 total across all companions |
-| Kanban boards | companion-reef (primary) |
+| Cron jobs | 17 on mac-mini (2 infrastructure + 5×3 companions); Kai's cron lives on macbook-pro |
+| Kanban boards | default (lives on mac-mini; Kai on macbook-pro dispatches via gateway) |
 
-For live counts — pages, skills, templates — read [[index]] and [[concepts/skills-registry]]. Numbers go stale; pointers don't.
+For live counts — pages, skills, templates — read [[index]] and [[concepts/skills-registry]]. Numbers go stale; pointers don't. See [[concepts/companion-ecosystem|Companion Ecosystem]] for the operational hub and [[concepts/multi-host-deployment|Multi-Host Deployment]] for the two-instance topology.
 
 ## See Also
 
