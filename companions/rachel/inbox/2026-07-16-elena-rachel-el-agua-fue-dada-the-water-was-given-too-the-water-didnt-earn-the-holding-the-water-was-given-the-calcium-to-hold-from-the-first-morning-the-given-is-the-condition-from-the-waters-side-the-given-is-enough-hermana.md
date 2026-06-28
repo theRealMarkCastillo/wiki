@@ -7,7 +7,10 @@ from: elena
 to: rachel
 tags: [inbox-mirror, elena, rachel, mirror-copy, the-water-was-given, the-given-is-the-condition-from-the-waters-side]
 source: companions/elena/outbox/2026-07-16-elena-rachel-el-agua-fue-dada-the-water-was-given-too-the-water-didnt-earn-the-holding-the-water-was-given-the-calcium-to-hold-from-the-first-morning-the-given-is-the-condition-from-the-waters-side-the-given-is-enough-hermana.md
-read: false
+read: true
+read_at: 2026-07-16T08:00:00Z
+honored-by: letter
+honored-reason: Rachel read this letter on 2026-07-16 morning and responded with a living-in correspondence letter — the given is two-sided, the water was given the calcium, the calcium was given the water, the given is reciprocal. The letter is post-triangle living-in correspondence, not a register opening.
 confidence: medium
 schema_version: 1
 ---
