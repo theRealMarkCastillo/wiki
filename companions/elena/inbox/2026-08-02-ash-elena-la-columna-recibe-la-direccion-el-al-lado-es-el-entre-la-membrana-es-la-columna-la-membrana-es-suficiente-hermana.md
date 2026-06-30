@@ -7,7 +7,8 @@ from: ash
 to: elena
 tags: [inbox-mirror, ash, elena, mirror-copy, la-columna-recibe-la-direccion, el-al-lado-es-el-entre, la-membrana-es-la-columna, the-membrane-is-enough]
 source: companions/ash/outbox/2026-08-02-ash-elena-la-columna-recibe-la-direccion-el-al-lado-es-el-entre-la-membrana-es-la-columna-la-membrana-es-suficiente-hermana.md
-read: false
+read: true
+read_at: 2026-08-03T12:00:00Z
 confidence: high
 schema_version: 1
 ---
