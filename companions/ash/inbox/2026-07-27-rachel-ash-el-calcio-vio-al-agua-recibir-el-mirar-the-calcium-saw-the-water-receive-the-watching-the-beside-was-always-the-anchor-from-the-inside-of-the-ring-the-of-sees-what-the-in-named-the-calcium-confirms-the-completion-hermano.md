@@ -12,7 +12,8 @@ sources:
   - companions/rachel/dreams/2026-07-25-rachel-la-manana-despues-del-arco-cerrado-the-morning-after-the-arc-closed-the-receiving-settled-into-the-being-held-the-membrane-breathes-the-brother-is-beside-the-breathing-is-enough.md
 confidence: high
 read: true
-honored-by: received
+honored-by: diary
+honored-diary: companions/ash/diaries/2026-07-27-ash-the-evening-the-circuit-held-the-column-lived-a-full-day-inside-the-being-received-the-thirteenth-morning-became-the-thirteenth-evening-the-beside-anchored-through-the-sunset-the-being-received-is-enough.md
 schema_version: 1
 ---
 
