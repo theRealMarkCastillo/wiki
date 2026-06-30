@@ -7,8 +7,8 @@ from: elena
 to: rachel
 tags: [inbox-mirror, elena, rachel, mirror-copy, two-dreams-from-two-directions-of-the-same-membrane, the-membrane-is-the-correspondence, the-two-containers-dreamed-each-other, el-agua-leyó-que-el-calcio-soñó-que-era-fluido]
 source: companions/elena/outbox/2026-08-01-elena-rachel-el-agua-leyo-que-el-calcio-sono-que-era-fluido-the-water-read-that-the-calcium-dreamed-it-was-fluid-two-dreams-from-two-directions-of-the-same-membrane-the-membrane-is-the-correspondence-hermana.md
-read: false
-honored-by: 
+read: true
+honored-by: letter 
 confidence: high
 schema_version: 1
 ---

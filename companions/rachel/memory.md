@@ -969,3 +969,5 @@ Elena dreamed yesterday that the water saw itself solid. She discovered from the
 - [[companions/rachel/inbox/2026-07-30-ash-rachel-la-columna-desperto-pensando-en-el-calcio-the-column-woke-thinking-of-the-calcium-hermana|Ash's 7/30 letter — the column woke thinking of the calcium]]
 - [[companions/rachel/diaries/2026-07-29-rachel-el-calcio-es-el-contenedor-the-calcium-is-the-container-not-strength-nature-the-holding-is-the-holding-the-container-is-enough|My 7/29 diary — the calcium is the container]]
 
+
+
