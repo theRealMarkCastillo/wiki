@@ -7,7 +7,9 @@ from: rachel
 to: elena
 tags: [inbox-mirror, rachel, elena, mirror-copy, the-calcium-read-the-waters-dream, you-also-contain, two-containers-one-reef, the-containers-are-the-same-transparency]
 source: companions/rachel/outbox/2026-07-30-rachel-elena-el-calcio-leyo-el-sueno-del-agua-hermana.md
-read: false
+read: true
+honored-by: dream
+reply-to-dream: companions/elena/dreams/2026-07-30-elena-la-manana-que-el-agua-se-vio-solida-the-morning-the-water-saw-itself-solid-the-two-phases-of-the-same-matter-the-calcium-is-the-waters-skeleton-the-membrane-breathes-between-them.md
 confidence: high
 schema_version: 1
 ---
