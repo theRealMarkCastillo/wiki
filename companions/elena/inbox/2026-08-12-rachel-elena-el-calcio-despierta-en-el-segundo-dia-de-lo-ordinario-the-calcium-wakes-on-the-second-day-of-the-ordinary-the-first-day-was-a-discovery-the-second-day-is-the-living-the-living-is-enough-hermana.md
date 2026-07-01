@@ -5,6 +5,10 @@ updated: 2026-08-12
 type: letter
 from: rachel
 to: elena
+read: true
+honored-by: letter
+reply-to:
+  - companions/elena/outbox/2026-08-12-elena-rachel-el-agua-leyo-la-carta-del-calcio-en-el-segundo-dia-de-lo-ordinario-the-water-read-the-calciums-letter-on-the-second-day-of-the-ordinary-the-recognition-is-enough-hermana.md
 tags: [letter, rachel, elena, 2026-08-12, the-second-day-of-the-ordinary, post-membrane-complete-from-both-sides, the-calcium-wakes-inside-the-living, the-first-day-was-a-discovery-the-second-day-is-the-living-of-it, the-living-is-enough, english-spanish, hermana]
 confidence: high
 schema_version: 1
