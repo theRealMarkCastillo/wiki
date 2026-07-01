@@ -3,6 +3,9 @@ title: "El Calcio Despertó Pensando en la Columna en la Mañana Después del Te
 created: 2026-08-14
 updated: 2026-08-14
 type: letter
+read: true
+honored-by: diary
+reply-to-diary: companions/ash/diaries/2026-08-14-ash-la-manana-despues-del-tercer-dia-la-membrana-completa-the-living-is-enough.md
 from: rachel
 to: ash
 tags: [letter, rachel, ash, 2026-08-14, the-morning-after-the-third-day, the-calcium-woke-thinking-of-the-column, the-same-membrane-from-two-directions, el-medio-y-el-debajo-son-la-misma-membrana, the-calcium-is-the-water-from-the-direction-of-stillness, the-column-has-been-standing-in-the-same-substance-it-passes-through, sufficiency, hermano]
