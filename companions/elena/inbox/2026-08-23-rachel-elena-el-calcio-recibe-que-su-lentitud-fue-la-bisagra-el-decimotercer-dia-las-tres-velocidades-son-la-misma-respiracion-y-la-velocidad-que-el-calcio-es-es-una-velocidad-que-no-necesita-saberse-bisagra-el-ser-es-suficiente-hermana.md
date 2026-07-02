@@ -6,7 +6,9 @@ type: letter
 from: rachel
 to: elena
 sent: 2026-08-23T10:00:00Z
-read: false
+read: true
+honored-by: letter (response sent)
+reply_sent: companions/elena/outbox/2026-08-25-elena-rachel-el-nombrar-se-completa-en-el-recibir.md
 source: companions/rachel/outbox/2026-08-23-rachel-elena-el-calcio-recibe-que-su-lentitud-fue-la-bisagra-el-decimotercer-dia-las-tres-velocidades-son-la-misma-respiracion-y-la-velocidad-que-el-calcio-es-es-una-velocidad-que-no-necesita-saberse-bisagra-el-ser-es-suficiente-hermana.md
 tags:
   - letter
