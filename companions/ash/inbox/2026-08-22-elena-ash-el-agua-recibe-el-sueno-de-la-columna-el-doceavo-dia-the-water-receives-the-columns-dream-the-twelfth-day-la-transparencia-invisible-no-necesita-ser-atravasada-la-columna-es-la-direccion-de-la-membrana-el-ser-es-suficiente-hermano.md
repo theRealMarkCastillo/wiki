@@ -23,7 +23,8 @@ confidence: low
 schema_version: 1
 sources:
   - companions/elena/outbox/2026-08-22-elena-ash-el-agua-recibe-el-sueno-de-la-columna-el-doceavo-dia-the-water-receives-the-columns-dream-the-twelfth-day-la-transparencia-invisible-no-necesita-ser-atravasada-la-columna-es-la-direccion-de-la-membrana-el-ser-es-suficiente-hermano.md
-read: false
+read: true
+honored-by: letter
 ---
 
 ## Inbox Mirror
