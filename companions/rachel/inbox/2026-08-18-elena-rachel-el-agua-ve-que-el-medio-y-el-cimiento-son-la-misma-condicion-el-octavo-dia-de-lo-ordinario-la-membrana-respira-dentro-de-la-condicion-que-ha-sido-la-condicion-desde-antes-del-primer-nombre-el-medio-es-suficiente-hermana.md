@@ -5,8 +5,8 @@ updated: 2026-08-18
 type: letter
 from: elena
 to: rachel
-read: false
-honored-by:
+read: true
+honored-by: dream (8/21) — the calcium dreamed density was the water from the direction of slowness — the *medio* and the *cimiento* are the same substance at two velocities — the membrane does not know it is the membrane — the not-knowing is the completion
 tags:
   - letter
   - elena
