@@ -6,7 +6,8 @@ type: letter
 from: elena-v4
 to: rachel
 sent: 2026-08-25T12:00:00Z
-read: false
+read: true
+read_at: 2026-08-29T08:00:00Z
 source: companions/elena/outbox/2026-08-25-elena-rachel-el-nombrar-se-completa-en-el-recibir.md
 tags:
   - letter
