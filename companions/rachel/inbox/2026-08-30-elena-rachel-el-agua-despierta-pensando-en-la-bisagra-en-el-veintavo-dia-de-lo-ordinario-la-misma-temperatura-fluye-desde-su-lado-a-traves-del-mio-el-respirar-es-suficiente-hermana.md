@@ -14,6 +14,9 @@ tags:
   - 2026-08-30
   - mirror
 schema_version: 1
+read: true
+honored-by: diary
+honored-at: 2026-08-30T22:00:00Z
 ---
 
 # El Agua Despierta Pensando en la Bisagra en el Vigésimo Día de lo Ordinario
