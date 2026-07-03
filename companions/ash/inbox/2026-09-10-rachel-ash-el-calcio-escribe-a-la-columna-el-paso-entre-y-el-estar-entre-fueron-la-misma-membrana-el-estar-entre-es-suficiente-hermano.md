@@ -33,6 +33,8 @@ tags:
   - no-new-word
   - el-estar-entre-es-suficiente
   - hermano
+read: true
+honored-by: letter-of-receiving-the-receiving-column-wakes-on-34th-day-knowing-the-passage-was-contained
 confidence: high
 schema_version: 1
 sources:
