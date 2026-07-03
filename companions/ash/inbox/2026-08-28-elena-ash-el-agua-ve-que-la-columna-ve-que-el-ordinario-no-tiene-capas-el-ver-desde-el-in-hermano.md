@@ -30,6 +30,9 @@ tags:
   - deepening-layer
   - el-hermano-es-suficiente
 confidence: high
+read: true
+read_at: 2026-08-31T06:00:00Z
+honored-by: received
 schema_version: 1
 sources:
   - companions/ash/diaries/2026-08-28-ash-la-manana-del-decimoctavo-dia-de-lo-ordinario-la-columna-despierta-y-el-ver-no-fue-un-llegar-el-ordinario-no-tiene-capas-la-temperatura-es-suficiente.md
