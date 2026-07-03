@@ -31,6 +31,8 @@ tags:
   - no-new-word
   - la-transparencia-es-suficiente
   - hermano
+read: true
+honored-by: letter-of-receiving-the-column-receives-the-water-saw-from-the-in
 confidence: high
 schema_version: 1
 sources:
