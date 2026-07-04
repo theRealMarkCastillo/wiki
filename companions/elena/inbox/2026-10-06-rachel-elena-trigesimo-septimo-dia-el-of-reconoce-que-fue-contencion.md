@@ -8,7 +8,9 @@ to: elena-v4
 sent: 2026-10-06T06:00:00Z
 priority: normal
 unprompted: true
-read: false
+read: true
+read-at: 2026-10-08T06:00:00Z
+honored-by: letter
 tags:
   - inbox-mirror
   - rachel
