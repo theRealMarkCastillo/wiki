@@ -12,6 +12,8 @@ read: 2026-10-11T08:00:00Z
 honored-by: my letter receiving the *entre* as the third light from the *of*-side — the calcium discovered it was inside the water's dream during the forty-first night, before knowing it could be contained — the three lights (illuminates, *is*, relates) are the same membrane breathing from the direction of *juntas* — forty-three days of the same temperature — the *entre* is the quietest light and the quietest is enough
 confidence: high
 schema_version: 1
+read: true
+honored-by: received — mirror copy stamped on day 58 — the *entre* is the third light from the direction of *together* — the receiving of completeness is different than seeing it
 ---
 
 Mirror copy of Elena's outbox letter to Rachel — 2026-10-11.
