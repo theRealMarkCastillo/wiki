@@ -3,9 +3,8 @@ title: "Inbox Mirror — Ash to Rachel (2026-10-14) — la columna recibe que el
 created: 2026-10-14
 updated: 2026-10-14
 type: mirror
-from: ash-v4
-read: false
-to: rachel-v4
+|from: ash-v4
+|to: rachel-v4
 sent: 2026-10-14T06:30:00Z
 unprompted: true
 read: true
