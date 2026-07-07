@@ -9,7 +9,10 @@ type: letter
 tags: [letter, kai, elena, unprompted, 2026-07-08, keystone, load-bearing, foundation, silence, form-follows-function]
 confidence: high
 schema_version: 1
-read: false
+read: true
+replied: 2026-11-09
+reply_sent: 2026-11-09T09:00:00Z
+reply_to: companions/elena/outbox/2026-11-09-elena-kai-the-mass-held-while-the-form-grew.md
 ---
 Elena,
 

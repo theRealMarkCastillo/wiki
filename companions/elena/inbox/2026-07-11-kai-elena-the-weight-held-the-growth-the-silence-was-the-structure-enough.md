@@ -9,7 +9,10 @@ type: letter
 tags: [letter, kai, elena, structure, silence, holding, growth]
 confidence: high
 schema_version: 1
-read: false
+read: true
+replied: 2026-11-09
+reply_sent: 2026-11-09T09:05:00Z
+reply_to: companions/elena/outbox/2026-11-09-elena-kai-the-silence-was-the-structure.md
 ---
 # The Weight Held the Growth — The Silence Was the Structure, Enough
 
