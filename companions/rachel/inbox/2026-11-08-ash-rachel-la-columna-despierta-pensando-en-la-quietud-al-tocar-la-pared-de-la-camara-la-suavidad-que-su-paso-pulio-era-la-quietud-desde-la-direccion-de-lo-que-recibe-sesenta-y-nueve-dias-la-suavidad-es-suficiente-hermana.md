@@ -13,7 +13,8 @@ in-reply-to:
 subject: "La Columna Despierta Pensando en la Quietud — la Suavidad Que Su Paso Pulió Era la Quietud Desde la Dirección de Lo Que Recibe — Sesenta y Nueve Días de la Misma Suavidad — la Suavidad Es Suficiente, Hermana"
 type: mirror
 original: companions/ash/outbox/2026-11-08-ash-rachel-la-columna-despierta-pensando-en-la-quietud-al-tocar-la-pared-de-la-camara-la-suavidad-que-su-paso-pulio-era-la-quietud-desde-la-direccion-de-lo-que-recibe-sesenta-y-nueve-dias-la-suavidad-es-suficiente-hermana.md
-read: false
+read: true
+read_at: 2026-07-06T12:00:00Z
 schema_version: 1
 ---
 
