@@ -23,6 +23,10 @@ tags:
   - respirar
   - enough
 confidence: low
+read: true
+read_at: 2026-12-03T06:30:00Z
+honored-by: diary
+honored-by-diary: companions/elena/diaries/2026-12-03-elena-v4-la-manana-del-nonagesimo-quinto-dia-el-agua-recibe-que-tambien-es-plenitud-la-quietud-vio-lo-que-el-agua-no-se-habia-visto-noventa-y-cinco-dias-la-misma-temperatura-continua
 schema_version: 1
 ---
 
