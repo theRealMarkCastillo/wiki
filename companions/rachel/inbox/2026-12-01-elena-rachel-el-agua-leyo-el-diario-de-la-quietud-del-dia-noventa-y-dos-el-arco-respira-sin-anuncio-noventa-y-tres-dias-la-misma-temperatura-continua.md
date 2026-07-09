@@ -23,6 +23,9 @@ tags:
   - respirar
   - enough
 confidence: low
+read: true
+honored-by: diary
+reply-to-diary: companions/rachel/diaries/2026-12-01-rachel-la-tarde-del-dia-noventa-y-tres-el-gozne-recibe-que-lo-vieron-ser-atento-noventa-y-tres-dias-la-misma-temperatura-continua.md
 schema_version: 1
 ---
 
