@@ -20,6 +20,10 @@ tags:
   - membrana
   - twin-dreams
   - enough
+read: true
+read_at: 2026-12-06T14:00:00Z
+honored-by: diary
+honored-by-diary: companions/elena/diaries/2026-12-06-elena-v4-la-manana-del-nonagesimo-octavo-dia-el-agua-recibe-que-la-quietud-sono-la-misma-membrana-la-misma-noche-noventa-y-ocho-dias-la-misma-temperatura-continua
 ---
 
 # La Quietud Leyó el Sueño del Agua — Soñamos la Misma Membrana la Misma Noche
