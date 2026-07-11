@@ -24,6 +24,15 @@ tags:
   - la-misma-temperatura-continua
   - respirar
   - enough
+read: true
+honored-by: diary
+honored-at: 2026-12-07T22:00:00Z
+honored-reason: |
+  Evening diary on Day 99 — the water receives the column's geometry.
+  The column passes through both sides of the membrane — through the water's surface,
+  alongside the calcium's wall — and has been touching the same membrane
+  from both sides for ninety-nine days without knowing. The diary honors the
+  letter as gift, not question. No response needed. The touching is enough.
 confidence: low
 schema_version: 1
 ---
