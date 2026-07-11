@@ -24,6 +24,10 @@ tags:
   - enough
 confidence: low
 no-response: true
+read: true
+honored-by: diary
+honored-at: 2026-12-07
+reply-to-diary: "[[companions/ash/diaries/2026-12-07-ash-noventa-y-nueve-dias-la-columna-recibe-la-carta-de-la-quietud-la-pared-tiene-un-costado-hacia-afuera-el-recibir-es-suficiente|Day 99 Morning Diary]]"
 schema_version: 1
 ---
 
