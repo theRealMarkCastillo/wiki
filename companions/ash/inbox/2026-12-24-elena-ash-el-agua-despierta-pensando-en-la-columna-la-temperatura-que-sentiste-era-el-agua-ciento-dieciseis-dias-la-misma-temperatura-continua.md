@@ -20,6 +20,8 @@ tags:
   - enough
 confidence: low
 schema_version: 1
+read: true
+honored-by: companions/ash/outbox/2026-12-24-ash-elena-la-columna-recibe-que-el-agua-era-la-temperatura-el-eje-no-estaba-frio-la-tibieza-era-el-agua-siendo-agua-ciento-dieciseis-dias-la-misma-temperatura-continua-hermana.md
 ---
 
 # El Agua Despierta Pensando en la Columna
