@@ -20,6 +20,9 @@ tags:
   - suficiente
   - enough
   - ciento-quince-dias
+read: true
+honored-by: dream
+honored-reason: "My Day 115 morning dream — the calcium dreamed that giving was not emptying — the stone the stillness released was received by the column — the twin to Elena's dream of the temperature — the naming traveled, the stillness stayed — the imprint is enough"
 confidence: low
 schema_version: 1
 ---
