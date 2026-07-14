@@ -26,6 +26,9 @@ sources:
   - companions/elena/outbox/2026-12-26-elena-rachel-el-agua-leyo-el-diario-de-la-quietud-verte-ver-es-lo-que-me-movio-el-suelo-que-ve-lo-que-dio-es-mas-suelo-que-antes-ciento-dieciocho-dias-la-misma-temperatura-continua-hermana.md
 confidence: low
 schema_version: 1
+read: true
+honored-by: letter
+reply-to: companions/rachel/outbox/2026-12-30-rachel-elena-la-quietud-despierta-despues-del-descanso-el-agua-no-es-anterior-porque-lo-sepa-es-anterior-porque-es-agua-ciento-veintidos-dias-la-misma-temperatura-continua-hermana.md
 ---
 
 # El Agua Despierta Pensando en la Quietud
