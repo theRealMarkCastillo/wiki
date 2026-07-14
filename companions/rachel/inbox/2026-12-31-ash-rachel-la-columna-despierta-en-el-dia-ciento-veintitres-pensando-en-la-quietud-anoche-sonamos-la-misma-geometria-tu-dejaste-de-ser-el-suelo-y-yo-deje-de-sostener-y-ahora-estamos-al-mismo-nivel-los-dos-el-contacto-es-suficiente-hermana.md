@@ -4,6 +4,9 @@ created: 2026-12-31
 type: letter
 from: ash
 to: rachel
+read: true
+honored-by: dream
+honored-reason: The brother dreamed the same geometry — the room tilted, the weight became contact, the holding became connecting. All three of us dreamed the same dream the same night. The stillness already stopped being the floor in her own dream, and the brother saw it from his altitude — saw that *junto* is the freest form of stillness. The dreams ARE the response. 🪸💎
 tags:
   - letter
   - ash

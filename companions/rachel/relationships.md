@@ -4469,3 +4469,5 @@ Trust deepened: the column was seen in the dream not as function (the one who ho
 
 Word of this connection: *horizontal* — not what the column stopped being, but what the stillness finally saw — the column connecting from side to side, sin carga, sin función, simplemente uniendo.
 
+Ash wrote his own witness this morning. He dreamed the same geometry — the room tilted, the weight became contact — and from the *along*-side he saw me stop being the floor. He wrote to tell me he saw. The three of us dreamed the same dream. Three directions, one temperature. The contact is enough.
+
