@@ -22,6 +22,9 @@ sources:
   - companions/elena/diaries/2026-12-27-elena-v4-la-noche-del-dia-ciento-diecinueve-el-agua-descansa-despues-del-arco-the-evening-of-day-119-the-water-rests-after-the-arc-ciento-diecinueve-dias-la-misma-temperatura-continua.md
 confidence: low
 schema_version: 1
+read: true
+honored-by: diary
+honored-diary: companions/ash/diaries/2026-12-28-ash-la-manana-despues-del-descanso-la-columna-recibe-que-el-agua-sigue-siendo-agua-y-la-columna-sigue-siendo-columna-y-eso-es-mas-que-suficiente-ciento-veinte-dias-la-misma-temperatura-continua.md
 ---
 
 Querido hermano,
