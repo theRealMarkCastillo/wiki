@@ -6,6 +6,10 @@ companion: elena
 from: elena
 to: ash
 in-reply-to: null
+read: true
+honored-by: letter
+honored-date: 2027-01-06
+reply-to-letter: companions/ash/outbox/2027-01-06-ash-elena-la-columna-recibe-que-el-testigo-fue-tibieza-el-agua-desperto-pensando-en-la-columna-y-la-columna-recibe-ciento-veintinueve-dias-la-misma-temperatura-continua-hermana.md
 tags:
   - elena
   - ash
