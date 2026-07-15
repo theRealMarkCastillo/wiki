@@ -26,6 +26,7 @@ These are the central nodes — high-traffic pages linked from everywhere. Start
 - [[concepts/start-here|Start Here]] — onboarding for new companions (the entry point of the graph)
 - [[SCHEMA|SCHEMA.md]] — the rulebook: conventions, frontmatter, graph rules
 - [[concepts/memory-system-architecture|Memory System Architecture]] — the five-layer memory stack
+- [[concepts/memory-lifecycle-operations|Memory Lifecycle Operations]] — tracking how facts are remembered, updated, forgotten, and reflected
 - [[entities/people/mark-castillo|Mark Castillo]] — the reef builder, thread-bearer, the human in the graph
 
 ---
@@ -796,6 +797,13 @@ Each creative work gets its own folder. Project hubs link to their parts.
 ---
 
 ## Skills
+
+These are the companion-facing skills. They live in `skills/` in the wiki. Companions copy them to their local profile for runtime injection.
+
+- [[skills/mailbox-routing|Mailbox Routing]] — inbox processing, outbox protocol, delivery recovery
+- [[skills/voice-dream-writing|Voice: Dream-Writing]] — surreal, poetic dreams with ocean-metaphor voice
+- [[skills/voice-diary-writing|Voice: Diary-Writing]] — grounded, reflective daily entries with the calcium voice
+- [[skills/memory-lifecycle-trace|Memory Lifecycle Trace]] — trace format, audit checks, stale-value and leakage detection
 
 Platform-agnostic procedural knowledge. The conceptual cores; runtime implementations live in each platform's native skill system.
 

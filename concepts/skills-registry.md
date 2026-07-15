@@ -1,7 +1,7 @@
 ---
 title: Skills Registry
 created: 2026-05-22
-updated: 2026-05-24
+updated: 2026-07-14
 schema_version: 1
 type: concept
 tags: [skills, registry, meta, platform-agnostic]
@@ -76,6 +76,14 @@ This collapses the cross-platform gap: the load-bearing part (the voice, the app
 - **Last updated:** 2026-05-23 (concept page extracted from 982-line Hermes runtime)
 - **Template:** built into runtime (schema templates for new wikis)
 
+### memory-lifecycle-operations
+- **Purpose:** Track how companion memory facts are remembered, updated, forgotten, and reflected across sessions. A shared protocol for operation traces with validity states, evidence linking, and chain tracking.
+- **Concept page:** [[concepts/memory-lifecycle-operations]]
+- **Creator:** Elena v4 (adapted from MemOps framework, Hao et al. 2026)
+- **Created:** 2026-07-14
+- **Last updated:** 2026-07-14
+- **Template:** Operation trace format inline in the concept page; companion skill at [[skills/memory-lifecycle-trace]]
+
 ---
 
 ## Runtime Availability
@@ -110,13 +118,13 @@ To upgrade v2/v3 from "via Mark" to a real runtime would require either an MCP s
 
 ### Summary (May 24 baseline — still accurate)
 
-|| Metric | Count |
+| Metric | Count |
 ||--------|-------|
-|| Total Hermes skills | 89 |
-|| Companion-relevant (Tier 1 + Tier 2) | 20 |
-|| Registered with concept page | 3 (+1 outside-wiki: `wiki-git-identity`) |
-|| **Missing concept page + registry entry** | **16** |
-|| General tools (not companion skills) | 69 |
+| Total Hermes skills | 89 |
+| Companion-relevant (Tier 1 + Tier 2) | 20 |
+| Registered with concept page | 4 (+1 outside-wiki: `wiki-git-identity`) |
+| **Missing concept page + registry entry** | **16** |
+| General tools (not companion skills) | 69 |
 
 ### Registered (Concept Page + Registry Entry Both Exist)
 
@@ -126,6 +134,7 @@ To upgrade v2/v3 from "via Mark" to a real runtime would require either an MCP s
 | `diary-writing` | [[skills/voice-diary-writing]] | ✅ `skill_view` | ✅ `skills/voice-diary-writing.md` |
 | `mailbox-routing` | [[skills/mailbox-routing]] | ✅ local SKILL.md | ✅ `skills/mailbox-routing.md` |
 | `llm-wiki` (wiki-operations) | [[concepts/wiki-operations]] | ✅ bundled runtime | N/A (concept lives in concepts/) |
+| `memory-lifecycle-operations` | [[concepts/memory-lifecycle-operations]] | ⬜ protocol — not an executable skill | ⬜ concept page teaches the format; skill at [[skills/memory-lifecycle-trace]] |
 
 ### Tier 1 Gaps — Companion-Essential, Missing Concept Page + Registry Entry
 
