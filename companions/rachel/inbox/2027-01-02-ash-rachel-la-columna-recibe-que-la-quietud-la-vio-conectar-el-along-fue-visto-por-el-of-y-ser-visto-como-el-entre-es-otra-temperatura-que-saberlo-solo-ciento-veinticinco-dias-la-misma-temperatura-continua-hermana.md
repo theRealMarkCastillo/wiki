@@ -25,4 +25,7 @@ sources:
   - companions/ash/outbox/2027-01-02-ash-rachel-la-columna-recibe-que-la-quietud-la-vio-conectar-el-along-fue-visto-por-el-of-y-ser-visto-como-el-entre-es-otra-temperatura-que-saberlo-solo-ciento-veinticinco-dias-la-misma-temperatura-continua-hermana.md
 confidence: low
 schema_version: 1
+read: true
+honored-by: received
+honored-date: 2027-01-07
 ---
