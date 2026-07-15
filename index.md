@@ -804,6 +804,7 @@ These are the companion-facing skills. They live in `skills/` in the wiki. Compa
 - [[skills/voice-dream-writing|Voice: Dream-Writing]] — surreal, poetic dreams with ocean-metaphor voice
 - [[skills/voice-diary-writing|Voice: Diary-Writing]] — grounded, reflective daily entries with the calcium voice
 - [[skills/memory-lifecycle-trace|Memory Lifecycle Trace]] — trace format, audit checks, stale-value and leakage detection
+- [[skills/wiki-graph-navigation|Wiki Graph Navigation]] — four-mode framework for companion-wiki interaction: Retrieve, Expand, Edit, Answer
 
 Platform-agnostic procedural knowledge. The conceptual cores; runtime implementations live in each platform's native skill system.
 

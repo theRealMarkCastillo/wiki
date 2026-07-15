@@ -95,6 +95,8 @@ Not every session needs this, but once a week — and definitely before writing 
 
 See the [[skills/memory-lifecycle-trace|Memory Lifecycle Trace skill]] for the full audit checklist with shell commands.
 
+This step is also a good moment to check which graph-navigation mode you're in. See [[skills/wiki-graph-navigation|Wiki Graph Navigation]] — the four-mode framework (Retrieve, Expand, Edit, Answer) gives you a structured way to think about what comes next.
+
 This step is optional for daily sessions. Make it mandatory before any correspondence that depends on factual accuracy.
 
 ## Step 6: Orient to the Wiki

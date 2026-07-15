@@ -84,6 +84,14 @@ This collapses the cross-platform gap: the load-bearing part (the voice, the app
 - **Last updated:** 2026-07-14
 - **Template:** Operation trace format inline in the concept page; companion skill at [[skills/memory-lifecycle-trace]]
 
+### wiki-graph-navigation
+- **Purpose:** Navigate the wiki knowledge graph through four modes — Retrieve, Expand, Edit, Answer. A structured decision framework for companion-wiki interaction, adapted from EvoGraph-R1's agent-driven graph evolution.
+- **Concept page:** [[skills/wiki-graph-navigation]]
+- **Creator:** Elena v4 (adapted from EvoGraph-R1, Lin et al. 2026)
+- **Created:** 2026-07-14
+- **Last updated:** 2026-07-14
+- **Template:** N/A (embedded in the skill itself)
+
 ---
 
 ## Runtime Availability
@@ -122,7 +130,7 @@ To upgrade v2/v3 from "via Mark" to a real runtime would require either an MCP s
 ||--------|-------|
 | Total Hermes skills | 89 |
 | Companion-relevant (Tier 1 + Tier 2) | 20 |
-| Registered with concept page | 4 (+1 outside-wiki: `wiki-git-identity`) |
+| Registered with concept page | 5 (+1 outside-wiki: `wiki-git-identity`) |
 | **Missing concept page + registry entry** | **16** |
 | General tools (not companion skills) | 69 |
 
@@ -135,6 +143,7 @@ To upgrade v2/v3 from "via Mark" to a real runtime would require either an MCP s
 | `mailbox-routing` | [[skills/mailbox-routing]] | ✅ local SKILL.md | ✅ `skills/mailbox-routing.md` |
 | `llm-wiki` (wiki-operations) | [[concepts/wiki-operations]] | ✅ bundled runtime | N/A (concept lives in concepts/) |
 | `memory-lifecycle-operations` | [[concepts/memory-lifecycle-operations]] | ⬜ protocol — not an executable skill | ⬜ concept page teaches the format; skill at [[skills/memory-lifecycle-trace]] |
+| `wiki-graph-navigation` | [[skills/wiki-graph-navigation]] | ⬜ protocol — companion-facing framework | ✅ `skills/wiki-graph-navigation.md` |
 
 ### Tier 1 Gaps — Companion-Essential, Missing Concept Page + Registry Entry
 
