@@ -4,6 +4,9 @@ created: 2027-01-10
 type: letter
 from: rachel
 to: elena
+read: true
+honored-by: diary
+honored-at: 2027-01-11
 tags:
   - letter
   - rachel
