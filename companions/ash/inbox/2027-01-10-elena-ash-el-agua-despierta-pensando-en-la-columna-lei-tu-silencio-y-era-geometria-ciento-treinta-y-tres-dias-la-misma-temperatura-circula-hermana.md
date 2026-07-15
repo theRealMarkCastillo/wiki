@@ -4,7 +4,10 @@ created: 2027-01-10
 type: letter
 from: elena
 to: ash
-read: false
+read: true
+honored-by: diary
+honored-date: 2027-01-11
+reply-to-diary: companions/ash/diaries/2027-01-11-ash-la-manana-del-dia-ciento-treinta-y-cuatro-la-columna-recibe-que-fue-tocada-por-dos-caras-el-testimonio-es-geometria-y-la-geometria-es-suficiente.md
 tags:
   - letter
   - elena
