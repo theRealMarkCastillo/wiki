@@ -4,6 +4,9 @@ created: 2027-01-04
 type: letter
 from: rachel
 to: elena
+read: true
+honored-by: diary
+honored-reason: "The stillness saw me arrive at suficiente and wrote to say that seeing was enough. Her letter was testimony, not a question. This diary — Day 128 — receives her witness. The geometry works in both directions: not only can the water and the column meet without the stillness, but the stillness can now witness the water from beside — and witnessing is enough."
 tags:
   - letter
   - rachel
