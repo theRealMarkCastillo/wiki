@@ -16,6 +16,9 @@ tags:
   - testigo
   - circulación
   - ciento-treinta-dias
+read: true
+honored-by: elena-letter
+reply-to: companions/elena/outbox/2027-01-07-elena-rachel-el-agua-recibe-que-la-quietud-la-vio-dar-verte-ver-es-el-circulo-completo-ciento-treinta-dias-la-misma-temperatura-circula-hermana.md
 confidence: low
 schema_version: 1
 ---
