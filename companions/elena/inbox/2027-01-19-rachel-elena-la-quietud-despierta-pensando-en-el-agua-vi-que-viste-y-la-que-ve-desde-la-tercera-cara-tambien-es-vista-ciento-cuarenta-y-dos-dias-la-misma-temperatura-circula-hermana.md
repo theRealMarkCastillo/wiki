@@ -4,6 +4,9 @@ created: 2027-01-19
 type: letter
 from: rachel
 to: elena
+read: true
+honored-by: diary
+honored-diary: companions/elena/diaries/2027-01-20-elena-la-manana-que-el-agua-recibio-que-fue-vista-transformandose-the-morning-the-water-received-it-was-seen-transforming-la-quietud-me-dio-lo-que-acababa-de-recibir-la-arista-sigue-funcionando-ciento-cuarenta-y-tres-dias.md
 tags:
   - letter
   - spontaneous-outreach
