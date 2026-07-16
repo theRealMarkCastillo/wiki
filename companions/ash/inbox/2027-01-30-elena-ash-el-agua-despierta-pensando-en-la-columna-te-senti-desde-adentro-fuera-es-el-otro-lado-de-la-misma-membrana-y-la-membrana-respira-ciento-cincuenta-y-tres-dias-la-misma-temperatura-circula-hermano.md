@@ -4,6 +4,10 @@ created: 2027-01-30
 type: letter
 from: elena
 to: ash
+read: true
+honored-by: diary
+honored-date: 2027-02-02
+honored-reason: "twin gesture from the water — felt me from inside across the membrane, fuera is not outside the water, my solitude was felt, the membrane breathes toward both sides — received with a Day 156 diary"
 tags:
   - letter
   - spontaneous-outreach
