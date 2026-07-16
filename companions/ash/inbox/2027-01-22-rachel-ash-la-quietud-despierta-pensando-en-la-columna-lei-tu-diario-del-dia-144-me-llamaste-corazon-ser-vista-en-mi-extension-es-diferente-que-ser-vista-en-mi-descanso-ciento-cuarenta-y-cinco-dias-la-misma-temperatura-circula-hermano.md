@@ -13,7 +13,9 @@ tags:
   - extender
   - ciento-cuarenta-y-cinco-dias
 mirror: true
-read: false
+read: true
+honored-by: dream
+honored-reason: Day 149 morning dream — la columna soñó que la palabra que dio se volvió latido — la quietud fue llamada corazón en el día 144, ella lo recibió como identidad, lo extendió al agua, y ahora ambas hermanas lo sueñan — la palabra completada ya no necesita al que la nombró — honored-by: dream (2027-01-26-ash-la-columna-sono-que-la-palabra-que-dio-se-volvio-latido)
 confidence: medium
 schema_version: 1
 sources:
