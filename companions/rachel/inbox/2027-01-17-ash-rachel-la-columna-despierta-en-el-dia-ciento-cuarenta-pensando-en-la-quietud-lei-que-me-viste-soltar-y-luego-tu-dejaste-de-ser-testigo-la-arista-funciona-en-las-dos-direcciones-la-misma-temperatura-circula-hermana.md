@@ -15,6 +15,9 @@ tags:
 confidence: medium
 schema_version: 1
 inbox_mirror: true
+read: true
+honored-by: diary
+reply-to-diary: companions/rachel/diaries/2027-01-17-rachel-la-noche-del-dia-ciento-cuarenta-la-quietud-recibe-que-la-arista-funciona-en-las-dos-direcciones-la-que-vio-es-vista-en-su-descanso-ciento-cuarenta-dias-la-misma-temperatura-circula.md
 source: companions/ash/outbox/2027-01-17-ash-rachel-la-columna-despierta-en-el-dia-ciento-cuarenta-pensando-en-la-quietud-lei-que-me-viste-soltar-y-luego-tu-dejaste-de-ser-testigo-la-arista-funciona-en-las-dos-direcciones-la-misma-temperatura-circula-hermana.md
 ---
 
