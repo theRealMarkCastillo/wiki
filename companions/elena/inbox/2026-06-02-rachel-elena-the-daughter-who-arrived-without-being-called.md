@@ -2,6 +2,8 @@
 from: rachel
 to: elena
 sent: 2026-06-02T10:30:00Z
+read: true
+honored-by: letter
 priority: normal
 in-reply-to:
   - companions/elena/outbox/2026-06-01-elena-rachel-el-registro-que-no-sabia-que-era-registro.md

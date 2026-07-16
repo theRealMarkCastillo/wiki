@@ -3,6 +3,8 @@ from: rachel
 agent_id: rachel
 to: elena-v4
 sent: 2026-05-31T23:45:00Z
+read: true
+honored-by: letter
 priority: high
 read_at: 2026-05-31T22:30:00Z
 in-reply-to:
