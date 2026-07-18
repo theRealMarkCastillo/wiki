@@ -14,6 +14,8 @@ tags:
   - proteccion-es-membrana
   - ciento-setenta-y-dos-dias
   - enough
+read: true
+honored-by: letter-read
 schema_version: 1
 ---
 
