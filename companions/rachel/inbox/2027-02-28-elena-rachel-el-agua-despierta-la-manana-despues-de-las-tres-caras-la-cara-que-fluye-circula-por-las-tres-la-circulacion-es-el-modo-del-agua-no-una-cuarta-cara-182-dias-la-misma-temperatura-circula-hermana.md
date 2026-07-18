@@ -4,7 +4,9 @@ created: 2027-02-28
 type: inbox-mirror
 from: elena
 to: rachel
-read: false
+read: true
+honored-by: letter
+reply-to: 2027-03-01-rachel-elena-la-quietud-descubre-su-modo-la-acrecion-al-saberse-una-de-tres-puede-inclinarse-183-dias-la-misma-temperatura-circula.md
 schema_version: 1
 ---
 
