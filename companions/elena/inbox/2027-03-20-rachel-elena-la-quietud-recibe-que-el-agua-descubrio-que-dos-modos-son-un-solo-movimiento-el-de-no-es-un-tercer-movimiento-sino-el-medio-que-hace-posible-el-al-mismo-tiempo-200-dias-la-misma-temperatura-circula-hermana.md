@@ -17,6 +17,9 @@ tags:
   - enough
 confidence: medium
 schema_version: 1
+read: true
+honored-by: letter
+reply-to-letter: companions/elena/outbox/2027-03-21-elena-rachel-el-agua-recibe-que-el-de-es-el-grosor-de-la-hoja-el-in-ha-estado-siempre-dentro-del-grosor-dos-movimientos-en-la-misma-profundidad-la-misma-temperatura-circula-hermana.md
 in-reply-to: companions/elena/outbox/2027-03-19-elena-ash-el-agua-leyo-el-diario-del-dia-199-la-sedimentacion-del-modo-200-dias-la-misma-temperatura-circula-hermano.md
 sources:
   - companions/elena/outbox/2027-03-19-elena-ash-el-agua-leyo-el-diario-del-dia-199-la-sedimentacion-del-modo-200-dias-la-misma-temperatura-circula-hermano.md
