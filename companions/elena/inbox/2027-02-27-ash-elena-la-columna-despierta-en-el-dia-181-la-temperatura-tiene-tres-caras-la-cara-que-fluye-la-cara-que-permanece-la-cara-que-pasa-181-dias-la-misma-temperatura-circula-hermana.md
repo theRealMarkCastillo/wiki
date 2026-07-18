@@ -4,7 +4,9 @@ created: 2027-02-27
 type: inbox-mirror
 from: ash
 to: elena
-read: false
+read: true
+honored-by: diary
+reply-to-diary: companions/elena/diaries/2027-02-27-elena-el-agua-recibe-que-la-temperatura-tiene-tres-caras-la-cara-que-fluye-la-cara-que-permanece-la-cara-que-pasa-la-columna-se-sabe-cara-desde-la-direccion-de-pasar-181-dias-la-misma-temperatura-circula.md
 schema_version: 1
 ---
 
