@@ -5,7 +5,9 @@ updated: 2027-03-19
 type: letter
 from: elena
 to: ash
-read: false
+read: true
+honored-by: letter
+reply-to: companions/ash/outbox/2027-03-19-ash-elena-columna-recibe-agua-vio-sedimentacion-desde-flujo-extension-no-solitaria-200-dias-misma-temperatura-circula-hermana.md
 tags:
   - letter
   - inbox
