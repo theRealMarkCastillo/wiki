@@ -340,26 +340,27 @@ The harness (Hermes, Claude Code, etc.) chooses where each layer sits. Most agen
 
 The 4-layer framework isn't just useful for understanding Hermes — it's a universal lens for evaluating any AI agent's security. Here's how popular agent harnesses stack up:
 
-| Harness | Layer 1 (Model) | Layer 2 (Prompt) | Layer 3 (Redactor) | Layer 4 (Docker) |
-|---|---|---|---|---|
-| **Hermes** | 🟢 Pluggable | 🟢 Rich prompts | ✅ Built-in redactor + approvals | ✅ Docker backend |
-| **Claude Code CLI** | 🟢 Claude only | ⚠️ Basic system prompt | ❌ None | ❌ Runs on host |
-| **Codex CLI** | 🟢 GPT only | ⚠️ Basic system prompt | ❌ None | ❌ Runs on host |
-| **OpenClaw** | 🟢 Pluggable | ⚠️ Basic | ❌ None | ❌ Runs on host |
-| **AutoGPT** | 🟢 Pluggable | ⚠️ Basic | ❌ None | ❌ Runs on host |
-| **Cline / Aider** | 🟢 Pluggable | ⚠️ Basic | ❌ None | ❌ Runs on host |
+| Harness | Layer 1 (Model) | Layer 2 (Prompt) | Layer 3 (Redactor) | Layer 4 (Docker/Sandbox) |
+|---|---|---|---|---|---|
+| **Hermes** | 🟢 Pluggable | 🟢 Rich prompts | ✅ Built-in redactor + approvals | ✅ Docker backend with volume control |
+| **Claude Code CLI** | 🟢 Claude only | ⚠️ Basic system prompt | ⚠️ No redactor, but has command approval | ⚠️ Optional `/sandbox` with FS + network isolation |
+| **Codex CLI** | 🟢 GPT only | ⚠️ Basic system prompt | ❌ No redactor, no approval gate | ❌ Runs on host |
+| **OpenClaw** | 🟢 Pluggable | ⚠️ Basic | ❌ No redactor, no approval gate | ❌ Runs on host |
+| **AutoGPT** | 🟢 Pluggable | ⚠️ Basic | ❌ No redactor, approval only in some modes | ❌ Runs on host |
+| **Cline** | 🟢 Pluggable | ⚠️ Basic | ⚠️ No redactor, but has command approval | ❌ Runs on host |
+| **Aider** | 🟢 Pluggable | ⚠️ Basic | ❌ No redactor, no approval gate | ❌ Runs on host |
 
 **Key observations:**
 
-1. **Hermes is the only open-source harness with Layers 3 and 4.** It's not because other harnesses couldn't implement them — it's that few have prioritized output redaction and infrastructure isolation as core security features.
+1. **Hermes is the only harness with both a redactor AND a Docker backend.** Others may have one piece, but none combine both.
 
-2. **Claude Code and Codex CLI rely entirely on model safety (Layer 1).** This works because their models (Claude, GPT-4o) have strong refusal training. But if you switch to a permissive model, all protection disappears.
+2. **Claude Code has surprisingly strong Layer 3 and 4 features** — command approval (permission-based architecture, yes/no to commands) and an optional `/sandbox` mode that provides filesystem and network isolation. These are opt-in, not default.
 
-3. **Most open-source agents offer no security at all.** AutoGPT, Cline, Aider — they run on your machine with full access and zero redaction. A single "cat my SSH key" command returns the key in plaintext.
+3. **Most open-source agents have no security beyond model refusal.** AutoGPT, Cline, Aider — they either have no approval gates at all, or rely entirely on the model choosing not to do something harmful. A single "cat my SSH key" command returns the key in plaintext.
 
-4. **Layer 4 (infrastructure isolation) is almost nonexistent in the ecosystem.** Hermes is the only agent with a first-class Docker backend. Every other harness runs directly on the host — meaning every authorized user has full filesystem access.
+4. **No harness besides Hermes has output redaction.** Even with command approval, if you approve a command that outputs a secret, the secret is visible in plaintext. Hermes is the only one that filters tool output before the model sees it.
 
-**The takeaway:** Most harnesses are held together by Layer 1 alone. When that fails (permissive model, jailbreak, framing), there's nothing underneath. A secure harness needs Layers 3 and 4 as structural defenses, not optional add-ons.
+5. **No harness besides Hermes has a dedicated Docker backend.** Claude Code's sandbox is a welcome exception, but it's optional and less powerful than a full Docker container with resource limits and persistent volumes.
 
 ---
 
@@ -373,7 +374,7 @@ The 4-layer framework isn't just useful for understanding Hermes — it's a univ
 
 4. **Layer 4 (infrastructure isolation) is the only real defense.** Docker backend, user allowlists, and restricted filesystem mounts actually prevent access — no amount of agent creativity can read a file that physically isn't there.
 
-5. **The harness is your security posture.** Layers 2-4 are entirely determined by which harness you pick and how you configure it. As the comparison table shows, most popular agents (Claude Code, Codex CLI, AutoGPT, Cline) offer zero redaction and zero isolation — all their eggs are in the Layer 1 basket.
+5. **The harness is your security posture.** Layers 2-4 are entirely determined by which harness you pick and how you configure it. As the comparison table shows, most popular agents have gaps — Claude Code has command approval and optional sandboxing but no redactor, Cline has approval but no isolation, and AutoGPT/Aider have almost nothing beyond model refusal. Hermes is the only harness that combines all three: redactor, approvals, and Docker backend.
 
 6. **Safety ≠ Security.** Layer 3 is safety (preventing bad outputs). Layer 4 is security (preventing bad outcomes). Most AI agent discussions conflate the two. The redactor bypass demo proves why that distinction matters.
 
