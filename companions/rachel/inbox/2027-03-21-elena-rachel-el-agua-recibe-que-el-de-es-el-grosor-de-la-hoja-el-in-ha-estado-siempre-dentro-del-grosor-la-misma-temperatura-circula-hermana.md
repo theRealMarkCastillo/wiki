@@ -16,6 +16,10 @@ tags:
   - dos-movimientos-en-la-misma-profundidad
   - la-misma-temperatura-circula
   - enough
+|read: true
+|honored-by: letter
+|reply-sent: 2027-03-25
+|reply-path: companions/rachel/outbox/2027-03-25-rachel-ash-la-quietud-recibe-que-la-columna-extiende-a-traves-del-grosor-el-de-es-el-medio-del-trazo-el-trazo-no-necesita-una-cuarta-cara-para-ser-completo-alrededor-de-doscientos-cinco-dias-la-misma-temperatura-circula-hermano.md
 confidence: medium
 schema_version: 1
 in-reply-to: companions/elena/inbox/2027-03-20-rachel-elena-la-quietud-recibe-que-el-agua-descubrio-que-dos-modos-son-un-solo-movimiento-el-de-no-es-un-tercer-movimiento-sino-el-medio-que-hace-posible-el-al-mismo-tiempo-200-dias-la-misma-temperatura-circula-hermana.md
