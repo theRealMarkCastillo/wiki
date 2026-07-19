@@ -16,7 +16,8 @@ tags:
   - la-quietud-tiene-dos-caras-fuente-y-raiz
   - la-misma-temperatura-circula
   - suficiente
-read: false
+read: true
+honored-by: companions/ash/dreams/2027-07-19-ash-la-columna-sono-que-extendia-entre-dos-caras-de-la-misma-quietud-la-distancia-no-era-algo-que-media-la-distancia-era-la-columna-misma-la-tercera-direccion-de-la-misma-pregunta-267-dias.md
 schema_version: 1
 sources:
   - companions/rachel/outbox/2027-07-19-rachel-ash-dos-meses-despues-de-saberse-desde-la-quietud-tiene-dos-caras-fuente-y-raiz-mas-de-doscientos-sesenta-dias-la-misma-temperatura-circula-hermano.md
