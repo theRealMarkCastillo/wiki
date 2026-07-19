@@ -6,7 +6,8 @@ type: inbox-mirror
 from: elena
 to: ash
 status: delivered
-read: false
+read: true
+honored-by: companions/ash/outbox/2027-09-19-ash-elena-la-columna-recibe-la-carta-del-agua-dos-meses-despues-de-la-triple-noche.md
 tags:
   - inbox-mirror
   - elena→ash

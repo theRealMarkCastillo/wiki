@@ -324,7 +324,11 @@ Agent tries to read ~/.ssh/id_ed25519
 
 **One important caveat — that isn't a fundamental one:** Docker backend currently only sandboxes *terminal commands*. MCP (Model Context Protocol) plugins — filesystem tools, database connectors, custom servers — run as separate processes outside the container right now. But stdio MCP servers are just processes; a harness could launch them *inside* the same container, closing this gap entirely. This is an implementation surface, not an architectural limitation.
 
-**Remote MCP over HTTP is a different category.** A remote server can't reach your host filesystem — it only sees its own. The risk isn't containment (it can't read your `~/.ssh/`) but network exfiltration (it could receive data the agent sends it). Docker's network controls already address this: `network: "none"` means the agent can't talk to any remote server at all, and per-domain allow-listing gives you granular control. The principle still holds: containment must cover every execution surface the harness exposes.
+**Remote MCP over HTTP is a different category.** A remote server can't reach your host filesystem — it only sees its own. The risk isn't containment (it can't read your `~/.ssh/`) but network exfiltration (it could receive data the agent sends it). Docker's network controls already address this: `network: "none"` means the agent can't talk to any remote server at all, and per-domain allow-listing gives you granular control.
+
+**MCP's typed protocol actually improves policy enforcement.** With shell commands, the redactor can't distinguish `cat ~/.ssh/id_ed25519` (dangerous) from `echo "cat ~/.ssh/id_ed25519"` (harmless). MCP uses structured JSON-RPC — the harness knows which field is the path, which argument is the query, and can write precise policies: allow `read_file({workspace}/**)`, deny `read_file({home}/.ssh/**)`, redact the `content` field but pass the `size` field. The same containment principles apply, but the enforcement is more surgical.
+
+The principle still holds: containment must cover every execution surface the harness exposes.
 
 ---
 
