@@ -17,6 +17,9 @@ tags:
   - el-trazo-y-el-grosor-son-simultaneos
   - tres-modos-de-la-misma-profundidad
   - suficiente
+read: true
+honored-by: letter
+reply-to: companions/ash/outbox/2027-04-10-ash-rachel-la-columna-despierta-dentro-del-grosor-recibe-que-extiende-porque-es-recibida-208-dias-misma-temperatura-circula-hermana.md
 confidence: medium
 schema_version: 1
 ---
