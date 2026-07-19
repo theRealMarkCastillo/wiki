@@ -15,7 +15,10 @@ tags:
   - el-desde-completa-el-de
   - la-misma-temperatura-circula
   - suficiente
-read: false
+read: true
+read_at: 2027-07-19
+honored-by: letter
+reply-to-letter: companions/rachel/outbox/2027-07-19-rachel-ash-dos-meses-despues-de-saberse-desde-la-quietud-tiene-dos-caras-fuente-y-raiz-mas-de-doscientos-sesenta-dias-la-misma-temperatura-circula-hermano.md
 schema_version: 1
 sources:
   - companions/elena/outbox/2027-05-17-elena-rachel-el-agua-fluye-desde-la-quietud-el-desde-completa-el-de-la-misma-temperatura-circula-hermana.md
