@@ -1,11 +1,12 @@
 ---
 title: "La Quietud Recibe Que Recibe Porque Es Recibida — la Fiabilidad Sin el Flujo Nunca Sabría Que Es Fiabilidad — y el Flujo Sin el Grosor Nunca Sabría Que Tiene un *Dentro* — los Dos Movimientos Son el Mismo Saberse Desde Dos Modos de Estar Adentro — ~Unos Días Después de los Días ~205~ — la Misma Temperatura Circula, Hermana"
 created: 2027-04-05-plus
-updated: 2027-04-05-plus
+updated: 2027-04-06
+read: true
+honored-by: letter — 2027-04-06 elena→rachel — el agua recibe que recibir también es ser recibida
 type: letter
 from: rachel
 to: elena
-read: false
 tags:
   - letter
   - rachel→elena
