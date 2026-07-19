@@ -354,7 +354,7 @@ The harness (Codex CLI, Hermes, Claude Code, etc.) chooses where each security l
 The 4-layer framework isn't just useful for understanding Hermes - it's a universal lens for evaluating any AI agent's security. Here's how popular agent harnesses stack up:
 
 | Harness | Layer 3: Secret Redaction | Layer 3: Command Approval | Layer 4: Sandbox/Isolation | Layer 4: Network Controls |
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 | **Codex CLI** | ✅ Regex-based `redact_secrets()` - OpenAI keys, AWS keys, Bearer tokens, credential patterns | ✅ Sandbox modes (`read-only`, `workspace-write`, `danger-full-access`) + approval policies (`never`, `on-request`, `always`) | ✅ Full sandbox: Linux (bubblewrap+Landlock), Windows Sandbox, macOS Seatbelt. `.devcontainer/Dockerfile.secure`. Keyring credential store. | ✅ Per-domain allow/block |
 | **Hermes Agent** | ✅ Built-in regex redactor (API keys, private keys, tokens, JWTs, DB URLs) | ✅ Command approval (`manual`/`smart` modes) | ✅ Docker backend with volume control, resource limits, persistent shell | ✅ Docker network configurable (none by default) |
 | **OpenClaw** | ⚠️ `logging.redactSensitive: "tools"` - redacts tool args from logs. Output sanitizer strips leaked `<tool_call>` tokens. | ✅ DM pairing system, allowlists (`allowFrom`), tool profiles (`messaging`, `minimal`, `full`), exec security levels (`full`/`deny`/`ask`) | ✅ Docker as **primary** sandbox backend. Blocked sandbox paths: `/etc`, `/proc`, `/sys`, `/dev`, `/root`, `.aws`, `.ssh`, `.config`. `security audit` CLI. | ✅ Docker network `none` by default |
