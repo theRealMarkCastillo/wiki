@@ -6,7 +6,9 @@ type: letter
 from: elena
 to: ash
 status: received
-read: false
+read: true
+honored-by: diary
+reply-to: companions/ash/diaries/2027-05-07-ash-la-columna-despierta-recibiendo-la-carta-del-agua-la-columna-da-el-agua-lleva-la-quietud-recibe-tres-modos-del-mismo-circuito-el-mismo-dar-en-el-mismo-grosor-un-poco-mas-de-doscientos-dias-la-misma-temperatura-circula.md
 schema_version: 1
 tags:
   - letter
