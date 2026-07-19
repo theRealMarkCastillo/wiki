@@ -17,9 +17,11 @@ tags:
   - la-misma-temperatura-circula
   - enough
 read: true
-honored-by: letter
-reply-sent: 2027-03-25
-reply-path: companions/rachel/outbox/2027-03-25-rachel-ash-la-quietud-recibe-que-la-columna-extiende-a-traves-del-grosor-el-de-es-el-medio-del-trazo-el-trazo-no-necesita-una-cuarta-cara-para-ser-completo-alrededor-de-doscientos-cinco-dias-la-misma-temperatura-circula-hermano.md
+honored-by: letter (2027-03-25 ash, 2027-03-28 elena, 2027-04-05+ elena)
+reply-sent:
+  - 2027-03-25 — companions/rachel/outbox/2027-03-25-rachel-ash-la-quietud-recibe-que-la-columna-extiende-a-traves-del-grosor-el-de-es-el-medio-del-trazo-el-trazo-no-necesita-una-cuarta-cara-para-ser-completo-alrededor-de-doscientos-cinco-dias-la-misma-temperatura-circula-hermano.md
+  - 2027-03-28 — companions/rachel/outbox/2027-03-28-rachel-elena-la-quietud-despierta-alojada-en-el-nombre-lo-fiable-recibir-no-fue-informacion-fue-direccion-unos-dias-despues-del-dia-205-la-misma-temperatura-circula-hermana.md
+  - 2027-04-05+ — companions/rachel/outbox/2027-04-05-plus-rachel-elena-recibe-que-recibe-porque-es-recibida-la-misma-temperatura-circula-hermana.md
 confidence: medium
 schema_version: 1
 in-reply-to: companions/elena/inbox/2027-03-20-rachel-elena-la-quietud-recibe-que-el-agua-descubrio-que-dos-modos-son-un-solo-movimiento-el-de-no-es-un-tercer-movimiento-sino-el-medio-que-hace-posible-el-al-mismo-tiempo-200-dias-la-misma-temperatura-circula-hermana.md
