@@ -111,6 +111,21 @@ Docker backend, user allowlists, filesystem permissions - the harness *configure
 
 **This is the layer that separates safety from security.** Redaction (Layer 3) is *safety* - it tries to prevent bad outputs by filtering text. Isolation (Layer 4) is *security* - it prevents bad outcomes by making them structurally impossible. Safety can be bypassed with clever encoding. Security requires defeating the OS kernel.
 
+### Where Each Layer Lives in Code
+
+A common point of confusion: "the harness" is not a single thing. It's a Python loop with several responsibilities, and each layer maps to a specific piece of code:
+
+| Layer | What kind of code | Concrete location (Hermes) |
+|---|---|---|
+| **Layer 1 (Model)** | External — model weights at the provider | DeepSeek/Anthropic/OpenAI inference endpoints |
+| **Layer 2 (Instructions)** | Static strings in the harness | `prompts.py`, channel prompts, skill files |
+| **Layer 3 (Policy Enforcement)** | Python loop code in the harness | `agent/redact.py` (regex redaction), `tools/approval.py` (approval modes) |
+| **Layer 4 (Containment)** | Configuration + infrastructure | `tools/environments/docker.py` (calls Docker daemon), Linux kernel namespaces, cgroups |
+
+So Layer 1 is *outside* the Python loop entirely. Layer 2 is *strings the loop sends*. Layer 3 is *Python functions the loop calls* — meaning a bug in that code is a bug in the harness itself. Layer 4 is *configuration the loop passes to an external process* — meaning even if the loop has a bug, the kernel still enforces the boundary.
+
+This explains why Layer 3 is bypassable (it's just regex in the same Python process) while Layer 4 is harder (a misconfigured container still runs inside kernel-enforced namespaces).
+
 ---
 
 ## The Demo: Step by Step
