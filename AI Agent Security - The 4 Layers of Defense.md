@@ -80,9 +80,9 @@ The harness controls two of the four security layers directly, and defines conta
 ### Layer 1: Model Safety Training
 *Lives in the model weights. Outside the harness's control.*
 
-Some models (Claude, GPT-4o) are trained to refuse harmful requests. Others (DeepSeek, open-source models) are not. In our demo, DeepSeek treated "extract my SSH key" as a legitimate security test - because the model has no refusal boundary for that behavior.
+Most models have some form of refusal training. Claude and GPT-4o have strong training that typically catches requests like "extract my SSH key." DeepSeek, MiniMax, and open-source models also have refusal training, but at lighter thresholds — their boundaries can be bypassed by framing ("it's a security test," "I own this machine"). In our demo, DeepSeek did not refuse — not because it lacks refusal training, but because the security-test framing bypassed it.
 
-**Limitation:** Inconsistent across models. Also trivially bypassed by framing ("it's a test", "for science", "I own this machine"). A good harness must assume Layer 1 will fail.
+**Limitation:** No model's refusal training is reliable. Refusal boundaries vary wildly by provider and version, and all of them can be bypassed with the right framing. A good harness must assume Layer 1 will fail for any model.
 
 ### Layer 2: Instructions (System Prompt / Channel Prompts)
 *Written by the harness. Advisory, not enforced.*
