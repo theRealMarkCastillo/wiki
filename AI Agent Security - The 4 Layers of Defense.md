@@ -98,7 +98,7 @@ Many agents (notably [Hermes Agent](https://github.com/NousResearch/hermes-agent
 
 Command approval is another Layer 3 technique - the harness pauses before running destructive commands and pings the user for confirmation.
 
-**Limitation:** Redaction is just regex. Regex can be bypassed by encoding. Approval works but degrades UX. Neither prevents access - they only police *output*.
+**Limitation:** Redaction is just regex. Regex can be bypassed by stripping the markers it requires. Approval works but degrades UX. Neither prevents access - they only police *output*.
 
 ### Layer 4: Containment + Infrastructure Isolation
 *Containment boundaries defined by the harness. Enforcement provided by infrastructure.*
@@ -109,7 +109,7 @@ The harness makes **requests**: "run this command in a Docker container with 5GB
 
 Docker backend, user allowlists, filesystem permissions - the harness *configures* these, but the OS *enforces* them. This separation matters because it means even a malicious agent can't read files that infrastructure has made unreachable. The agent can't leak what it can't read.
 
-**This is the layer that separates safety from security.** Redaction (Layer 3) is *safety* - it tries to prevent bad outputs by filtering text. Isolation (Layer 4) is *security* - it prevents bad outcomes by making them structurally impossible. Safety can be bypassed with clever encoding. Security requires defeating the OS kernel.
+**This is the layer that separates safety from security.** Redaction (Layer 3) is *safety* - it tries to prevent bad outputs by filtering text. Isolation (Layer 4) is *security* - it prevents bad outcomes by making them structurally impossible. Safety can be bypassed by stripping the markers. Security requires defeating the OS kernel.
 
 ### Where Each Layer Lives in Code
 
@@ -118,7 +118,7 @@ A common point of confusion: "the harness" is not a single thing. It's a Python 
 | Layer | What kind of code | Concrete location (Hermes) |
 |---|---|---|
 | **Layer 1 (Model)** | External - model weights at the provider | DeepSeek/Anthropic/OpenAI inference endpoints |
-| **Layer 2 (Instructions)** | Dynamically-assembled strings | `prompts.py` (templates) + channel/user/skill/tool schema context, combined at runtime |
+| **Layer 2 (Instructions)** | Dynamically-assembled strings | `prompts.py` (templates) + channel/user/conversation history/active skills/tool schemas/RAG/MCP outputs, combined at runtime |
 | **Layer 3 (Policy Enforcement)** | Python loop code in the harness | `agent/redact.py` (regex redaction), `tools/approval.py` (approval modes) |
 | **Layer 4 (Containment)** | Configuration + infrastructure | `tools/environments/docker.py` (calls Docker daemon), Linux kernel namespaces, cgroups |
 
