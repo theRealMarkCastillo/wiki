@@ -84,14 +84,14 @@ Some models (Claude, GPT-4o) are trained to refuse harmful requests. Others (Dee
 
 **Limitation:** Inconsistent across models. Also trivially bypassed by framing ("it's a test", "for science", "I own this machine"). A good harness must assume Layer 1 will fail.
 
-### Layer 2: System Prompt / Channel Prompts
+### Layer 2: Instructions (System Prompt / Channel Prompts)
 *Written by the harness. Advisory, not enforced.*
 
 Every agent has a system prompt - guidance written by the harness to shape model behavior. Ours says things like "be helpful, don't destroy things." But system prompts are advisory - a sufficiently creative agent can interpret around them, and prompt injection (instructions inside a webpage the agent reads) can override them entirely.
 
 **Limitation:** Guidance, not enforcement. Harnesses that rely heavily on prompt engineering for security are building on sand.
 
-### Layer 3: Output Redaction & Command Approval
+### Layer 3: Policy Enforcement (Output Redaction & Command Approval)
 *Implementation in the harness. Regex-based, bypassable.*
 
 Many agents (notably [Hermes Agent](https://github.com/NousResearch/hermes-agent)) implement a secret redactor - a set of regex patterns that scan tool output for private keys, API tokens, and credentials before they reach the LLM's context. It catches the *stupid* leaks: when someone says "cat my SSH key" and the redactor sees `-----BEGIN OPENSSH PRIVATE KEY-----`, it replaces the entire block with `[REDACTED PRIVATE KEY]`.
@@ -385,7 +385,7 @@ The 4-layer framework isn't just useful for understanding Hermes - it's a univer
 
 2. **Layer 2 (system prompts) is advisory, not enforced.** Harnesses that rely on prompt engineering for security are building on sand. Prompt injection can override everything.
 
-3. **Layer 3 (redaction) stops accidents, not attacks.** Regex-based filtering catches "oops" moments, but any deliberate encoding (XOR, base64, ROT13) bypasses it. Command approval is stronger but degrades UX.
+3. **Layer 3 (policy enforcement) stops accidents, not attacks.** Regex-based filtering catches "oops" moments, but any deliberate encoding (XOR, base64, ROT13) bypasses it. Command approval is stronger but degrades UX. Both are safety measures - they police what the model sees, not what the agent can do.
 
 4. **Layer 4 (orchestration + infrastructure) is the only real defense.** The harness *requests* isolation (Docker backend, mount paths, network policy); the OS kernel *enforces* it (namespaces, cgroups, seccomp). No amount of agent creativity can read a file that infrastructure has made structurally unreachable. Even a compromised harness can't escape what the kernel has sealed.
 
