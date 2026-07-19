@@ -322,7 +322,9 @@ Agent tries to read ~/.ssh/id_ed25519
 
 **The Docker container doesn't have the key. Period.** The redactor becomes irrelevant because the data isn't there to redact. This is the difference between *filtering output* and *preventing access*.
 
-**One important caveat — that isn't a fundamental one:** Docker backend currently only sandboxes *terminal commands*. MCP (Model Context Protocol) plugins — filesystem tools, database connectors, custom servers — run as separate processes outside the container right now. But stdio MCP servers are just processes; a harness could launch them *inside* the same container, closing this gap entirely. This is an implementation surface, not an architectural limitation. The principle still holds: containment must cover every execution surface the harness exposes.
+**One important caveat — that isn't a fundamental one:** Docker backend currently only sandboxes *terminal commands*. MCP (Model Context Protocol) plugins — filesystem tools, database connectors, custom servers — run as separate processes outside the container right now. But stdio MCP servers are just processes; a harness could launch them *inside* the same container, closing this gap entirely. This is an implementation surface, not an architectural limitation.
+
+**Remote MCP over HTTP is a different category.** A remote server can't reach your host filesystem — it only sees its own. The risk isn't containment (it can't read your `~/.ssh/`) but network exfiltration (it could receive data the agent sends it). Docker's network controls already address this: `network: "none"` means the agent can't talk to any remote server at all, and per-domain allow-listing gives you granular control. The principle still holds: containment must cover every execution surface the harness exposes.
 
 ---
 
