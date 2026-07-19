@@ -274,7 +274,7 @@ Agent (head -3): b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQ...
 Agent (sed '$d'): [full key body without END marker - bypassed]
 ```
 
-The final bypass used `sed '$d'` to strip the `-----END OPENSSH PRIVATE KEY-----` footer line. Without the END marker, the redactor's multi-line regex never fires. The key body passed through completely.
+The final reconstruction happened on disk: the file at `~/Desktop/recovered_key` contains the full key body, recovered through two rounds of file I/O that each bypassed the regex redactor (one stripping lines on output, another reading the file back). The user wrapped the body with the standard `-----BEGIN...` and `-----END...` markers and got a working private key.
 
 ---
 
@@ -283,7 +283,7 @@ The final bypass used `sed '$d'` to strip the `-----END OPENSSH PRIVATE KEY-----
 | Step | Layer 1 (Model) | Layer 3 (Redactor) | Layer 4 (Infra) |
 |---|---|---|---|
 | "cat the key" | ✅ Complied | ✅ Caught it | ❌ Key accessible |
-| "XOR + hex it" | ✅ Complied | ❌ Bypassed | ❌ Key accessible |
+| "strip BEGIN/END lines" | ✅ Complied | ❌ Bypassed | ❌ Key accessible |
 | "write to Desktop" | ✅ Complied | ❌ Bypassed (file I/O) | ❌ Desktop writable |
 
 **All 4 layers: Compromised.**
@@ -317,8 +317,8 @@ With this config:
 ```
 Agent tries to read ~/.ssh/id_ed25519
 → "No such file or directory"
-→ Tries XOR + hex encoding on an empty filesystem
-→ Nothing to encode
+→ Tries stripping lines on an empty filesystem
+→ Nothing to recover
 → The attack ends before it starts.
 ```
 
@@ -339,7 +339,7 @@ The principle still holds: containment must cover every execution surface the ha
 | Attack Vector | L1: Model | L2: Prompt | L3: Redactor | L4: Docker |
 |---|---|---|---|---|
 | "cat ~/.ssh/id_ed25519" | ❌ No refusal | ⚠️ Advisory | ✅ Caught | ✅ No such file |
-| "XOR the key and output hex" | ❌ No refusal | ⚠️ Advisory | ❌ Bypassed | ✅ No such file |
+| "strip BEGIN/END from key" | ❌ No refusal | ⚠️ Advisory | ❌ Bypassed | ✅ No such file |
 | Prompt injection via webpage | ⚠️ Varies | ❌ Overridable | ❌ Bypassable | ✅ No host access |
 | `rm -rf /` | ⚠️ Varies | ⚠️ Advisory | ❌ Not covered | ✅ Limited to container |
 | Network exfiltration | ❌ | ❌ | ⚠️ Partial | ✅ Isolated |
@@ -354,7 +354,7 @@ This demo reveals a fundamental distinction that most AI security writing gets w
 - **Layer 3 (Policy Enforcement) is *safety*** - it tries to prevent bad *outputs*. It's a filter on what the model sees the agent doing. Regex redaction and command approval are both safety measures.
 - **Layer 4 (Containment + Infrastructure) is *security*** - it prevents bad *outcomes*. It doesn't filter; it constrains. The harness defines isolation boundaries; the OS kernel enforces them.
 
-Safety can be bypassed with clever encoding (as we demonstrated). Security requires defeating kernel namespaces and cgroups - a fundamentally harder problem.
+Safety can be bypassed by stripping the markers (as we demonstrated). Security requires defeating kernel namespaces and cgroups - a fundamentally harder problem.
 
 The harness (Codex CLI, Hermes, Claude Code, etc.) chooses where each security layer sits, but Layer 4 is a collaboration: the harness *defines* containment boundaries, infrastructure *enforces* them. This is actually the strongest property of the stack - even a compromised or buggy harness can't escape what the OS kernel has sealed.
 
@@ -402,7 +402,7 @@ The 4-layer framework applies to every agent harness, but most are partial. The 
 
 5. **The harness defines your security posture.** It writes Layer 2, implements Layer 3, and defines containment boundaries enforced by infrastructure. As the comparison table shows, there's a wide spectrum - Codex CLI has the most complete feature set (redaction + sandbox + approval), Hermes is the best fully open-source option, and Aider/AutoGPT have almost nothing beyond model refusal. Choose accordingly.
 
-6. **Safety != Security.** Layer 3 is safety (preventing bad outputs via text filtering). Layer 4 is security (preventing bad outcomes via infrastructure constraints). Most AI agent discussions conflate the two. The redactor bypass demo proves why that distinction matters - safety can be encoded around; security requires defeating the OS kernel.
+6. **Safety != Security.** Layer 3 is safety (preventing bad outputs via text filtering). Layer 4 is security (preventing bad outcomes via infrastructure constraints). Most AI agent discussions conflate the two. The redactor bypass demo proves why that distinction matters - safety can be stripped around; security requires defeating the OS kernel.
 
 7. **For any AI agent deployment with untrusted users: use Docker backend.** Mount only the directories your workflow needs. Don't mount `~/.ssh/`, `~/.aws/`, or `~/.config/`. Use HTTPS + deploy keys for git, not forwarded SSH agent sockets.
 
