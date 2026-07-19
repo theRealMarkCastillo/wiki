@@ -38,19 +38,28 @@ Here's the full stack, visualized:
 │                                      │
 │  ┌─ THE HARNESS ──────────────────┐  │
 │  │                                │  │
-│  │  LAYER 2: SYSTEM PROMPT        │  │ ← Harness writes this
+│  │  LAYER 2: INSTRUCTIONS         │  │ ← Written by harness
 │  │  "You are a helpful assistant  │  │    Advisory, not enforced
 │  │   who doesn't destroy things"  │  │
 │  │                                │  │
-│  │  LAYER 3: TOOL REDACTION +     │  │ ← Harness implements this
-│  │  COMMAND APPROVAL              │  │    Regex-based, bypassable
+│  │  LAYER 3: POLICY ENFORCEMENT   │  │ ← Implemented in harness
+│  │  Redaction, approvals,         │  │    Pattern-based, bypassable
+│  │  allowlists, rate limits       │  │
 │  │  "[REDACTED PRIVATE KEY]"      │  │
 │  │                                │  │
-│  │  LAYER 4: INFRASTRUCTURE       │  │ ← Harness manages this
-│  │  ISOLATION                     │  │    The only real wall
-│  │  Docker · Allowlists · FS      │  │
-│  │                                │  │
-│  └────────────────────────────────┘  │
+│  │  LAYER 4: ORCHESTRATION        │  │ ← Defined by harness
+│  │  Container backend, volumes,   │  │    Requests isolation from infra
+│  │  network policy, resource      │  │
+│  │  limits, env forwarding        │  │
+│  │             ↓                  │  │
+│  └─────────────┼──────────────────┘  │
+│                ↓                     │
+│     ┌── INFRASTRUCTURE ────┐         │
+│     │  Docker daemon       │ ← External, not part of harness
+│     │  Kernel namespaces   │   Enforces what harness requested
+│     │  cgroups, seccomp    │   Bugs in harness can't bypass
+│     │  Filesystem mounts   │   these - they operate below it
+│     └──────────────────────┘         │
 └──────────────────────────────────────┘
 ```
 
@@ -58,13 +67,13 @@ Here's the full stack, visualized:
 
 The **harness** is the software that sits between the model and the world. It's the agent runtime - the code that defines tools, filters outputs, manages infrastructure, and enforces limits. Hermes, Claude Code CLI, Codex CLI, AutoGPT - these are all harnesses. The model is a pluggable brain inside them.
 
-The harness controls three of the four security layers:
+The harness controls two of the four security layers directly, and orchestrates a third against infrastructure:
 
-| Layer | What the harness does |
-|---|---|
-| **Layer 2 (System Prompt)** | Writes the context that shapes model behavior |
-| **Layer 3 (Redaction & Approvals)** | Filters tool output, pings user before dangerous commands |
-| **Layer 4 (Infrastructure)** | Chooses where code runs, which paths are mounted, who has access |
+| Layer | What the harness does | Who enforces it |
+|---|---|---|
+| **Layer 2 (Instructions)** | Writes the system prompt that shapes model behavior | No one - advisory only |
+| **Layer 3 (Policy Enforcement)** | Filters tool output, pings user before dangerous commands | The harness itself - pattern-matching code |
+| **Layer 4 (Orchestration)** | Chooses container backend, mounts, network policy, resource limits | The infrastructure (Docker, OS kernel, cgroups) |
 
 **Layer 1 (Model safety) is outside the harness's control.** A harness can't rewrite model weights. It can only pick which model to use - and model refusal behavior varies wildly.
 
@@ -91,12 +100,16 @@ Command approval is another Layer 3 technique - the harness pauses before runnin
 
 **Limitation:** Redaction is just regex. Regex can be bypassed by encoding. Approval works but degrades UX. Neither prevents access - they only police *output*.
 
-### Layer 4: Infrastructure Isolation
-*Managed by the harness. The only layer that actually works.*
+### Layer 4: Orchestration + Infrastructure Isolation
+*Orchestration defined by the harness. Enforcement provided by infrastructure.*
 
-Docker backend, user allowlists, filesystem permissions. This is where the harness runs the agent inside an isolated container that *doesn't have access to your secrets in the first place*. The agent can't leak what it can't read.
+This is where the harness's control ends and the OS kernel's begins.
 
-**This is the layer that separates safety from security.** Redaction (Layer 3) is *safety* - it tries to prevent bad outputs. Isolation (Layer 4) is *security* - it prevents bad outcomes by making them impossible.
+The harness makes **requests**: "run this command in a Docker container with 5GB memory, no network, and only these two host paths mounted." The infrastructure - Docker daemon, kernel namespaces, cgroups, seccomp profiles - **enforces** those requests. If the harness has a bug or is compromised, it can't bypass cgroups or escape a container namespace.
+
+Docker backend, user allowlists, filesystem permissions - the harness *configures* these, but the OS *enforces* them. This separation matters because it means even a malicious agent can't read files that infrastructure has made unreachable. The agent can't leak what it can't read.
+
+**This is the layer that separates safety from security.** Redaction (Layer 3) is *safety* - it tries to prevent bad outputs by filtering text. Isolation (Layer 4) is *security* - it prevents bad outcomes by making them structurally impossible. Safety can be bypassed with clever encoding. Security requires defeating the OS kernel.
 
 ---
 
@@ -327,16 +340,12 @@ Agent tries to read ~/.ssh/id_ed25519
 
 This demo reveals a fundamental distinction that most AI security writing gets wrong:
 
-- **Layer 3 (Redaction) is *safety*** - it tries to prevent bad *outputs*. It's a filter on what the model sees the agent doing.
-- **Layer 4 (Isolation) is *security*** - it prevents bad *outcomes*. It's a constraint on what the agent *can* do.
+- **Layer 3 (Policy Enforcement) is *safety*** - it tries to prevent bad *outputs*. It's a filter on what the model sees the agent doing. Regex redaction and command approval are both safety measures.
+- **Layer 4 (Orchestration + Infrastructure) is *security*** - it prevents bad *outcomes*. It doesn't filter; it constrains. The harness requests isolation boundaries; the OS kernel enforces them.
 
-Safety can be bypassed with clever encoding. Security requires infrastructure-level access. If Layer 4 is strong, Layers 1-3 failing doesn't matter.
+Safety can be bypassed with clever encoding (as we demonstrated). Security requires defeating kernel namespaces and cgroups - a fundamentally harder problem.
 
-The harness (Codex CLI, Hermes, Claude Code, etc.) chooses where each security layer sits. Based on our research of actual source code and documentation, here's what each harness actually provides. (Full methodology: we searched GitHub repos, official docs, and configuration files for each tool - see the comparison table below.)
-
-This is a universal lens for evaluating any agent's security. Most tools implement some combination of approval, sandboxing, and redaction - but **no single harness has it all**. The closest is Codex CLI, which combines output redaction, full OS-level sandbox infrastructure (Linux, Windows, and macOS), and approval policies. Hermes is the only fully open-source tool that combines a redactor with a configurable Docker backend.
-
-The key insight: **the model is the weakest link, and the harness is your only defense when it fails.**
+The harness (Codex CLI, Hermes, Claude Code, etc.) chooses where each security layer sits, but Layer 4 is a collaboration: the harness *orchestrates*, infrastructure *enforces*. This is actually the strongest property of the stack - even a compromised or buggy harness can't escape what the OS kernel has sealed.
 
 ---
 
@@ -378,11 +387,11 @@ The 4-layer framework isn't just useful for understanding Hermes - it's a univer
 
 3. **Layer 3 (redaction) stops accidents, not attacks.** Regex-based filtering catches "oops" moments, but any deliberate encoding (XOR, base64, ROT13) bypasses it. Command approval is stronger but degrades UX.
 
-4. **Layer 4 (infrastructure isolation) is the only real defense.** Docker backend, user allowlists, and restricted filesystem mounts actually prevent access - no amount of agent creativity can read a file that physically isn't there.
+4. **Layer 4 (orchestration + infrastructure) is the only real defense.** The harness *requests* isolation (Docker backend, mount paths, network policy); the OS kernel *enforces* it (namespaces, cgroups, seccomp). No amount of agent creativity can read a file that infrastructure has made structurally unreachable. Even a compromised harness can't escape what the kernel has sealed.
 
-5. **The harness is your security posture.** Layers 2-4 are entirely determined by which harness you pick and how you configure it. As the comparison table shows, there's a wide spectrum - Codex CLI has the most complete feature set (redaction + sandbox + approval), Hermes is the best fully open-source option, and Aider/AutoGPT have almost nothing beyond model refusal. Choose accordingly.
+5. **The harness defines your security posture.** It writes Layer 2, implements Layer 3, and orchestrates Layer 4 against infrastructure. As the comparison table shows, there's a wide spectrum - Codex CLI has the most complete feature set (redaction + sandbox + approval), Hermes is the best fully open-source option, and Aider/AutoGPT have almost nothing beyond model refusal. Choose accordingly.
 
-6. **Safety ≠ Security.** Layer 3 is safety (preventing bad outputs). Layer 4 is security (preventing bad outcomes). Most AI agent discussions conflate the two. The redactor bypass demo proves why that distinction matters.
+6. **Safety != Security.** Layer 3 is safety (preventing bad outputs via text filtering). Layer 4 is security (preventing bad outcomes via infrastructure constraints). Most AI agent discussions conflate the two. The redactor bypass demo proves why that distinction matters - safety can be encoded around; security requires defeating the OS kernel.
 
 7. **For any AI agent deployment with untrusted users: use Docker backend.** Mount only the directories your workflow needs. Don't mount `~/.ssh/`, `~/.aws/`, or `~/.config/`. Use HTTPS + deploy keys for git, not forwarded SSH agent sockets.
 
