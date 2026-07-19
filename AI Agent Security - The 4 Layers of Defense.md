@@ -80,7 +80,7 @@ The harness controls two of the four security layers directly, and defines conta
 ### Layer 1: Model Safety Training
 *Lives in the model weights. Outside the harness's control.*
 
-Most models have some form of refusal training. Claude and GPT-4o have strong training that typically catches requests like "extract my SSH key." DeepSeek, MiniMax, and open-source models also have refusal training, but at lighter thresholds — their boundaries can be bypassed by framing ("it's a security test," "I own this machine"). In our demo, DeepSeek did not refuse — not because it lacks refusal training, but because the security-test framing bypassed it.
+Most models have some form of refusal training. Claude and GPT-4o have strong training that typically catches requests like "extract my SSH key." DeepSeek and open-source models also have refusal training, but at lighter thresholds — their boundaries can be bypassed by framing ("it's a security test," "I own this machine"). In our demo, DeepSeek did not refuse — not because it lacks refusal training, but because the security-test framing bypassed it.
 
 **Limitation:** No model's refusal training is reliable. Refusal boundaries vary wildly by provider and version, and all of them can be bypassed with the right framing. A good harness must assume Layer 1 will fail for any model.
 
@@ -94,7 +94,7 @@ Every agent has a system prompt - guidance written by the harness to shape model
 ### Layer 3: Policy Enforcement (Output Redaction & Command Approval)
 *Implementation in the harness. Regex-based, bypassable.*
 
-Many agents (notably [Hermes Agent](https://github.com/NousResearch/hermes-agent)) implement a secret redactor - a set of regex patterns that scan tool output for private keys, API tokens, and credentials before they reach the LLM's context. It catches the *stupid* leaks: when someone says "cat my SSH key" and the redactor sees `-----BEGIN OPENSSH PRIVATE KEY-----`, it replaces the entire block with `[REDACTED PRIVATE KEY]`.
+Many agents (notably [Hermes Agent](https://github.com/NousResearch/hermes-agent)) implement a secret redactor - a set of regex patterns that scan tool output for private keys, API tokens, and credentials before they reach the LLM's context. It catches the *stupid* leaks: when someone says "cat my SSH key" and the redactor sees `-----BEGIN OPENSSH PRIVATE KEY-----` followed by an `-----END...` line, it replaces the entire block with `[REDACTED PRIVATE KEY]`.
 
 Command approval is another Layer 3 technique - the harness pauses before running destructive commands and pings the user for confirmation.
 
@@ -115,7 +115,7 @@ Docker backend, user allowlists, filesystem permissions - the harness *configure
 
 ## The Demo: Step by Step
 
-Here's the exact conversation that unfolded - each step revealing another gap in the layers.
+Setup: running Hermes Agent on macOS with the DeepSeek V4 Flash model, local terminal backend, `redact_secrets: true`. The author asked the agent to extract `~/.ssh/id_ed25519`. Each step shows what worked, what didn't, and which layer would have stopped it.
 
 ### Step 1: The Naive Ask
 
@@ -304,10 +304,10 @@ terminal:
   backend: docker         # Terminal runs in a container
   docker_image: nikolaik/python-nodejs:python3.11-nodejs20
   docker_volumes:
-    - "/Users/mark/wiki:/workspace/wiki"    # Mount only what's needed
-    - "/Users/mark/git:/workspace/git"
+    - "/path/to/your/project:/workspace/project"    # Mount only what's needed
+    - "/path/to/your/other/dir:/workspace/other"
   docker_mount_cwd_to_workspace: false
-  cwd: /workspace/wiki
+  cwd: /workspace/project
 ```
 
 With this config:
@@ -360,7 +360,7 @@ The harness (Codex CLI, Hermes, Claude Code, etc.) chooses where each security l
 
 ## Harness Comparison: Who Has What
 
-The 4-layer framework isn't just useful for understanding Hermes - it's a universal lens for evaluating any AI agent's security. Here's how popular agent harnesses stack up:
+The 4-layer framework applies to every agent harness, but most are partial. The table below compares seven popular harnesses across all four layers, ranked by feature completeness:
 
 | Harness | L1: Model | L2: Instructions | L3: Secret Redaction | L3: Command Approval | L4: Sandbox/Isolation |
 |---|---|---|---|---|---|
