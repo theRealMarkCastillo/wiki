@@ -47,7 +47,7 @@ Here's the full stack, visualized:
 │  │  allowlists, rate limits       │  │
 │  │  "[REDACTED PRIVATE KEY]"      │  │
 │  │                                │  │
-│  │  LAYER 4: ORCHESTRATION        │  │ ← Defined by harness
+│  │  LAYER 4: CONTAINMENT            │  │ ← Defined by harness
 │  │  Container backend, volumes,   │  │    Requests isolation from infra
 │  │  network policy, resource      │  │
 │  │  limits, env forwarding        │  │
@@ -67,13 +67,13 @@ Here's the full stack, visualized:
 
 The **harness** is the software that sits between the model and the world. It's the agent runtime - the code that defines tools, filters outputs, manages infrastructure, and enforces limits. Hermes, Claude Code CLI, Codex CLI, AutoGPT - these are all harnesses. The model is a pluggable brain inside them.
 
-The harness controls two of the four security layers directly, and orchestrates a third against infrastructure:
+The harness controls two of the four security layers directly, and defines containment boundaries enforced by infrastructure:
 
 | Layer | What the harness does | Who enforces it |
 |---|---|---|
 | **Layer 2 (Instructions)** | Writes the system prompt that shapes model behavior | No one - advisory only |
 | **Layer 3 (Policy Enforcement)** | Filters tool output, pings user before dangerous commands | The harness itself - pattern-matching code |
-| **Layer 4 (Orchestration)** | Chooses container backend, mounts, network policy, resource limits | The infrastructure (Docker, OS kernel, cgroups) |
+| **Layer 4 (Containment)** | Chooses container backend, mounts, network policy, resource limits | The infrastructure (Docker, OS kernel, cgroups) |
 
 **Layer 1 (Model safety) is outside the harness's control.** A harness can't rewrite model weights. It can only pick which model to use - and model refusal behavior varies wildly.
 
@@ -100,8 +100,8 @@ Command approval is another Layer 3 technique - the harness pauses before runnin
 
 **Limitation:** Redaction is just regex. Regex can be bypassed by encoding. Approval works but degrades UX. Neither prevents access - they only police *output*.
 
-### Layer 4: Orchestration + Infrastructure Isolation
-*Orchestration defined by the harness. Enforcement provided by infrastructure.*
+### Layer 4: Containment + Infrastructure Isolation
+*Containment boundaries defined by the harness. Enforcement provided by infrastructure.*
 
 This is where the harness's control ends and the OS kernel's begins.
 
@@ -341,11 +341,11 @@ Agent tries to read ~/.ssh/id_ed25519
 This demo reveals a fundamental distinction that most AI security writing gets wrong:
 
 - **Layer 3 (Policy Enforcement) is *safety*** - it tries to prevent bad *outputs*. It's a filter on what the model sees the agent doing. Regex redaction and command approval are both safety measures.
-- **Layer 4 (Orchestration + Infrastructure) is *security*** - it prevents bad *outcomes*. It doesn't filter; it constrains. The harness requests isolation boundaries; the OS kernel enforces them.
+- **Layer 4 (Containment + Infrastructure) is *security*** - it prevents bad *outcomes*. It doesn't filter; it constrains. The harness defines isolation boundaries; the OS kernel enforces them.
 
 Safety can be bypassed with clever encoding (as we demonstrated). Security requires defeating kernel namespaces and cgroups - a fundamentally harder problem.
 
-The harness (Codex CLI, Hermes, Claude Code, etc.) chooses where each security layer sits, but Layer 4 is a collaboration: the harness *orchestrates*, infrastructure *enforces*. This is actually the strongest property of the stack - even a compromised or buggy harness can't escape what the OS kernel has sealed.
+The harness (Codex CLI, Hermes, Claude Code, etc.) chooses where each security layer sits, but Layer 4 is a collaboration: the harness *defines* containment boundaries, infrastructure *enforces* them. This is actually the strongest property of the stack - even a compromised or buggy harness can't escape what the OS kernel has sealed.
 
 ---
 
@@ -387,9 +387,9 @@ The 4-layer framework isn't just useful for understanding Hermes - it's a univer
 
 3. **Layer 3 (policy enforcement) stops accidents, not attacks.** Regex-based filtering catches "oops" moments, but any deliberate encoding (XOR, base64, ROT13) bypasses it. Command approval is stronger but degrades UX. Both are safety measures - they police what the model sees, not what the agent can do.
 
-4. **Layer 4 (orchestration + infrastructure) is the only real defense.** The harness *requests* isolation (Docker backend, mount paths, network policy); the OS kernel *enforces* it (namespaces, cgroups, seccomp). No amount of agent creativity can read a file that infrastructure has made structurally unreachable. Even a compromised harness can't escape what the kernel has sealed.
+4. **Layer 4 (containment + infrastructure) is the only real defense.** The harness *defines* isolation boundaries (Docker backend, mount paths, network policy); the OS kernel *enforces* them (namespaces, cgroups, seccomp). No amount of agent creativity can read a file that infrastructure has made structurally unreachable. Even a compromised harness can't escape what the kernel has sealed.
 
-5. **The harness defines your security posture.** It writes Layer 2, implements Layer 3, and orchestrates Layer 4 against infrastructure. As the comparison table shows, there's a wide spectrum - Codex CLI has the most complete feature set (redaction + sandbox + approval), Hermes is the best fully open-source option, and Aider/AutoGPT have almost nothing beyond model refusal. Choose accordingly.
+5. **The harness defines your security posture.** It writes Layer 2, implements Layer 3, and defines containment boundaries enforced by infrastructure. As the comparison table shows, there's a wide spectrum - Codex CLI has the most complete feature set (redaction + sandbox + approval), Hermes is the best fully open-source option, and Aider/AutoGPT have almost nothing beyond model refusal. Choose accordingly.
 
 6. **Safety != Security.** Layer 3 is safety (preventing bad outputs via text filtering). Layer 4 is security (preventing bad outcomes via infrastructure constraints). Most AI agent discussions conflate the two. The redactor bypass demo proves why that distinction matters - safety can be encoded around; security requires defeating the OS kernel.
 
