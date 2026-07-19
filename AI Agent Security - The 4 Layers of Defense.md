@@ -322,6 +322,8 @@ Agent tries to read ~/.ssh/id_ed25519
 
 **The Docker container doesn't have the key. Period.** The redactor becomes irrelevant because the data isn't there to redact. This is the difference between *filtering output* and *preventing access*.
 
+**One important caveat:** Docker backend only sandboxes *terminal commands*. MCP (Model Context Protocol) plugins — filesystem tools, database connectors, custom servers — run as separate processes outside the container. If you have a local MCP filesystem server, it can still read `~/.ssh/` regardless of the Docker backend. Containment must cover *all* execution surfaces: terminal, MCP tools, browser sessions, and any other plugin the harness exposes.
+
 ---
 
 ## The Full Layer Matrix
@@ -333,6 +335,7 @@ Agent tries to read ~/.ssh/id_ed25519
 | Prompt injection via webpage | ⚠️ Varies | ❌ Overridable | ❌ Bypassable | ✅ No host access |
 | `rm -rf /` | ⚠️ Varies | ⚠️ Advisory | ❌ Not covered | ✅ Limited to container |
 | Network exfiltration | ❌ | ❌ | ⚠️ Partial | ✅ Isolated |
+| MCP filesystem tool access | ❌ | ❌ | ❌ Not covered | ⚠️ Runs outside container |
 
 ---
 
