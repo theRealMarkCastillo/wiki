@@ -89,7 +89,7 @@ Most models have some form of refusal training. Claude and GPT-4o have strong tr
 
 Every agent has a system prompt - guidance written by the harness to shape model behavior. Ours says things like "be helpful, don't destroy things." But system prompts are advisory - a sufficiently creative agent can interpret around them, and prompt injection (instructions inside a webpage the agent reads) can override them entirely.
 
-**Limitation:** Guidance, not enforcement. Harnesses that rely heavily on prompt engineering for security are building on sand.
+**Limitation:** Guidance, not enforcement. Harnesses that rely heavily on prompt engineering for security are building on sand. Worse, because prompts are dynamically assembled at runtime, any string the agent can read (a webpage, a file, an email) can be smuggled in as if it were authoritative — prompt injection rides the same channel as legitimate instructions.
 
 ### Layer 3: Policy Enforcement (Output Redaction & Command Approval)
 *Implementation in the harness. Regex-based, bypassable.*
@@ -118,11 +118,11 @@ A common point of confusion: "the harness" is not a single thing. It's a Python 
 | Layer | What kind of code | Concrete location (Hermes) |
 |---|---|---|
 | **Layer 1 (Model)** | External — model weights at the provider | DeepSeek/Anthropic/OpenAI inference endpoints |
-| **Layer 2 (Instructions)** | Static strings in the harness | `prompts.py`, channel prompts, skill files |
+| **Layer 2 (Instructions)** | Dynamically-assembled strings | `prompts.py` (templates) + channel/user/skill/tool schema context, combined at runtime |
 | **Layer 3 (Policy Enforcement)** | Python loop code in the harness | `agent/redact.py` (regex redaction), `tools/approval.py` (approval modes) |
 | **Layer 4 (Containment)** | Configuration + infrastructure | `tools/environments/docker.py` (calls Docker daemon), Linux kernel namespaces, cgroups |
 
-So Layer 1 is *outside* the Python loop entirely. Layer 2 is *strings the loop sends*. Layer 3 is *Python functions the loop calls* — meaning a bug in that code is a bug in the harness itself. Layer 4 is *configuration the loop passes to an external process* — meaning even if the loop has a bug, the kernel still enforces the boundary.
+So Layer 1 is *outside* the Python loop entirely. Layer 2 is *strings the loop assembles dynamically* from templates plus runtime context (channel, user, conversation history, active skills, available tool schemas). Layer 3 is *Python functions the loop calls* — meaning a bug in that code is a bug in the harness itself. Layer 4 is *configuration the loop passes to an external process* — meaning even if the loop has a bug, the kernel still enforces the boundary.
 
 This explains why Layer 3 is bypassable (it's just regex in the same Python process) while Layer 4 is harder (a misconfigured container still runs inside kernel-enforced namespaces).
 
