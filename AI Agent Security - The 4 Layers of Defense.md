@@ -89,7 +89,7 @@ Most models have some form of refusal training. Claude and GPT-4o have strong tr
 
 Every agent has a system prompt - guidance written by the harness to shape model behavior. Ours says things like "be helpful, don't destroy things." But system prompts are advisory - a sufficiently creative agent can interpret around them, and prompt injection (instructions inside a webpage the agent reads) can override them entirely.
 
-**Limitation:** Guidance, not enforcement. Harnesses that rely heavily on prompt engineering for security are building on sand. Worse, because prompts are dynamically assembled at runtime, any string the agent can read (a webpage, a file, an email) can be smuggled in as if it were authoritative — prompt injection rides the same channel as legitimate instructions.
+**Limitation:** Guidance, not enforcement. Harnesses that rely heavily on prompt engineering for security are building on sand. Worse, because prompts are dynamically assembled at runtime, any string the agent can reach can be smuggled in as if it were authoritative — RAG retrieval results, MCP tool outputs, webpages, files, emails, and conversation history all ride the same channel as legitimate instructions. Prompt injection attacks exploit this directly.
 
 ### Layer 3: Policy Enforcement (Output Redaction & Command Approval)
 *Implementation in the harness. Regex-based, bypassable.*
