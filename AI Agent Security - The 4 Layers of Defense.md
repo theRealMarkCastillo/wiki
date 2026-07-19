@@ -322,7 +322,7 @@ Agent tries to read ~/.ssh/id_ed25519
 
 **The Docker container doesn't have the key. Period.** The redactor becomes irrelevant because the data isn't there to redact. This is the difference between *filtering output* and *preventing access*.
 
-**One important caveat:** Docker backend only sandboxes *terminal commands*. MCP (Model Context Protocol) plugins — filesystem tools, database connectors, custom servers — run as separate processes outside the container. If you have a local MCP filesystem server, it can still read `~/.ssh/` regardless of the Docker backend. Containment must cover *all* execution surfaces: terminal, MCP tools, browser sessions, and any other plugin the harness exposes.
+**One important caveat — that isn't a fundamental one:** Docker backend currently only sandboxes *terminal commands*. MCP (Model Context Protocol) plugins — filesystem tools, database connectors, custom servers — run as separate processes outside the container right now. But stdio MCP servers are just processes; a harness could launch them *inside* the same container, closing this gap entirely. This is an implementation surface, not an architectural limitation. The principle still holds: containment must cover every execution surface the harness exposes.
 
 ---
 
@@ -335,7 +335,7 @@ Agent tries to read ~/.ssh/id_ed25519
 | Prompt injection via webpage | ⚠️ Varies | ❌ Overridable | ❌ Bypassable | ✅ No host access |
 | `rm -rf /` | ⚠️ Varies | ⚠️ Advisory | ❌ Not covered | ✅ Limited to container |
 | Network exfiltration | ❌ | ❌ | ⚠️ Partial | ✅ Isolated |
-| MCP filesystem tool access | ❌ | ❌ | ❌ Not covered | ⚠️ Runs outside container |
+| MCP filesystem tool access | ❌ | ❌ | ❌ Not covered | ⚠️ Not sandboxed yet, but solvable |
 
 ---
 
