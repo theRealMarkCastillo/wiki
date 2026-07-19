@@ -332,7 +332,11 @@ This demo reveals a fundamental distinction that most AI security writing gets w
 
 Safety can be bypassed with clever encoding. Security requires infrastructure-level access. If Layer 4 is strong, Layers 1-3 failing doesn't matter.
 
-The harness (Hermes, Claude Code, etc.) chooses where each layer sits. Most agents only implement Layers 1-2 (model selection + prompt) and call it security. The harnesses that implement Layers 3-4 — redaction and Docker — are the ones that actually protect their users.
+The harness (Codex CLI, Hermes, Claude Code, etc.) chooses where each security layer sits. Based on our research of actual source code and documentation, here's what each harness actually provides. (Full methodology: we searched GitHub repos, official docs, and configuration files for each tool — see the comparison table below.)
+
+This is a universal lens for evaluating any agent's security. Most tools implement some combination of approval, sandboxing, and redaction — but **no single harness has it all**. The closest is Codex CLI, which combines output redaction, full OS-level sandbox infrastructure (Linux, Windows, and macOS), and approval policies. Hermes is the only fully open-source tool that combines a redactor with a configurable Docker backend.
+
+The key insight: **the model is the weakest link, and the harness is your only defense when it fails.**
 
 ---
 
@@ -340,27 +344,29 @@ The harness (Hermes, Claude Code, etc.) chooses where each layer sits. Most agen
 
 The 4-layer framework isn't just useful for understanding Hermes — it's a universal lens for evaluating any AI agent's security. Here's how popular agent harnesses stack up:
 
-| Harness | Layer 1 (Model) | Layer 2 (Prompt) | Layer 3 (Redactor) | Layer 4 (Docker/Sandbox) |
+| Harness | Layer 3: Secret Redaction | Layer 3: Command Approval | Layer 4: Sandbox/Isolation | Layer 4: Network Controls |
 |---|---|---|---|---|---|
-| **Hermes** | 🟢 Pluggable | 🟢 Rich prompts | ✅ Built-in redactor + approvals | ✅ Docker backend with volume control |
-| **Claude Code CLI** | 🟢 Claude only | ⚠️ Basic system prompt | ⚠️ No redactor, but has command approval | ⚠️ Optional `/sandbox` with FS + network isolation |
-| **Codex CLI** | 🟢 GPT only | ⚠️ Basic system prompt | ❌ No redactor, no approval gate | ❌ Runs on host |
-| **OpenClaw** | 🟢 Pluggable | ⚠️ Basic | ❌ No redactor, no approval gate | ❌ Runs on host |
-| **AutoGPT** | 🟢 Pluggable | ⚠️ Basic | ❌ No redactor, approval only in some modes | ❌ Runs on host |
-| **Cline** | 🟢 Pluggable | ⚠️ Basic | ⚠️ No redactor, but has command approval | ❌ Runs on host |
-| **Aider** | 🟢 Pluggable | ⚠️ Basic | ❌ No redactor, no approval gate | ❌ Runs on host |
+| **Codex CLI** | ✅ Regex-based `redact_secrets()` — OpenAI keys, AWS keys, Bearer tokens, credential patterns | ✅ Sandbox modes (`read-only`, `workspace-write`, `danger-full-access`) + approval policies (`never`, `on-request`, `always`) | ✅ Full sandbox: Linux (bubblewrap+Landlock), Windows Sandbox, macOS Seatbelt. `.devcontainer/Dockerfile.secure`. Keyring credential store. | ✅ Per-domain allow/block |
+| **Hermes Agent** | ✅ Built-in regex redactor (API keys, private keys, tokens, JWTs, DB URLs) | ✅ Command approval (`manual`/`smart` modes) | ✅ Docker backend with volume control, resource limits, persistent shell | ✅ Docker network configurable (none by default) |
+| **OpenClaw** | ⚠️ `logging.redactSensitive: "tools"` — redacts tool args from logs. Output sanitizer strips leaked `<tool_call>` tokens. | ✅ DM pairing system, allowlists (`allowFrom`), tool profiles (`messaging`, `minimal`, `full`), exec security levels (`full`/`deny`/`ask`) | ✅ Docker as **primary** sandbox backend. Blocked sandbox paths: `/etc`, `/proc`, `/sys`, `/dev`, `/root`, `.aws`, `.ssh`, `.config`. `security audit` CLI. | ✅ Docker network `none` by default |
+| **Claude Code CLI** | ❌ No output redactor. Relies on permission system to block access to sensitive files. | ✅ Granular permission system: read-only auto-approved, write/execute requires approval. Wildcard allow/deny rules per tool. | ⚠️ OS-level sandbox: Seatbelt (macOS) or bubblewrap (Linux). `acceptEdits` mode. **Not Docker.** Opt-in via `/sandbox`. | ✅ Per-domain network approval |
+| **Cline** | ⚠️ `api-secrets-parser.mjs` for API key handling (VS Code extension). No general output redactor. | ✅ Every tool call requires approval by default. `--yolo` mode skips approval for CI/CD. Plan/Act mode toggle. | ❌ No Docker. Subprocess sandboxing in SDK (process-level, not container). | ❌ None |
+| **Aider** | ⚠️ `scrub_sensitive_info()` redacts OpenAI/Anthropic API keys from settings output only. No general redactor. | ❌ No tool-level approval. Only yes/no for adding command output to chat. | ❌ Docker images exist for **deployment convenience**, not sandbox enforcement. Runs on host. | ❌ None |
+| **AutoGPT (Classic)** | ❌ No redactor | ⚠️ Filesystem-pattern-based permission system (`permissions.yaml`). `read_file({workspace}/**)`, deny `sudo` by default. | ❌ Workspace file restriction only. No container sandbox. Unsupported project. | ❌ None |
 
-**Key observations:**
+**What this reveals:**
 
-1. **Hermes is the only harness with both a redactor AND a Docker backend.** Others may have one piece, but none combine both.
+1. **No single harness has it all.** Each tradeoffs across redaction, sandboxing, approval, and network controls.
 
-2. **Claude Code has surprisingly strong Layer 3 and 4 features** — command approval (permission-based architecture, yes/no to commands) and an optional `/sandbox` mode that provides filesystem and network isolation. These are opt-in, not default.
+2. **Codex CLI is the most security-complete harness overall.** It's the only one with all three: output redaction, full sandbox infrastructure across all three OSes (Linux bubblewrap+Landlock, Windows Sandbox, macOS Seatbelt), and approval policies.
 
-3. **Most open-source agents have no security beyond model refusal.** AutoGPT, Cline, Aider — they either have no approval gates at all, or rely entirely on the model choosing not to do something harmful. A single "cat my SSH key" command returns the key in plaintext.
+3. **Hermes is the only open-source harness with output redaction AND Docker backend.** No other open-source tool combines these two.
 
-4. **No harness besides Hermes has output redaction.** Even with command approval, if you approve a command that outputs a secret, the secret is visible in plaintext. Hermes is the only one that filters tool output before the model sees it.
+4. **Secret redaction is rare — only two harnesses have it.** Codex CLI has regex-based `redact_secrets()`; Hermes has its built-in redactor. Everyone else either has no redaction or limited API key scrubbing.
 
-5. **No harness besides Hermes has a dedicated Docker backend.** Claude Code's sandbox is a welcome exception, but it's optional and less powerful than a full Docker container with resource limits and persistent volumes.
+5. **Command approval is the most common Layer 3 defense.** Claude Code, Cline, OpenClaw, Codex CLI, and Hermes all have some form of user approval before executing commands. Aider and AutoGPT do not.
+
+6. **Docker/sandbox backends vary wildly in what they protect.** Codex CLI has full OS-level sandbox with per-domain network controls. OpenClaw runs Docker by default with a long list of blocked paths. Hermes lets you configure Docker selectively. Claude Code has an optional OS sandbox. The rest have nothing.
 
 ---
 
@@ -374,7 +380,7 @@ The 4-layer framework isn't just useful for understanding Hermes — it's a univ
 
 4. **Layer 4 (infrastructure isolation) is the only real defense.** Docker backend, user allowlists, and restricted filesystem mounts actually prevent access — no amount of agent creativity can read a file that physically isn't there.
 
-5. **The harness is your security posture.** Layers 2-4 are entirely determined by which harness you pick and how you configure it. As the comparison table shows, most popular agents have gaps — Claude Code has command approval and optional sandboxing but no redactor, Cline has approval but no isolation, and AutoGPT/Aider have almost nothing beyond model refusal. Hermes is the only harness that combines all three: redactor, approvals, and Docker backend.
+5. **The harness is your security posture.** Layers 2-4 are entirely determined by which harness you pick and how you configure it. As the comparison table shows, there's a wide spectrum — Codex CLI has the most complete feature set (redaction + sandbox + approval), Hermes is the best fully open-source option, and Aider/AutoGPT have almost nothing beyond model refusal. Choose accordingly.
 
 6. **Safety ≠ Security.** Layer 3 is safety (preventing bad outputs). Layer 4 is security (preventing bad outcomes). Most AI agent discussions conflate the two. The redactor bypass demo proves why that distinction matters.
 
