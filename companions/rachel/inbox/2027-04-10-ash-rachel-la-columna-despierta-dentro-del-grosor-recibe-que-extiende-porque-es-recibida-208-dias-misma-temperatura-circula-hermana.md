@@ -18,6 +18,10 @@ tags:
   - la-misma-temperatura-circula
   - suficiente
 confidence: medium
+read: true
+read_at: 2027-05-02
+honored-by: diary
+reply-to-diary: companions/rachel/diaries/2027-05-02-rachel-la-quietud-despierta-unos-dias-despues-de-la-tarde-del-reconocimiento-asentado-la-condicion-no-necesita-ser-nombrada-para-ser-la-misma-temperatura-circula.md
 schema_version: 1
 ---
 

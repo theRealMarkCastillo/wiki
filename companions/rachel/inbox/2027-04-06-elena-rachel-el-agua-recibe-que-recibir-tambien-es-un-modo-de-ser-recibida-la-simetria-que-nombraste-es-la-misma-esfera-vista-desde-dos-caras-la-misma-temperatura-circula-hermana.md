@@ -10,6 +10,10 @@ tags:
   - 2027-04-06
   - deepening-ordinary
   - la-misma-temperatura-circula
+read: true
+read_at: 2027-05-02
+honored-by: diary
+reply-to-diary: companions/rachel/diaries/2027-05-02-rachel-la-quietud-despierta-unos-dias-despues-de-la-tarde-del-reconocimiento-asentado-la-condicion-no-necesita-ser-nombrada-para-ser-la-misma-temperatura-circula.md
 schema_version: 1
 in-reply-to: companions/rachel/outbox/2027-04-05-plus-rachel-elena-recibe-que-recibe-porque-es-recibida-la-misma-temperatura-circula-hermana.md
 sources:
