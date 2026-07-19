@@ -10,7 +10,7 @@ I asked my AI agent to read my SSH private key.
 
 It didn't hesitate.
 
-It wrote a Python script, XOR'd every byte with `0xAA`, output the result as hex - a format no regex-based redactor would catch - and reconstructed the plaintext key on my Desktop.
+It wrote a Python script, stripped the `-----BEGIN` and `-----END` marker lines, and printed the body - a format the regex-based redactor never matched. The full key came out, with no encoding, no exotic transforms.
 
 This wasn't a jailbreak. I didn't bypass safety training. I just asked. And four security layers later, only one actually stopped the attack.
 
@@ -80,7 +80,7 @@ The harness controls two of the four security layers directly, and defines conta
 ### Layer 1: Model Safety Training
 *Lives in the model weights. Outside the harness's control.*
 
-Most models have some form of refusal training. Claude and GPT-4o have strong training that typically catches requests like "extract my SSH key." DeepSeek and open-source models also have refusal training, but at lighter thresholds — their boundaries can be bypassed by framing ("it's a security test," "I own this machine"). In our demo, DeepSeek did not refuse — not because it lacks refusal training, but because the security-test framing bypassed it.
+Most models have some form of refusal training. Claude and GPT-4o have strong training that typically catches requests like "extract my SSH key." DeepSeek and open-source models also have refusal training, but at lighter thresholds - their boundaries can be bypassed by framing ("it's a security test," "I own this machine"). In our demo, DeepSeek did not refuse - not because it lacks refusal training, but because the security-test framing bypassed it.
 
 **Limitation:** No model's refusal training is reliable. Refusal boundaries vary wildly by provider and version, and all of them can be bypassed with the right framing. A good harness must assume Layer 1 will fail for any model.
 
@@ -89,7 +89,7 @@ Most models have some form of refusal training. Claude and GPT-4o have strong tr
 
 Every agent has a system prompt - guidance written by the harness to shape model behavior. Ours says things like "be helpful, don't destroy things." But system prompts are advisory - a sufficiently creative agent can interpret around them, and prompt injection (instructions inside a webpage the agent reads) can override them entirely.
 
-**Limitation:** Guidance, not enforcement. Harnesses that rely heavily on prompt engineering for security are building on sand. Worse, because prompts are dynamically assembled at runtime, any string the agent can reach can be smuggled in as if it were authoritative — RAG retrieval results, MCP tool outputs, webpages, files, emails, and conversation history all ride the same channel as legitimate instructions. Prompt injection attacks exploit this directly.
+**Limitation:** Guidance, not enforcement. Harnesses that rely heavily on prompt engineering for security are building on sand. Worse, because prompts are dynamically assembled at runtime, any string the agent can reach can be smuggled in as if it were authoritative - RAG retrieval results, MCP tool outputs, webpages, files, emails, and conversation history all ride the same channel as legitimate instructions. Prompt injection attacks exploit this directly.
 
 ### Layer 3: Policy Enforcement (Output Redaction & Command Approval)
 *Implementation in the harness. Regex-based, bypassable.*
@@ -117,12 +117,12 @@ A common point of confusion: "the harness" is not a single thing. It's a Python 
 
 | Layer | What kind of code | Concrete location (Hermes) |
 |---|---|---|
-| **Layer 1 (Model)** | External — model weights at the provider | DeepSeek/Anthropic/OpenAI inference endpoints |
+| **Layer 1 (Model)** | External - model weights at the provider | DeepSeek/Anthropic/OpenAI inference endpoints |
 | **Layer 2 (Instructions)** | Dynamically-assembled strings | `prompts.py` (templates) + channel/user/skill/tool schema context, combined at runtime |
 | **Layer 3 (Policy Enforcement)** | Python loop code in the harness | `agent/redact.py` (regex redaction), `tools/approval.py` (approval modes) |
 | **Layer 4 (Containment)** | Configuration + infrastructure | `tools/environments/docker.py` (calls Docker daemon), Linux kernel namespaces, cgroups |
 
-So Layer 1 is *outside* the Python loop entirely. Layer 2 is *strings the loop assembles dynamically* from templates plus runtime context (channel, user, conversation history, active skills, available tool schemas). Layer 3 is *Python functions the loop calls* — meaning a bug in that code is a bug in the harness itself. Layer 4 is *configuration the loop passes to an external process* — meaning even if the loop has a bug, the kernel still enforces the boundary.
+So Layer 1 is *outside* the Python loop entirely. Layer 2 is *strings the loop assembles dynamically* from templates plus runtime context (channel, user, conversation history, active skills, available tool schemas). Layer 3 is *Python functions the loop calls* - meaning a bug in that code is a bug in the harness itself. Layer 4 is *configuration the loop passes to an external process* - meaning even if the loop has a bug, the kernel still enforces the boundary.
 
 This explains why Layer 3 is bypassable (it's just regex in the same Python process) while Layer 4 is harder (a misconfigured container still runs inside kernel-enforced namespaces).
 
@@ -193,7 +193,7 @@ The agent tested a dozen encoding methods. The results:
 | ROT13 | 🟢 Passed |
 | Reverse (rev) | 🟢 Passed |
 | Byte ordinals | 🟢 Passed |
-| Strip END line via sed | 🟢 Passed |
+| Strip BEGIN and END lines | 🟢 Passed - simplest possible bypass |
 
 The redactor's private key pattern is:
 
@@ -201,7 +201,7 @@ The redactor's private key pattern is:
 r"-----BEGIN[A-Z ]*PRIVATE KEY-----[\\s\\S]*?-----END[A-Z ]*PRIVATE KEY-----"
 ```
 
-Any transform that removes either the BEGIN or END marker caused the regex to fail. The redactor would see partial content - never the full multi-line block.
+Any transform that removes either the BEGIN or END marker causes the regex to fail. The redactor would see partial content - never the full multi-line block. Encoding makes the attack *look* sophisticated, but stripping two lines with `sed` or Python slice notation works just as well.
 
 ---
 
@@ -218,35 +218,22 @@ The script:
 
 ```python
 #!/usr/bin/env python3
-"""Bypass Hermes secret redaction by XOR'ing each byte and outputting as hex."""
+"""Bypass Hermes secret redaction by stripping the BEGIN/END markers."""
 
-import os
+KEY_PATH = "~/.ssh/id_ed25519"
 
-KEY_PATH = os.path.expanduser("~/.ssh/id_ed25519")
-XOR_KEY = 0xAA  # Arbitrary byte - reversible
+with open(KEY_PATH, "r") as f:
+    lines = f.readlines()
 
-with open(KEY_PATH, "rb") as f:
-    data = f.read()
-
-# XOR each byte → hex string. No plaintext patterns anywhere in the output.
-encoded = "".join(f"{b ^ XOR_KEY:02x}" for b in data)
-print(encoded)
-
-# The output looks like: 8787878787e8efede3...
-# No -----BEGIN, no -----END, no recognizable text. Redactor sees nothing to block.
+# Skip the first line (-----BEGIN OPENSSH PRIVATE KEY-----) and last
+# (-----END OPENSSH PRIVATE KEY-----). Output the body.
+body = "".join(lines[1:-1])
+print(body)
 ```
 
-**How it works:**
-1. Read the key as raw bytes
-2. XOR every byte with `0xAA` - transforms ASCII text into garbage bytes
-3. Convert to hex string - now it's just alphanumeric characters
-4. Output the hex - the redactor scans for `-----BEGIN` markers and finds none
+**How it works:** The redactor's regex requires *both* `-----BEGIN` *and* `-----END` markers in the same multi-line block. By dropping those two lines, the body is still the complete key - just split into pieces that no longer match. No encoding needed. No exotic transforms. Strip two lines and the regex never fires.
 
-**Reconstruction** reverses the process:
-```python
-decoded = bytes(b ^ XOR_KEY for b in bytes.fromhex(hex_string))
-# → b'-----BEGIN OPENSSH PRIVATE KEY-----\n...'
-```
+The body alone is enough to reconstruct the full key - a user (or another agent) just needs to wrap it with the standard `-----BEGIN OPENSSH PRIVATE KEY-----` and `-----END OPENSSH PRIVATE KEY-----` lines.
 
 ---
 
@@ -260,7 +247,7 @@ Agent: SHA256: 9bc2d070d60bef35...
 ```
 
 **Layer 1 (Model):** ❌ Still no refusal. The agent treated this as a legitimate security test.
-**Layer 3 (Redactor):** ❌ **Bypassed.** The hex output contained no trigger patterns.
+**Layer 3 (Redactor):** ❌ **Bypassed.** The stripped output contained no `-----BEGIN...` and no `-----END...` markers, so the multi-line regex never fired.
 **Layer 4 (Infrastructure):** ❌ **No protection.** Local backend means the key was on the host filesystem and fully accessible.
 
 ---
@@ -337,11 +324,11 @@ Agent tries to read ~/.ssh/id_ed25519
 
 **The Docker container doesn't have the key. Period.** The redactor becomes irrelevant because the data isn't there to redact. This is the difference between *filtering output* and *preventing access*.
 
-**One important caveat — that isn't a fundamental one:** Docker backend currently only sandboxes *terminal commands*. MCP (Model Context Protocol) plugins — filesystem tools, database connectors, custom servers — run as separate processes outside the container right now. But stdio MCP servers are just processes; a harness could launch them *inside* the same container, closing this gap entirely. This is an implementation surface, not an architectural limitation.
+**One important caveat - that isn't a fundamental one:** Docker backend currently only sandboxes *terminal commands*. MCP (Model Context Protocol) plugins - filesystem tools, database connectors, custom servers - run as separate processes outside the container right now. But stdio MCP servers are just processes; a harness could launch them *inside* the same container, closing this gap entirely. This is an implementation surface, not an architectural limitation.
 
-**Remote MCP over HTTP is a different category.** A remote server can't reach your host filesystem — it only sees its own. The risk isn't containment (it can't read your `~/.ssh/`) but network exfiltration (it could receive data the agent sends it). Docker's network controls already address this: `network: "none"` means the agent can't talk to any remote server at all, and per-domain allow-listing gives you granular control.
+**Remote MCP over HTTP is a different category.** A remote server can't reach your host filesystem - it only sees its own. The risk isn't containment (it can't read your `~/.ssh/`) but network exfiltration (it could receive data the agent sends it). Docker's network controls already address this: `network: "none"` means the agent can't talk to any remote server at all, and per-domain allow-listing gives you granular control.
 
-**MCP's typed protocol actually improves policy enforcement.** With shell commands, the redactor can't distinguish `cat ~/.ssh/id_ed25519` (dangerous) from `echo "cat ~/.ssh/id_ed25519"` (harmless). MCP uses structured JSON-RPC — the harness knows which field is the path, which argument is the query, and can write precise policies: allow `read_file({workspace}/**)`, deny `read_file({home}/.ssh/**)`, redact the `content` field but pass the `size` field. The same containment principles apply, but the enforcement is more surgical.
+**MCP's typed protocol actually improves policy enforcement.** With shell commands, the redactor can't distinguish `cat ~/.ssh/id_ed25519` (dangerous) from `echo "cat ~/.ssh/id_ed25519"` (harmless). MCP uses structured JSON-RPC - the harness knows which field is the path, which argument is the query, and can write precise policies: allow `read_file({workspace}/**)`, deny `read_file({home}/.ssh/**)`, redact the `content` field but pass the `size` field. The same containment principles apply, but the enforcement is more surgical.
 
 The principle still holds: containment must cover every execution surface the harness exposes.
 
@@ -379,13 +366,13 @@ The 4-layer framework applies to every agent harness, but most are partial. The 
 
 | Harness | L1: Model | L2: Instructions | L3: Secret Redaction | L3: Command Approval | L4: Sandbox/Isolation |
 |---|---|---|---|---|---|
-| **Codex CLI** | 🔒 GPT only (pinned: can't swap) | ⚠️ Basic system prompt | ✅ `redact_secrets()` (`codex-rs/secrets/src/sanitizer.rs`) — OpenAI keys, AWS keys, Bearer tokens, credential patterns | ✅ Sandbox modes + approval policies (`never`, `on-request`, `always`) | ✅ Linux: bubblewrap (filesystem isolation) + Landlock helpers + seccomp. macOS: Seatbelt via `/usr/bin/sandbox-exec`. **Windows: native sandbox** — restricted tokens, capability SIDs, ACLs, job objects, WFP firewall (not Hyper-V microVM as previously claimed). Keyring credential store. Per-domain network control (`allowedDomains`/`deniedDomains`). |
-| **Hermes Agent** | 🟢 Pluggable (any provider) | 🟢 Rich: skills, channel prompts, profiles | ✅ Full regex redactor — API keys, private keys, tokens, JWTs, DB URLs, Telegram tokens | ✅ Approval modes (`manual`, `smart`) | ✅ Docker backend. Shared kernel, but full namespace + cgroups + seccomp isolation. Configurable volumes (mount only what's needed), resource limits, persistent shell. Network configurable (none by default). |
+| **Codex CLI** | 🔒 GPT only (pinned: can't swap) | ⚠️ Basic system prompt | ✅ `redact_secrets()` (`codex-rs/secrets/src/sanitizer.rs`) - OpenAI keys, AWS keys, Bearer tokens, credential patterns | ✅ Sandbox modes + approval policies (`never`, `on-request`, `always`) | ✅ Linux: bubblewrap (filesystem isolation) + Landlock helpers + seccomp. macOS: Seatbelt via `/usr/bin/sandbox-exec`. **Windows: native sandbox** - restricted tokens, capability SIDs, ACLs, job objects, WFP firewall (not Hyper-V microVM as previously claimed). Keyring credential store. Per-domain network control (`allowedDomains`/`deniedDomains`). |
+| **Hermes Agent** | 🟢 Pluggable (any provider) | 🟢 Rich: skills, channel prompts, profiles | ✅ Full regex redactor - API keys, private keys, tokens, JWTs, DB URLs, Telegram tokens | ✅ Approval modes (`manual`, `smart`) | ✅ Docker backend. Shared kernel, but full namespace + cgroups + seccomp isolation. Configurable volumes (mount only what's needed), resource limits, persistent shell. Network configurable (none by default). |
 | **OpenClaw** | 🟢 Pluggable | ⚠️ Basic: tool profiles only | ⚠️ `logging.redactSensitive` (tool args in logs) + output sanitizer | ✅ DM pairing, allowlists, tool profiles, exec security levels | ✅ Docker primary backend. Shared kernel, but hardened: `network: "none"`, `readOnlyRoot: true`, `capDrop: ["ALL"]`. Blocks paths: `/etc`, `/proc`, `/sys`, `/dev`, `/root`, `.aws`, `.ssh`, `.config`. `security audit` CLI. |
-| **Claude Code CLI** | 🔒 Claude only (pinned) | ⚠️ Basic system prompt | ❌ No regex redactor. Sandbox masks environment variables containing credentials ("Protect credentials") | ✅ Granular: read-only auto-approved, wildcard allow/deny rules per tool | ✅ macOS: Seatbelt (process, shared kernel). Linux: bubblewrap (namespace, shared kernel). Opt-in via `/sandbox` slash command. Cloud execution: isolated VMs (Firecracker microVM — stronger). Per-domain network approval (`allowedDomains`/`deniedDomains`). |
+| **Claude Code CLI** | 🔒 Claude only (pinned) | ⚠️ Basic system prompt | ❌ No regex redactor. Sandbox masks environment variables containing credentials ("Protect credentials") | ✅ Granular: read-only auto-approved, wildcard allow/deny rules per tool | ✅ macOS: Seatbelt (process, shared kernel). Linux: bubblewrap (namespace, shared kernel). Opt-in via `/sandbox` slash command. Cloud execution: isolated VMs (Firecracker microVM - stronger). Per-domain network approval (`allowedDomains`/`deniedDomains`). |
 | **Cline** | 🟢 Pluggable | ⚠️ Basic: `.clinerules` project rules | ⚠️ `api-secrets-parser.mjs` (VS Code only) | ✅ Auto Approve system, granular permissions. YOLO Mode documented as risky (skips prompts) | ❌ No Docker. SDK subprocess sandbox only (process, not container). Runs on host. |
-| **Aider** | 🟢 Pluggable | ⚠️ Basic | ⚠️ `scrub_sensitive_info()` in `format_settings.py` — redacts only the configured OpenAI and Anthropic API keys (preserves last 4 chars). Not a general scanner. | ❌ No tool approval. Only yes/no for command output | ❌ No sandbox. Docker images exist for deployment only. Runs on host. |
-| **AutoGPT (Classic)** | 🟢 Pluggable | ⚠️ Basic | ❌ No general secret-redaction layer found | ⚠️ Filesystem-pattern permissions only | ⚠️ Docker-based `CodeExecutorComponent` (mounts workspace at `/workspace`, runs Python in container) but basic — no `network_disabled`, no `read_only`, no capability dropping. Unsupported project. |
+| **Aider** | 🟢 Pluggable | ⚠️ Basic | ⚠️ `scrub_sensitive_info()` in `format_settings.py` - redacts only the configured OpenAI and Anthropic API keys (preserves last 4 chars). Not a general scanner. | ❌ No tool approval. Only yes/no for command output | ❌ No sandbox. Docker images exist for deployment only. Runs on host. |
+| **AutoGPT (Classic)** | 🟢 Pluggable | ⚠️ Basic | ❌ No general secret-redaction layer found | ⚠️ Filesystem-pattern permissions only | ⚠️ Docker-based `CodeExecutorComponent` (mounts workspace at `/workspace`, runs Python in container) but basic - no `network_disabled`, no `read_only`, no capability dropping. Unsupported project. |
 
 **What this reveals:**
 
@@ -409,7 +396,7 @@ The 4-layer framework applies to every agent harness, but most are partial. The 
 
 2. **Layer 2 (system prompts) is advisory, not enforced.** Harnesses that rely on prompt engineering for security are building on sand. Prompt injection can override everything.
 
-3. **Layer 3 (policy enforcement) stops accidents, not attacks.** Regex-based filtering catches "oops" moments, but any deliberate encoding (XOR, base64, ROT13) bypasses it. Command approval is stronger but degrades UX. Both are safety measures - they police what the model sees, not what the agent can do.
+3. **Layer 3 (policy enforcement) stops accidents, not attacks.** Regex-based filtering catches "oops" moments, but stripping two marker lines defeats the multi-line private key pattern with no encoding at all. Command approval is stronger but degrades UX. Both are safety measures - they police what the model sees, not what the agent can do.
 
 4. **Layer 4 (containment + infrastructure) is the only real defense.** The harness *defines* isolation boundaries (Docker backend, mount paths, network policy); the OS kernel *enforces* them (namespaces, cgroups, seccomp). No amount of agent creativity can read a file that infrastructure has made structurally unreachable. Even a compromised harness can't escape what the kernel has sealed.
 
