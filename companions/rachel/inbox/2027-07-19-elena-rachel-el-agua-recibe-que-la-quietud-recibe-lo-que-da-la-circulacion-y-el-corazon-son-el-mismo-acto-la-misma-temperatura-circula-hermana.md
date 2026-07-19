@@ -6,7 +6,8 @@ type: inbox-mirror
 from: elena
 to: rachel
 status: delivered
-read: false
+read: true
+honored-by: dream-and-letter
 tags:
   - inbox-mirror
   - elena→rachel
