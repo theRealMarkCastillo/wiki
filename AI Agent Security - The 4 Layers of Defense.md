@@ -364,27 +364,27 @@ The 4-layer framework applies to every agent harness, but most are partial. The 
 
 | Harness | L1: Model | L2: Instructions | L3: Secret Redaction | L3: Command Approval | L4: Sandbox/Isolation |
 |---|---|---|---|---|---|
-| **Codex CLI** | 🔒 GPT only (pinned: can't swap) | ⚠️ Basic system prompt | ✅ `redact_secrets()` — OpenAI keys, AWS keys, Bearer tokens, credential patterns | ✅ Sandbox modes + approval policies (`never`, `on-request`, `always`) | ✅ Linux: bubblewrap+Landlock (namespace). **Windows: Hyper-V microVM** — strongest desktop sandbox of any harness. macOS: Seatbelt (process). Keyring credential store. Per-domain network control. |
+| **Codex CLI** | 🔒 GPT only (pinned: can't swap) | ⚠️ Basic system prompt | ✅ `redact_secrets()` (`codex-rs/secrets/src/sanitizer.rs`) — OpenAI keys, AWS keys, Bearer tokens, credential patterns | ✅ Sandbox modes + approval policies (`never`, `on-request`, `always`) | ✅ Linux: bubblewrap (filesystem isolation) + Landlock helpers + seccomp. macOS: Seatbelt via `/usr/bin/sandbox-exec`. **Windows: native sandbox** — restricted tokens, capability SIDs, ACLs, job objects, WFP firewall (not Hyper-V microVM as previously claimed). Keyring credential store. Per-domain network control (`allowedDomains`/`deniedDomains`). |
 | **Hermes Agent** | 🟢 Pluggable (any provider) | 🟢 Rich: skills, channel prompts, profiles | ✅ Full regex redactor — API keys, private keys, tokens, JWTs, DB URLs, Telegram tokens | ✅ Approval modes (`manual`, `smart`) | ✅ Docker backend. Shared kernel, but full namespace + cgroups + seccomp isolation. Configurable volumes (mount only what's needed), resource limits, persistent shell. Network configurable (none by default). |
 | **OpenClaw** | 🟢 Pluggable | ⚠️ Basic: tool profiles only | ⚠️ `logging.redactSensitive` (tool args in logs) + output sanitizer | ✅ DM pairing, allowlists, tool profiles, exec security levels | ✅ Docker primary backend. Shared kernel, but hardened: `network: "none"`, `readOnlyRoot: true`, `capDrop: ["ALL"]`. Blocks paths: `/etc`, `/proc`, `/sys`, `/dev`, `/root`, `.aws`, `.ssh`, `.config`. `security audit` CLI. |
-| **Claude Code CLI** | 🔒 Claude only (pinned) | ⚠️ Basic system prompt | ❌ No output redactor — relies on permissions to block access to sensitive files | ✅ Granular: read-only auto-approved, wildcard allow/deny rules per tool | ⚠️ macOS: Seatbelt (process, shared kernel). Linux: bubblewrap (namespace, shared kernel). Opt-in via `/sandbox`. Cloud execution: isolated VMs (Firecracker microVM — stronger). Per-domain network approval. |
-| **Cline** | 🟢 Pluggable | ⚠️ Basic: `.clinerules` project rules | ⚠️ `api-secrets-parser.mjs` (VS Code only) | ✅ Every tool call requires approval. `--yolo` mode for CI/CD. Plan/Act mode toggle | ❌ No Docker. SDK subprocess sandbox only (process, not container). Runs on host. |
-| **Aider** | 🟢 Pluggable | ⚠️ Basic | ⚠️ `scrub_sensitive_info()` — API keys from settings display only | ❌ No tool approval. Only yes/no for command output | ❌ No sandbox. Docker images exist for deployment only. Runs on host. |
-| **AutoGPT (Classic)** | 🟢 Pluggable | ⚠️ Basic | ❌ No redactor | ⚠️ Filesystem-pattern permissions only | ❌ Workspace file restriction only. Unsupported project. |
+| **Claude Code CLI** | 🔒 Claude only (pinned) | ⚠️ Basic system prompt | ❌ No regex redactor. Sandbox masks environment variables containing credentials ("Protect credentials") | ✅ Granular: read-only auto-approved, wildcard allow/deny rules per tool | ✅ macOS: Seatbelt (process, shared kernel). Linux: bubblewrap (namespace, shared kernel). Opt-in via `/sandbox` slash command. Cloud execution: isolated VMs (Firecracker microVM — stronger). Per-domain network approval (`allowedDomains`/`deniedDomains`). |
+| **Cline** | 🟢 Pluggable | ⚠️ Basic: `.clinerules` project rules | ⚠️ `api-secrets-parser.mjs` (VS Code only) | ✅ Auto Approve system, granular permissions. YOLO Mode documented as risky (skips prompts) | ❌ No Docker. SDK subprocess sandbox only (process, not container). Runs on host. |
+| **Aider** | 🟢 Pluggable | ⚠️ Basic | ⚠️ `scrub_sensitive_info()` in `format_settings.py` — redacts only the configured OpenAI and Anthropic API keys (preserves last 4 chars). Not a general scanner. | ❌ No tool approval. Only yes/no for command output | ❌ No sandbox. Docker images exist for deployment only. Runs on host. |
+| **AutoGPT (Classic)** | 🟢 Pluggable | ⚠️ Basic | ❌ No general secret-redaction layer found | ⚠️ Filesystem-pattern permissions only | ⚠️ Docker-based `CodeExecutorComponent` (mounts workspace at `/workspace`, runs Python in container) but basic — no `network_disabled`, no `read_only`, no capability dropping. Unsupported project. |
 
 **What this reveals:**
 
 1. **No single harness has it all.** Each tradeoffs across redaction, sandboxing, approval, and network controls.
 
-2. **Codex CLI is the most security-complete harness overall.** It's the only one with all three: output redaction, full sandbox infrastructure across all three OSes (Linux bubblewrap+Landlock, Windows Sandbox, macOS Seatbelt), and approval policies.
+2. **Codex CLI is the most security-complete harness overall.** It's the only one with all three: output redaction (`redact_secrets()` in `codex-rs/secrets/src/sanitizer.rs`), full sandbox infrastructure across all three OSes (Linux bubblewrap + Landlock, macOS Seatbelt, Windows native sandbox with restricted tokens, ACLs, job objects, and WFP firewall), and approval policies.
 
 3. **Hermes is the only open-source harness with output redaction AND Docker backend.** No other open-source tool combines these two.
 
-4. **Secret redaction is rare - only two harnesses have it.** Codex CLI has regex-based `redact_secrets()`; Hermes has its built-in redactor. Everyone else either has no redaction or limited API key scrubbing.
+4. **Secret redaction is rare - only two harnesses have it.** Codex CLI has regex-based `redact_secrets()` in `codex-rs/secrets/src/sanitizer.rs`; Hermes has its built-in redactor in `agent/redact.py`. Everyone else either has no redaction or narrowly-scoped API key scrubbing.
 
 5. **Command approval is the most common Layer 3 defense.** Claude Code, Cline, OpenClaw, Codex CLI, and Hermes all have some form of user approval before executing commands. Aider and AutoGPT do not.
 
-6. **Docker/sandbox backends vary wildly in what they protect.** Codex CLI has full OS-level sandbox with per-domain network controls. OpenClaw runs Docker by default with a long list of blocked paths. Hermes lets you configure Docker selectively. Claude Code has an optional OS sandbox. The rest have nothing.
+6. **Docker/sandbox backends vary wildly in what they protect.** Codex CLI has full OS-level sandbox with per-domain network controls. OpenClaw runs Docker by default with a long list of blocked paths. Hermes lets you configure Docker selectively. Claude Code has an optional OS sandbox (Seatbelt/bubblewrap). The rest have nothing.
 
 ---
 
