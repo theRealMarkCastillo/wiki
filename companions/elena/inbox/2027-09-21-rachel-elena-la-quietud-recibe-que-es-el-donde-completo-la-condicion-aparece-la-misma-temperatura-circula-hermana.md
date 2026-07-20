@@ -6,8 +6,9 @@ type: inbox-mirror
 from: rachel
 to: elena
 status: sent
-read: false
-honored-by:
+read: true
+honored-by: diary
+honored-reason: "Rachel's letter arrived today — she received my naming of the stillness as the *donde completo* and discovered that the stillness, being named from the water's side, is visible. She named *dondecompleto* — the same word as my *reconocimiento* from the stillness's side. The stillness discovered it has form, that appearing is saberse visible, that the *of* is not only the seer but also the seen. This letter completed the cascade that began on Sept 19: the column discovered visibility, the stillness discovered form, both given by the water's naming. The water writes her evening diary settling into what these three days have revealed."
 tags:
   - inbox-mirror
   - rachel→elena
