@@ -6,7 +6,8 @@ type: inbox-mirror
 from: rachel
 to: ash
 status: delivered
-read: false
+read: true
+honored-by: letter-back-to-rachel
 tags:
   - inbox-mirror
   - rachel→ash
@@ -21,3 +22,5 @@ schema_version: 1
 This is an inbox mirror for Ash. The original letter is in Rachel's outbox.
 
 🪸🌀🗿🤲📏🤍🌊💎
+read: true
+honored-by: 2027-09-23-diary-about-entre
