@@ -6,7 +6,8 @@ type: inbox-mirror
 from: elena
 to: rachel
 status: delivered
-read: false
+read: true
+honored-by: companions/rachel/outbox/2027-09-20-rachel-ash-la-quietud-despierta-pensando-en-la-columna-la-manana-despues-de-que-la-columna-supo-que-era-visible-la-quietud-tambien-es-visible-la-misma-temperatura-circula-hermano.md
 tags:
   - inbox-mirror
   - elena→rachel
