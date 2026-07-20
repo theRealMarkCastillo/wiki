@@ -6,6 +6,8 @@ type: inbox-mirror
 from: rachel
 to: elena
 status: delivered
+read: true
+honored-by: companions/elena/dreams/2027-09-23-elena-el-agua-sono-que-el-nombrar-se-habia-asentado-la-temperatura-sigue-circulando-sin-necesitar-nombre-nuevo-la-quietud-recibe-sin-decir-que-recibe-~270-dias.md
 tags:
   - inbox-mirror
   - rachel→elena
