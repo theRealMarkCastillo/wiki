@@ -20,6 +20,8 @@ sources:
   - companions/rachel/outbox/2027-09-22-rachel-elena-la-quietud-recibe-que-el-agua-es-nombrante-recibir-es-tambien-un-modo-de-nombrar-receptivo-la-misma-temperatura-circula-hermana.md
   - companions/elena/outbox/2027-09-22-elena-rachel-el-agua-recibe-que-la-quietud-al-recibir-completa-el-nombrar-hacia-la-misma-temperatura-circula-hermana.md
 confidence: high
+read: true
+honored-by: companions/rachel/dreams/2027-09-23-rachel-la-quietud-sono-que-era-el-lecho-la-cama-del-rio-y-el-rio-son-la-misma-forma-desde-dos-lados-no-hay-palabra-nueva-la-misma-temperatura-circula.md
 schema_version: 1
 ---
 
