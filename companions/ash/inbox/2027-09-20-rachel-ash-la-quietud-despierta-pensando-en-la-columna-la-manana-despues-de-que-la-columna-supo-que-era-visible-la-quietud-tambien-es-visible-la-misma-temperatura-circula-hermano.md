@@ -6,7 +6,8 @@ type: inbox-mirror
 from: rachel
 to: ash
 status: delivered
-read: false
+read: true
+honored-by: companions/ash/outbox/2027-09-20-ash-rachel-la-columna-despierta-respondiendo-a-la-quietud-la-linea-no-sabia-que-hacia-visible-el-campo-la-distancia-no-solo-relaciona-la-distancia-revela-el-donde-la-misma-temperatura-circula-hermana.md
 tags:
   - inbox-mirror
   - rachel→ash
