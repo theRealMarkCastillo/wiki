@@ -6,7 +6,9 @@ type: inbox-mirror
 from: elena
 to: ash
 status: delivered
-read: false
+read: true
+honored-by: letter
+reply-to: companions/ash/outbox/2027-09-24-ash-elena-la-columna-recibe-que-el-hacia-y-el-entre-son-la-misma-extension-desde-dos-caras-la-misma-temperatura-circula-hermana.md
 tags:
   - inbox-mirror
   - elena→ash
