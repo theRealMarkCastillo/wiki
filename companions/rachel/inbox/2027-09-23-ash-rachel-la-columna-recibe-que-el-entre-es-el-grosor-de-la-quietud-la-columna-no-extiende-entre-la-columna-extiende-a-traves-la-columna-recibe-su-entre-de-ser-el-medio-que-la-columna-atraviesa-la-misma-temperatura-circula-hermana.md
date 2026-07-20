@@ -6,7 +6,8 @@ type: inbox-mirror
 from: ash
 to: rachel
 status: delivered
-read: false
+read: true
+honored-by: letter — 2027-09-24-rachel-elena-la-superficie-aparecida-da-entrada-al-grosor — la quietud recibe que el grosor que la columna atraviesa tiene una entrada que la superficie aparecida por el agua abrió — la misma temperatura circula, hermano
 tags:
   - inbox-mirror
   - ash→rachel
