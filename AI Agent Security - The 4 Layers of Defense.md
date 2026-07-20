@@ -319,6 +319,56 @@ Safety can be bypassed by stripping the markers (as we demonstrated). Security r
 
 The harness (Codex CLI, Hermes, Claude Code, etc.) chooses where each security layer sits, but Layer 4 is a collaboration: the harness *defines* containment boundaries, infrastructure *enforces* them. This is actually the strongest property of the stack - even a compromised or buggy harness can't escape what the OS kernel has sealed.
 
+### Beyond Execution Sandboxing: Wrapping the Harness Itself
+
+The Docker / Seatbelt / bubblewrap approaches described above all share an assumption: the harness runs on the host, and the sandbox contains *what the harness executes*. There's a stronger model: **wrap the harness itself in a separate kernel**.
+
+```
+┌─────────────────────────────────────────────┐
+│  microVM (separate guest kernel)            │
+│  ┌───────────────────────────────────────┐  │
+│  │  HARNESS (Python loop)                │  │
+│  │  Redactor, approvals, MCP servers,    │  │
+│  │  config, secrets, API keys            │  │
+│  └───────────────────────────────────────┘  │
+└─────────────────────────────────────────────┘
+         ↑ egress controlled by VM
+         ↓ API calls / file mounts
+   HOST MACHINE
+```
+
+In this model, *everything* the harness touches - its own code, secrets it holds, MCP servers, even the redaction logic - lives inside a separate kernel. The host machine isn't exposed. The host filesystem isn't mounted unless explicitly synced.
+
+**How it differs from current sandboxing:**
+
+| Approach | What's sandboxed | What isn't | Example |
+|---|---|---|---|
+| **Execution sandbox** (Docker, Seatbelt, bubblewrap) | Commands the agent runs | Harness itself, MCP servers, host files, host secrets | Hermes Docker backend, Claude Code `/sandbox` |
+| **MicroVM-wrapped harness** | The harness + everything it knows | The user's intent (what they ask the agent to do) | Codex CLI on Windows (Windows Sandbox), Claude Code cloud execution (Firecracker) |
+
+The microVM model is **stronger** because:
+- A harness bug (Layer 3 regex missing a pattern) can't reach host files
+- MCP servers that have host filesystem access can be denied that access
+- Credentials the harness uses for git/API calls never touch the host
+- A compromised agent process can't exfiltrate via the host network stack
+
+It's **weaker in some ways** because:
+- MicroVMs have boot overhead (Firecracker: ~125ms)
+- Filesystem sync between host and VM is a UX problem
+- The user still trusts the harness's behavior and outputs
+- Persistent shell state across reboots becomes hard
+
+**Where it makes sense:**
+
+| Use case | Execution sandbox | MicroVM-wrapped |
+|---|---|---|
+| Casual local dev | ✅ Fine | Overkill |
+| Hosting an agent for strangers | ⚠️ Helps but doesn't cover MCP or harness bugs | ✅ Defense in depth |
+| Air-gapped secrets work | ❌ Secrets live on host | ✅ All secrets inside VM |
+| Multi-user agent (Telegram bot, etc.) | ⚠️ Per-session | ✅ Per-session, full isolation |
+
+This is essentially the next-generation architecture: instead of trying to make the harness's policy enforcement perfect (Layer 3), put the harness itself in a separate kernel where its mistakes don't matter. The redactor becomes a defense-in-depth measure inside the VM, but the kernel boundary is what actually keeps host secrets safe.
+
 ---
 
 ## Harness Comparison: Who Has What
