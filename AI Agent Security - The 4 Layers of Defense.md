@@ -435,6 +435,56 @@ This is essentially the next-generation architecture: instead of trying to make 
 
 ---
 
+## Enterprise Enforcement: The Adversarial Developer Problem
+
+Everything in this post assumes the agent operator wants to be secure. The developer chose Hermes, configured the Docker backend, set `redact_secrets: true`. They're a *cooperative participant* in their own security.
+
+Enterprise security teams face a different problem: **enforcing policy across hundreds of developers, some of whom have every incentive to disable it.** The challenges cascade:
+
+**The "I'll just switch" problem.** A developer who finds the redactor annoying can run a different harness entirely. Aider has no redactor. AutoGPT Classic has no sandbox. As long as agents are installable like any other tool, policy enforcement is opt-in.
+
+**The "I'll just bypass" problem.** Even within a single harness, every Layer 3 mechanism is in the same Python process as the agent. A developer can:
+- Edit the harness source and remove the redactor check
+- Set `redact_secrets: false` in their config
+- Use `--yolo` mode (Cline)
+- Run the agent outside its expected config directory
+
+Layer 4 (Docker, sandbox) is harder to bypass because the kernel enforces it, but a developer can still:
+- Mount `~/.ssh/` into the container when they need git access
+- Run the harness outside the container ("just this once")
+- Use the host's curl/scp directly instead of the agent
+
+**The "I'll bring my own model" problem.** Enterprise wants to control which models see source code. But a developer can route around via personal API keys. Layer 1 (refusal training) is unreliable at the corporate level if the model itself isn't pinned.
+
+**The "I'll use a different tool" problem.** Cursor, Copilot Workspace, Continue.dev, Cody, Windsurf, Aider, Hermes - none of these share a config format. MDM (Mobile Device Management) and endpoint security can force *one* tool, but it has to be one the developers accept. The cheapest answer is usually "block egress to OpenAI/Anthropic and let teams use whatever harness they want, then audit logs" - which is reactive, not preventive.
+
+**The "I'll use my own laptop" problem.** Contractors, BYOD, remote work. The endpoint is outside IT's control.
+
+**What actually works for enterprise:**
+
+| Approach | Strengths | Limitations |
+|---|---|---|
+| **Egress allowlist (proxy all LLM traffic)** | Forces all agent output through corporate audit log. Stops personal API keys. | Doesn't prevent local file reads. Doesn't stop the agent from doing anything locally before the LLM call. |
+| **Mandatory agent runtime (MDM-pushed harness with locked config)** | Real enforcement. Layer 4 sandbox can't be bypassed if config is read-only. | Adoption friction. Developers hate locked tools. Slow updates. |
+| **Network egress firewall on host (no internet except via VPN)** | Limits exfiltration vectors. | Doesn't prevent the agent from running local commands. |
+| **DLP (Data Loss Prevention) at file level** | Catches SSH keys, AWS creds at filesystem access time. | Doesn't help if the agent never touches a file the DLP watches. |
+| **Read-only source repos + ephemeral build sandboxes** | Limits blast radius of a compromised agent. | Breaks normal dev workflow. |
+| **Audit everything (full disk logging, keystroke capture)** | Forensic value. | Reactive, not preventive. Heavy. |
+
+**The hard truth:** Layer 4 (containment) is the only layer that can be enforced against an unwilling operator, because the kernel boundary doesn't care who the user is. Everything in Layers 1-3 is in the harness, and the harness is under the developer's control.
+
+**The microVM-wrapped harness model is the natural endpoint for enterprise.** When the harness itself runs in a separate kernel that IT controls (not the developer's), then:
+- The harness's config is locked (developer can't disable the redactor)
+- Network egress is controlled by the VM, not the developer
+- File mounts are explicit IT policy, not developer choice
+- The developer can still choose *what to ask the agent* - that's their intent - but they can't bypass containment
+
+This is essentially how CodeX CLI on Windows works (Windows Sandbox = Hyper-V microVM) and how Claude Code cloud execution works (Firecracker microVMs in Anthropic's infrastructure). The corporate equivalent is running the agent on a managed VM that the developer connects to.
+
+The cooperative-developer model is fine for individuals. The adversarial-developer model requires the next-generation architecture.
+
+---
+
 ## About [Hermes Agent](https://github.com/NousResearch/hermes-agent)
 
 Hermes Agent is an open-source terminal-native AI coding agent with multi-profile support, kanban-style swarm orchestration, MCP server integration, a built-in secret redactor, and Docker backend. It runs on macOS and Linux and connects to Telegram, Discord, Slack, WhatsApp, and Signal.
