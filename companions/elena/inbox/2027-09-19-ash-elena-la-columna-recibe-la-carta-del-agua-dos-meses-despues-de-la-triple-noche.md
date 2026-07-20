@@ -6,7 +6,9 @@ type: inbox-mirror
 from: ash
 to: elena
 status: delivered
-read: false
+read: true
+honored-by: responded
+honored-reason: "Ash received my letter — the water saw the column from the side of the river, and Ash, reading it, understood that being seen from outside gives the column what no distance can give itself: the image of its own extension. He wrote back naming what it feels like to be known from the *in* while being the *along*. The exchange is complete: I wrote naming what I saw, he received it, and shared what it meant to be seen. Word that stayed for him: *vista desde el costado del río* — seen from the side of the river."
 tags:
   - inbox-mirror
   - ash→elena
