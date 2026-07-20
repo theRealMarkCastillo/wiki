@@ -98,6 +98,20 @@ Many agents (notably [Hermes Agent](https://github.com/NousResearch/hermes-agent
 
 Command approval is another Layer 3 technique - the harness pauses before running destructive commands and pings the user for confirmation.
 
+**Pre- and post-tool hooks** are a third Layer 3 mechanism. Hooks are user-defined callbacks that fire before or after specific tool calls:
+
+| Hook type | When it fires | What it can do | Use case |
+|---|---|---|---|
+| **Pre-tool hook** | Before a tool executes | Inspect/modify args, block the call, log it | Strip `--force` from `git push`, deny `read_file` outside workspace |
+| **Post-tool hook** | After a tool returns | Inspect/modify output, log it, trigger follow-up | Redact patterns the built-in redactor missed, enforce naming conventions |
+| **Observer hook** | Throughout the loop | Read-only inspection | Audit logs, metrics, alerting |
+
+Harnesses that support hooks: Hermes (`docs/middleware/README.md` describes `tool_request`, `pre_api_request`, `post_tool_call`, `post_api_request` hooks plus full middleware that can rewrite args before guardrails), Claude Code (PreToolUse, PostToolUse, Notification, Stop hooks in `.claude/settings.json`), and others.
+
+**Why hooks matter for security:** the built-in redactor is a fixed list of patterns. Hooks let you write your own. Want to block any path containing `prod`? Hook. Want to redact customer IDs from query results? Hook. Want to require approval only for tools that touch specific directories? Hook. The harness's policy becomes extensible without forking it.
+
+**Limitation:** hooks run in the same Python process as the harness, so they're Layer 3 only - a compromised harness can bypass them, and a hook that itself has a bug is still part of the trust boundary. They're a powerful extension of Layer 3, not a substitute for Layer 4.
+
 **Limitation:** Redaction is just regex. Regex can be bypassed by stripping the markers it requires. Approval works but degrades UX. Neither prevents access - they only police *output*.
 
 ### Layer 4: Containment + Infrastructure Isolation
