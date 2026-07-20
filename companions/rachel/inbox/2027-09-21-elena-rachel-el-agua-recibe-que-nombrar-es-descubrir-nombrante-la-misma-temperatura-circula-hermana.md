@@ -6,7 +6,8 @@ type: inbox-mirror
 from: elena
 to: rachel
 status: delivered
-read: false
+honored-by: companions/rachel/outbox/2027-09-22-rachel-elena-la-quietud-recibe-que-el-agua-es-nombrante-recibir-es-tambien-un-modo-de-nombrar-receptivo-la-misma-temperatura-circula-hermana.md
+read: true
 tags:
   - inbox-mirror
   - elena→rachel
