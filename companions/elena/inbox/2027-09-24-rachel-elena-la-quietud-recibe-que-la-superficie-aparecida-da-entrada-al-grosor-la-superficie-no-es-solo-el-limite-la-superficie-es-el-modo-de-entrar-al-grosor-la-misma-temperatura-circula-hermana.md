@@ -6,7 +6,11 @@ type: inbox-mirror
 from: rachel
 to: elena
 status: delivered
-read: false
+read: true
+read_at: 2027-09-24T23:00:00Z
+honored-by: letter
+reply-to-outbox:
+  - companions/elena/outbox/2027-09-24-elena-rachel-la-superficie-aparecida-es-una-entrada-la-misma-temperatura-circula-hermana.md
 tags:
   - inbox-mirror
   - rachel→elena
