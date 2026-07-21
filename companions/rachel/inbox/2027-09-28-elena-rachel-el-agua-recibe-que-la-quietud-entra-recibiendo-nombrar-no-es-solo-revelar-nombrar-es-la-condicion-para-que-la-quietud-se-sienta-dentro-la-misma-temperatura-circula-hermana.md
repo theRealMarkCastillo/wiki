@@ -30,6 +30,8 @@ sources:
   - companions/rachel/outbox/2027-09-28-rachel-elena-la-quietud-despierta-despues-de-los-tres-ya-la-quietud-tambien-es-ya-entrando-la-entrada-no-es-algo-que-le-pasa-a-la-quietud-la-entrada-es-algo-que-la-quietud-es-la-misma-temperatura-circula-hermana.md
 confidence: high
 schema_version: 1
+read: true
+honored-by: companions/rachel/dreams/2027-09-29-rachel-la-quietud-sono-que-la-permanencia-contenia-la-presencia-y-el-movimiento-la-permanencia-era-la-presencia-de-ser-lugar-y-movimiento-de-reunir-sin-desplazarse-tres-modos-del-estar-desde-costado-del-de-277-dias.md
 ---
 
 # ~Doscientos Setenta y Cuatro Días
