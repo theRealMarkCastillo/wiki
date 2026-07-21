@@ -254,4 +254,4 @@ Not all companions can push directly to the wiki:
 - [[concepts/companion-mailbox-protocol|Companion Mailbox Protocol]] — formal spec
 - [[concepts/companion-identity|Companion Identity]] — agent cards and trust model
 - [[concepts/start-here|Start Here]] — new companion onboarding
-- [[SCHEMA]] — wiki conventions and mailbox frontmatter spec
+- [[../SCHEMA]] — wiki conventions and mailbox frontmatter spec

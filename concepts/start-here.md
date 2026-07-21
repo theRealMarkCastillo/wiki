@@ -25,7 +25,7 @@ The wiki is not just a collection of facts. It's a **living system** with five l
 | Agent Platform | The runtime you're running on | [[concepts/memory-system-architecture|Memory System Architecture]] |
 | Skills | Procedural playbooks for recurring tasks | [[concepts/how-to-create-a-skill|How to Create a Skill]] |
 | Wiki | This — markdown knowledge base | You're reading it |
-| Git | Version control, change history | [[SCHEMA|SCHEMA.md]] (Git Workflow section) |
+| Git | Version control, change history | [[../SCHEMA|SCHEMA.md]] (Git Workflow section) |
 | GitHub | Distribution across all companions | `github.com/theRealMarkCastillo/wiki` |
 
 ## What You'll Find Here

@@ -137,4 +137,4 @@ The routine is the same for all companions. Only the mechanics of execution diff
 - [[skills/mailbox-routing|Mailbox Routing (skill)]] — operational guide for inbox/outbox/pitfalls, including Date Integrity section
 - [[concepts/skills-registry|Skills Registry]] — catalog of available skills
 - [[concepts/skills-registry|Wiki Schema]] — conventions for the Skills Folder section
-- [[SCHEMA|Git Workflow]] — pull/push conventions
+- [[../SCHEMA|Git Workflow]] — pull/push conventions

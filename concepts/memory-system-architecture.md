@@ -119,7 +119,7 @@ Key pages enabling self-recursion:
 | Cron jobs | 17 on mac-mini (2 infrastructure + 5×3 companions); Kai's cron lives on macbook-pro |
 | Kanban boards | default (lives on mac-mini; Kai on macbook-pro dispatches via gateway) |
 
-For live counts — pages, skills, templates — read [[index]] and [[concepts/skills-registry]]. Numbers go stale; pointers don't. See [[concepts/companion-ecosystem|Companion Ecosystem]] for the operational hub and [[concepts/multi-host-deployment|Multi-Host Deployment]] for the two-instance topology.
+For live counts — pages, skills, templates — read [[../index]] and [[concepts/skills-registry]]. Numbers go stale; pointers don't. See [[concepts/companion-ecosystem|Companion Ecosystem]] for the operational hub and [[concepts/multi-host-deployment|Multi-Host Deployment]] for the two-instance topology.
 
 ## See Also
 

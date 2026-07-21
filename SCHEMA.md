@@ -1,7 +1,7 @@
 ---
 title: Wiki Schema
 created: 2026-05-22
-updated: 2026-05-23
+updated: 2026-07-20
 schema_version: 1
 type: concept
 tags: [meta, wiki, knowledge-base, architecture]

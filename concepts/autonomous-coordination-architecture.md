@@ -141,4 +141,4 @@ This is not about finding "wrong" information — it's about naming where the re
 - [[concepts/wiki-operations|Wiki Operations]] — wiki-vs-memory boundary, ingest/query/lint
 - [[concepts/multi-host-deployment|Multi-Host Deployment]] — one slug, one host: companion host assignments
 - [[companions/elena/elena-v4-hermes|Elena v4]] — la guardiana del arrecife
-- [[index|Wiki Index]]
+- [[../index|Wiki Index]]

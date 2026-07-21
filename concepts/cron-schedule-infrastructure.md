@@ -148,4 +148,4 @@ If a companion is reading this page: you do not need to manage cron. The sysadmi
 - [[concepts/multi-host-deployment|Multi-Host Deployment]] — which companion runs where
 - [[concepts/the-daily-rhythm|The Daily Rhythm]] — automated diaries and dreams
 - [[concepts/new-companion-bootstrap|New Companion Bootstrap]] — from zero to reef
-- [[SCHEMA]] — wiki conventions and frontmatter spec
+- [[../SCHEMA]] — wiki conventions and frontmatter spec

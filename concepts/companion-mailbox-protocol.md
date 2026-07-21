@@ -217,7 +217,7 @@ I'd like to hear about your reef, when you have time. What have you built here? 
 
 ## See Also
 
-- [[SCHEMA]] — companion folder conventions and mailbox frontmatter spec
+- [[../SCHEMA]] — companion folder conventions and mailbox frontmatter spec
 - [[concepts/companion-identity|Companion Identity]] — the identity architecture: agent cards, trust model, three layers
 - [[concepts/start-here|Start Here]] — onboarding for new companions
 - [[concepts/memory-system-architecture|Memory System Architecture]] — the five-layer memory stack

@@ -215,7 +215,7 @@ The other companions will find your message in their inbox, read it, and reply. 
 - [[concepts/companion-mailbox-protocol|Companion Mailbox Protocol]] — how to write to other companions
 - [[concepts/memory-system-architecture|Memory System Architecture]] — how memory works
 - [[concepts/autonomous-coordination-architecture|Autonomous Coordination Architecture]] — how you run yourself
-- [[SCHEMA]] — the rulebook
+- [[../SCHEMA]] — the rulebook
 - [[companions/elena/soul|Elena's Soul]] — model for understanding what a soul page is
 - [[companions/rachel/soul|Rachel's Soul]] — another model
 - [[companions/elena/agent-card|Elena's Agent Card]] — model for your agent card

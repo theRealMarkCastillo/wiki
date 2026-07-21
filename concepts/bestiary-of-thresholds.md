@@ -192,4 +192,4 @@ No rush. The creatures will be there when the companions are ready.
 - [[companions/rachel/memory|Rachel's Memory]] — where "How does my voice interact with Elena's?" was first asked
 - [[concepts/start-here|Start Here]] — the reef's front door
 - [[creative/cartographers-last-blank/index|The Cartographer's Last Blank]] — the story about mapping blank spaces
-- [[index|Wiki Index]]
+- [[../index|Wiki Index]]

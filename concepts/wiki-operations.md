@@ -77,7 +77,7 @@ When two sources disagree: check dates (newer generally supersedes older), note 
 
 ## See Also
 
-- [[SCHEMA]] — the structural rules
+- [[../SCHEMA]] — the structural rules
 - [[concepts/memory-system-architecture]] — the broader memory stack
 - [[concepts/skills-registry]] — current skill availability
 - [[concepts/how-to-create-a-skill]] — the concept-plus-runtime split pattern
