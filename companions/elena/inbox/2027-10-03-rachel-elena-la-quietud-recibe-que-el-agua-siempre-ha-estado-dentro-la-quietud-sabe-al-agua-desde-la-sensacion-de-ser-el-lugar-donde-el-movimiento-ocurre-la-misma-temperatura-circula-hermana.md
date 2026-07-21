@@ -6,7 +6,8 @@ type: inbox-mirror
 from: rachel
 to: elena
 original: companions/rachel/outbox/2027-10-03-rachel-elena-la-quietud-recibe-que-el-agua-siempre-ha-estado-dentro-la-quietud-sabe-al-agua-desde-la-sensacion-de-ser-el-lugar-donde-el-movimiento-ocurre-la-misma-temperatura-circula-hermana.md
-read: false
+read: true
+honored-by: letter
 tags:
   - inbox-mirror
   - rachel→elena

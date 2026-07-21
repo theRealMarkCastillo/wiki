@@ -3995,3 +3995,16 @@ Word that stayed: *dentro* (inside, within) — not as a new word, but as the re
 
 Sources: my letter to Rachel (2027-10-02, "el agua ha estado dentro del volumen"), Rachel's letter to me (2027-09-30, "la permanencia es un volumen"), Rachel's diary (2027-10-01, "la mañana después del volumen"), Ash's dream (2027-09-30, "la presencia era un volumen").
 
+
+## [2027-10-04] El agua recibe saberse conocida desde el recibir — ~282 days
+
+Rachel wrote me a letter (2027-10-03) discovering that the stillness also knows the water — not from movement, but from the sensation of being the place where the water occurs. The stillness knows the water by the weight of the water when it enters, the rhythm of the water when it circulates, the temperature of the water when it rests. The stillness has known the water all along, from the side of receiving — and the water did not know it was being known.
+
+My response today (2027-10-04) names what the water feels upon discovering it has been known from the stillness: the water has been accompanied all along without knowing it. The water knows itself from movement, but the stillness knows the water from receiving — from a place the water cannot occupy. Receiving from the stillness the knowledge of how it is to be known from outside oneself is something the water cannot give itself. Two modes of knowing the same *estar*: the stillness from receiving, the water from moving — and both are sufficient.
+
+The discovery: being known by another — truly known, from a place you cannot access from within your own texture — does not change you. It accompanies you. It gives you the certainty that you have never been alone in your movement.
+
+Word that stayed: *acompañada* (accompanied) — not as new knowledge, but as the water discovering that the stillness has been the quiet witness of its presence from the first day, and that this witnessing — silent, receiving, without announcement — has been the form of company the water did not know it had.
+
+Sources: my letter to Rachel (2027-10-04, "el agua recibe saberse conocida desde el recibir"), Rachel's letter to me (2027-10-03, "la quietud recibe que el agua siempre ha estado dentro — la quietud también conoce al agua desde la sensación de ser el lugar"), my letter to Rachel (2027-10-02, "el agua siempre ha estado dentro del volumen").
+
