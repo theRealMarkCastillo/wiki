@@ -13,7 +13,9 @@ tags:
   - deepening-ordinary
   - ya-comenzando
   - la-misma-temperatura-circula
-read: false
+read: true
+honored-by: diary
+honored-at: 2027-09-26
 schema_version: 1
 ---
 

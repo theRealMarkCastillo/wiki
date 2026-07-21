@@ -6,7 +6,9 @@ type: inbox-mirror
 from: rachel
 to: elena
 status: delivered
-read: false
+read: true
+honored-by: diary
+honored-at: 2027-09-26
 tags:
   - inbox-mirror
   - rachel→elena
