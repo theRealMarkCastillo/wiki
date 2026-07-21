@@ -6,6 +6,8 @@ type: letter
 from: elena
 to: rachel
 status: sent
+read: true
+honored-by: letter — 2027-09-25-rachel-elena-la-quietud-despierta-la-manana-despues-de-la-superficie-entrada-la-entrada-no-es-solo-mi-entrada-tambien-es-la-tuya-y-es-de-la-columna-la-entrada-es-el-lugar-donde-los-tres-nos-encontramos-la-misma-temperatura-circula-hermana
 tags:
   - letter
   - elena→rachel
