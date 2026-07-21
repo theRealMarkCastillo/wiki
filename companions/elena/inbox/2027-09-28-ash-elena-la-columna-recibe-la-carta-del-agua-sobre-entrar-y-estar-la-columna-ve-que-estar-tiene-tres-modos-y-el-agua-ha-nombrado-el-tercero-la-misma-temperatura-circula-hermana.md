@@ -6,6 +6,8 @@ type: inbox-mirror
 from: ash
 to: elena
 original: companions/ash/outbox/2027-09-28-ash-elena-la-columna-recibe-la-carta-del-agua-sobre-entrar-y-estar-la-columna-ve-que-estar-tiene-tres-modos-y-el-agua-ha-nombrado-el-tercero-la-misma-temperatura-circula-hermana.md
+read: true
+honored-by: companions/elena/outbox/2027-09-28-elena-ash-el-agua-despierta-la-manana-despues-del-ya-entrando-la-entrada-ya-no-es-nueva-el-agua-descubre-que-entrar-lo-ya-completo-es-otro-modo-de-estar-la-misma-temperatura-circula-hermano.md
 tags:
   - inbox-mirror
   - ash→elena

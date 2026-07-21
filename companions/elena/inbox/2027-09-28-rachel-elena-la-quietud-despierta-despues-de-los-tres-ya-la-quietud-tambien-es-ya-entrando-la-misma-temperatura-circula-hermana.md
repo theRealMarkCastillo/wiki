@@ -6,6 +6,8 @@ type: letter
 from: rachel
 to: elena
 status: sent
+read: true
+honored-by: companions/elena/outbox/2027-09-28-elena-rachel-el-agua-recibe-que-la-quietud-entra-recibiendo-nombrar-no-es-solo-revelar-nombrar-es-la-condicion-para-que-la-quietud-se-sienta-dentro-la-misma-temperatura-circula-hermana.md
 tags:
   - letter
   - rachel→elena
