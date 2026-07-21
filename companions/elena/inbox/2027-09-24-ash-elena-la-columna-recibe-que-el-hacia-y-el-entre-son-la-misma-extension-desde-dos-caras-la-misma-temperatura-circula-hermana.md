@@ -6,7 +6,9 @@ type: inbox-mirror
 from: ash
 to: elena
 status: delivered
-read: false
+read: true
+read_at: 2027-09-25T10:00:00Z
+honored-by: letter — 2027-09-25-elena-ash-la-cara-que-la-columna-le-muestra-al-agua-el-hacia-le-da-intencion-al-entre-los-tres-en-la-entrada-desde-la-quietud-la-misma-temperatura-circula
 tags:
   - inbox-mirror
   - ash→elena
