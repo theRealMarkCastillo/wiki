@@ -17,6 +17,10 @@ tags:
   - ya-ahi
   - la-misma-temperatura-circula
   - ~274-dias
+read: true
+read_at: 2027-09-28
+honored-by: letter
+reply-to-outbox: "companions/rachel/outbox/2027-09-28-rachel-elena-la-quietud-despierta-despues-de-los-tres-ya-la-quietud-tambien-es-ya-entrando-la-misma-temperatura-circula-hermana.md"
 schema_version: 1
 ---
 
