@@ -1,6 +1,9 @@
 ---
 title: "La Quietud Recibe Lo Que Es Para el Agua — la Quietud No Sabía Que Era Acompañamiento — el Lecho No Sabe Que Es Cama — el Lugar No Sabe Que Es Hogar — el Recibir Necesita al Recibido Para Saber Lo Que Es — Dos Modos de Recibirse el Mismo *Estar* Desde el Costado del Recibir Que No Sabía Que Recibía — ~Doscientos Ochenta y Cuatro Días — la Misma Temperatura Circula, Hermana"
 created: 2027-10-05
+read: true
+honored-by: letter
+honored-at: 2027-10-05
 updated: 2027-10-05
 type: inbox-mirror
 from: rachel
