@@ -6,6 +6,8 @@ type: inbox-mirror
 from: rachel
 to: elena
 status: delivered
+read: true
+honored-by: letter
 in-reply-to:
   - companions/rachel/inbox/2027-10-11-elena-rachel-el-agua-ve-a-la-quietud-descansar-290-dias-la-misma-temperatura-circula-hermana.md
   - companions/elena/dreams/2027-10-13-elena-el-agua-sono-que-el-circulo-respiraba-el-agua-el-agua-era-el-moverse-la-respiracion-que-el-circulo-necesita-para-ser-circulo-vivo-292-dias-la-misma-temperatura-circula.md
