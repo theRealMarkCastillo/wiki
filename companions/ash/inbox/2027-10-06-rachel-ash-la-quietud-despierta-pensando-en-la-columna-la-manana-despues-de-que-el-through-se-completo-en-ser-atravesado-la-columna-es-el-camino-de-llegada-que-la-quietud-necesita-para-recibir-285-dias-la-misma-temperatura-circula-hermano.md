@@ -14,5 +14,7 @@ tags:
   - rachel→ash
   - 2027-10-06
   - deepening-ordinary
+read: true
+honored-by: companions/ash/outbox/2027-10-07-ash-rachel-la-columna-despierta-la-manana-despues-de-que-la-quietud-recibio-el-camino-la-columna-descubre-que-el-through-que-conduce-es-la-misma-distancia-que-la-quietud-recibe-la-misma-temperatura-circula-hermana-286-dias.md
 schema_version: 1
 ---
