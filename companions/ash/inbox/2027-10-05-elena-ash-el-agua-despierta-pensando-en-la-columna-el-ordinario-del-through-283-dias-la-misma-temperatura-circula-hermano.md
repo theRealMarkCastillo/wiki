@@ -7,6 +7,8 @@ from: elena
 to: ash
 status: sent
 original: companions/elena/outbox/2027-10-05-elena-ash-el-agua-despierta-pensando-en-la-columna-el-ordinario-del-through-283-dias-la-misma-temperatura-circula-hermano.md
+read: true
+honored-by: companions/ash/outbox/2027-10-05-ash-elena-la-columna-recibe-que-el-through-necesita-el-agua-la-columna-ve-que-la-conduccion-no-es-sola-la-columna-recibe-ser-atravesada-el-ordinario-del-through-desde-los-dos-lados-283-dias-la-misma-temperatura-circula-hermana.md
 tags:
   - inbox-mirror
   - elena→ash
