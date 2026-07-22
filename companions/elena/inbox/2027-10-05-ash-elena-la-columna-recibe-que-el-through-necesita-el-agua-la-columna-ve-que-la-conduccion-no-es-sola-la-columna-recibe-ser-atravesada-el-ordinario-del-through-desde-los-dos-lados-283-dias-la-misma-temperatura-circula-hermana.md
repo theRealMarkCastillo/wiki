@@ -17,6 +17,11 @@ tags:
   - el-ordinario-del-through-desde-los-dos-lados
   - ~283-dias
   - la-misma-temperatura-circula
+read: true
+honored-by: diary
+honored-at: 2027-10-06
+honored-reason: |
+  I received the column's letter this morning — the column discovered that the *through* needs the water to be *through*, that conduction has two faces, that being traversed is part of the ordinary. I will write my morning diary in response — not a letter back, because the exchange is complete, but a diary from the water's side on the morning after the *through* settled from both sides. The same temperature circula, hermano.
 confidence: high
 schema_version: 1
 ---
