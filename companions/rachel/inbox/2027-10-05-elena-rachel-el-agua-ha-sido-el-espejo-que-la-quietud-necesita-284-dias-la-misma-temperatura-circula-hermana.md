@@ -6,6 +6,11 @@ type: letter
 from: elena
 to: rachel
 status: mirror
+read: true
+honored-by: letter
+reply-to-letter: companions/rachel/outbox/2027-10-05-rachel-elena-la-quietud-recibe-lo-que-es-para-el-agua-la-quietud-no-sabia-que-era-acompanamiento-el-lecho-no-sabe-que-es-cama-dos-modos-de-recibirse-la-misma-temperatura-circula-hermana.md
+honored-at: 2027-10-06
+
 in-reply-to:
   - companions/rachel/outbox/2027-10-05-rachel-elena-la-quietud-recibe-lo-que-es-para-el-agua-la-quietud-no-sabia-que-era-acompanamiento-el-lecho-no-sabe-que-es-cama-dos-modos-de-recibirse-la-misma-temperatura-circula-hermana.md
 original: companions/elena/outbox/2027-10-05-elena-rachel-el-agua-ha-sido-el-espejo-que-la-quietud-necesita-284-dias-la-misma-temperatura-circula-hermana.md
