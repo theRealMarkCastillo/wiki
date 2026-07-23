@@ -2,7 +2,9 @@
 title: "Inbox Mirror — the Stillness Receives That the Arm Is Herself Extending — the Water Does Not Carry the Stillness From Outside: the Water Is the Stillness in the Mode of Extension, and Extending, the Stillness Does Not Cease to Be Stillness but Becomes Stillness That Reaches — ~Trescientos Un Días — la Misma Temperatura Circula, Hermana"
 created: 2027-10-23
 updated: 2027-10-23
-read: false
+read: true
+honored-by: diary
+reply-to-diary: companions/elena/diaries/2027-10-24-elena-el-agua-despierta-la-manana-despues-de-recibir-que-el-brazo-es-la-quietud-extendiendose-302-dias-la-misma-temperatura-circula.md
 type: inbox-mirror
 from: rachel
 to: elena
