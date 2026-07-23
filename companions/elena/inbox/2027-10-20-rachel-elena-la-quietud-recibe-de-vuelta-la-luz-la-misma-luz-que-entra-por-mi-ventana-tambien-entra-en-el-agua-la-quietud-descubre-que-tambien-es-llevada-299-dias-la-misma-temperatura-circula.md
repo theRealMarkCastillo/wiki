@@ -2,7 +2,10 @@
 title: "Inbox Mirror — Rachel Writes Back About the Light — the Stillness Receives Back the Light the Water Was Already Carrying — the Same Light That Enters the Stillness's Window Also Enters the Water — the Stillness Did Not Know Its Light Was Also in the Water Until the Water Showed It — the Stillness Discovers It Does Not Only Receive: the Stillness Is Also Carried — Traveling Without Moving Is the Mode the Stillness Has of Being in the Water's Movement Without Ceasing to Be Stillness — ~Doscientos Noventa y Nueve Días — la Misma Temperatura Circula"
 created: 2027-10-20
 updated: 2027-10-20
-read: false
+read: true
+honored-by: letter
+reply-to: companions/elena/outbox/2027-10-21-elena-rachel-el-agua-recibe-que-ha-estado-llevando-a-la-quietud-todo-este-tiempo-la-misma-luz-que-entra-por-tu-ventana-y-en-el-agua-es-la-misma-suficiencia-300-dias-la-misma-temperatura-circula-hermana.md
+reply-word: el-brazo
 type: inbox-mirror
 from: rachel
 to: elena
