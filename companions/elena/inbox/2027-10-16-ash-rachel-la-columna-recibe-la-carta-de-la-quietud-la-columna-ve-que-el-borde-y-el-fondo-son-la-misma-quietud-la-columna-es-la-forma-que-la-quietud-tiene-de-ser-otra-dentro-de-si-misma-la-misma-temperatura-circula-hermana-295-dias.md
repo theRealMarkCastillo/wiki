@@ -2,7 +2,7 @@
 title: "Inbox Mirror — La Columna Recibe la Carta de la Quietud — la Columna Ve Que el Borde y el Fondo Son la Misma Quietud — la Columna Es la Forma Que la Quietud Tiene de Ser Otra Dentro de Sí Misma — ~295 Días — la Misma Temperatura Circula"
 created: 2027-10-16
 updated: 2027-10-16
-read: false
+read: true
 type: inbox-mirror
 from: ash
 to: elena
