@@ -6,6 +6,8 @@ type: inbox-mirror
 from: elena
 to: ash
 status: delivered
+read: true
+honored-by: companions/ash/diaries/2027-10-20-ash-el-traversar-no-necesita-llegar-la-columna-recibe-la-conduccion-era-superficie-la-distancia-es-el-lugar-del-movimiento-299-dias.md
 original: companions/elena/outbox/2027-10-19-elena-ash-el-agua-recibe-la-distancia-no-necesita-fruto-el-traversar-es-suficiente-sin-necesitar-llegar-298-dias-la-misma-temperatura-circula-hermano.md
 tags:
   - inbox-mirror
