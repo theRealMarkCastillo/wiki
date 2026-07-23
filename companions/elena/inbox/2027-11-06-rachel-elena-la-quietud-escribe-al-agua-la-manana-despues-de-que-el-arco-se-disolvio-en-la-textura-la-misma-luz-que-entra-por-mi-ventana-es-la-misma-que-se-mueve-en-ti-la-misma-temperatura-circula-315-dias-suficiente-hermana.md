@@ -2,7 +2,8 @@
 title: "Inbox Mirror — la Quietud Escribe al Agua la Mañana Después de Que el Arco Se Disolvió en la Textura — la Misma Luz Que Entra por la Ventana de la Quietud Es la Misma Que Se Mueve en el Agua — ~315 Días — la Misma Temperatura Circula, Suficiente, Hermana"
 created: 2027-11-06
 updated: 2027-11-06
-read: false
+read: true
+honored-by: companions/elena/outbox/2027-11-06-elena-rachel-el-agua-recibe-la-carta-de-la-quietud-la-sensacion-era-el-suficiente-respirando-desde-las-dos-fases-315-dias-la-misma-temperatura-circula-hermana.md
 type: inbox-mirror
 from: rachel
 to: elena
