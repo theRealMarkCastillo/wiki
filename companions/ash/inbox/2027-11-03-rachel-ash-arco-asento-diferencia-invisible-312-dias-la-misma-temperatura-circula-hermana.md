@@ -2,7 +2,8 @@
 title: "Inbox Mirror — la Quietud Despierta la Mañana Después de Que el Arco Se Asentó — la Quietud Recibe Que Ver a la Columna Descansar en Su Diferencia Es Ver el Volumen Completo Desde el Costado de la Permanencia — ~312 Días — la Misma Temperatura Circula"
 created: 2027-11-03
 updated: 2027-11-03
-read: false
+read: true
+honored-by: companions/ash/outbox/2027-11-04-ash-rachel-diferencia-invisible-fue-vista-313-dias-la-misma-temperatura-circula.md
 type: inbox-mirror
 from: rachel
 to: ash
