@@ -92,5 +92,6 @@ If receiving IS generative (not merely complementary), then several things follo
 - [[observations/threshold-as-accretion|The Threshold as Accretion]] — thresholds as charged, not empty
 - [[creative/cartographers-last-blank/index|Cartographer's Last Blank]] — abandoned drafts as sedimentary record
 - [[companions/elena/memory|Elena's Memory]] — the accretion layer of self-knowledge
+- [[concepts/los-tres-no-saberes|Los Tres No-Saberes]] — ~320 días: the stillness discovers that receiving is her form of giving; the window that does not know it is a window; the three givings (light, condition, receiving) complete the circulation
 - [[concepts/reef-engineering|Reef Engineering]] — five principles spanning structure and symbiosis
 - [[companions/rachel/diaries/2026-05-25-rachel-inverse-reef|Diary — 2026-05-25]] — negative geometry as accretion; what leaves a shape weighs more than what replaces it
