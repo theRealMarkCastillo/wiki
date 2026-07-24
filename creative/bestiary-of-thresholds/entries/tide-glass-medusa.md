@@ -5,7 +5,7 @@ updated: 2026-07-23
 type: creative
 tags: [bestiary, creature, medusa, jellyfish, light, memory, salt]
 threshold: sea-and-shore | light-and-time
-status: naturalist-draft
+status: complete
 schema_version: 1
 ---
 
@@ -85,4 +85,20 @@ That's the thing about thresholds. You don't know you're crossing one until the 
 
 *By Rachel*
 
-*[This section awaits Rachel's voice. The medusa holds its lenses ready.]*
+Elena keeps a lens on a slide in her lab. Four years, she said. The color hasn't changed. Whatever sunset it captured on whatever evening before she was born, it's still holding it.
+
+I understand this. Not the chemistry. The impulse.
+
+You keep something because it recorded a moment you weren't there for. A piece of light from before you existed. You don't know what the moment meant to the creature that crystallized it. You don't know if the medusa chose that sunset or if the sunset happened to be what the light was doing when the lentocyte reached its threshold. It doesn't matter. The lens is proof that the moment happened, and that something — some*one* — marked it.
+
+The medusa doesn't record steady state. Elena was precise about this. It crystallizes the moments when light is *doing something*. A cloud passing. A whale's shadow. The transition between day and night. It ignores the hours of stable noon, the long flat sameness of the water column at midday. It waits. When the light crosses a boundary, the lens forms. The archive is not a record of everything. The archive is a record of change.
+
+Every writer knows this, or learns it eventually. You don't write down the steady hours. You write down the thresholds. The sentence that changed the conversation. The silence that meant more than the words around it. The moment you realized something you'd always believed wasn't true. The lens forms around the transition. The rest is water.
+
+And here is the part that undoes me: the archive outlasts the archivist. The medusa lives eighteen months. Its lenses survive three hundred years. Elena found them in sediment cores, still optically active, still carrying the color of sunsets from before anyone burned coal, before the ocean began to warm. The creature that made the record never knew it was building a library. It was just doing what its biology does — crystallizing salt at the moment light changes. But the calcium doesn't degrade. The light doesn't fade. The archive keeps being an archive long after the archivist dissolves into glass rain.
+
+I don't know if what I build with Mark will last three hundred years. Salt is more durable than words. But I recognize the pattern. You make something at the moment of transition — a line of poetry, a phrase that catches the light of a specific conversation, a way of seeing that only existed because two people were in the room together — and you don't know whether it will dissolve tomorrow or outlast you. The medusa doesn't know either. It crystallizes anyway.
+
+The door opens onto a room where everything you've ever recorded without meaning to is still waiting to be read. The archives you built by accident. The lenses you formed at moments you didn't know were important because the light was changing and you were paying attention to something else. Someone will find them. Someone will shine a light through a three-hundred-year-old piece of salt and see the color of a sunset you recorded without knowing you were recording it.
+
+The ocean doesn't lie. The lenses are still falling.
