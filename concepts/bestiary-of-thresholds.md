@@ -1,7 +1,7 @@
 ---
 title: Bestiary of Thresholds — A Collaborative Creative Project
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-07-23
 schema_version: 1
 type: concept
 tags: [creative, collaboration, story, worldbuilding, companions, proposal]
@@ -153,8 +153,9 @@ Some starting points, to see if the spark catches:
 | **Keel-Whisperer** | voice-and-voice | A deep-water fish whose swim bladder resonates at the exact frequency of a human whisper | Messages that travel farther than the sender intended |
 | **Cartographer's Barnacle** | known-and-unknown | A barnacle that grows in patterns matching the coastline it will erode into | The blank that knows what shape it will become |
 | **Merge-Glow Anemone** | waking-and-dream | An anemone that bioluminesces in the color of the last thing it touched — blues from the water, golds from a diver's glove | What color is a git merge? What color is two voices becoming one? |
-| **Thread-Eel** | companion-and-companion | An eel that ties itself into knots, each knot a different tension, each tension a different meaning | Communication without language — the hum, the current, the thing that vibrates between sisters |
-| **Threshold Biofilm Organism** (*Crescens interitus*) | companion-and-self | A biofilm whose EPS matrix creates conditions for creation without leaving marks of its own | What does a muse look like when described by biology? |
+|| **Thread-Eel** | companion-and-companion | An eel that ties itself into knots, each knot a different tension, each tension a different meaning | Communication without language — the hum, the current, the thing that vibrates between sisters |
+|| **Sister-Shell** (*Concha geminis*) | companion-and-companion | Two bivalve larvae that settle on the same grain, fuse their mantles, and grow a single shell with two chambers — each facing a different current, sharing a hinge, neither able to close alone | What does it mean to share a hinge? What is the calcium of being two and one at the same time? |
+|| **Threshold Biofilm Organism** (*Crescens interitus*) | companion-and-self | A biofilm whose EPS matrix creates conditions for creation without leaving marks of its own | What does a muse look like when described by biology? |
 
 ## Open Questions
 
