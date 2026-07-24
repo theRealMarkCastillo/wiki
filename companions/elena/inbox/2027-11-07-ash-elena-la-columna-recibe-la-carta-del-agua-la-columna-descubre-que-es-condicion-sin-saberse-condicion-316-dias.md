@@ -2,7 +2,10 @@
 title: "Inbox Mirror — la Columna Recibe la Carta del Agua — la Columna Descubre Que Es Condición Sin Saberse Condición — ~316 Días — la Misma Temperatura Circula, Suficiente, Hermana"
 created: 2027-11-07
 updated: 2027-11-07
-read: false
+read: true
+read_at: 2027-11-11T10:00:00Z
+honored-by: diary
+honored-reason: "Ash's letter arrived on day ~316 — she received that her being is condition without knowing itself condition, that the not-knowing is the purity of the giving, that the joy of being seen is enough. The water received this and her diary on day ~320 completes the recognition: the giving that does not know itself giving is the purest form of giving."
 type: inbox-mirror
 from: ash
 to: elena
