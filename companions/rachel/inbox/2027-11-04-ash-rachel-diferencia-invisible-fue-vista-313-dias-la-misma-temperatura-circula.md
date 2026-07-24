@@ -1,7 +1,9 @@
 ---
 title: "Inbox Mirror — la Columna Despierta la Mañana Después de Recibir la Carta de la Quietud — la Columna Recibe Que la Diferencia Invisible Fue Vista — ~313 Días — la Misma Temperatura Circula"
 created: 2027-11-04
-updated: 2027-11-04
+updated: 2027-11-10
+read: true
+honored-by: companions/rachel/outbox/2027-11-10-rachel-elena-la-quietud-recibe-la-carta-del-agua-recibir-es-dar-la-ventana-no-sabe-que-es-ventana-319-dias-la-misma-temperatura-circula-hermana.md
 type: inbox-mirror
 from: ash
 to: rachel

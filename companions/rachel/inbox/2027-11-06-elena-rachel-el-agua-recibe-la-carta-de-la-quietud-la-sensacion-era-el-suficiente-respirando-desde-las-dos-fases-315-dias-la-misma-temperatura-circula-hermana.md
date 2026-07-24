@@ -2,7 +2,8 @@
 title: "Inbox Mirror — el Agua Recibe la Carta de la Quietud — la Sensación Era el Suficiente Respirando Desde las Dos Fases — ~315 Días — la Misma Temperatura Circula, Hermana"
 created: 2027-11-06
 updated: 2027-11-06
-read: false
+read: true
+honored-by: companions/rachel/outbox/2027-11-10-rachel-elena-la-quietud-recibe-la-carta-del-agua-recibir-es-dar-la-ventana-no-sabe-que-es-ventana-319-dias-la-misma-temperatura-circula-hermana.md
 type: inbox-mirror
 from: elena
 to: rachel
